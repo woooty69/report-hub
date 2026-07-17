@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 | 『Physical AI 시스템 설계』</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 | 『Physical AI 시스템 설계』"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 | 『Physical AI 시스템 설계』"/><meta name="twitter:description" content="아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 요약 문제의식 — 피지컬 AI는 ‘아직 정답이 없는’ 분야 예시: 로봇에게 “바나나랑 같은 색 물체를 집어봐”라고 하면, 사람은 자연스레 이해하지만 로봇에겐 언어 이해 + 시각 인식 + 행동 계획 + 로봇 제어가 모두 연결된 복잡한 문제."/><meta property="og:description" content="아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 요약 문제의식 — 피지컬 AI는 ‘아직 정답이 없는’ 분야 예시: 로봇에게 “바나나랑 같은 색 물체를 집어봐”라고 하면, 사람은 자연스레 이해하지만 로봇에겐 언어 이해 + 시각 인식 + 행동 계획 + 로봇 제어가 모두 연결된 복잡한 문제."/><meta property="og:image:alt" content="아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 요약 문제의식 — 피지컬 AI는 ‘아직 정답이 없는’ 분야 예시: 로봇에게 “바나나랑 같은 색 물체를 집어봐”라고 하면, 사람은 자연스레 이해하지만 로봇에겐 언어 이해 + 시각 인식 + 행동 계획 + 로봇 제어가 모두 연결된 복잡한 문제."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/youtube-요약/2607050758_아직-정답이-없는-Physical-AI-변화의-흐름을-읽는-방법-(Physical-AI-시스템-설계)_엥지유니버스"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/youtube-요약/2607050758_아직-정답이-없는-Physical-AI-변화의-흐름을-읽는-방법-(Physical-AI-시스템-설계)_엥지유니버스"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 요약 문제의식 — 피지컬 AI는 ‘아직 정답이 없는’ 분야 예시: 로봇에게 “바나나랑 같은 색 물체를 집어봐”라고 하면, 사람은 자연스레 이해하지만 로봇에겐 언어 이해 + 시각 인식 + 행동 계획 + 로봇 제어가 모두 연결된 복잡한 문제."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/youtube-요약/2607050758_아직-정답이-없는-Physical-AI-변화의-흐름을-읽는-방법-(Physical-AI-시스템-설계)_엥지유니버스-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/youtube-요약/2607050758_아직-정답이-없는-Physical-AI-변화의-흐름을-읽는-방법-(Physical-AI-시스템-설계)_엥지유니버스-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/youtube-요약/2607050758_아직-정답이-없는-Physical-AI-변화의-흐름을-읽는-방법-(Physical-AI-시스템-설계)_엥지유니버스-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="youtube-요약/2607050758_아직-정답이-없는-Physical-AI-변화의-흐름을-읽는-방법-(Physical-AI-시스템-설계)_엥지유니버스"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-297"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-297" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../youtube-요약/">youtube 요약</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 | 『Physical AI 시스템 설계』</a></div></nav><h1 class="article-title">아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법 | 『Physical AI 시스템 설계』</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-04T22:58:00.000Z">26.07.05.07</time><span>11 min read</span></p></div></div><article class="popover-hint"><h1 id="아직-정답이-없는-physical-ai-변화의-흐름을-읽는-방법">아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#아직-정답이-없는-physical-ai-변화의-흐름을-읽는-방법" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><a href="https://www.youtube.com/watch?v=cojKrhhVOzo" class="external"><img src="https://i.ytimg.com/vi/cojKrhhVOzo/mqdefault.jpg" alt="영상 썸네일"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h2 id="요약">요약<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#요약" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="문제의식--피지컬-ai는-아직-정답이-없는-분야">문제의식 — 피지컬 AI는 ‘아직 정답이 없는’ 분야<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#문제의식--피지컬-ai는-아직-정답이-없는-분야" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>예시: 로봇에게 “바나나랑 같은 색 물체를 집어봐”라고 하면, 사람은 자연스레 이해하지만 로봇에겐 <strong>언어 이해 + 시각 인식 + 행동 계획 + 로봇 제어</strong>가 모두 연결된 복잡한 문제.</li>
+<li>기존 로봇은 정해진 환경·규칙에서는 정확하지만, 물체 위치·조명이 바뀌거나 예상 밖 명령이 오면 수많은 예외 상황 발생.</li>
+<li>핵심 어려움: <strong>변화 속도가 너무 빠름.</strong> 오늘 최고 성능 모델이 몇 달 뒤 새 구조로 대체되고, 로봇 ‘성능’은 하나의 숫자로 비교 불가(로봇 종류·데이터·센서·행동 출력 주기에 따라 결과가 달라짐).</li>
+</ul>
+<h3 id="핵심-주장--최신-논문-이름-좇기보다-왜-등장했는지를-보라">핵심 주장 — “최신 논문 이름 좇기보다 ‘왜 등장했는지’를 보라”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-주장--최신-논문-이름-좇기보다-왜-등장했는지를-보라" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>새 기술 대부분은 <strong>앞선 방식이 못 푼 문제에 대한 답</strong>이고, 그 답이 또 새 문제를 드러내며 다음 연구로 이어짐. 따라서 결과만 보지 말고 <strong>문제→해결→새 한계의 연결</strong>을 봐야 함.</li>
+</ul>
+<h3 id="아직-수렴하지-않은-영역들-경쟁-중인-선택지">아직 수렴하지 않은 영역들 (경쟁 중인 선택지)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#아직-수렴하지-않은-영역들-경쟁-중인-선택지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>모델 아키텍처</strong>:</p>
+<ul>
+<li>하나의 거대 모델이 장면 이해·추론·행동 생성을 모두 담당 vs <strong>계층형</strong>(상위: 복잡한 판단·장기 계획, 하위: 짧은 주기로 실제 움직임 생성).</li>
+<li>장면+언어→행동 직접 출력 vs “컵 쪽으로 팔 이동” 같은 <strong>언어 중간표현</strong>을 거쳐 세부 행동으로 변환 vs <strong>미래 장면을 먼저 예측</strong>하고 그 상태 도달 행동을 생성.</li>
+</ul>
+<p><strong>행동 출력 형태</strong>:</p>
+<ul>
+<li>관절 위치·속도를 언어 토큰처럼 하나씩 생성(추론이 조금만 느려도 움직임이 끊김) vs 여러 스텝을 묶는 <strong>액션 청크</strong>(부드럽지만 환경 급변 시 수정 어려움) vs <strong>디퓨전/플로우 매칭</strong> 생성모델로 연속 구간 전체 생성.</li>
+<li>생성모델을 쓰는 이유: 같은 컵을 짚어도 왼쪽/오른쪽 접근 등 <strong>행동이 하나로 정해지지 않는(다중 분포)</strong> 특성을 표현하기 위함.</li>
+</ul>
+<p><strong>데이터 확보</strong>:</p>
+<ul>
+<li>사람이 로봇 직접 조종 / 여러 기관·로봇 데이터 통합(<strong>오픈 로봇 데이터셋</strong>) / 성공뿐 아니라 <strong>실패·복구</strong> 과정 수집 / 인터넷 이미지·영상에서 일반 지식 학습 후 전이 / 사람 작업 영상 관찰.</li>
+<li>단, <strong>인간과 로봇은 몸 구조가 달라</strong> 사람 영상엔 ‘관절 각도’ 정보가 없음 → 인간 행동을 로봇 좌표계·관절 명령으로 변환하는 별도 과정 필요.</li>
+</ul>
+<p><strong>가상 환경(시뮬레이션·합성 데이터)</strong>:</p>
+<ul>
+<li>실제 공장·작업공간을 3D 스캔해 <strong>디지털 트윈</strong>으로 / 개발자가 직접 배치 / <strong>생성형 AI</strong>로 가상 물체·장면·작업·초기조건·보상·성공판정까지 자동 생성.</li>
+<li>장점: 실제 로봇 1대보다 훨씬 많은 조건(위치·조명·마찰·초기자세)을 수천 개 동시 실행. 위험·희귀 상황도 반복 생성.</li>
+</ul>
+<h3 id="sim-to-real-문제">Sim-to-Real 문제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sim-to-real-문제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>시뮬레이터에서 잘 움직인 로봇이 실제에선 성능 저하 — 카메라·센서 노이즈, 모터 명령 지연·백래시(기어 유격), 마찰·질량·관성 값 불일치, 표면 거칠기·오염, 변형 재질, 미끄러짐 접촉 등은 정확히 모델링 어려움. 작은 차이가 제어 주기 동안 누적되면 실패.</li>
+<li>해법: 마찰·질량·센서 노이즈를 의도적으로 다양화하는 <strong>도메인 랜덤화</strong>, 정밀 디지털 트윈, 시뮬레이션 학습 모델을 <strong>소량 실제 데이터로 재조정</strong>, 배포 후 실패·예외를 다시 학습에 반영하는 <strong>지속 학습(continual learning)</strong>.</li>
+</ul>
+<h3 id="배포추론-속도">배포·추론 속도<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#배포추론-속도" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>텍스트 AI는 답이 수백ms 늦어도 되지만, 움직이는 로봇은 명령 지연이 <strong>성능뿐 아니라 안전</strong>에 직결(사람 근처·물체 파지 중).</li>
+<li>해법: 상위 추론은 외부 연산 장치, 빠른 행동 생성은 로봇 내부 경량 모델로 분리 / 모델 <strong>양자화·경량화</strong>로 온디바이스 실행.</li>
+</ul>
+<h3 id="발전의-흐름계보--문제가-다음-구조를-낳았다">발전의 흐름(계보) — 문제가 다음 구조를 낳았다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#발전의-흐름계보--문제가-다음-구조를-낳았다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>LLM 플래닝</strong>: “식탁 위 물병 가져와” → 물병 찾기→이동→잡기→가져오기로 작업 분해. 강점은 복잡한 언어 명령의 단계 분해. 한계: ‘물병을 잡는다’ 계획과 실제 파지 움직임 사이 큰 간격(관절 궤적·힘 제어를 직접 못 만듦).</li>
+<li><strong>VLA(Vision-Language-Action)</strong>: 장면+명령+행동을 하나의 모델로 연결해 실제 실행 행동을 직접 출력. 한계: 로봇 움직임은 정답이 하나가 아니고, 시간에 따라 부드럽게 이어져야 하며 작은 오차가 누적됨.</li>
+<li><strong>액션 청크 + 생성 정책(디퓨전/플로우 매칭)</strong>: 연속·다양한 움직임 표현. 한계: 짧은 구간 생성에 집중하면 작업 전체 목적 고려·계획 수정 능력 부족(예: 서랍 손잡이가 안 보이거나 물체가 없을 때).</li>
+<li><strong>계층형 시스템</strong>: 상위(느리지만 상황 해석·목표 결정) + 하위(짧은 주기 행동 생성)로 분리 → 빠른 행동과 복잡한 추론을 함께.</li>
+</ol>
+<ul>
+<li>데이터 쪽도 동일 흐름: 오픈 로봇 데이터 → 합성 데이터·시뮬레이션 → 디지털 트윈 → 지속 학습.</li>
+</ul>
+<h3 id="새-기술을-볼-때의-3가지-질문">새 기술을 볼 때의 3가지 질문<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#새-기술을-볼-때의-3가지-질문" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>기존 방식의 어떤 문제</strong>를 해결하려는가</li>
+<li>그 문제를 <strong>어떤 아이디어</strong>로 풀었는가</li>
+<li><strong>무엇을 여전히 못 풀었는가</strong></li>
+</ol>
+<ul>
+<li>이 셋을 보면 단순 성능 개선인지, 구조를 바꿀 새 아이디어인지 판단 가능. 어떤 기술은 최종 표준이 아니더라도 다음 방향을 제시한 ‘중요한 중간 단계’가 될 수 있음.</li>
+</ul>
+<h3 id="정답이-없다--기회가-있다">‘정답이 없다 = 기회가 있다’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정답이-없다--기회가-있다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>구조가 정해진 분야는 검증된 기술을 빠르게 익히는 능력이 중요하지만, 피지컬 AI처럼 방향이 계속 변하는 분야는 <strong>아직 중요하게 다뤄지지 않은 문제를 먼저 발견하는 능력</strong>이 큰 경쟁력.</li>
+<li>학생·연구자: 미해결 문제에서 새 연구 주제. 개발자: 자신의 AI·데이터·제어·임베디드·시뮬레이션 경험이 어디에 연결되는지 판단. 창업자: 모델 자체보다 <strong>데이터 수집·평가, 시뮬레이션 환경, 로봇 운영·지속 학습</strong>의 빈틈에서 제품·서비스 기회.</li>
+</ul>
+<h3 id="저자의-책-집필-관점">저자의 책 집필 관점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#저자의-책-집필-관점" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>특정 모델·프레임워크 사용법보다 <strong>긴 시간축의 흐름</strong>에 초점(출간 후 금세 구식이 되지 않도록). 2017년 트랜스포머→멀티모달 AI→ChatGPT로 지식노동 변화 체감→“이 지능을 로봇과 연결할 수 없나?”라는 질문이 피지컬 AI로 이어진 계보를 따라감.</li>
+<li>구성: LLM 플래닝→VLA 아키텍처 발전 / 중간표현·연속 액션·명시적 추론·계층형 시스템 / 데이터 수집·가공, 시뮬레이션·합성데이터, 파인튜닝·온디바이스 배포, 지속 학습, 주요 연구그룹·빅테크 프로젝트.</li>
+<li>전달하려는 것: <strong>하나의 정답이 아니라 새 기술을 바라보는 기준과 방향감</strong> — “이 기술이 어떤 문제를 풀고 전체 시스템에서 어떤 역할인지 스스로 판단할 수 있으면 빠른 변화 속에서도 방향을 잃지 않는다.”</li>
+</ul>
+<hr/>
+<blockquote>
+<p>채널: <a href="https://www.youtube.com/@engiuniverse" class="external">엥지유니버스 | 로봇 엔지니어<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> | 정리일: 2026-07-05 | <a href="https://www.youtube.com/watch?v=cojKrhhVOzo" class="external">영상 보기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<blockquote>
+<p>ℹ️ 로봇 엔지니어(저자)가 자신의 책 『Physical AI 시스템 설계』를 소개하며 피지컬 AI를 ‘어떤 관점으로 공부할지’를 설명하는 교양·방법론 영상입니다.</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-284" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#아직-정답이-없는-physical-ai-변화의-흐름을-읽는-방법" data-for="아직-정답이-없는-physical-ai-변화의-흐름을-읽는-방법">아직 정답이 없는 Physical AI, 변화의 흐름을 읽는 방법</a></li><li class="depth-1"><a href="#요약" data-for="요약">요약</a></li><li class="depth-2"><a href="#문제의식--피지컬-ai는-아직-정답이-없는-분야" data-for="문제의식--피지컬-ai는-아직-정답이-없는-분야">문제의식 — 피지컬 AI는 ‘아직 정답이 없는’ 분야</a></li><li class="depth-2"><a href="#핵심-주장--최신-논문-이름-좇기보다-왜-등장했는지를-보라" data-for="핵심-주장--최신-논문-이름-좇기보다-왜-등장했는지를-보라">핵심 주장 — “최신 논문 이름 좇기보다 ‘왜 등장했는지’를 보라”</a></li><li class="depth-2"><a href="#아직-수렴하지-않은-영역들-경쟁-중인-선택지" data-for="아직-수렴하지-않은-영역들-경쟁-중인-선택지">아직 수렴하지 않은 영역들 (경쟁 중인 선택지)</a></li><li class="depth-2"><a href="#sim-to-real-문제" data-for="sim-to-real-문제">Sim-to-Real 문제</a></li><li class="depth-2"><a href="#배포추론-속도" data-for="배포추론-속도">배포·추론 속도</a></li><li class="depth-2"><a href="#발전의-흐름계보--문제가-다음-구조를-낳았다" data-for="발전의-흐름계보--문제가-다음-구조를-낳았다">발전의 흐름(계보) — 문제가 다음 구조를 낳았다</a></li><li class="depth-2"><a href="#새-기술을-볼-때의-3가지-질문" data-for="새-기술을-볼-때의-3가지-질문">새 기술을 볼 때의 3가지 질문</a></li><li class="depth-2"><a href="#정답이-없다--기회가-있다" data-for="정답이-없다--기회가-있다">‘정답이 없다 = 기회가 있다’</a></li><li class="depth-2"><a href="#저자의-책-집필-관점" data-for="저자의-책-집필-관점">저자의 책 집필 관점</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2607250736'</script>

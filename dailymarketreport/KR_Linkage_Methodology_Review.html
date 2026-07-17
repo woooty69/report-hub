@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>KR_Linkage_Methodology_Review</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="KR_Linkage_Methodology_Review"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="KR_Linkage_Methodology_Review"/><meta name="twitter:description" content="‘한국 연관’ 분석 고도화 — 방법론·분석툴 검토 작성: 2026-07-04(토) · 목적: 데일리 리포트의 ’🇰🇷 한국 연관’ 섹션을 업종 매핑 수준에서 수급·포지셔닝·상관관계 기반의 조건부 해석으로 격상 1."/><meta property="og:description" content="‘한국 연관’ 분석 고도화 — 방법론·분석툴 검토 작성: 2026-07-04(토) · 목적: 데일리 리포트의 ’🇰🇷 한국 연관’ 섹션을 업종 매핑 수준에서 수급·포지셔닝·상관관계 기반의 조건부 해석으로 격상 1."/><meta property="og:image:alt" content="‘한국 연관’ 분석 고도화 — 방법론·분석툴 검토 작성: 2026-07-04(토) · 목적: 데일리 리포트의 ’🇰🇷 한국 연관’ 섹션을 업종 매핑 수준에서 수급·포지셔닝·상관관계 기반의 조건부 해석으로 격상 1."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/dailymarketreport/KR_Linkage_Methodology_Review"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/dailymarketreport/KR_Linkage_Methodology_Review"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="‘한국 연관’ 분석 고도화 — 방법론·분석툴 검토 작성: 2026-07-04(토) · 목적: 데일리 리포트의 ’🇰🇷 한국 연관’ 섹션을 업종 매핑 수준에서 수급·포지셔닝·상관관계 기반의 조건부 해석으로 격상 1."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/dailymarketreport/KR_Linkage_Methodology_Review-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/dailymarketreport/KR_Linkage_Methodology_Review-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/dailymarketreport/KR_Linkage_Methodology_Review-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="dailymarketreport/KR_Linkage_Methodology_Review"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-0" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../dailymarketreport/">dailymarketreport</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>KR_Linkage_Methodology_Review</a></div></nav><h1 class="article-title">KR_Linkage_Methodology_Review</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-03T15:00:00.000Z">26.07.04.00</time><span>14 min read</span></p><ul class="tags"><li><a href="../tags/방법론" class="internal tag-link">방법론</a></li><li><a href="../tags/한국연관" class="internal tag-link">한국연관</a></li><li><a href="../tags/미국증시" class="internal tag-link">미국증시</a></li><li><a href="../tags/데일리리포트" class="internal tag-link">데일리리포트</a></li></ul></div></div><article class="popover-hint wide-report"><h1 id="한국-연관-분석-고도화--방법론분석툴-검토">‘한국 연관’ 분석 고도화 — 방법론·분석툴 검토<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한국-연관-분석-고도화--방법론분석툴-검토" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>작성: 2026-07-04(토) · 목적: 데일리 리포트의 ’🇰🇷 한국 연관’ 섹션을 업종 매핑 수준에서 <strong>수급·포지셔닝·상관관계 기반의 조건부 해석</strong>으로 격상</p>
+</blockquote>
+<hr/>
+<h2 id="1-현재-방식의-문제-진단">1. 현재 방식의 문제 진단<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-현재-방식의-문제-진단" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>현행 ‘한국 연관’은 “미국 반도체 하락 → 삼성전자·SK하이닉스 경계, 미국 헬스케어 상승 → 삼성바이오로직스 우호” 같은 <strong>정적 업종 매핑</strong>이다. 이 방식의 결함은 세 가지다.</p>
+<p><strong>① 선반영(look-ahead)을 무시한다.</strong> 한국장은 미국 정규장보다 시간상 먼저 열리지만, 정보 반영은 오히려 앞서가는 경우가 많다. 이번 주가 정확한 반례다 — KOSPI는 7/2(목) 하루에 −7.89%(8,303.41→7,648.09) 폭락하며 미국 7/1 SOX −6.3%는 물론 그날 밤 −6.7%까지 사실상 하루에 소화했고, 정작 미국 7/2 폭락을 ‘확인한’ 7/3(금)에는 **+5.76% 반등(7,648.09→8,088.34)**했다. 이 상황에서 “7/6(월) 반도체 변동성 지속 경계”라는 코멘트는 이미 지나간 위험을 경고하는, 실전에서 쓸모없는 분석이 된다.</p>
+<p><strong>② 수급 주체를 무시한다.</strong> 같은 ‘하락’이라도 외국인 투매의 초입인지, 매도 클라이맥스 통과인지에 따라 대응이 정반대다. 삼성전자(005930) 이번 주 외국인 순매수: 6/29 <strong>−3.85조 원</strong> → 6/30 −0.87조 → 7/1 −1.08조 → 7/2 −1.47조 → 7/3 <strong>−0.39조 원</strong>. 매도 강도가 피크 대비 90% 감속했고, 7/3에는 기관이 <strong>+1.31조 원 순매수로 전환</strong>하며 지수 반등을 주도했다. 업종 매핑만으로는 이 ‘매도 소진 신호’를 절대 포착할 수 없다.</p>
+<p><strong>③ 포지셔닝·레짐을 무시한다.</strong> 공매도 잔고가 쌓인 종목은 악재에 둔감(이미 숏)하고 호재에 민감(숏커버)하다. VKOSPI가 극단 레짐이면 개별 종목 논리보다 시장 전체 리스크 온/오프가 지배한다. 낙폭과대 여부(KOSPI 6/22 고점 9,114.55 → 7/2 7,648.09, −16.1%)도 미국발 신호의 ‘남은 전달력’을 결정한다.</p>
+<p><strong>결론</strong>: ‘한국 연관’은 방향 예측이 아니라 <strong>“미국 신호 × 한국의 현재 상태(선반영 정도·수급·포지셔닝·레짐)“의 조건부 해석</strong>이어야 한다.</p>
+<hr/>
+<h2 id="2-사용-가능한-분석툴-인벤토리-현재-환경에-연결된-mcp">2. 사용 가능한 분석툴 인벤토리 (현재 환경에 연결된 MCP)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-사용-가능한-분석툴-인벤토리-현재-환경에-연결된-mcp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>레이어</th><th>도구</th><th>용도</th></tr></thead><tbody><tr><td>가격·상관</td><td><code>hw-krx.get_ohlcv</code> / <code>get_index_ohlcv</code></td><td>종목·지수 일봉 → 미국 지표와의 롤링 상관·베타 계산 원료</td></tr><tr><td>수급</td><td><code>hw-krx.get_trading_by_investor</code></td><td>개인/외국인/기관/연기금 순매수 — 외국인 매도 가속/감속, 기관 전환 포착</td></tr><tr><td>수급</td><td><code>hw-krx.get_foreign_holding</code></td><td>외국인 보유율·한도소진율 추이 — 구조적 이탈 vs 단기 트레이딩 구분</td></tr><tr><td>포지셔닝</td><td><code>hw-krx.get_short_balance</code> / <code>get_short_sale</code></td><td>공매도 잔고·체결 — 숏커버 반등 잠재력, 악재 둔감도</td></tr><tr><td>레짐</td><td><code>hw-krx.classify_vkospi_regime</code></td><td>VKOSPI 4구간 레짐(&lt;20 / 20-30 / 30-40 / >40) — 시장 전체 리스크 판정</td></tr><tr><td>밸류·과열</td><td><code>hw-krx.get_fundamental</code> / <code>get_market_cap</code></td><td>PER·PBR·배당 — 낙폭과대/과열 판단 보조</td></tr><tr><td>이벤트</td><td><code>hw-dart.search_disclosures</code> / <code>get_major_shareholders</code></td><td>자사주·증자·CB·대주주 변동 — 한국 고유 이벤트가 미국발 신호를 압도하는지 확인</td></tr><tr><td>컨센서스</td><td><code>hw-research.search_broker_reports</code></td><td>한경컨센서스 국내 증권사 리포트 — 국내 시각·목표가 괴리</td></tr><tr><td>프레임</td><td><code>hw-research.get_6axis_framework_guide</code></td><td>종목 단위 심층 분석 시 6축 체크리스트</td></tr><tr><td>미국측</td><td>Finviz API·WebSearch (기존 파이프라인)</td><td>미국 섹터·종목 확정 등락, 뉴스·촉매</td></tr></tbody></table></div>
+<p>즉 <strong>필요한 데이터는 이미 전부 연결되어 있고</strong>, 부족한 것은 이를 매일 아침 리포트 생성 흐름에 결합하는 계산 로직과 해석 프레임이다.</p>
+<hr/>
+<h2 id="3-제안-방법론--3레이어-조건부-해석-프레임">3. 제안 방법론 — 3레이어 조건부 해석 프레임<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-제안-방법론--3레이어-조건부-해석-프레임" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="layer-1-정량-상관베타-미국-신호의-전달-계수">Layer 1. 정량 상관·베타 (미국 신호의 ‘전달 계수’)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-1-정량-상관베타-미국-신호의-전달-계수" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>갭 반응 베타</strong>: 미국 섹터 지표(SOX, S&amp;P500, 나스닥, 관련 미국 종목)의 밤사이 수익률 → 한국 대응 종목의 익일 시가 갭·종가 수익률 회귀. 최근 20일/60일 롤링으로 계산해 “지금 SOX −1%는 삼성전자 몇 %로 전달되는가”를 수치로 유지.</li>
+<li><strong>롤링 상관 안정성</strong>: 상관계수 자체보다 <strong>상관의 최근 변화</strong>가 신호다(평시 0.4 → 급등 0.8이면 동조화 국면, 급락하면 국내 고유 재료 지배 국면).</li>
+<li><strong>선반영 잔여분 계산</strong>: (미국 누적 등락 × 베타) − 한국 기실현 등락 = ‘남은 전달분’. 이번 주 사례: SOX 이틀 −12.6% × β(≈0.9～1.1) ≈ −12% 내외 vs 삼성전자·KOSPI 기실현 낙폭이 이미 그 이상 → <strong>전달분 소진 → 반등 여지</strong>로 판정했어야 함.</li>
+<li>구현: 매일 아침 pykrx(hw-krx) 일봉 + 미국 종가로 파이썬 스크립트가 계산, <code>kr_us_linkage_cache.json</code>으로 폴더에 캐시. 리포트 생성 시 읽어서 주입.</li>
+</ul>
+<h3 id="layer-2-수급포지셔닝-한국-내부의-수용-태세">Layer 2. 수급·포지셔닝 (한국 내부의 ‘수용 태세’)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-2-수급포지셔닝-한국-내부의-수용-태세" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>외국인 순매수 모멘텀</strong>: 5일 순매수 합계와 <strong>일별 매도 강도의 2차 미분</strong>(가속/감속). “외국인 5일 연속 매도”(경계)와 “매도 규모 90% 감속 + 기관 전환”(바닥 신호)을 구분.</li>
+<li><strong>공매도 잔고 델타</strong>: 잔고 비중 상승 중이면 악재 선반영 진행, 고잔고 상태에서 반등 시작이면 숏커버 증폭 가능.</li>
+<li><strong>외국인 한도소진율/보유율 추세</strong>: 단기 트레이딩 매도인지 구조적 비중 축소인지.</li>
+<li><strong>DART 이벤트 스캔</strong>: 해당 종목에 자사주·증자·대주주 변동 등 국내 고유 이벤트가 있으면 미국발 논리보다 우선 명시.</li>
+</ul>
+<h3 id="layer-3-레짐컨센서스-해석의-문맥">Layer 3. 레짐·컨센서스 (해석의 ‘문맥’)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#layer-3-레짐컨센서스-해석의-문맥" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>VKOSPI 레짐</strong>: >40 극단 구간에서는 업종 로직 대신 “전 종목 고상관 투매/반등” 문맥을 명시. (이번 주 KOSPI 일중 ±6～10% 변동은 명백한 극단 레짐 — 이 상태에서 개별 업종 매핑은 무의미)</li>
+<li><strong>국내 증권사 컨센서스 대조</strong>: <code>search_broker_reports</code>로 최근 국내 리포트 논조·목표가를 확인해 “미국발 악재가 국내 컨센서스에 이미 반영됐는지”를 언급.</li>
+<li><strong>환율·원자재 채널</strong>: 달러 약세(7/2 −0.5%)·유가 하락은 외국인 수급과 원가 채널로 별도 명시.</li>
+</ul>
+<h3 id="산출-포맷--리포트-한국-연관-블록의-새-표준">산출 포맷 — 리포트 ‘한국 연관’ 블록의 새 표준<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#산출-포맷--리포트-한국-연관-블록의-새-표준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기존 한 줄 유추 대신, 종목/테마당 아래 구조로 기술한다:</p>
+<blockquote>
+<p><strong>🇰🇷 삼성전자·SK하이닉스</strong>: [전달] SOX 이틀 −12.6%, 갭베타 기준 전달분은 이미 소진(KOSPI 7/2 −7.9% 선반영) · [수급] 외국인 매도 6/29 −3.85조→7/3 −0.39조 감속, 기관 +1.3조 전환 · [포지션] 공매도 잔고 X% (증가/감소) · [레짐] VKOSPI 극단→완화 · <strong>[판정] 추가 투매 추종 매도보다 되돌림 관찰 우위. 단 메타 컴퓨트 후속 보도 시 재차 동조화 리스크.</strong></p>
+</blockquote>
+<p>‘경계/우호’ 같은 방향 단정 대신 <strong>판정 + 무효화 조건</strong>을 반드시 붙인다.</p>
+<hr/>
+<h2 id="4-구현-계획-기존-아침-파이프라인에의-통합">4. 구현 계획 (기존 아침 파이프라인에의 통합)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-구현-계획-기존-아침-파이프라인에의-통합" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li><strong><code>kr_us_linkage.py</code> 신설</strong> (폴더 내 저장): pykrx 일봉(hw-krx와 동일 소스) + 미국 확정 종가 입력 → 워치리스트(삼성전자, SK하이닉스, 한미반도체, HD현대일렉트릭, LS일렉트릭, 두산에너빌리티, 삼성바이오로직스, 셀트리온, 한화에어로스페이스, 현대차, LG에너지솔루션 등 15～20종목)에 대해 ①20/60일 롤링 상관·갭베타 ②외국인/기관 5일 수급 모멘텀 ③공매도 잔고 델타를 계산해 JSON 캐시 갱신.</li>
+<li><strong>리포트 생성 절차 수정</strong>: 미국 데이터 수집 후, hw-krx로 <strong>전일 한국장 스냅샷</strong>(KOSPI/KOSDAQ 등락, 워치리스트 수급)을 함께 조회하고, ‘한국 연관’은 캐시+스냅샷을 근거로 위 산출 포맷으로 작성. “한국장이 이미 반영했는가”를 매 종목 첫 판단 기준으로 삼는다.</li>
+<li><strong>스케줄 태스크 지침 반영</strong>: SKILL.md의 ‘한국 연관 유추’ 항목을 “3레이어 조건부 해석 + 판정/무효화 조건 포맷”으로 개정.</li>
+<li><strong>주 1회 검증 루프</strong>: 토요일 주간 리포트에서 지난주 ‘판정’들의 적중 여부를 1줄씩 리뷰(예측 책임 추적) — 방법론 자체를 데이터로 개선.</li>
+</ol>
+<hr/>
+<h2 id="5-한계와-주의">5. 한계와 주의<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-한계와-주의" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>롤링 상관·베타는 <strong>불안정</strong>하다(레짐 전환 시 급변). 수치는 참고 계수이지 예측 모델이 아니며, 항상 수급·이벤트 레이어와 교차해 서술한다.</li>
+<li>pykrx 수급 데이터는 T+1 확정치 기준이라 당일 장중 수급은 반영 불가 — 리포트에는 “전일 확정 수급” 기준임을 유지.</li>
+<li>극단 변동성 구간(이번 주처럼 일중 ±6% 이상)에서는 모든 정량 계수가 일시적으로 무의미해질 수 있다 — 이때는 레짐 판정을 최상위에 두고 개별 매핑 서술을 축소한다.</li>
+<li>공매도·한도소진율은 종목별 제도 상태(공매도 금지 여부 등)에 따라 해석이 달라진다.</li>
+</ul>
+<hr/>
+<h2 id="6-이번-주-실증-방법론-사후-검증">6. 이번 주 실증 (방법론 사후 검증)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-이번-주-실증-방법론-사후-검증" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>신호</th><th>기존 방식의 해석</th><th>신규 방법론의 해석</th></tr></thead><tbody><tr><td>미국 SOX 이틀 −12.6% (7/1～2)</td><td>“삼성전자·SK하이닉스 경계”</td><td>KOSPI 7/2 −7.89%로 전달분 기소진 + 오버슈팅(6/22 고점 대비 −16.1%) → 추종 매도 실익 없음</td></tr><tr><td>삼성전자 외국인 5일 연속 매도</td><td>(포착 불가)</td><td>매도 강도 −3.85조→−0.39조로 90% 감속 = 매도 클라이맥스 통과 후보</td></tr><tr><td>7/3 기관 +1.31조 순매수 전환</td><td>(포착 불가)</td><td>반등 주도 주체 확인 → 7/3 KOSPI +5.76% 반등과 정합</td></tr><tr><td>판정</td><td>”7/6 변동성 지속 경계” (모호)</td><td>“되돌림 관찰 우위, 무효화 조건: 메타 컴퓨트 후속 악재·외국인 매도 재가속” (실행 가능)</td></tr></tbody></table></div>
+<hr/>
+<p><em>본 문서는 내부 방법론 검토 자료이며 투자 권유가 아닙니다.</em></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-0" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#한국-연관-분석-고도화--방법론분석툴-검토" data-for="한국-연관-분석-고도화--방법론분석툴-검토">‘한국 연관’ 분석 고도화 — 방법론·분석툴 검토</a></li><li class="depth-1"><a href="#1-현재-방식의-문제-진단" data-for="1-현재-방식의-문제-진단">1. 현재 방식의 문제 진단</a></li><li class="depth-1"><a href="#2-사용-가능한-분석툴-인벤토리-현재-환경에-연결된-mcp" data-for="2-사용-가능한-분석툴-인벤토리-현재-환경에-연결된-mcp">2. 사용 가능한 분석툴 인벤토리 (현재 환경에 연결된 MCP)</a></li><li class="depth-1"><a href="#3-제안-방법론--3레이어-조건부-해석-프레임" data-for="3-제안-방법론--3레이어-조건부-해석-프레임">3. 제안 방법론 — 3레이어 조건부 해석 프레임</a></li><li class="depth-2"><a href="#layer-1-정량-상관베타-미국-신호의-전달-계수" data-for="layer-1-정량-상관베타-미국-신호의-전달-계수">Layer 1. 정량 상관·베타 (미국 신호의 ‘전달 계수’)</a></li><li class="depth-2"><a href="#layer-2-수급포지셔닝-한국-내부의-수용-태세" data-for="layer-2-수급포지셔닝-한국-내부의-수용-태세">Layer 2. 수급·포지셔닝 (한국 내부의 ‘수용 태세’)</a></li><li class="depth-2"><a href="#layer-3-레짐컨센서스-해석의-문맥" data-for="layer-3-레짐컨센서스-해석의-문맥">Layer 3. 레짐·컨센서스 (해석의 ‘문맥’)</a></li><li class="depth-2"><a href="#산출-포맷--리포트-한국-연관-블록의-새-표준" data-for="산출-포맷--리포트-한국-연관-블록의-새-표준">산출 포맷 — 리포트 ‘한국 연관’ 블록의 새 표준</a></li><li class="depth-1"><a href="#4-구현-계획-기존-아침-파이프라인에의-통합" data-for="4-구현-계획-기존-아침-파이프라인에의-통합">4. 구현 계획 (기존 아침 파이프라인에의 통합)</a></li><li class="depth-1"><a href="#5-한계와-주의" data-for="5-한계와-주의">5. 한계와 주의</a></li><li class="depth-1"><a href="#6-이번-주-실증-방법론-사후-검증" data-for="6-이번-주-실증-방법론-사후-검증">6. 이번 주 실증 (방법론 사후 검증)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2607250736'</script>

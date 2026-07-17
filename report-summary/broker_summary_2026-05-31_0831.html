@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>broker_summary_2026-05-31_0831</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="broker_summary_2026-05-31_0831"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="broker_summary_2026-05-31_0831"/><meta name="twitter:description" content="선진짱 broker digest — 2026-05-31 (Sun) 08:31 KST Source: t.me/-1001378197756 Window: 최근 24h Reports parsed: 47 (18 unique tickers · 29 업종/전략) 🔥 강력추천: 8건 🆕 신규종목 (캐시 최초 등장): 0건 🔥 강력추천 Reports (8건) 아래 리포트는 본문에 강력매수/Strong Buy/Top Pick/목표가 상향 등 고확신 멘트가 포함되어 있어 별도로 자세히 정리합니다."/><meta property="og:description" content="선진짱 broker digest — 2026-05-31 (Sun) 08:31 KST Source: t.me/-1001378197756 Window: 최근 24h Reports parsed: 47 (18 unique tickers · 29 업종/전략) 🔥 강력추천: 8건 🆕 신규종목 (캐시 최초 등장): 0건 🔥 강력추천 Reports (8건) 아래 리포트는 본문에 강력매수/Strong Buy/Top Pick/목표가 상향 등 고확신 멘트가 포함되어 있어 별도로 자세히 정리합니다."/><meta property="og:image:alt" content="선진짱 broker digest — 2026-05-31 (Sun) 08:31 KST Source: t.me/-1001378197756 Window: 최근 24h Reports parsed: 47 (18 unique tickers · 29 업종/전략) 🔥 강력추천: 8건 🆕 신규종목 (캐시 최초 등장): 0건 🔥 강력추천 Reports (8건) 아래 리포트는 본문에 강력매수/Strong Buy/Top Pick/목표가 상향 등 고확신 멘트가 포함되어 있어 별도로 자세히 정리합니다."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/report-summary/broker_summary_2026-05-31_0831"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/report-summary/broker_summary_2026-05-31_0831"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="선진짱 broker digest — 2026-05-31 (Sun) 08:31 KST Source: t.me/-1001378197756 Window: 최근 24h Reports parsed: 47 (18 unique tickers · 29 업종/전략) 🔥 강력추천: 8건 🆕 신규종목 (캐시 최초 등장): 0건 🔥 강력추천 Reports (8건) 아래 리포트는 본문에 강력매수/Strong Buy/Top Pick/목표가 상향 등 고확신 멘트가 포함되어 있어 별도로 자세히 정리합니다."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/report-summary/broker_summary_2026-05-31_0831-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/report-summary/broker_summary_2026-05-31_0831-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/report-summary/broker_summary_2026-05-31_0831-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="report-summary/broker_summary_2026-05-31_0831"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-154"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-154" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../report-summary/">report summary</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>broker_summary_2026 05 31_0831</a></div></nav><h1 class="article-title">broker_summary_2026-05-31_0831</h1><p show-comma="true" class="content-meta"><time datetime="2026-05-30T23:31:00.000Z">26.05.31.08</time><span>17 min read</span></p></div></div><article class="popover-hint"><h1 id="선진짱-broker-digest--2026-05-31-sun-0831-kst">선진짱 broker digest — 2026-05-31 (Sun) 08:31 KST<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#선진짱-broker-digest--2026-05-31-sun-0831-kst" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>Source: t.me/-1001378197756</li>
+<li>Window: 최근 24h</li>
+<li>Reports parsed: 47 (18 unique tickers · 29 업종/전략)</li>
+<li>🔥 <strong>강력추천</strong>: 8건</li>
+<li>🆕 <strong>신규종목</strong> (캐시 최초 등장): 0건</li>
+</ul>
+<h2 id="-강력추천-reports-8건">🔥 강력추천 Reports (8건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-강력추천-reports-8건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>아래 리포트는 본문에 강력매수/Strong Buy/Top Pick/목표가 상향 등 고확신 멘트가 포함되어 있어 별도로 자세히 정리합니다.</p>
+<h3 id="009150-삼성전기--kb-2026-05-26">[009150] 삼성전기 — KB 2026-05-26<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#009150-삼성전기--kb-2026-05-26" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>신호 트리거</strong>: <code>Top Pick</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/삼성전기［009150］_20260526_KB_1100783.png" alt="삼성전기 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0%EF%BC%BB009150%EF%BC%BD_20260526_KB_1100783.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="034230-파라다이스--yuanta-2026-05-28">[034230] 파라다이스 — Yuanta 2026-05-28<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#034230-파라다이스--yuanta-2026-05-28" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>TP 20000원</strong>  |  <strong>Rating 매수</strong></p>
+</li>
+<li>
+<p><strong>신호 트리거</strong>: <code>상승여력 20%+</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/파라다이스［034230］_20260528_Yuanta_1101972.png" alt="파라다이스 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%8C%8C%EB%9D%BC%EB%8B%A4%EC%9D%B4%EC%8A%A4%EF%BC%BB034230%EF%BC%BD_20260528_Yuanta_1101972.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="-k방산-지금-놓치면-후회한다-한화에어로스페이스-lig디펜스에어로스페이스-한국항공우주-현대로템-한화시스템-aerospacedefen--unknown-2026-05-30">[—] K방산; 지금 놓치면 후회한다 한화에어로스페이스, LIG디펜스에어로스페이스, 한국항공우주, 현대로템, 한화시스템 Aerospace＆Defen — (unknown) 2026-05-30<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-k방산-지금-놓치면-후회한다-한화에어로스페이스-lig디펜스에어로스페이스-한국항공우주-현대로템-한화시스템-aerospacedefen--unknown-2026-05-30" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>Rating 매수</strong></p>
+</li>
+<li>
+<p><strong>신호 트리거</strong>: <code>Top Pick</code>, <code>비중확대</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/K방산;_지금_놓치면_후회한다_한화에어로스페이스,_LIG디펜스에어로스페이스,_한국항공우주,_현대로템,_한화시스템_Aerospace＆Defen.png" alt="K방산; 지금 놓치면 후회한다 한화에어로스페이스, LIG디펜스에어로스페이스, 한국항공우주, 현대로템, 한화시스템 Aerospace＆Defen 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/K%EB%B0%A9%EC%82%B0;_%EC%A7%80%EA%B8%88_%EB%86%93%EC%B9%98%EB%A9%B4_%ED%9B%84%ED%9A%8C%ED%95%9C%EB%8B%A4_%ED%95%9C%ED%99%94%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4,_LIG%EB%94%94%ED%8E%9C%EC%8A%A4%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4,_%ED%95%9C%EA%B5%AD%ED%95%AD%EA%B3%B5%EC%9A%B0%EC%A3%BC,_%ED%98%84%EB%8C%80%EB%A1%9C%ED%85%9C,_%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C_Aerospace%EF%BC%86Defen.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="-2026년-하반기-산업-전망-up-triomlcc-기판-소켓-삼성전기-lg이노텍-두산-이수페타시스-심텍--unknown-2026-05-30">[—] 2026년 하반기 산업 전망 Up TrioMLCC, 기판, 소켓 삼성전기, LG이노텍, 두산, 이수페타시스, 심텍 — (unknown) 2026-05-30<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026년-하반기-산업-전망-up-triomlcc-기판-소켓-삼성전기-lg이노텍-두산-이수페타시스-심텍--unknown-2026-05-30" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>신호 트리거</strong>: <code>비중확대</code>, <code>Top Pick</code>, <code>최선호주</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/2026년_하반기_산업_전망_Up_TrioMLCC,_기판,_소켓_삼성전기,_LG이노텍,_두산,_이수페타시스,_심텍.png" alt="2026년 하반기 산업 전망 Up TrioMLCC, 기판, 소켓 삼성전기, LG이노텍, 두산, 이수페타시스, 심텍 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_Up_TrioMLCC,_%EA%B8%B0%ED%8C%90,_%EC%86%8C%EC%BC%93_%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0,_LG%EC%9D%B4%EB%85%B8%ED%85%8D,_%EB%91%90%EC%82%B0,_%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4,_%EC%8B%AC%ED%85%8D.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="-반도체-2026년-하반기-산업-전망-strong-buy-sk하이닉스-삼성전자-피에스케이-피에스케이홀딩스-솔브레인--unknown-2026-05-30">[—] 반도체 2026년 하반기 산업 전망 Strong BUY SK하이닉스, 삼성전자, 피에스케이, 피에스케이홀딩스, 솔브레인 — (unknown) 2026-05-30<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-반도체-2026년-하반기-산업-전망-strong-buy-sk하이닉스-삼성전자-피에스케이-피에스케이홀딩스-솔브레인--unknown-2026-05-30" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>신호 트리거</strong>: <code>최선호주</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/반도체_2026년_하반기_산업_전망_Strong_BUY_SK하이닉스,_삼성전자,_피에스케이,_피에스케이홀딩스,_솔브레인.png" alt="반도체 2026년 하반기 산업 전망 Strong BUY SK하이닉스, 삼성전자, 피에스케이, 피에스케이홀딩스, 솔브레인 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%B0%98%EB%8F%84%EC%B2%B4_2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_Strong_BUY_SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4,_%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90,_%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4,_%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%99%80%EB%94%A9%EC%8A%A4,_%EC%86%94%EB%B8%8C%EB%A0%88%EC%9D%B8.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="-음식료_소비는_어렵다_성장은_남는다_삼양식품_ktg_신세계_롯데쇼핑_distributors--unknown-2026-05-28">[—] 음식료_소비는_어렵다,_성장은_남는다_삼양식품,_KT&amp;G,_신세계,_롯데쇼핑_Distributors — (unknown) 2026-05-28<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-음식료_소비는_어렵다_성장은_남는다_삼양식품_ktg_신세계_롯데쇼핑_distributors--unknown-2026-05-28" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>TP 1750000원</strong>  |  <strong>Rating 매수</strong></p>
+</li>
+<li>
+<p><strong>신호 트리거</strong>: <code>비중확대</code>, <code>Top Pick</code>, <code>최선호주</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/음식료_소비는_어렵다,_성장은_남는다_삼양식품,_KT-and-G,_신세계,_롯데쇼핑_Distributors_20260528.png" alt="음식료_소비는_어렵다,_성장은_남는다_삼양식품,_KT&amp;G,_신세계,_롯데쇼핑_Distributors 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%9D%8C%EC%8B%9D%EB%A3%8C_%EC%86%8C%EB%B9%84%EB%8A%94_%EC%96%B4%EB%A0%B5%EB%8B%A4,_%EC%84%B1%EC%9E%A5%EC%9D%80_%EB%82%A8%EB%8A%94%EB%8B%A4_%EC%82%BC%EC%96%91%EC%8B%9D%ED%92%88,_KT&amp;G,_%EC%8B%A0%EC%84%B8%EA%B3%84,_%EB%A1%AF%EB%8D%B0%EC%87%BC%ED%95%91_Distributors_20260528.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="-2차전지-이차전지-하반기-전망-상반기-모멘텀-하반기-실적-lg에너지솔루션-삼성sdi-대주전자재료-롯데에너지머티리얼즈--unknown-2026-05-30">[—] 2차전지 이차전지 하반기 전망 상반기 모멘텀, 하반기 실적 LG에너지솔루션, 삼성SDI, 대주전자재료, 롯데에너지머티리얼즈 — (unknown) 2026-05-30<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2차전지-이차전지-하반기-전망-상반기-모멘텀-하반기-실적-lg에너지솔루션-삼성sdi-대주전자재료-롯데에너지머티리얼즈--unknown-2026-05-30" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>Rating 중립</strong></p>
+</li>
+<li>
+<p><strong>신호 트리거</strong>: <code>Top Pick</code>, <code>비중확대</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/2차전지_이차전지_하반기_전망_상반기_모멘텀,_하반기_실적_LG에너지솔루션,_삼성SDI,_대주전자재료,_롯데에너지머티리얼즈.png" alt="2차전지 이차전지 하반기 전망 상반기 모멘텀, 하반기 실적 LG에너지솔루션, 삼성SDI, 대주전자재료, 롯데에너지머티리얼즈 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/2%EC%B0%A8%EC%A0%84%EC%A7%80_%EC%9D%B4%EC%B0%A8%EC%A0%84%EC%A7%80_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%A0%84%EB%A7%9D_%EC%83%81%EB%B0%98%EA%B8%B0_%EB%AA%A8%EB%A9%98%ED%85%80,_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%8B%A4%EC%A0%81_LG%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98,_%EC%82%BC%EC%84%B1SDI,_%EB%8C%80%EC%A3%BC%EC%A0%84%EC%9E%90%EC%9E%AC%EB%A3%8C,_%EB%A1%AF%EB%8D%B0%EC%97%90%EB%84%88%EC%A7%80%EB%A8%B8%ED%8B%B0%EB%A6%AC%EC%96%BC%EC%A6%88.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h3 id="-반도체_소부장_2026년_하반기_전망_소부장_조정은_곧_기회_semiconductors--sk-2026-05-28">[—] 반도체_소부장_2026년_하반기_전망_소부장,_조정은_곧_기회_Semiconductors＆ — SK 2026-05-28<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-반도체_소부장_2026년_하반기_전망_소부장_조정은_곧_기회_semiconductors--sk-2026-05-28" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>신호 트리거</strong>: <code>최선호주</code></p>
+</li>
+<li>
+<p><strong>리포트 1페이지</strong>:</p>
+<p><img src="../images/반도체_소부장_2026년_하반기_전망_소부장,_조정은_곧_기회_Semiconductors＆_20260528_SK_1101595.png" alt="반도체_소부장_2026년_하반기_전망_소부장,_조정은_곧_기회_Semiconductors＆ 1페이지"/></p>
+</li>
+<li>
+<p><strong>File</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%B0%98%EB%8F%84%EC%B2%B4_%EC%86%8C%EB%B6%80%EC%9E%A5_2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%A0%84%EB%A7%9D_%EC%86%8C%EB%B6%80%EC%9E%A5,_%EC%A1%B0%EC%A0%95%EC%9D%80_%EA%B3%A7_%EA%B8%B0%ED%9A%8C_Semiconductors%EF%BC%86_20260528_SK_1101595.pdf" class="external">PDF 열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<hr/>
+<h2 id="일반-리포트--종목별-요약-18-tickers">일반 리포트 — 종목별 요약 (18 tickers)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#일반-리포트--종목별-요약-18-tickers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="000520-삼일제약-1건">[000520] 삼일제약 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#000520-삼일제약-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Hungkuk 05-28 10000원 BUY</li>
+<li><strong>TP</strong>: 10,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>Company Report
+2026.05.28
+제약·바이오/화장품
+02)6742-3584 (000520)
+<a href="mailto:leejw9205@heungkuksec.co.kr" class="external">leejw9205@heungkuksec.co.kr<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+삼일제약
+CMO + 로어시비빈트 모멘텀 유효
+(유지)
+임상비용 증가에 따른 실적 부진
+목표주가 10,000원(하향)
+삼일제약의 2025년 연결 매출액/영업이익은 2,103억/-222억원(-4% YoY/
+현재주가(05/27)</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%82%BC%EC%9D%BC%EC%A0%9C%EC%95%BD%EF%BC%BB000520%EF%BC%BD_20260528_Hungkuk_1101613.pdf" class="external">Hungkuk<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="005380-현대차-1건">[005380] 현대차 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#005380-현대차-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: KB 05-28 1200000원</li>
+<li><strong>TP</strong>: 1,200,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>현대차 (005380)
+적정 시가총액 240조원, 토요타를 정조준
+자동차/운송 Analyst 강성진 연구원 김지윤
+2026년 5월 28일
+<a href="mailto:seongjin.kang@kbfg.com" class="external">seongjin.kang@kbfg.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="mailto:jiyun_kim@kbfg.com" class="external">jiyun_kim@kbfg.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+목표주가 1,200,000원으로 50% 상향 현대차에 대한 목표주가를 1,200,000원 (DCF, WACC 7.5%, TGR 0.7%, 12개월 포워드
+implied P/E 33.</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%98%84%EB%8C%80%EC%B0%A8%EF%BC%BB005380%EF%BC%BD_20260528_KB_1101523.pdf" class="external">KB<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="006280-녹십자-1건">[006280] 녹십자 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#006280-녹십자-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Kiwoom 05-28 210000원 BUY</li>
+<li><strong>TP</strong>: 210,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p> 기업 업데이트 2026.
+Buy(Upgrade) 녹십자
+(006280)
+목표주가: 210,000원
+주가(5/27): 150,200원 릴리의 선택. 단순 일회성이 아닌 선순환의 시작
+시가총액: 17,553억 원
+전일(5/26일) 릴리가 국내 녹십자의 관계사인 미국 백신 개발 전문 바이오텍 큐레
+보를 총 15억 달러(약 2조원) 규모의 인수를 발표하며 본격적인 백신 영역 확장에</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%85%B9%EC%8B%AD%EC%9E%90%EF%BC%BB006280%EF%BC%BD_20260528_Kiwoom_1101544.pdf" class="external">Kiwoom<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="009150-삼성전기-1건">[009150] 삼성전기 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#009150-삼성전기-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: KB 05-26</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>2026년 5월 26일 스마트폰 / 2차전지 소재 Analyst 이창민
+F <a href="mailto:cm.lee@kbfg.com" class="external">cm.lee@kbfg.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+R 연구원 김연수
+S <a href="mailto:kimyeonsoo@kbfg.com" class="external">kimyeonsoo@kbfg.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+O 삼성전기 (009150)
+초대형 고객 전용 기판 생산라인 증설: 최상위 기술 경쟁력 입증
+삼성전기, 초대형 고객 전용 패키징 기판 생산라인 국내에 신설 예정
+ㅡ 언론보도 (5/24 키포스</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0%EF%BC%BB009150%EF%BC%BD_20260526_KB_1100783.pdf" class="external">KB<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="034230-파라다이스-1건">[034230] 파라다이스 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#034230-파라다이스-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Yuanta 05-28 20000원 매수</li>
+<li><strong>TP</strong>: 20,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>Company Report 2026.05.28
+파라다이스
+(034230)
+주가 부진에 가려진 복합 리조트 성장세
+P-CITY 가파른 성장세가 전사 실적 개선 이끌 것 (M)
+그랜드 하얏트(인천 웨스트타워) 개장으로 활용 가능한 객실 수가 큰 폭(+500 객실)으로 증
+가해 2분기부터 뚜렷한 실적 개선세가 예상된다.
+5월 골든 위크(日) 및 노동절(中) 연휴 전월 목표주가 20,000원</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%8C%8C%EB%9D%BC%EB%8B%A4%EC%9D%B4%EC%8A%A4%EF%BC%BB034230%EF%BC%BD_20260528_Yuanta_1101972.pdf" class="external">Yuanta<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="041830-인바디-1건">[041830] 인바디 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#041830-인바디-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Mirae Asset 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>230 인바디 KOSDAQ
+25.5 25.9 26.1 26.5
+‘ ’ ‘ ’
+,0 0
+,0 0
+,0 0
+,0 0
+2 4 .5
+2 6 .5</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%9D%B8%EB%B0%94%EB%94%94%EF%BC%BB041830%EF%BC%BD_20260528_Mirae+Asset_1101639.pdf" class="external">Mirae Asset<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="053450-세코닉스-1건">[053450] 세코닉스 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#053450-세코닉스-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: MERITZ 05-28 6000원</li>
+<li><strong>TP</strong>: 6,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>Company Brief
+세코닉스 전기전자/IT부품
+(0534
+0) Analyst 양승수
+<a href="mailto:seungsoo.yang@meritz.co.kr" class="external">seungsoo.yang@meritz.co.kr<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+여전히 안갯속
+1Q26 Review: 지속되는 부진
+Meritz Research 2026.
+5. 28
+1Q26 연결 실적은 매출액 1,040억원(-12.5% YoY), 영업이익 10억원(-56.5%
+YoY)으로 크게 부진했다.
+차량용 헤드램프 매출(</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%84%B8%EC%BD%94%EB%8B%89%EC%8A%A4%EF%BC%BB053450%EF%BC%BD_20260528_MERITZ_1101599.pdf" class="external">MERITZ<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="085660-차바이오텍-1건">[085660] 차바이오텍 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#085660-차바이오텍-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Stunning Value Research 05-28 매수</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>2026년5월28일I 기업분석_스터닝밸류보고서
+차바이오텍
+(085660)
+병원 네트워크·CGB ·AI기반 헬스케어의 시너지
+• 성장전략‘Longevity Platform’
+• ‘병원안＇에서‘병원밖＇까지, AI기반디지털헬스케어
+• 세포·유전자치료제세계최대규모CGB로인한사업연결
+성장전략‘Longevity Platform’
+동사는제대혈 보관, 줄기세포연구및 세포치료제개발과 Anti-aging 관련</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%B0%A8%EB%B0%94%EC%9D%B4%EC%98%A4%ED%85%8D%EF%BC%BB085660%EF%BC%BD_20260528_Stunning+Value+Research_1101818.pdf" class="external">Stunning Value Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="097230-hj중공업-1건">[097230] HJ중공업 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#097230-hj중공업-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: DS 05-28 37000원 매수</li>
+<li><strong>TP</strong>: 37,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>HJ중공업 n
+097230
+개화하는 상선과 다가오는 미국향 모멘텀 s
+고속상륙정(SSC), MRO, 군산 조선소 등 미국향 모멘텀은 한 가득
+미 해군의 공식적인 군함 건조 계획 발표에 따라 동사의 미국향 모멘텀은 구조 김대성 조선
+적으로 확대될 전망이다.
+특히 미국 고속상륙정 프라임 조선사인 텍스트론 시스 02-709-2665
+rlarla6019</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/HJ%EC%A4%91%EA%B3%B5%EC%97%85%EF%BC%BB097230%EF%BC%BD_20260528_DS_1101584.pdf" class="external">DS<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="195870-해성디에스-1건">[195870] 해성디에스 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#195870-해성디에스-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: MERITZ 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>Company Brief
+해성디에스 전기전자/IT부품
+(1958
+0) Analyst 양승수
+<a href="mailto:seungsoo.yang@meritz.co.kr" class="external">seungsoo.yang@meritz.co.kr<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+하나씩 맞춰지는 성장 퍼즐
+2Q26 Preview: 기대에 부합하는 회복
+Meritz Research 2026.
+5. 28
+2Q26 연결 매출액과 영업이익은 각각 2,095억원(+33.1% YoY), 221억원(+168.6%
+YoY)으로 기존 추정</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EC%84%B1%EB%94%94%EC%97%90%EC%8A%A4%EF%BC%BB195870%EF%BC%BD_20260528_MERITZ_1101648.pdf" class="external">MERITZ<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="204270-제이앤티씨-1건">[204270] 제이앤티씨 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#204270-제이앤티씨-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Eugene 05-28 26000원 BUY</li>
+<li><strong>TP</strong>: 26,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>2026.05.28
+(204270,KQ)
+제이앤티씨
+중소형주 / IPO / 비상장 기업 박종선
+6076 / <a href="mailto:jongsun.park@eugenefn.com" class="external">jongsun.park@eugenefn.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+투자의견 BUY(유지)
+1Q26 Review: 하반기 신사업 매출 본격화 기대 목표주가 26,000원(유지)
+현재주가 20,850원(5/27)
+ 1Q26 Review: 전년동기 대비 매출 감소 불구, 적자폭 감소는 긍정적.
+35,000 주</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%A0%9C%EC%9D%B4%EC%95%A4%ED%8B%B0%EC%94%A8%EF%BC%BB204270%EF%BC%BD_20260528_Eugene_1101610.pdf" class="external">Eugene<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="214420-토니모리-1건">[214420] 토니모리 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#214420-토니모리-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Hungkuk 05-28 9000원 BUY</li>
+<li><strong>TP</strong>: 9,000원</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>Company Report
+2026.05.28
+화장품/제약·바이오
+02)6742-3584 (214420)
+<a href="mailto:leejw9205@heungkuksec.co.kr" class="external">leejw9205@heungkuksec.co.kr<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+토니모리
+수출, ODM 중장기 실적 기대감 유효
+(유지)
+1Q26 Review: 미국 수출 부진
+목표주가 9,000원(하향)
+토니모리의 2026년 1분기 연결 매출액은 520억원(+6.3% YoY, -1.0%
+현재주가(05/</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%86%A0%EB%8B%88%EB%AA%A8%EB%A6%AC%EF%BC%BB214420%EF%BC%BD_20260528_Hungkuk_1101641.pdf" class="external">Hungkuk<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="217590-티엠씨-1건">[217590] 티엠씨 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#217590-티엠씨-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Eugene 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>2026.05.28
+(217590)
+통신 이찬영
+6167 / <a href="mailto:cylee@eugenefn.com" class="external">cylee@eugenefn.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+투자의견 NR
+시즌2를 향해 목표주가 -
+현재주가 25,200원(5/27)
+ 5/4～5/8 티엠씨 미국 공장 투어를 진행. 미국 공장에서 확인한 것은 공급
+40,000 주가
+부족. 미국 광케이블 시장은 통신사발 FTTH 투자와 데이터센터 증설이 동 35,000
+시에 진행되는 구간이나, 이를</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%8B%B0%EC%97%A0%EC%94%A8%EF%BC%BB217590%EF%BC%BD_20260528_Eugene_1101607.pdf" class="external">Eugene<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="290740-액트로-1건">[290740] 액트로 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#290740-액트로-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Eugene 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>2026.05.28
+(290740,KQ)
+중소형주 / IPO / 비상장 기업 박종선
+6076 / <a href="mailto:jongsun.park@eugenefn.com" class="external">jongsun.park@eugenefn.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+투자의견 NR(유지)
+1Q26 Review: 신사업(전장&amp;로봇) 가시화 단계 목표주가 -원(유지)
+현재주가 14,560원(5/27)
+ 1Q26 Review: 비수기로 전년동기 대비 매출 감소, 시장 컨센서스 부합.
+35,000 주가
+최근(05</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%95%A1%ED%8A%B8%EB%A1%9C%EF%BC%BB290740%EF%BC%BD_20260528_Eugene_1101609.pdf" class="external">Eugene<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="298050-hs효성첨단소재-1건">[298050] HS효성첨단소재 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#298050-hs효성첨단소재-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: KB 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>HS효성첨단소재 (298050)
+걱정 없는 타이어코드, 살아나는 탄소섬유
+배터리/화학/정유 Analyst 전우제 연구원 송윤주
+2026년 5월 28일
+<a href="mailto:wchun@kbfg.com" class="external">wchun@kbfg.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="mailto:yunju.jade.song@kbfg.com" class="external">yunju.jade.song@kbfg.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+투자의견 Buy (유지), 투자의견 Buy를 유지하며, 목표주가는 27만원으로 상향한다.
+판가 인상에 따른 타이어코드 실적
+목표주가 27만원 (상향) 회복과 탄소섬유 신규</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/HS%ED%9A%A8%EC%84%B1%EC%B2%A8%EB%8B%A8%EC%86%8C%EC%9E%AC%EF%BC%BB298050%EF%BC%BD_20260528_KB_1101978.pdf" class="external">KB<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="347850-디앤디파마텍-1건">[347850] 디앤디파마텍 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#347850-디앤디파마텍-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Kiwoom 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p> 기업 업데이트 2026.
+Not Rated 디앤디파마텍
+(347850)
+주가(5/27): 98,800원 All Clear!! 히어로가 나타났다
+시가총액: 43,278억 원
+동사의 MASH 치료제가 3개의 조직생검 지표 모두 통계적 유의성을 확보하면서
+전일 주가 +30%, 시가총액 9,987억원 증가하였습니다.
+특히, 소규모 2상(PP 분
+제약바이오 Analyst 허혜민 석군</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%94%94%EC%95%A4%EB%94%94%ED%8C%8C%EB%A7%88%ED%85%8D%EF%BC%BB347850%EF%BC%BD_20260528_Kiwoom_1101545.pdf" class="external">Kiwoom<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="444530-심플랫폼-1건">[444530] 심플랫폼 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#444530-심플랫폼-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Shinhan 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>:
+<blockquote>
+<p>심플랫폼
+(44 4530)
+피지컬 AI의 숨겨진 진주
+2026년 5월 28일
+✓ 투자판단 Not Rated ✓ 목표주가 - [AI S/W]
+✓ 상승여력 - ✓ 현재주가 (5월 27일) 10,490원 최승환, CFA 연구위원
+ <a href="mailto:hani86@shinhan.com" class="external">hani86@shinhan.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+이채윤 연구원
+신한생각 영업레버리지 확대 임박, 중장기 기업가치 재평가의 시작
+ <a href="mailto:cyunee@shinhan.com" class="external">cyunee@shinhan.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+피지컬 AI 및</p>
+</blockquote>
+</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%8B%AC%ED%94%8C%EB%9E%AB%ED%8F%BC%EF%BC%BB444530%EF%BC%BD_20260528_Shinhan_1101604.pdf" class="external">Shinhan<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="456070-이엔셀-1건">[456070] 이엔셀 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#456070-이엔셀-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Brokers</strong>: Growth Research 05-28</li>
+<li><strong>TP</strong>: –</li>
+<li><strong>발췌</strong>: (본문 추출 실패)</li>
+<li><strong>Files</strong>: <a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%9D%B4%EC%97%94%EC%85%80%EF%BC%BB456070%EF%BC%BD_20260528_Growth+Research_1101541.pdf" class="external">Growth Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<hr/>
+<h2 id="업종--전략--매크로-29건">업종 / 전략 / 매크로 (29건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#업종--전략--매크로-29건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Date</th><th>Title</th><th>Broker</th><th>File</th></tr></thead><tbody><tr><td>2026-05-30</td><td>아이엠바이오로직스 기업설명회 IR KiwooGo Corporate Day</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%95%84%EC%9D%B4%EC%97%A0%EB%B0%94%EC%9D%B4%EC%98%A4%EB%A1%9C%EC%A7%81%EC%8A%A4_%EA%B8%B0%EC%97%85%EC%84%A4%EB%AA%85%ED%9A%8C_IR_KiwooGo_Corporate_Day.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-27</td><td>이지스_IR Book</td><td>(unknown)</td><td>[열기](file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/이지스_IR Book_260527.pdf)</td></tr><tr><td>2026-05-30</td><td>쓰리에이로직스(주) IR(NDR) Book 키움Corporate Day</td><td>(unknown)</td><td>[열기](file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/쓰리에이로직스(주) IR(NDR) Book_키움Corporate Day.pdf)</td></tr><tr><td>2026-05-30</td><td>컴투스홀딩스 Com2uS Holdings IR Material 2605</td><td>(unknown)</td><td>[열기](file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/컴투스홀딩스 Com2uS Holdings_IR Material_2605.pdf)</td></tr><tr><td>2026-05-30</td><td>[쿼드메디슨] IR Book Kiwoom Corp Day</td><td>(unknown)</td><td>[열기](file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/[쿼드메디슨] IR Book_Kiwoom Corp Day.pdf)</td></tr><tr><td>2026-05-30</td><td>인터넷,게임,레저 2H26 산업 전망 월드 모델을 타고 AGI로 가자 네이버, 카카오, 크래프톤, NC, 롯데관광개발</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%9D%B8%ED%84%B0%EB%84%B7,%EA%B2%8C%EC%9E%84,%EB%A0%88%EC%A0%80_2H26_%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_%EC%9B%94%EB%93%9C_%EB%AA%A8%EB%8D%B8%EC%9D%84_%ED%83%80%EA%B3%A0_AGI%EB%A1%9C_%EA%B0%80%EC%9E%90_%EB%84%A4%EC%9D%B4%EB%B2%84,_%EC%B9%B4%EC%B9%B4%EC%98%A4,_%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4,_NC,_%EB%A1%AF%EB%8D%B0%EA%B4%80%EA%B4%91%EA%B0%9C%EB%B0%9C.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>K방산; 지금 놓치면 후회한다 한화에어로스페이스, LIG디펜스에어로스페이스, 한국항공우주, 현대로템, 한화시스템 Aerospace＆Defen</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/K%EB%B0%A9%EC%82%B0;_%EC%A7%80%EA%B8%88_%EB%86%93%EC%B9%98%EB%A9%B4_%ED%9B%84%ED%9A%8C%ED%95%9C%EB%8B%A4_%ED%95%9C%ED%99%94%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4,_LIG%EB%94%94%ED%8E%9C%EC%8A%A4%EC%97%90%EC%96%B4%EB%A1%9C%EC%8A%A4%ED%8E%98%EC%9D%B4%EC%8A%A4,_%ED%95%9C%EA%B5%AD%ED%95%AD%EA%B3%B5%EC%9A%B0%EC%A3%BC,_%ED%98%84%EB%8C%80%EB%A1%9C%ED%85%9C,_%ED%95%9C%ED%99%94%EC%8B%9C%EC%8A%A4%ED%85%9C_Aerospace%EF%BC%86Defen.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>SK증권_Research_Signature_2_좁아지는_시장,_높아지는_천장_IndustrialCongl</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/SK%EC%A6%9D%EA%B6%8C_Research_Signature_2_%EC%A2%81%EC%95%84%EC%A7%80%EB%8A%94_%EC%8B%9C%EC%9E%A5,_%EB%86%92%EC%95%84%EC%A7%80%EB%8A%94_%EC%B2%9C%EC%9E%A5_IndustrialCongl_20260528.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>미트박스 261Q 보고서</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%AF%B8%ED%8A%B8%EB%B0%95%EC%8A%A4_261Q_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>2026년 하반기 산업 전망 Up TrioMLCC, 기판, 소켓 삼성전기, LG이노텍, 두산, 이수페타시스, 심텍</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_Up_TrioMLCC,_%EA%B8%B0%ED%8C%90,_%EC%86%8C%EC%BC%93_%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0,_LG%EC%9D%B4%EB%85%B8%ED%85%8D,_%EB%91%90%EC%82%B0,_%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4,_%EC%8B%AC%ED%85%8D.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>제약바이오 Biotech Investor Primer #3 RNAi, 시간이 증명한 모달리티 에스티팜, 올릭스 Pharmaceuticals</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%A0%9C%EC%95%BD%EB%B0%94%EC%9D%B4%EC%98%A4_Biotech_Investor_Primer_#3_RNAi,_%EC%8B%9C%EA%B0%84%EC%9D%B4_%EC%A6%9D%EB%AA%85%ED%95%9C_%EB%AA%A8%EB%8B%AC%EB%A6%AC%ED%8B%B0_%EC%97%90%EC%8A%A4%ED%8B%B0%ED%8C%9C,_%EC%98%AC%EB%A6%AD%EC%8A%A4_Pharmaceuticals.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>반도체 2026년 하반기 산업 전망 Strong BUY SK하이닉스, 삼성전자, 피에스케이, 피에스케이홀딩스, 솔브레인</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%B0%98%EB%8F%84%EC%B2%B4_2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_Strong_BUY_SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4,_%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90,_%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4,_%ED%94%BC%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4%ED%99%80%EB%94%A9%EC%8A%A4,_%EC%86%94%EB%B8%8C%EB%A0%88%EC%9D%B8.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>음식료_소비는_어렵다,_성장은_남는다_삼양식품,_KT&amp;G,_신세계,_롯데쇼핑_Distributors</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%9D%8C%EC%8B%9D%EB%A3%8C_%EC%86%8C%EB%B9%84%EB%8A%94_%EC%96%B4%EB%A0%B5%EB%8B%A4,_%EC%84%B1%EC%9E%A5%EC%9D%80_%EB%82%A8%EB%8A%94%EB%8B%A4_%EC%82%BC%EC%96%91%EC%8B%9D%ED%92%88,_KT&amp;G,_%EC%8B%A0%EC%84%B8%EA%B3%84,_%EB%A1%AF%EB%8D%B0%EC%87%BC%ED%95%91_Distributors_20260528.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>2차전지 이차전지 하반기 전망 상반기 모멘텀, 하반기 실적 LG에너지솔루션, 삼성SDI, 대주전자재료, 롯데에너지머티리얼즈</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/2%EC%B0%A8%EC%A0%84%EC%A7%80_%EC%9D%B4%EC%B0%A8%EC%A0%84%EC%A7%80_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%A0%84%EB%A7%9D_%EC%83%81%EB%B0%98%EA%B8%B0_%EB%AA%A8%EB%A9%98%ED%85%80,_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%8B%A4%EC%A0%81_LG%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98,_%EC%82%BC%EC%84%B1SDI,_%EB%8C%80%EC%A3%BC%EC%A0%84%EC%9E%90%EC%9E%AC%EB%A3%8C,_%EB%A1%AF%EB%8D%B0%EC%97%90%EB%84%88%EC%A7%80%EB%A8%B8%ED%8B%B0%EB%A6%AC%EC%96%BC%EC%A6%88.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>2026년_하반기_매크로_전망_극소수의_경제_Eco</td><td>KB</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EB%A7%A4%ED%81%AC%EB%A1%9C_%EC%A0%84%EB%A7%9D_%EA%B7%B9%EC%86%8C%EC%88%98%EC%9D%98_%EA%B2%BD%EC%A0%9C_Eco_20260528_KB_1101976.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-30</td><td>전기전자 AI는 기판 위에서 흐른다 삼성전기, LG이노텍, 대덕전자, 이수페타시스, 기가비스 ElectronicEquip</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EC%A0%84%EA%B8%B0%EC%A0%84%EC%9E%90_AI%EB%8A%94_%EA%B8%B0%ED%8C%90_%EC%9C%84%EC%97%90%EC%84%9C_%ED%9D%90%EB%A5%B8%EB%8B%A4_%EC%82%BC%EC%84%B1%EC%A0%84%EA%B8%B0,_LG%EC%9D%B4%EB%85%B8%ED%85%8D,_%EB%8C%80%EB%8D%95%EC%A0%84%EC%9E%90,_%EC%9D%B4%EC%88%98%ED%8E%98%ED%83%80%EC%8B%9C%EC%8A%A4,_%EA%B8%B0%EA%B0%80%EB%B9%84%EC%8A%A4_ElectronicEquip.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-29</td><td>해당기업_삼성FN리츠</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%82%BC%EC%84%B1FN%EB%A6%AC%EC%B8%A0_20260529143604.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-29</td><td>해당기업_NH올원리츠</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_NH%EC%98%AC%EC%9B%90%EB%A6%AC%EC%B8%A0_20260529143503.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_에이직랜드</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%97%90%EC%9D%B4%EC%A7%81%EB%9E%9C%EB%93%9C_20260528132102.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_씨이랩</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%94%A8%EC%9D%B4%EB%9E%A9_20260528131904.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_페스카로</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%ED%8E%98%EC%8A%A4%EC%B9%B4%EB%A1%9C_20260528132503.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_큐렉소</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%ED%81%90%EB%A0%89%EC%86%8C_20260528132403.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_동진쎄미켐</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EB%8F%99%EC%A7%84%EC%8E%84%EB%AF%B8%EC%BC%90_20260528131603.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-29</td><td>해당기업_ESR켄달스퀘어리츠</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_ESR%EC%BC%84%EB%8B%AC%EC%8A%A4%ED%80%98%EC%96%B4%EB%A6%AC%EC%B8%A0_20260529143702.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_심플랫폼</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%8B%AC%ED%94%8C%EB%9E%AB%ED%8F%BC_20260528131804.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_신한글로벌액티브리츠_140502_pdf</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%8B%A0%ED%95%9C%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%95%A1%ED%8B%B0%EB%B8%8C%EB%A6%AC%EC%B8%A0_20260528140502_pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>해당기업_제이씨케미칼</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%A0%9C%EC%9D%B4%EC%94%A8%EC%BC%80%EB%AF%B8%EC%B9%BC_20260528132303.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-28</td><td>반도체_소부장_2026년_하반기_전망_소부장,_조정은_곧_기회_Semiconductors＆</td><td>SK</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%EB%B0%98%EB%8F%84%EC%B2%B4_%EC%86%8C%EB%B6%80%EC%9E%A5_2026%EB%85%84_%ED%95%98%EB%B0%98%EA%B8%B0_%EC%A0%84%EB%A7%9D_%EC%86%8C%EB%B6%80%EC%9E%A5,_%EC%A1%B0%EC%A0%95%EC%9D%80_%EA%B3%A7_%EA%B8%B0%ED%9A%8C_Semiconductors%EF%BC%86_20260528_SK_1101595.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr><tr><td>2026-05-29</td><td>해당기업_지앤이헬스케어</td><td>(unknown)</td><td><a href="file:///C:/dev/hw-mcp-stack/.cache/tg_pdfs/%ED%95%B4%EB%8B%B9%EA%B8%B0%EC%97%85_%EC%A7%80%EC%95%A4%EC%9D%B4%ED%97%AC%EC%8A%A4%EC%BC%80%EC%96%B4_20260529133602.pdf.pdf" class="external">열기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></td></tr></tbody></table></div>
+<hr/>
+<h2 id="처리-오류-1건">처리 오류 (1건)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#처리-오류-1건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>해당기업_미래엔에듀파트너_20260529133502.pdf.pdf: extract_failed (cached file purged for retry next run): PdfminerException: Invalid dictionary construct: [/‘Type’, /‘Font’, /‘Subtype’, /‘Type0’, /‘Name’, /‘F6’, /‘BaseFont’, /‘Yoon’, /b’\xc0’, /b’\xb1’, /b’\xb0’, /b’\xed’, /b’\xb5’, /b’\xf1’, 130, /‘Encoding’, /‘Identity-H’, /‘DescendantFonts’, [<a href="PDFObjRef:449" class="external">PDFObjRef:449<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>], /‘ToUnicode’, <a href="PDFObjRef:450" class="external">PDFObjRef:450<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>]</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-141" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#선진짱-broker-digest--2026-05-31-sun-0831-kst" data-for="선진짱-broker-digest--2026-05-31-sun-0831-kst">선진짱 broker digest — 2026-05-31 (Sun) 08:31 KST</a></li><li class="depth-1"><a href="#-강력추천-reports-8건" data-for="-강력추천-reports-8건">🔥 강력추천 Reports (8건)</a></li><li class="depth-2"><a href="#009150-삼성전기--kb-2026-05-26" data-for="009150-삼성전기--kb-2026-05-26">[009150] 삼성전기 — KB 2026-05-26</a></li><li class="depth-2"><a href="#034230-파라다이스--yuanta-2026-05-28" data-for="034230-파라다이스--yuanta-2026-05-28">[034230] 파라다이스 — Yuanta 2026-05-28</a></li><li class="depth-2"><a href="#-k방산-지금-놓치면-후회한다-한화에어로스페이스-lig디펜스에어로스페이스-한국항공우주-현대로템-한화시스템-aerospacedefen--unknown-2026-05-30" data-for="-k방산-지금-놓치면-후회한다-한화에어로스페이스-lig디펜스에어로스페이스-한국항공우주-현대로템-한화시스템-aerospacedefen--unknown-2026-05-30">[—] K방산; 지금 놓치면 후회한다 한화에어로스페이스, LIG디펜스에어로스페이스, 한국항공우주, 현대로템, 한화시스템 Aerospace＆Defen — (unknown) 2026-05-30</a></li><li class="depth-2"><a href="#-2026년-하반기-산업-전망-up-triomlcc-기판-소켓-삼성전기-lg이노텍-두산-이수페타시스-심텍--unknown-2026-05-30" data-for="-2026년-하반기-산업-전망-up-triomlcc-기판-소켓-삼성전기-lg이노텍-두산-이수페타시스-심텍--unknown-2026-05-30">[—] 2026년 하반기 산업 전망 Up TrioMLCC, 기판, 소켓 삼성전기, LG이노텍, 두산, 이수페타시스, 심텍 — (unknown) 2026-05-30</a></li><li class="depth-2"><a href="#-반도체-2026년-하반기-산업-전망-strong-buy-sk하이닉스-삼성전자-피에스케이-피에스케이홀딩스-솔브레인--unknown-2026-05-30" data-for="-반도체-2026년-하반기-산업-전망-strong-buy-sk하이닉스-삼성전자-피에스케이-피에스케이홀딩스-솔브레인--unknown-2026-05-30">[—] 반도체 2026년 하반기 산업 전망 Strong BUY SK하이닉스, 삼성전자, 피에스케이, 피에스케이홀딩스, 솔브레인 — (unknown) 2026-05-30</a></li><li class="depth-2"><a href="#-음식료_소비는_어렵다_성장은_남는다_삼양식품_ktg_신세계_롯데쇼핑_distributors--unknown-2026-05-28" data-for="-음식료_소비는_어렵다_성장은_남는다_삼양식품_ktg_신세계_롯데쇼핑_distributors--unknown-2026-05-28">[—] 음식료_소비는_어렵다,_성장은_남는다_삼양식품,_KT&amp;G,_신세계,_롯데쇼핑_Distributors — (unknown) 2026-05-28</a></li><li class="depth-2"><a href="#-2차전지-이차전지-하반기-전망-상반기-모멘텀-하반기-실적-lg에너지솔루션-삼성sdi-대주전자재료-롯데에너지머티리얼즈--unknown-2026-05-30" data-for="-2차전지-이차전지-하반기-전망-상반기-모멘텀-하반기-실적-lg에너지솔루션-삼성sdi-대주전자재료-롯데에너지머티리얼즈--unknown-2026-05-30">[—] 2차전지 이차전지 하반기 전망 상반기 모멘텀, 하반기 실적 LG에너지솔루션, 삼성SDI, 대주전자재료, 롯데에너지머티리얼즈 — (unknown) 2026-05-30</a></li><li class="depth-2"><a href="#-반도체_소부장_2026년_하반기_전망_소부장_조정은_곧_기회_semiconductors--sk-2026-05-28" data-for="-반도체_소부장_2026년_하반기_전망_소부장_조정은_곧_기회_semiconductors--sk-2026-05-28">[—] 반도체_소부장_2026년_하반기_전망_소부장,_조정은_곧_기회_Semiconductors＆ — SK 2026-05-28</a></li><li class="depth-1"><a href="#일반-리포트--종목별-요약-18-tickers" data-for="일반-리포트--종목별-요약-18-tickers">일반 리포트 — 종목별 요약 (18 tickers)</a></li><li class="depth-2"><a href="#000520-삼일제약-1건" data-for="000520-삼일제약-1건">[000520] 삼일제약 (1건)</a></li><li class="depth-2"><a href="#005380-현대차-1건" data-for="005380-현대차-1건">[005380] 현대차 (1건)</a></li><li class="depth-2"><a href="#006280-녹십자-1건" data-for="006280-녹십자-1건">[006280] 녹십자 (1건)</a></li><li class="depth-2"><a href="#009150-삼성전기-1건" data-for="009150-삼성전기-1건">[009150] 삼성전기 (1건)</a></li><li class="depth-2"><a href="#034230-파라다이스-1건" data-for="034230-파라다이스-1건">[034230] 파라다이스 (1건)</a></li><li class="depth-2"><a href="#041830-인바디-1건" data-for="041830-인바디-1건">[041830] 인바디 (1건)</a></li><li class="depth-2"><a href="#053450-세코닉스-1건" data-for="053450-세코닉스-1건">[053450] 세코닉스 (1건)</a></li><li class="depth-2"><a href="#085660-차바이오텍-1건" data-for="085660-차바이오텍-1건">[085660] 차바이오텍 (1건)</a></li><li class="depth-2"><a href="#097230-hj중공업-1건" data-for="097230-hj중공업-1건">[097230] HJ중공업 (1건)</a></li><li class="depth-2"><a href="#195870-해성디에스-1건" data-for="195870-해성디에스-1건">[195870] 해성디에스 (1건)</a></li><li class="depth-2"><a href="#204270-제이앤티씨-1건" data-for="204270-제이앤티씨-1건">[204270] 제이앤티씨 (1건)</a></li><li class="depth-2"><a href="#214420-토니모리-1건" data-for="214420-토니모리-1건">[214420] 토니모리 (1건)</a></li><li class="depth-2"><a href="#217590-티엠씨-1건" data-for="217590-티엠씨-1건">[217590] 티엠씨 (1건)</a></li><li class="depth-2"><a href="#290740-액트로-1건" data-for="290740-액트로-1건">[290740] 액트로 (1건)</a></li><li class="depth-2"><a href="#298050-hs효성첨단소재-1건" data-for="298050-hs효성첨단소재-1건">[298050] HS효성첨단소재 (1건)</a></li><li class="depth-2"><a href="#347850-디앤디파마텍-1건" data-for="347850-디앤디파마텍-1건">[347850] 디앤디파마텍 (1건)</a></li><li class="depth-2"><a href="#444530-심플랫폼-1건" data-for="444530-심플랫폼-1건">[444530] 심플랫폼 (1건)</a></li><li class="depth-2"><a href="#456070-이엔셀-1건" data-for="456070-이엔셀-1건">[456070] 이엔셀 (1건)</a></li><li class="depth-1"><a href="#업종--전략--매크로-29건" data-for="업종--전략--매크로-29건">업종 / 전략 / 매크로 (29건)</a></li><li class="depth-1"><a href="#처리-오류-1건" data-for="처리-오류-1건">처리 오류 (1건)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2607250736'</script>

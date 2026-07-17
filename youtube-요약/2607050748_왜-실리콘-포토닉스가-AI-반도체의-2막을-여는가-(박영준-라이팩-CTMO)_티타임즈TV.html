@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)"/><meta name="twitter:description" content="왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO) 요약 큰 그림 — AI 반도체 ‘2막 = 연결(connectivity)’ AI 반도체 1막은 GPU 확보 경쟁, 2막은 연결(데이터 이동)."/><meta property="og:description" content="왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO) 요약 큰 그림 — AI 반도체 ‘2막 = 연결(connectivity)’ AI 반도체 1막은 GPU 확보 경쟁, 2막은 연결(데이터 이동)."/><meta property="og:image:alt" content="왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO) 요약 큰 그림 — AI 반도체 ‘2막 = 연결(connectivity)’ AI 반도체 1막은 GPU 확보 경쟁, 2막은 연결(데이터 이동)."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/youtube-요약/2607050748_왜-실리콘-포토닉스가-AI-반도체의-2막을-여는가-(박영준-라이팩-CTMO)_티타임즈TV"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/youtube-요약/2607050748_왜-실리콘-포토닉스가-AI-반도체의-2막을-여는가-(박영준-라이팩-CTMO)_티타임즈TV"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO) 요약 큰 그림 — AI 반도체 ‘2막 = 연결(connectivity)’ AI 반도체 1막은 GPU 확보 경쟁, 2막은 연결(데이터 이동)."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/youtube-요약/2607050748_왜-실리콘-포토닉스가-AI-반도체의-2막을-여는가-(박영준-라이팩-CTMO)_티타임즈TV-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/youtube-요약/2607050748_왜-실리콘-포토닉스가-AI-반도체의-2막을-여는가-(박영준-라이팩-CTMO)_티타임즈TV-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/youtube-요약/2607050748_왜-실리콘-포토닉스가-AI-반도체의-2막을-여는가-(박영준-라이팩-CTMO)_티타임즈TV-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="youtube-요약/2607050748_왜-실리콘-포토닉스가-AI-반도체의-2막을-여는가-(박영준-라이팩-CTMO)_티타임즈TV"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-296"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-296" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../youtube-요약/">youtube 요약</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)</a></div></nav><h1 class="article-title">왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-04T22:48:00.000Z">26.07.05.07</time><span>12 min read</span></p></div></div><article class="popover-hint"><h1 id="왜-실리콘-포토닉스가-ai-반도체의-2막을-여는가-박영준-라이팩-ctmo">왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-실리콘-포토닉스가-ai-반도체의-2막을-여는가-박영준-라이팩-ctmo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><a href="https://www.youtube.com/watch?v=jN29A92uusU" class="external"><img src="https://i.ytimg.com/vi/jN29A92uusU/mqdefault.jpg" alt="영상 썸네일"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h2 id="요약">요약<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#요약" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="큰-그림--ai-반도체-2막--연결connectivity">큰 그림 — AI 반도체 ‘2막 = 연결(connectivity)’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#큰-그림--ai-반도체-2막--연결connectivity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI 반도체 1막은 <strong>GPU 확보 경쟁</strong>, 2막은 <strong>연결(데이터 이동)</strong>. GPU 중심 재편으로 전력 소모·데이터 이동·저장 병목이 심각해지며 <strong>광통신, 특히 실리콘 포토닉스</strong>가 AI 시대의 ‘고속도로’(핵심 인프라)로 부상.</li>
+<li>출연자: 박영준(전 서울대 전기공학부 교수, 하이닉스 메모리연구소장·서울대 반도체연구소장 역임, 현 라이팩(Lipac) 기술마케팅 책임).</li>
+</ul>
+<h3 id="광통신-vs-실리콘-포토닉스--개념-구분">광통신 vs 실리콘 포토닉스 — 개념 구분<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#광통신-vs-실리콘-포토닉스--개념-구분" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>광통신은 오래된 기술</strong> — 계산·칩 연결이 이뤄지는 보드/모듈에서 나온 데이터를 집·빌딩으로 보낼 때는 이미 수십 년간 광섬유로 전송(스튜디오에도 광섬유로 디지털 정보가 들어옴).</li>
+<li>새로운 점은 <strong>AI 때문에 ‘가까운 거리’(칩과 칩, 모듈과 모듈, PCB 식판과 식판 사이 수십cm～수m)도 광으로 바꿔야 한다</strong>는 것. 지금까지 이 근거리는 **구리선(전자)**으로 잘 해왔으나, AI가 요구하는 어마어마한 속도를 구리가 견딜 수 없게 됨.</li>
+<li>이 근거리는 ‘광통신’보다 **‘광전송(광송신)‘**이라 부르는 게 정확. 여기에 여러 방식이 있는데 실리콘 포토닉스가 속도·안정성·가격 면에서 더 나은 방식일 수 있다는 게 논지.</li>
+</ul>
+<h3 id="실리콘-포토닉스의-원리--모듈레이션">실리콘 포토닉스의 원리 — ‘모듈레이션’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#실리콘-포토닉스의-원리--모듈레이션" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>기본은 <strong>실리콘 칩</strong>. 외부에서 **신호 없는 레이저 빛(CW 레이저)**을 받아 칩 위의 **웨이브 가이드(waveguide)**로 통과시키며, 그 경로에 있는 반도체 소자(<strong>PN 다이오드</strong>)에 전기 신호(GPU/NPU/TPU에서 옴)를 가함.</li>
+<li>PN 다이오드에 1이 걸리면 전자 상태가 바뀌고, 그 변화가 지나가는 빛에 영향을 줌 → 빛에 1·0 디지털 신호가 실림(<strong>모듈레이션</strong>). 빛이 새로 생기는 게 아니라 “빛이 물(반도체 소자)을 지나며 다르게 행동”하는 것. 요즘은 초당 <strong>수백억 번(수백 GHz급, 정확히는 4×0억대)</strong> 스위칭.</li>
+<li><strong>종래 방식과 비교</strong>: 전통적으로는 레이저 자체에 직접 전기 신호를 가해 모듈레이션(레이저가 ‘똑똑’). 이게 현재 메이저(주류)이고 경험이 많음. 실리콘 포토닉스는 별도 칩(웨이브가이드+PN다이오드)을 만들어야 함.</li>
+</ul>
+<h3 id="왜-ai-시대에-주목받나--장점">왜 AI 시대에 주목받나 — 장점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-ai-시대에-주목받나--장점" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>안정성</strong>: 빛은 ‘천방지축’이라 잘 망가지고, 고장 나면 전체가 망가짐(AI 시스템에 치명적). 실리콘은 반도체 경험이 많고 잘 안 망가짐(스마트폰이 10년 가는 것처럼) → <strong>더 안정된, 빛에 신호를 싣는 수단</strong>.</li>
+<li><strong>가격</strong>: 레이저(+모듈레이션)는 비싼 반도체이고 상대적으로 잘 고장남. 실리콘은 쌈. → AI 반도체 곁에 두기 좋은 “안 망가지고 싸고 좋은 기술”.</li>
+<li>단, 출연자는 “실리콘 포토닉스가 전부를 지배할 것”이라 보진 않음(반쯤 팬) — <strong>종래 레이저 진영도 가만있지 않고</strong>, 복잡성으로는 레이저 모듈레이션이 더 간단하고 경험도 많아 <strong>두 진영이 상호보완+극렬 경쟁</strong> 중.</li>
+</ul>
+<h3 id="왜-그동안-주류가-못-됐나--오버헤드">왜 그동안 주류가 못 됐나 — ‘오버헤드’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-그동안-주류가-못-됐나--오버헤드" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>실리콘 포토닉스는 사실 <strong>40년 된 기술</strong>(전문가에겐 오래됐고 친숙, 대중엔 생소).</li>
+<li>주류가 못 된 이유: 칩과 칩 사이 전기 연결을 끊고, 중간에 **전기→빛 변환 칩(트랜스미터)**을 넣고, 받는 쪽에서 다시 **빛→전기 역변환 칩(리시버)**을 넣어야 함(합쳐서 트랜시버). 이 오버헤드가 큼 — 구리선은 그냥 연결만 하면 되니 훨씬 쉬움.</li>
+<li>그런데 <strong>AI 시대엔 그 오버헤드를 감수하지 않으면 고객이 요구하는 속도를 못 냄</strong> → 드디어 주류로 진입(주류화는 확실하나, 유일한 솔루션은 아님).</li>
+</ul>
+<h3 id="전력-문제-해결-원리">전력 문제 해결 원리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#전력-문제-해결-원리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>구리선은 긴 거리를 달릴수록 엄청난 열(=에너지 손실) 발생(고압 송전탑에서 열로 전기를 잃는 것과 동일). 디지털 1·0로 흐르며 소모되는 에너지가 큼.</li>
+<li><strong>빛은 원리적으로 이동 시 에너지 손실이 없음</strong>(광섬유·유리를 지날 때 공기를 데우지 않음). 길게 갈수록 광이 무조건 이익 → 그래서 광통신을 함.</li>
+<li>근거리에서도 모듈레이션 시 광 자체는 에너지를 안 쓰지만 변환 소자엔 소모가 있음. 고속을 원하는 지금은 실리콘 포토닉스/레이저 모듈레이션이 훨씬 나음. <strong>데이터센터를 빛으로 바꾸면 전체 약 30～40% 에너지 절감</strong> 기대(단, 최우선은 속도이고 전력 절감은 ‘덤’).</li>
+</ul>
+<h3 id="제품-현황과-nvlink">제품 현황과 NVLink<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#제품-현황과-nvlink" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>실리콘 포토닉스 제품은 꽤 오래됐고 <strong>절대 지존은 인텔</strong>(수십 년 대량 공급) — 다만 대부분 ‘통신’ 응용이었고, <strong>AI 근거리 광전송은 이제 시작</strong>. 데이터센터에 광을 넣는 건 큰 모험(고장 시 수리·조립 등 디테일한 기술 난관).</li>
+<li>엔비디아가 자랑하는 **NVLink(블랙웰 등)**는 아직 <strong>전부 구리</strong> — 칩과 칩 사이 통신 표준으로 GPU에 가장 적합한 전송 방식이며, 이를 <strong>빛으로 바꾸려는 중</strong>. 그 외 PCIe, 최근엔 더 개방된 <strong>UCIe</strong> 등이 기술 경쟁·상호보완. “기술은 성숙했지만 시스템 실채택은 지금부터 시작.”</li>
+</ul>
+<h3 id="asml의-빛과의-차이">ASML의 빛과의 차이<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#asml의-빛과의-차이" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>ASML EUV 장비의 빛(파장 ～5～6나노, X레이보다 조금 긴 극자외선)은 <strong>작은 트랜지스터를 만들기 위한 것</strong>. 반면 광전송용 레이저는 파장 수백～1,300～1,500나노로 <strong>완전히 다른 빛</strong>. ASML을 아무나 못 만드는 가장 큰 이유가 바로 그 (EUV) 레이저를 못 만들어서(유럽만 가능).</li>
+</ul>
+<h3 id="경쟁-구도--tsmc삼성">경쟁 구도 — TSMC·삼성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#경쟁-구도--tsmc삼성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>인텔이 앞섰지만 <strong>수율(yield) 구조에 약점</strong>이 있어 광전송에 쓰일 가능성은 작음. 후발주자들이 이를 보고 따라옴(실리콘 포토닉스 제작 자체는 경험이 쌓이면 아주 어렵진 않음).</li>
+<li>현재 가장 주목받는 곳은 <strong>TSMC</strong> — 이미 실리콘 포토닉스의 좋은 구조(패키징 방식 ‘COUPE’류)를 상당 수준 대응. AI 시대엔 한 회사 대 한 회사가 아니라 <strong>풀 스케일(생태계) 경쟁</strong>이라, 전기 반도체를 잘 만들고 패키징으로 세계를 지배하는 TSMC가 “광을 어디에 어떻게 넣을지”를 가장 잘 판단(광=전기를 잘 보내기 위한 수단). 고객(하이퍼스케일러)이 조립·수리·신호 왜곡 최소화 관점에서 원하는 방식을 정하는 그룹이 유리.</li>
+<li><strong>삼성</strong>도 자체 기술이 있고 전체 AI 시스템에서 실리콘 포토닉스를 어떻게 넣을지 판단·공급할 경쟁력 있는 회사(아직 두각은 아니나 중요한 공급원 후보).</li>
+</ul>
+<h3 id="라이팩lipac과-출연자의-접근--빛을-패키징">라이팩(Lipac)과 출연자의 접근 — ‘빛을 패키징’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#라이팩lipac과-출연자의-접근--빛을-패키징" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>라이팩 = <strong>빛을 패키징하는 회사</strong>(출연자가 2018년 퇴직, 2016～17년경 구상해 창업). 핵심 통찰: <strong>레이저 만드는 회사는 많으나 ‘광을 잘 패키징’하는 데 기회</strong>가 있음. 전자 하는 사람은 광을 잘 모르고, 광 하는 사람은 전자를 잘 모르는데, 실리콘 포토닉스의 고객은 ‘전자 하는 칩/모듈’이라 <strong>전자와 광을 모두 아는 것이 핵심 경쟁력</strong>.</li>
+<li>기술: 당시 가장 앞선 패키징 <strong>FOWLP(팬아웃 웨이퍼레벨 패키징)</strong> — 실리콘이 아닌 **EMC(에폭시 몰딩 컴파운드)**를 부어 웨이퍼 형태(8·12인치)로 만들고, 그 안에 레이저·반도체 칩을 넣어 GPU 명령으로 레이저/실리콘 포토닉스를 제어하도록 반도체 금속라인으로 정교하게 연결(와이어본딩 대체). 이를 <strong>광에 응용</strong>해 시작.</li>
+<li>시점: <strong>HBM이 막 양산에 들어가려던 초기</strong>(HBM조차 “될까 말까” 하던 시절)에 착안 — 지금 보면 당연하지만 당시엔 “황당하고 어려운 기술.”</li>
+</ul>
+<hr/>
+<blockquote>
+<p>채널: <a href="https://www.youtube.com/@TTimesTV" class="external">티타임즈TV<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> | 게스트: 박영준(라이팩 CTMO) | 정리일: 2026-07-05 | <a href="https://www.youtube.com/watch?v=jN29A92uusU" class="external">영상 보기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<blockquote>
+<p>ℹ️ 반도체 전문가(박영준, 전 서울대 교수·하이닉스 메모리연구소장, 현 라이팩 CTMO) 인터뷰. 기술 해설 중심이며 종목 언급은 산업 분석이지 투자 조언이 아닙니다.</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-283" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#왜-실리콘-포토닉스가-ai-반도체의-2막을-여는가-박영준-라이팩-ctmo" data-for="왜-실리콘-포토닉스가-ai-반도체의-2막을-여는가-박영준-라이팩-ctmo">왜 실리콘 포토닉스가 AI 반도체의 2막을 여는가 (박영준 라이팩 CTMO)</a></li><li class="depth-1"><a href="#요약" data-for="요약">요약</a></li><li class="depth-2"><a href="#큰-그림--ai-반도체-2막--연결connectivity" data-for="큰-그림--ai-반도체-2막--연결connectivity">큰 그림 — AI 반도체 ‘2막 = 연결(connectivity)’</a></li><li class="depth-2"><a href="#광통신-vs-실리콘-포토닉스--개념-구분" data-for="광통신-vs-실리콘-포토닉스--개념-구분">광통신 vs 실리콘 포토닉스 — 개념 구분</a></li><li class="depth-2"><a href="#실리콘-포토닉스의-원리--모듈레이션" data-for="실리콘-포토닉스의-원리--모듈레이션">실리콘 포토닉스의 원리 — ‘모듈레이션’</a></li><li class="depth-2"><a href="#왜-ai-시대에-주목받나--장점" data-for="왜-ai-시대에-주목받나--장점">왜 AI 시대에 주목받나 — 장점</a></li><li class="depth-2"><a href="#왜-그동안-주류가-못-됐나--오버헤드" data-for="왜-그동안-주류가-못-됐나--오버헤드">왜 그동안 주류가 못 됐나 — ‘오버헤드’</a></li><li class="depth-2"><a href="#전력-문제-해결-원리" data-for="전력-문제-해결-원리">전력 문제 해결 원리</a></li><li class="depth-2"><a href="#제품-현황과-nvlink" data-for="제품-현황과-nvlink">제품 현황과 NVLink</a></li><li class="depth-2"><a href="#asml의-빛과의-차이" data-for="asml의-빛과의-차이">ASML의 빛과의 차이</a></li><li class="depth-2"><a href="#경쟁-구도--tsmc삼성" data-for="경쟁-구도--tsmc삼성">경쟁 구도 — TSMC·삼성</a></li><li class="depth-2"><a href="#라이팩lipac과-출연자의-접근--빛을-패키징" data-for="라이팩lipac과-출연자의-접근--빛을-패키징">라이팩(Lipac)과 출연자의 접근 — ‘빛을 패키징’</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2607250736'</script>
