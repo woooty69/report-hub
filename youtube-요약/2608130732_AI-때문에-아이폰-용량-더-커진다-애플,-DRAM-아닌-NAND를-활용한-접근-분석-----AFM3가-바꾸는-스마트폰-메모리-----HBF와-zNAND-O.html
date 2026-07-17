@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>AI 때문에 아이폰 용량 더 커진다? 애플, DRAM 아닌 NAND를 활용한 접근 분석 / AFM3가 바꾸는 스마트폰 메모리 / HBF와 zNAND (안될공학 - IT 테크 신기술)</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="AI 때문에 아이폰 용량 더 커진다? 애플, DRAM 아닌 NAND를 활용한 접근 분석 / AFM3가 바꾸는 스마트폰 메모리 / HBF와 zNAND (안될공학 - IT 테크 신기술)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI 때문에 아이폰 용량 더 커진다? 애플, DRAM 아닌 NAND를 활용한 접근 분석 / AFM3가 바꾸는 스마트폰 메모리 / HBF와 zNAND (안될공학 - IT 테크 신기술)"/><meta name="twitter:description" content="올해 아이폰은 카메라보다 저장 용량을 봐야 한다 진행자가 이번 아이폰에서 주목하겠다고 밝힌 것이 이례적이다. 카메라나 신형 칩도 중요하지만 메모리와 저장 공간을 유심히 보겠다는 것이다. 이유는 가격이다."/><meta property="og:description" content="올해 아이폰은 카메라보다 저장 용량을 봐야 한다 진행자가 이번 아이폰에서 주목하겠다고 밝힌 것이 이례적이다. 카메라나 신형 칩도 중요하지만 메모리와 저장 공간을 유심히 보겠다는 것이다. 이유는 가격이다."/><meta property="og:image:alt" content="올해 아이폰은 카메라보다 저장 용량을 봐야 한다 진행자가 이번 아이폰에서 주목하겠다고 밝힌 것이 이례적이다. 카메라나 신형 칩도 중요하지만 메모리와 저장 공간을 유심히 보겠다는 것이다. 이유는 가격이다."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/youtube-요약/2608130732_AI-때문에-아이폰-용량-더-커진다-애플,-DRAM-아닌-NAND를-활용한-접근-분석-----AFM3가-바꾸는-스마트폰-메모리-----HBF와-zNAND-O"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/youtube-요약/2608130732_AI-때문에-아이폰-용량-더-커진다-애플,-DRAM-아닌-NAND를-활용한-접근-분석-----AFM3가-바꾸는-스마트폰-메모리-----HBF와-zNAND-O"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="올해 아이폰은 카메라보다 저장 용량을 봐야 한다 진행자가 이번 아이폰에서 주목하겠다고 밝힌 것이 이례적이다. 카메라나 신형 칩도 중요하지만 메모리와 저장 공간을 유심히 보겠다는 것이다. 이유는 가격이다."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/youtube-요약/2608130732_AI-때문에-아이폰-용량-더-커진다-애플,-DRAM-아닌-NAND를-활용한-접근-분석-----AFM3가-바꾸는-스마트폰-메모리-----HBF와-zNAND-O-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/youtube-요약/2608130732_AI-때문에-아이폰-용량-더-커진다-애플,-DRAM-아닌-NAND를-활용한-접근-분석-----AFM3가-바꾸는-스마트폰-메모리-----HBF와-zNAND-O-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/youtube-요약/2608130732_AI-때문에-아이폰-용량-더-커진다-애플,-DRAM-아닌-NAND를-활용한-접근-분석-----AFM3가-바꾸는-스마트폰-메모리-----HBF와-zNAND-O-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="youtube-요약/2608130732_AI-때문에-아이폰-용량-더-커진다-애플,-DRAM-아닌-NAND를-활용한-접근-분석-----AFM3가-바꾸는-스마트폰-메모리-----HBF와-zNAND-O"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-863"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-863" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../youtube-요약/">youtube 요약</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI 때문에 아이폰 용량 더 커진다? 애플, DRAM 아닌 NAND를 활용한 접근 분석 / AFM3가 바꾸는 스마트폰 메모리 / HBF와 zNAND (안될공학   IT 테크 신기술)</a></div></nav><h1 class="article-title">AI 때문에 아이폰 용량 더 커진다? 애플, DRAM 아닌 NAND를 활용한 접근 분석 / AFM3가 바꾸는 스마트폰 메모리 / HBF와 zNAND (안될공학 - IT 테크 신기술)</h1><p show-comma="true" class="content-meta"><time datetime="2026-08-12T22:32:00.000Z">26.08.13.07</time><span>23 min read</span></p></div></div><article class="popover-hint"><p><a href="https://www.youtube.com/watch?v=heIhmgp4ywU" class="external"><img src="https://i.ytimg.com/vi/heIhmgp4ywU/mqdefault.jpg" alt="영상 썸네일"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="올해-아이폰은-카메라보다-저장-용량을-봐야-한다">올해 아이폰은 카메라보다 저장 용량을 봐야 한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#올해-아이폰은-카메라보다-저장-용량을-봐야-한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>진행자가 이번 아이폰에서 주목하겠다고 밝힌 것</strong>이 이례적이다. 카메라나 신형 칩도 중요하지만 <strong>메모리와 저장 공간을 유심히 보겠다</strong>는 것이다.</p>
+<p><strong>이유는 가격이다.</strong> <strong>AI 데이터센터가 D램과 낸드를 대규모로 가져가면서</strong>, 올해 2분기 모바일용 <strong>LPDDR5X 가격이 전분기 대비 약 78～83% 상승</strong>했다.</p>
+<p><strong>애플도 이미 신호를 보냈다.</strong> 팀 쿡이 최근 <strong>메모리와 저장장치 가격 상승을 더 이상 전부 흡수하기 어렵다</strong>고 밝혔다는 것이다.</p>
+<p><strong>대안 모색도 보도됐다.</strong> 중국 내 생산을 위해 애플이 <strong>중국 D램 업체 CXMT와 조달을 논의</strong>한다는 소식이며, CXMT는 **2025년 기준 세계 D램 점유율 4위, 약 7.7%**까지 올라온 업체다.</p>
+<p><strong>그런데 하필 이 시점에 애플이 메모리 사용 방식 자체를 바꿨다</strong>는 것이 이 영상의 본론이다.</p>
+<h3 id="afm3--모델을-낸드에-두고-필요한-부분만-d램으로">AFM3 — 모델을 낸드에 두고 필요한 부분만 D램으로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#afm3--모델을-낸드에-두고-필요한-부분만-d램으로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>핵심 변화.</strong> 올해 공개된 **3세대 애플 파운데이션 모델(AFM3)**에서 <strong>AI 모델이 더 이상 D램 안에서만 움직이지 않는다.</strong></p>
+<p><strong>구조가 명확하다.</strong> <strong>200억 파라미터짜리 모델 전체를 낸드에 저장해 두고, 지금 필요한 부분만 D램으로 가져와 사용</strong>하는 방식이다.</p>
+<p><strong>온디바이스 모델은 두 종류다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>모델</th><th>파라미터</th></tr></thead><tbody><tr><td>AFM3 코어</td><td>약 <strong>30억</strong> 덴스 모델</td></tr><tr><td>AFM3 코어 어드밴스드</td><td>전체 <strong>200억</strong>, 요청에 따라 <strong>10억～40억만 활성화</strong></td></tr></tbody></table></div>
+<p><strong>이번 세대에는 구글이 깊게 들어왔다.</strong> 올해 1월 애플과 구글이 <strong>차세대 애플 파운데이션 모델이 제미나이 모델과 구글 클라우드 기술을 기반으로 개발된다</strong>고 공동 발표했다는 것이다.</p>
+<p><strong>다만 성격은 구분된다.</strong> <strong>제미나이를 그대로 아이폰에 넣은 것이 아니라</strong>, 좋은 기반 모델을 가져와 <strong>애플 실리콘과 애플 인텔리전스에 맞춰 다시 설계</strong>한 쪽에 가깝다는 것이다.</p>
+<p><strong>코어 어드밴스드의 발상은 MoE와 비슷하다.</strong> 큰 모델 안에 여러 전문가를 두고 <strong>질문마다 필요한 전문가만 골라 계산</strong>하는 방식이다.</p>
+<h3 id="그런데-나머지-190억-개는-어디로-가나">그런데 나머지 190억 개는 어디로 가나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그런데-나머지-190억-개는-어디로-가나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>이 영상이 던지는 핵심 질문</strong>이다.</p>
+<p><strong>전제.</strong> 200억 파라미터 중 실제 계산에 10억～40억만 쓴다면 <strong>나머지 가중치가 사라지는 것인가.</strong></p>
+<p><strong>답은 아니다.</strong> <strong>어떤 질문에서 어떤 전문가가 필요할지 모르기 때문에 전체 모델은 어딘가에 갖고 있어야 한다</strong>는 것이다.</p>
+<p><strong>기존 방식의 한계.</strong> 대형 모델은 이런 가중치를 주로 <strong>빠른 D램에 올려 두는데</strong>, <strong>스마트폰에 수십 GB의 D램을 무작정 넣을 수는 없다.</strong></p>
+<p><strong>그래서 애플의 선택이 나온다.</strong> <strong>저장 공간으로 쓰던 낸드를 모델 보관 장소로 끌어들인 것</strong>이다.</p>
+<p><strong>그런데 여기서 새로운 문제가 생긴다.</strong> <strong>낸드는 D램보다 훨씬 느리다.</strong></p>
+<p><strong>최악의 시나리오가 제시된다.</strong> 일반적인 MoE처럼 <strong>단어 하나를 만들 때마다 전문가를 바꾸고 낸드에서 새 가중치를 읽어 온다면</strong>, <strong>AI가 계산하는 시간보다 데이터를 기다리는 시간이 더 문제</strong>가 된다는 것이다.</p>
+<h3 id="ifp--무엇을-계산할지-먼저-정한다">IFP — “무엇을 계산할지 먼저 정한다”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ifp--무엇을-계산할지-먼저-정한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>애플이 넣은 해법</strong>이다. 명령어 추종 프루닝(Instruction Following Pruning)이다.</p>
+<p><strong>이름은 복잡하지만 동작은 단순하다는 설명이 이어진다.</strong></p>
+<p><strong>작동 순서.</strong> ① <strong>사용자의 질문을 먼저 보고</strong> ② 모델에서 <strong>이 작업에 필요한 부분을 고르고</strong> ③ 선택된 가중치를 <strong>낸드에서 D램으로 한 번 가져온 뒤</strong> ④ <strong>토큰마다 갈아 끼우지 않고 그대로 사용</strong>하며 ⑤ 생성 도중 정말 필요할 때만 다시 고른다.</p>
+<p><strong>표준 MoE와의 차이가 핵심이다.</strong> 표준 MoE는 <strong>토큰마다 어떤 전문가를 쓸지 결정</strong>하는데, IFP는 <strong>무엇을 계산할지를 먼저 정해 모델을 읽는 횟수 자체를 줄인다.</strong></p>
+<p><strong>성능도 확인됐다는 연구 결과가 제시된다.</strong></p>
+<p><strong>실험 조건.</strong> <strong>90억 파라미터 모델에서 질문마다 약 30억 개만 골라 사용</strong>했다.</p>
+<p><strong>결과가 인상적이다.</strong> 일반적인 30억 파라미터 덴스 모델보다 <strong>수학과 코딩에서 5～8포인트 높은 성능</strong>을 냈다.</p>
+<p><strong>그리고 속도도 지켰다.</strong> <strong>전체 90억 모델에 가까운 결과를 내면서, 첫 토큰이 나오기까지 걸리는 시간은 30억 덴스 모델과 비슷한 수준</strong>이었다.</p>
+<p><strong>그래서 함의가 정리된다.</strong> <strong>큰 모델 전체를 매번 계산하지 않아도, 질문에 필요한 능력을 잘 골라낼 수 있다면 작은 모델처럼 빠르게 움직일 수 있다</strong>는 것이다.</p>
+<h3 id="낸드-입장에서도-유리한-이유--그리고-그-한계">낸드 입장에서도 유리한 이유 — 그리고 그 한계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#낸드-입장에서도-유리한-이유--그리고-그-한계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>메모리 관점의 관찰이 이어진다.</strong></p>
+<p><strong>AI 가중치의 특성.</strong> 일반 파일과 달리 <strong>한 번 기록해 놓으면 대부분이 읽기만 하는 데이터</strong>다.</p>
+<p><strong>그리고 낸드의 약점이 어디인지가 설명된다.</strong> <strong>쓰고 지우는 프로그램과 이레이즈가 반복될 때 내구성이 크게 떨어지므로</strong>, 이런 <strong>읽기 중심(read-heavy) 워크로드가 상대적으로 잘 맞는다</strong>는 것이다.</p>
+<p><strong>그런데 읽기가 완전히 공짜는 아니라는 단서가 붙는다.</strong></p>
+<p><strong>물리적 이유가 구체적이다.</strong> 낸드에서 한 셀을 읽으려면 <strong>같은 문자열의 다른 셀에는 데이터를 통과시키기 위한 전압을 걸어 줘야 한다</strong>는 것이다.</p>
+<p><strong>그 반복이 문제를 만든다.</strong> 이런 동작이 매우 많이 반복되면 **주변 셀의 문턱 전압이 조금씩 변하는 ‘리드 디스터브’**가 생길 수 있다.</p>
+<p><strong>연구로도 확인된 사항이다.</strong> <strong>반복적인 읽기와 높은 패스 전압이 리드 디스터브 오류를 키울 수 있다</strong>는 것이다.</p>
+<p><strong>다만 진행자는 선을 긋는다.</strong> 애플이 <strong>IFP를 낸드 수명 보호를 위해 만들었다고 밝힌 것은 아니며</strong>, 핵심 목적은 <strong>느린 낸드와 D램 사이에서 움직이는 데이터를 줄이는 것</strong>이었다.</p>
+<p><strong>그럼에도 부수 효과가 있다는 관찰이다.</strong> 토큰마다 낸드를 계속 읽는 대신 <strong>한 번 가져온 가중치를 D램에 유지해 재사용하는 구조는 반복적인 읽기까지 줄이는 방향</strong>이라는 것이다.</p>
+<h3 id="양자화--2비트까지-내려간-전력">양자화 — 2비트까지 내려간 전력<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#양자화--2비트까지-내려간-전력" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>모델 자체를 작게 만드는 기술</strong>도 다뤄진다.</p>
+<p><strong>원리.</strong> AI 가중치는 숫자인데, 원래 <strong>16비트 같은 높은 정밀도</strong>로 표현하던 것을 <strong>추론 시 성능을 크게 잃지 않는 범위에서 8비트, 4비트, 2비트</strong>로 줄이는 것이다.</p>
+<p><strong>애플의 실적이 구체적이다.</strong> 2025년에 약 30억 파라미터 온디바이스 모델에서 이렇게 적용했다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>대상</th><th>비트</th></tr></thead><tbody><tr><td>디코더 가중치</td><td><strong>2비트</strong></td></tr><tr><td>임베딩</td><td>4비트</td></tr><tr><td>KV 캐시</td><td>8비트</td></tr></tbody></table></div>
+<p><strong>방법론도 함께 바꿨다.</strong> **처음부터 낮은 비트로 바뀔 것을 감안해 학습하는 QAT(Quantization-Aware Training)**를 쓰고, <strong>마지막에 작은 어댑터를 다시 학습시켜 압축 과정에서 잃은 품질을 보완</strong>했다.</p>
+<p><strong>결과가 의외다.</strong> 수학 벤치마크 일부에서는 성능이 조금 내려갔지만 <strong>MMLU는 오히려 1.5% 높아졌다.</strong></p>
+<p><strong>그래서 평가가 붙는다.</strong> **“2비트라는 숫자만 낮춘 게 아니라, 낮은 비트에서도 모델이 버틸 수 있도록 학습 방식까지 같이 바꾼 것”**이다.</p>
+<p><strong>용량 효과가 계산으로 제시된다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>조건</th><th>가중치 용량</th></tr></thead><tbody><tr><td>30억 파라미터, 16비트</td><td>약 <strong>6GB</strong></td></tr><tr><td>30억 파라미터, 2비트</td><td>약 <strong>0.75GB</strong></td></tr></tbody></table></div>
+<p><strong>AFM3에서도 QAT로 크게 압축했다고 밝혔으며</strong>, 코어 어드밴스드가 몇 비트를 쓰는지는 공개되지 않았지만 <strong>이전 세대에서 2비트까지 내려간 전력이 있어 같은 방향이 이어지고 있다</strong>는 관측이다.</p>
+<h3 id="그럼-낸드는-얼마나-더-필요해지나">그럼 낸드는 얼마나 더 필요해지나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그럼-낸드는-얼마나-더-필요해지나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>논의가 개별 모델에서 기기 전체로 확장된다.</strong></p>
+<p><strong>현재 요구 사양.</strong> 애플이 공식적으로 요구하는 <strong>애플 인텔리전스 저장 공간은 7GB</strong>이며, 기능을 켜면 온디바이스 모델이 다운로드되고 <strong>끄면 제거된다.</strong></p>
+<p><strong>그런데 조사기관의 전망은 훨씬 크다.</strong></p>
+<p><strong>TrendForce 전망.</strong> 2026년 플래그십 스마트폰에서 <strong>로컬 AI 처리를 위한 모델과 캐시 등이 약 40～60GB 수준의 시스템 저장 공간</strong>을 사용할 수 있다는 것이다.</p>
+<p><strong>다만 구성이 설명된다.</strong> 이것이 전부 하나의 LLM 파일이라는 뜻이 아니라 <strong>언어·음성·이미지 모델, 그리고 AI가 처리 과정에서 쓰는 캐시</strong>가 함께 차지하는 공간이다.</p>
+<p><strong>그래서 최근 변화가 다시 보인다.</strong> 지난해 아이폰 17이 <strong>기본 저장 용량을 128GB에서 256GB로 올린 것</strong>이다.</p>
+<p><strong>다만 원인을 단정하지는 않는다.</strong> AFM3 하나 때문이라고 볼 수는 없고 <strong>카메라 데이터와 앱 용량도 늘어난다</strong>는 것이다.</p>
+<p><strong>그럼에도 조사기관은 AI를 중요한 배경으로 본다.</strong> TrendForce는 <strong>AI 기능 확대와 로컬 캐시 소요를 저장 용량 증가의 중요한 배경</strong>으로 보며, <strong>2026년 스마트폰 한 대당 평균 저장 용량이 전년 대비 약 4.8% 증가</strong>할 것으로 예상한다.</p>
+<p><strong>안드로이드에서도 같은 흐름이다.</strong> 올해 말 <strong>128GB가 주력에서 점차 줄고 256GB가 새로운 기본 용량</strong>으로 자리 잡을 가능성이다.</p>
+<p><strong>공급 측 요인도 같은 방향으로 작용한다.</strong> <strong>3D 낸드가 더 높은 단수와 집적도로 갈수록 저용량 다이를 계속 만드는 경제성이 떨어진다</strong>는 것이다.</p>
+<p><strong>그래서 양쪽에서 민다는 정리가 나온다.</strong> <strong>AI는 더 많은 공간을 요구하고, 공급 측에서도 저용량 낸드가 줄어들며 256GB 쪽으로 밀어주는 힘</strong>이 동시에 작용한다는 것이다.</p>
+<h3 id="한-대에서는-별거-아닌-용량이-2억-대를-만나면">한 대에서는 별거 아닌 용량이 2억 대를 만나면<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한-대에서는-별거-아닌-용량이-2억-대를-만나면" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>시장 규모로 환산하는 대목</strong>이다.</p>
+<p><strong>전제.</strong> TrendForce에 따르면 <strong>2025년 애플은 약 2억 4천만 대의 아이폰을 생산</strong>했다.</p>
+<p><strong>시나리오별 계산이 제시된다.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>한 대당 증가</th><th>추가되는 낸드 총량</th></tr></thead><tbody><tr><td><strong>+64GB</strong></td><td>약 <strong>15.4EB</strong></td></tr><tr><td><strong>+128GB</strong></td><td>약 <strong>30EB 이상</strong></td></tr></tbody></table></div>
+<p><strong>다만 단서를 단다.</strong> 모든 아이폰이 갑자기 일괄적으로 늘어난다는 예상은 아니라는 것이다.</p>
+<p><strong>그럼에도 결론은 분명하다.</strong> <strong>“한 대에서는 별거 아닌 용량 한 단계가 2억 대가 넘는 물량을 만나면 낸드 업계에서는 꽤 큰 숫자가 된다.”</strong></p>
+<p><strong>PC에서도 같은 일이 벌어진다.</strong> 온디바이스 AI 모델이 SSD 공간을 차지하는 것뿐 아니라, <strong>마이크로소프트 리콜처럼 사용자가 봤던 화면을 로컬에 저장해 나중에 AI가 검색하는 기능</strong>까지 등장했다는 것이다.</p>
+<p><strong>그래서 성격이 확장된다.</strong> <strong>AI를 위한 저장 공간이 모델 자체에서 AI가 계속 사용할 데이터로까지 넓어지고 있다</strong>는 것이다.</p>
+<h3 id="하필-가격이-가장-비쌀-때-시작됐다">하필 가격이 가장 비쌀 때 시작됐다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#하필-가격이-가장-비쌀-때-시작됐다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>타이밍의 문제가 지적된다.</strong></p>
+<p><strong>낸드 가격을 끌어올린 주범.</strong> 스마트폰이 아니라 <strong>AI 데이터센터</strong>다.</p>
+<p><strong>메커니즘.</strong> 클라우드 업체들이 <strong>고용량 엔터프라이즈 SSD를 확보하면서 올해 1분기 엔터프라이즈 SSD 계약 가격이 크게 뛰었고</strong>, 메모리 업체들은 <strong>수익성이 높은 서버용 제품에 생산 능력을 우선 배정</strong>하고 있다.</p>
+<p><strong>D램도 같다.</strong> HBM을 비롯한 <strong>AI 서버용 메모리 수요가 커지면서 모바일 D램 가격까지 크게 올랐다.</strong></p>
+<p><strong>그 틈을 중국이 파고든다.</strong> CXMT 같은 업체가 빠르게 물량을 늘리고 있다는 것이다.</p>
+<p><strong>다만 위치는 명확히 한다.</strong> CXMT는 <strong>HBM이나 최첨단 D램에서는 삼성전자·SK하이닉스·마이크론보다 뒤처져 있지만</strong>, <strong>점유율이 이미 7%까지 올라왔고 신규 팹도 확대</strong>하고 있다.</p>
+<p><strong>그래서 이번 신제품의 딜레마가 정리된다.</strong> <strong>AI 기능은 더 많은 메모리를 요구하는데, D램과 낸드 모두 가격 부담이 커진 환경에서 신제품을 내야 한다</strong>는 것이다.</p>
+<h3 id="애플만의-특이한-선택이-아니다--hbf와-znand">애플만의 특이한 선택이 아니다 — HBF와 zNAND<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#애플만의-특이한-선택이-아니다--hbf와-znand" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>시야가 산업 전체로 확장된다.</strong></p>
+<p><strong>SK하이닉스와 샌디스크</strong>가 <strong>낸드를 HBM과 SSD 사이의 새로운 메모리 계층으로 사용하는 HBF(High Bandwidth Flash)의 표준화</strong>를 진행 중이다.</p>
+<p><strong>HBF의 목표.</strong> <strong>SSD처럼 큰 용량을 가지면서도 기존 낸드보다 훨씬 높은 대역폭으로 AI 추론용 모델과 데이터를 공급</strong>하는 것이다.</p>
+<p><strong>SK하이닉스의 설명도 인용된다.</strong> HBF를 **“HBM의 고성능과 SSD의 대용량 사이를 메우는 메모리 계층”**이라고 규정한다는 것이다.</p>
+<p><strong>삼성전자도 같은 방향이다.</strong> 이번 <strong>FMS 2026에서 zNAND-O라는 차세대 낸드 아키텍처 컨셉</strong>을 공개했다.</p>
+<p><strong>아직 단계는 다르다.</strong> HBF처럼 표준화와 상용화가 진행된 기술은 아니라는 단서가 붙는다.</p>
+<p><strong>그러나 방향은 같다.</strong> <strong>AI 가속기 가까이에 낸드를 배치해 대용량 모델을 빠르게 공급하겠다</strong>는 것이다.</p>
+<p><strong>그래서 위치가 정리된다.</strong> <strong>데이터센터에서는 HBF와 zNAND가, 엣지에서는 애플이 이미 낸드를 모델 실행 과정 안으로 끌어들이기 시작</strong>했다는 것이다.</p>
+<h3 id="결론--지능을-어디에-보관하느냐">결론 — “지능을 어디에 보관하느냐”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#결론--지능을-어디에-보관하느냐" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>진행자가 가장 흥미롭게 본 지점</strong>이 밝혀진다.</p>
+<p><strong>그것은 200억이라는 파라미터 숫자 자체가 아니다.</strong></p>
+<p><strong>핵심 명제.</strong> <strong>“AI가 커질수록 D램과 낸드 가운데 하나를 선택하는 게 아니라, 둘의 역할을 어떻게 나눌지가 훨씬 더 중요해지고 있다.”</strong></p>
+<p><strong>역할 구분이 명확하게 정리된다.</strong></p>
+<p><strong>빠른 쪽이 필요한 이유.</strong> <strong>지금 당장 계산하는 가중치와 KV 캐시 같은 데이터는 빠르게 읽고 써야 하므로</strong>, 스마트폰과 PC에서는 D램이, AI 서버에서는 HBM 같은 고대역폭 메모리가 필요하다.</p>
+<p><strong>느린 쪽이 필요한 이유.</strong> 모델이 수십억·수백억 파라미터로 커지면 <strong>그 모든 지능을 비싼 D램에 계속 올려 놓을 수 없고</strong>, 일부 전문가만 계산한다고 <strong>나머지 모델이 없어지는 것도 아니다.</strong></p>
+<p><strong>그래서 결론.</strong> <strong>전체 모델과 대용량 데이터가 계속 머물 공간이 필요하며, 애플은 그 공간으로 낸드를 본격 활용하기 시작했다</strong>는 것이다.</p>
+<p><strong>마지막 문장이 이 영상의 요지다.</strong> <strong>“앞으로 AI 메모리를 볼 때 얼마나 빨리 계산할 수 있느냐도 봐야겠지만, 그 지능 전체를 어디에 보관하느냐를 같이 봐야 한다.”</strong></p>
+<p><strong>그리고 대구로 마무리된다.</strong> <strong>“생각하는 순간을 빠르게 붙잡아 둘 D램도 필요하고, 거대한 모델과 데이터를 계속 기억해 둘 낸드도 필요하다. AI가 더 많은 지능을 가지려면 결국 더 많은 계산 능력만 필요한 게 아니라 더 많은 기억할 공간도 필요해지는 것이다.”</strong></p>
+<hr/>
+<blockquote>
+<p>반도체·AI 기술 해설입니다. <strong>투자 권유가 아니며</strong> 시장 전망은 인용된 조사기관과 진행자의 견해입니다. 자동 생성 자막이라 용어 오차가 있습니다(보정: ‘랜드’→낸드(NAND), ‘디램/D레미’→DRAM, ‘LPDDL 5X’→LPDDR5X, ‘ME’→MoE(전문가 혼합), ‘댄스 모델’→덴스(dense) 모델, ‘instruction following pruning IFP’→명령어 추종 프루닝, ‘quant이션 트레이닝 QAT’→Quantization-Aware Training, ‘인베딩’→임베딩, ‘MML’→MMLU 추정, ‘진엔/G엔드 5오’→삼성 zNAND-O(자막 표기), ‘FMS26’→Flash Memory Summit 2026, ‘트렌드 포스’→TrendForce, ‘팀쿡’→팀 쿡, ‘A2 칩’→애플 신형 칩(자막 표기)). <strong>파라미터 수·용량 전망 등은 자막 기준이며 별도 확인이 필요합니다.</strong></p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-759" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#올해-아이폰은-카메라보다-저장-용량을-봐야-한다" data-for="올해-아이폰은-카메라보다-저장-용량을-봐야-한다">올해 아이폰은 카메라보다 저장 용량을 봐야 한다</a></li><li class="depth-0"><a href="#afm3--모델을-낸드에-두고-필요한-부분만-d램으로" data-for="afm3--모델을-낸드에-두고-필요한-부분만-d램으로">AFM3 — 모델을 낸드에 두고 필요한 부분만 D램으로</a></li><li class="depth-0"><a href="#그런데-나머지-190억-개는-어디로-가나" data-for="그런데-나머지-190억-개는-어디로-가나">그런데 나머지 190억 개는 어디로 가나</a></li><li class="depth-0"><a href="#ifp--무엇을-계산할지-먼저-정한다" data-for="ifp--무엇을-계산할지-먼저-정한다">IFP — “무엇을 계산할지 먼저 정한다”</a></li><li class="depth-0"><a href="#낸드-입장에서도-유리한-이유--그리고-그-한계" data-for="낸드-입장에서도-유리한-이유--그리고-그-한계">낸드 입장에서도 유리한 이유 — 그리고 그 한계</a></li><li class="depth-0"><a href="#양자화--2비트까지-내려간-전력" data-for="양자화--2비트까지-내려간-전력">양자화 — 2비트까지 내려간 전력</a></li><li class="depth-0"><a href="#그럼-낸드는-얼마나-더-필요해지나" data-for="그럼-낸드는-얼마나-더-필요해지나">그럼 낸드는 얼마나 더 필요해지나</a></li><li class="depth-0"><a href="#한-대에서는-별거-아닌-용량이-2억-대를-만나면" data-for="한-대에서는-별거-아닌-용량이-2억-대를-만나면">한 대에서는 별거 아닌 용량이 2억 대를 만나면</a></li><li class="depth-0"><a href="#하필-가격이-가장-비쌀-때-시작됐다" data-for="하필-가격이-가장-비쌀-때-시작됐다">하필 가격이 가장 비쌀 때 시작됐다</a></li><li class="depth-0"><a href="#애플만의-특이한-선택이-아니다--hbf와-znand" data-for="애플만의-특이한-선택이-아니다--hbf와-znand">애플만의 특이한 선택이 아니다 — HBF와 zNAND</a></li><li class="depth-0"><a href="#결론--지능을-어디에-보관하느냐" data-for="결론--지능을-어디에-보관하느냐">결론 — “지능을 어디에 보관하느냐”</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2608270415'</script>
