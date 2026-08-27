@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>The Story of VS Code | Official Documentary (Visual Studio Code)</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="The Story of VS Code | Official Documentary (Visual Studio Code)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="The Story of VS Code | Official Documentary (Visual Studio Code)"/><meta name="twitter:description" content="왜 만들었나 — Windows만 보던 조직의 방향 전환 다큐멘터리는 조직의 전략 변화에서 출발한다. 첫 증언이 그 배경을 요약한다."/><meta property="og:description" content="왜 만들었나 — Windows만 보던 조직의 방향 전환 다큐멘터리는 조직의 전략 변화에서 출발한다. 첫 증언이 그 배경을 요약한다."/><meta property="og:image:alt" content="왜 만들었나 — Windows만 보던 조직의 방향 전환 다큐멘터리는 조직의 전략 변화에서 출발한다. 첫 증언이 그 배경을 요약한다."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/youtube-요약/2609062015_The-Story-of-VS-Code-----Official-Documentary_Visual-Studio-Code"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/youtube-요약/2609062015_The-Story-of-VS-Code-----Official-Documentary_Visual-Studio-Code"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="왜 만들었나 — Windows만 보던 조직의 방향 전환 다큐멘터리는 조직의 전략 변화에서 출발한다. 첫 증언이 그 배경을 요약한다."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/youtube-요약/2609062015_The-Story-of-VS-Code-----Official-Documentary_Visual-Studio-Code-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/youtube-요약/2609062015_The-Story-of-VS-Code-----Official-Documentary_Visual-Studio-Code-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/youtube-요약/2609062015_The-Story-of-VS-Code-----Official-Documentary_Visual-Studio-Code-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="youtube-요약/2609062015_The-Story-of-VS-Code-----Official-Documentary_Visual-Studio-Code"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1057"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1057" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../youtube-요약/">유튜브 요약</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>The Story of VS Code | Official Documentary (Visual Studio Code)</a></div></nav><h1 class="article-title">The Story of VS Code | Official Documentary (Visual Studio Code)</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-06T11:15:00.000Z">26.09.06.20</time><span>87 min read</span></p></div></div><article class="popover-hint"><p><a href="https://www.youtube.com/watch?v=kHL3XzjpT5w" class="external"><img src="https://i.ytimg.com/vi/kHL3XzjpT5w/mqdefault.jpg" alt="영상 썸네일"/><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="왜-만들었나--windows만-보던-조직의-방향-전환">왜 만들었나 — Windows만 보던 조직의 방향 전환<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#왜-만들었나--windows만-보던-조직의-방향-전환" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>다큐멘터리는 조직의 전략 변화에서 출발한다. 첫 증언이 그 배경을 요약한다.</p>
+<p><strong>“Microsoft 초창기부터 스티브 발머가 CEO로 이끌던 시기 대부분까지, 개발자 사업부는 당시 우리 플랫폼의 요구를 충족하는 조직이었고, 그 플랫폼은 사실상 Windows였습니다.”</strong></p>
+<p>그 결과 시야가 좁았다고 인정한다. <strong>“우리는 비교적 좁은 관점을 취했습니다. Windows용이 아니면 관심을 두지 않았죠. Windows 애플리케이션을 만드는 C#이나 C++가 아니면, 별로 관심을 두지 않았습니다.”</strong></p>
+<p>그래서 VS Code의 출발점은 기술이 아니라 방향 전환이었다는 것이다.</p>
+<p><strong>“VS Code 초창기에 단행한 특별한 방향 전환은, 전 세계 모든 개발자를 포용해야 한다는 깨달음이었죠. 그게 우리의 핵심 사명이라고 생각합니다. 개발자가 있는 곳으로 직접 찾아가고자 합니다.”</strong></p>
+<p>회사의 정체성도 함께 짚는다. <strong>“Microsoft는 언제나 개발자 도구 회사였습니다. Microsoft 최초의 코드는 빌 게이츠가 작성했습니다. 그것이 바로 개발자 도구였죠.”</strong></p>
+<h3 id="2010년-웹이-바꾼-것">2010년, 웹이 바꾼 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2010년-웹이-바꾼-것" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>변화의 원인은 웹이었다. <strong>“2010년 무렵 개발자 세계에 변화가 일어나고 있었습니다. 바로 웹 때문이었죠. 브라우저가 등장한 뒤 약 10년 만에, 단순한 웹페이지를 보여 주던 것에서 본격적인 애플리케이션까지 만들 수 있는 것으로 발전했습니다.”</strong></p>
+<p>시장의 신호도 분명했다. <strong>“갑자기 Google Docs 같은 서비스와 Office 365가 등장하기 시작했죠. 이제 단순한 웹사이트가 아니었습니다. 완전한 애플리케이션이 웹에서 만들어지고 있었죠.”</strong></p>
+<p>그리고 신규 개발자들의 선택이 바뀌었다. <strong>“새로 개발자가 됐다면 바로 웹에 눈을 돌렸습니다. Windows나 데스크톱이 아니었죠. 개발자들에게 계속 의미 있는 존재가 되려면 무언가 해야 한다는 걸 알았습니다.”</strong></p>
+<p>대응은 세 갈래였다. 새 JavaScript 엔진, 새 언어, 그리고 도구다.</p>
+<p><strong>“스티브 루코에게 새로운 JavaScript 엔진 개발을 맡겨 Internet Explorer의 웹 앱 실행 방식을 바꾸고자 했습니다. 앤더스와 함께 TypeScript라는 새 언어를 설계해 개발자들이 대규모 웹 애플리케이션을 만들 수 있도록 했습니다. 하지만 한 가지 빠진 것이 있었으니 바로 개발자 도구였습니다.”</strong></p>
+<h3 id="에리히-감마의-영입--새-직장이-아니라-새-도전">에리히 감마의 영입 — “새 직장이 아니라 새 도전”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#에리히-감마의-영입--새-직장이-아니라-새-도전" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>빈자리를 채운 것이 우연한 만남이었다. <strong>“마침 바로 그 무렵, 놀랍게도 에리히 감마가 우리 앞에 나타났습니다.”</strong></p>
+<p>그의 이력이 소개된다. <strong>“에리히 감마는 이미 그 자체로 전설이었죠. 그는 이른바 ‘Gang of Four’의 일원으로, 모든 엔지니어가 참고하는 『디자인 패턴』을 함께 썼죠. 그는 이보다 앞서 IDE를 6～7개쯤 만들었을 겁니다.”</strong></p>
+<p>만남의 계기는 컨퍼런스였다. <strong>“매년 열리는 Eclipse 컨퍼런스가 실리콘밸리 산호세에서 열렸고, 레드먼드와 아주 가깝다고 생각했죠. 그래서 컨퍼런스 뒤에 레드먼드로 가서 Microsoft 캠퍼스에서 하루를 보냈습니다. 빌 게이츠와도 한 시간 동안 만났습니다.”</strong></p>
+<p>통한 지점도 밝힌다. <strong>“서로 통하는 점이 많았습니다. 개발자 도구에 대한 열정도 그중 하나였고, 그 열정은 즉시 느낄 수 있었고, IBM에서는 조금씩 그리워하던 것이기도 했습니다.”</strong></p>
+<p>다만 조건이 있었다. <strong>“하지만 한 가지는 아주 분명했습니다. 새 직장을 찾는 게 아니라 새로운 도전을 찾고 있다는 것이었죠.”</strong></p>
+<p>그래서 제안이 도전 과제의 형태로 왔다. <strong>“제이슨 잰더가 취리히로 찾아와 이런 도전 과제를 제안했습니다. 브라우저에서 실행되는 온라인 개발자 도구를 개발해 볼 생각이 있나요?”</strong></p>
+<p>그가 내건 원칙이 이 프로젝트의 성격을 결정했다.</p>
+<p><strong>“에리히 감마는 첫날부터 이랬어요. ‘제가 아는 것을 그대로 가져다가 웹에 억지로 끼워 맞추고 싶지는 않습니다. 웹에서 태어난 무언가를 만들고 싶습니다.‘”</strong></p>
+<p>본인이 끌린 이유는 다른 데 있었다. <strong>“아우터 루프에서 벗어나 다시 이너 루프로 돌아갈 수 있었거든요. 편집, 개발, 테스트, 디버깅 같은 작업 말이죠. 그곳이 개발자와 가장 가까운 지점이니까요.”</strong></p>
+<p>타이밍에 대한 판단도 있었다. <strong>“브라우저가 발전했고 JavaScript 엔진도 발전했습니다. V8, Chakra, SpiderMonkey 같은 엔진들이죠. 그 작업에 도전해 볼 때가 무르익었다고 생각했습니다.”</strong></p>
+<p>퇴직 후 유급 대기 기간에도 손을 놓지 않았다. <strong>“그 가든 리브 기간이 석 달이었습니다. 그럼 당연히, 제가 뭘 했겠어요? 그래서 브라우저에서 작동하는 작은 온라인 도구를 만들었습니다. 단위 테스트를 실행하는 작은 플레이그라운드였죠.”</strong></p>
+<p>거기서 확신을 얻는다. <strong>“새 브라우저에는 웹 워커가 있었고요. 백그라운드에서 작업할 수 있었고, HTML5의 강력한 기능도 활용할 수 있었죠. 또 흥미롭게도, 새로 알게 된 것 중에는 Node.js도 있었습니다.”</strong></p>
+<p>Node의 의미도 짚는다. <strong>“Node.js 덕분에 JavaScript를 브라우저에서만 쓰는 게 아니라 백엔드와 서버에서도 쓸 수 있었고, 명령줄 도구까지 만들 수 있었습니다.”</strong></p>
+<h3 id="팀이-통째로-따라오다--취리히-개발-센터">팀이 통째로 따라오다 — 취리히 개발 센터<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#팀이-통째로-따라오다--취리히-개발-센터" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 다큐멘터리에서 가장 인상적인 조직 이야기가 여기 있다. 한 사람이 아니라 팀이 왔다는 것이다.</p>
+<p><strong>“에리히 감마의 특별한 점은 그가 혼자가 아니었다는 겁니다. 그에게는 그의 팀이 함께 있었죠.”</strong></p>
+<p>다만 절차상 제약이 있었다. <strong>“Microsoft는 이 문제에 정말 신중했습니다. IBM과 논쟁을 벌이고 싶어 하지 않았습니다. 그래서 제가 퇴사한 뒤에는 더 이상 팀원들과 이야기할 수 없다고 못 박았습니다.”</strong></p>
+<p>그런데 설득이 필요 없었다. <strong>“좋았던 점은 그들을 설득하는 데 많은 노력이 필요하지 않았다는 겁니다. 팀원 모두가 에리히 감마를 무척 좋아했고, 그와 함께 일하고 싶어 했거든요. 우리가 할 일은 취리히 개발 센터를 만들고 그 직책들을 공고하는 것뿐이었고, 그러자 모두 찾아왔습니다.”</strong></p>
+<p>팀원들의 인연도 길었다. <strong>“여기 있는 사람 중 제가 가장 오래 알고 지낸 건 마틴입니다. 여기 있는 사람들 대부분은 서로 아주 오랜 인연을 이어 왔습니다.”</strong></p>
+<p>블로그 글을 보고 지원한 경우도 있다. <strong>“Microsoft의 발표였죠. 에리히 감마가 취리히에 새 연구소를 연다고요. 글에는 ‘여기를 클릭해 지원하세요’라는 버튼이 있었습니다. 그래서 저도 그냥 지원했습니다.”</strong></p>
+<p>합류를 망설인 사람의 이야기도 나온다. 명성에 안주하는 사람인지 확인하고 싶었다는 것이다.</p>
+<p><strong>“‘좋아, 이 사람이 과거의 명성에 안주해서 과거 얘기만 하는 사람이라면, 이 프로젝트는 나와 맞지 않겠구나.’ 그래서 에리히 감마에게 전화해 좋은 대화를 나눴는데, 정말 5분도 안 돼 그가 말했어요. ‘과거의 일들도 훌륭하지만, 저는 앞으로 우리가 할 일에 더 관심이 있습니다.‘”</strong></p>
+<p><strong>“그 말을 듣고 확신했죠. 이건 에리히 감마의 마지막 작품이 아니구나.”</strong></p>
+<h3 id="스타트업처럼--다이어그램이-아니라-만질-수-있는-것">스타트업처럼 — “다이어그램이 아니라 만질 수 있는 것”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#스타트업처럼--다이어그램이-아니라-만질-수-있는-것" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>당시 이 시도는 상식에 반하는 것이었다. <strong>“2010년에는 순수한 웹 기술만으로 IDE를 만들 수 있다는 건 결코 확실한 일이 아니었습니다.”</strong></p>
+<p>주변의 반응도 그랬다. <strong>“사람들에게 물어보면 대부분 이랬죠. ‘브라우저에서 개발자 도구에 필요한 성능과 반응성을 감당할 만한 것을 만들 방법은 없어요.’ 대부분 브라우저 기반 편집기는 그저 장난감에 가깝다고 여겼습니다.”</strong></p>
+<p>그래서 경영진이 택한 방식이 시간의 보장이었다. <strong>“에리히 감마와 팀에 충분히 긴 개발 기간을 보장해야 했습니다. 핵심은 스타트업처럼, 완전한 백지상태의 프로젝트처럼 접근하는 것이었습니다.”</strong></p>
+<p>동시에 결과물도 요구했다. <strong>“실험을 시작하고, 그 과정에서 매년 결과물을 내놓으면서 어디까지 갈 수 있는지 지켜보자는 거였죠.”</strong></p>
+<p>팀 쪽에서도 같은 인식이 있었다. <strong>“스타트업 정신이 있다면 이론만 늘어놓고 있을 수는 없습니다. 멋진 아키텍처 다이어그램만으로는 현실에서 가치를 인정받을 수 없습니다. 손에 잡히는 무언가가 있어야 비로소 가치를 인정받습니다. 출시하고 시연할 수 있는 결과물 말이죠.”</strong></p>
+<p>이유도 덧붙인다. <strong>“Microsoft는 대기업입니다. 쉽게 잊히기 마련이죠.”</strong></p>
+<p>문화 충격도 솔직하게 말한다. Build 컨퍼런스에 처음 참석한 소감이다. <strong>“컨퍼런스를 보니 조금 겁이 났습니다. ‘와, 내가 여기서 어떻게 성공하지?‘”</strong></p>
+<h3 id="typescript와의-상호-의존">TypeScript와의 상호 의존<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#typescript와의-상호-의존" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>레드먼드 방문에서 본 것이 결정적이었다. <strong>“스티브가 그곳에서 처음 보여 준 멋진 것은 바로 TypeScript였습니다. 그걸 보고 깨달았죠. 그래, 이걸로 대규모 프로그램도 만들 수 있겠구나.”</strong></p>
+<p>문제의식은 리팩터링이었다. <strong>“그는 웹 기반 편집기를 만들 때 진짜 걱정되는 점은, 규모가 10만 줄, 20만 줄이 되었을 때 어떻게 리팩터링하느냐는 것이라 했습니다. 인터페이스를 어떻게 통제할 것인가도 문제였죠.”</strong></p>
+<p>역할 분담이 정해진다. <strong>“저는 계속해서 TypeScript 컴파일러 프로토타입을 이끌고, 그는 VS Code 프로토타입을 맡아 발전시키기로 했죠.”</strong></p>
+<p>관계는 일방적이지 않았다. 이 대목이 흥미롭다.</p>
+<p><strong>“그들은 우리의 가장 초기이자 최고의 고객이었고, 사실상 TypeScript의 공동 설계자이기도 했습니다. 아주 훌륭한 피드백으로 코드가 10만, 15만 줄로 커질 때 필요한 것을 충족할 방법을 알려 주었기 때문입니다.”</strong></p>
+<p>의존도 서로였다. <strong>“에리히 감마는 TypeScript 팀이 하는 일을 높이 평가했고 그래서 TypeScript를 의존 요소로 채택했습니다. 하지만 그것은 서로에 대한 존중이자 상호 의존이었습니다. TypeScript 팀도 결국 VS Code의 구성 요소를 사용하게 되었기 때문입니다.”</strong></p>
+<p>초기 TypeScript의 상태도 숨기지 않는다. <strong>“흥미로웠습니다. 딱 봐도 주말 프로젝트였거든요. 그냥 충돌하곤 했죠. 오류 메시지도 없이 그냥 충돌했습니다.”</strong> 버그 신고 방식도 원시적이었다. <strong>“버그를 보고하려면 재현 예제를 만들고 이메일에 첨부한 다음, 스티브에게 0.1.1 버전이 이 파일을 입력하면 충돌한다고 알리는 식이었습니다.”</strong></p>
+<p>새 언어가 왜 매력적이었는지도 정리한다. <strong>“코드를 검증해 주니 실수하면 물결 밑줄로 바로 알려 줍니다. 코드를 더 빨리 탐색할 수도 있습니다. 정의로 이동하거나 어떤 항목의 참조를 찾을 수 있죠. 입력 중인 내용을 자동 완성해 주니 코딩 속도도 빨라집니다.”</strong></p>
+<p><strong>“저는 이 세 가지가 프로그래밍의 성스러운 삼위일체라고 봅니다.”</strong></p>
+<h3 id="monaco--브라우저에서-도는-편집기">Monaco — 브라우저에서 도는 편집기<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#monaco--브라우저에서-도는-편집기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>첫 결과물의 이름이 Monaco였다. <strong>“팀이 처음 만든 프로젝트는 Monaco라는 것이었는데, 브라우저 안에서 바로 작동하는 코드 편집 구성 요소였습니다.”</strong></p>
+<p>지금의 위상도 언급한다. <strong>“오늘날에는 사실상 모든 브라우저 앱의 표준 코드 편집 구성 요소가 되었고 모든 회사에서 쓰이고 있습니다. 오픈 소스로 공개됐기 때문이죠.”</strong></p>
+<p>사내 확산에는 전담 인물이 필요했다. <strong>“그래서 Monaco를 알릴 홍보대사가 필요했습니다. Visual Studio 조직에 제품 관리자가 한 명 있었습니다. 이름은 크리스 디아스였습니다.”</strong></p>
+<p>그의 일은 판매에 가까웠다. <strong>“그는 모두가 Monaco를 시험해 볼 수 있도록 관련 내부 SDK를 만드는 일을 맡았습니다. 작은 Monaco Sandbox를 만든 뒤, 여러 팀을 찾아다니며 ‘여러분 제품에도 코드 편집기가 필요하잖아요’라고 소개했고 ‘이건 어때요?‘라고 권했죠.”</strong></p>
+<p>식별법도 재미있다. <strong>“브라우저의 온라인 코드 편집기에서 코드를 선택했을 때 모서리가 예쁘게 둥글다면, Monaco Editor라는 첫 번째 단서입니다.”</strong></p>
+<p>이름 때문에 생긴 일화도 있다. <strong>“한번은 모나코라는 나라에서 편지를 받기도 했습니다. 코드 편집기 Monaco와 모나코 관광을 명확히 구분해 달라는 내용이었죠.”</strong></p>
+<h3 id="성능-원칙--렌더러-스레드와-비례-비용">성능 원칙 — 렌더러 스레드와 비례 비용<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성능-원칙--렌더러-스레드와-비례-비용" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>기술적 선택 중 가장 근본적인 것이 프레임워크를 쓰지 않기로 한 결정이었다.</p>
+<p><strong>“초기에 우리 스스로 던진 질문 중 하나는 이것이었어요. jQuery를 써야 할까, 말아야 할까? 당시 사실상의 표준 프레임워크였죠. 결국 우리는 직접 만들기로 했습니다. 그래야 우리가 통제하면서 계속 발전시킬 수 있었으니까요.”</strong></p>
+<p>렌더링도 직접 제어했다. <strong>“편집기 자체만 봐도 맞춤형 렌더링 코드로 가득합니다. 각 줄마다 div를 만들고, 토큰마다 span을 만듭니다. 모든 DOM 상호 작용을 하나하나 직접 결정할 수 있다는 점은 렌더링 성능을 크게 높이는 핵심 요소 중 하나입니다.”</strong></p>
+<p>스레드 원칙도 명확했다. <strong>“물결 밑줄을 계산하는 것 같은 연산 집약적 작업은 렌더러 스레드에서 처리할 수 없다는 걸 늘 알고 있었습니다. 눈에 보이지 않는 작업으로 그 스레드를 과부하시키면 UI가 멈춥니다. 이 스레드는 그리기만 하라고 있는 거니까요.”</strong></p>
+<p>여기서 나오는 설계 원칙이 이 다큐멘터리에서 가장 실용적인 대목이다.</p>
+<p><strong>“초창기에 정말 좋은 결정을 몇 가지 내렸습니다. UI 스레드에서는 오래 실행되는 스크립트를 절대 돌리지 않았죠. 또한 편집기에서 하는 모든 작업을 아주 세심하게 설계해서 실행 비용이 작업량에 정확히 비례하도록 했습니다.”</strong></p>
+<p>구체적인 예도 든다. <strong>“수백만 줄짜리 거대한 코드 파일에서라도, 키를 한 번 눌러 문자 하나를 입력했다면, 비용도 오직 그 한 번의 입력에 반응하는 만큼만 들어야 합니다. 스크롤할 때 50줄만 보인다면, 실제로 봐야 하는 그 50줄만 렌더링하려고 정말 철저히 노력합니다.”</strong></p>
+<h3 id="셀프-호스팅--첫날-받은-과제">셀프 호스팅 — 첫날 받은 과제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#셀프-호스팅--첫날-받은-과제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>편집기가 돌아가는 것만으로는 부족했다. 빠진 것은 자기 자신으로 자기를 만드는 일이었다.</p>
+<p><strong>“제가 합류했을 때는 이미 Monaco Editor가 실제로 브라우저에서 실행되고 있었습니다. 입력도 할 수 있었고, IntelliSense도 어느 정도 작동했죠. 하지만 빠진 게 있었습니다. 이것을 실제로 어떻게 활용해 Monaco 자체를 개발할 것인가, 이른바 셀프 호스팅이었죠.”</strong></p>
+<p>첫날 과제가 그것이었다. <strong>“첫날 에리히 감마가 제게 맡긴 일은 Monaco Editor에 파일을 만들고 편집하고 저장할 수 있는 공간을 마련하고, 그곳에서 Monaco Editor 자체의 소스 코드를 작성하게 하는 것이었습니다.”</strong></p>
+<p>여기서도 타이밍이 맞았다. <strong>“제 기억으로 당시 Node.js가 Windows 지원을 내놓았는데, 아주 초기 버전이었죠. 우리는 처음부터 크로스 플랫폼으로 만들고 싶었습니다.”</strong></p>
+<p>한 달 만에 돌아갔다. <strong>“한 달쯤 지나자 이미 브라우저를 열고 localhost에 접속해 Node.js를 실행하면 워크벤치와 파일 탐색기가 딸린 Monaco Editor에서 입력하고 저장할 수 있었고, 실제로 그것으로 Monaco를 개발할 수 있었습니다.”</strong></p>
+<p>그 효과를 개발자 도구의 매력으로 정리한다.</p>
+<p><strong>“무엇을 개선하든, 그걸 직접 사용하면서 더 생산적으로 일하게 되죠. 계속해서 더 나아지고 또 나아지는 선순환입니다.”</strong></p>
+<p>이 피드백 루프에 대한 애정은 앞부분에도 나온다. <strong>“개발자 도구의 피드백 루프가 좋습니다. 무언가를 만들면 직접 써 보고, 친구들도 써 봅니다. 물론 다른 개발자들도 쓰는데, 아주 까다로운 사용자들이죠. 충성심이라곤 전혀 없어요. 원할 때면 언제든 더 좋은 도구로 옮겨 갑니다.”</strong></p>
+<h3 id="웹-ide의-좌절-그리고-데스크톱으로">웹 IDE의 좌절, 그리고 데스크톱으로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#웹-ide의-좌절-그리고-데스크톱으로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>첫 제품화는 Azure에 묶인 형태였다. <strong>“결국 이것을 Visual Studio Online Monaco라는 이름으로 공개하기로 했습니다.”</strong> 목표는 가벼움이었다. <strong>“‘가벼운 Visual Studio’인 셈이죠. 아주 가볍고 반응성이 뛰어나면서도 쾌적한 코딩 경험을 제공합니다.”</strong></p>
+<p>그러나 도달 범위가 문제였다. <strong>“그 시나리오는 범위가 상당히 좁았습니다. Azure를 사용해야 하고, Azure 웹사이트가 있어야 하며, 이것저것 또 해야 했습니다. 그것만으로 존재감을 갖기는 매우 어려웠습니다.”</strong></p>
+<p>그래서 질문을 바꾼다. <strong>“적어도 웹 IDE가 될 수 없다면, 여러 파일을 다루는 좋은 편집기는 될 수 있을까?”</strong></p>
+<p>또 한 번 기술 환경이 맞아떨어졌다. <strong>“데스크톱 애플리케이션을 개발할 수 있는 프레임워크들이 등장했습니다. JavaScript, HTML, CSS, Node.js로 말이죠. 가장 먼저 나온 것은 node-webkit이었습니다.”</strong></p>
+<p>전환 비용이 작았다는 점도 짚는다. <strong>“우리 입장에서는 이미 만든 것에서 그리 크게 벗어나는 변화는 아니었습니다. 우리는 웹용으로 개발하고 있었고, node-webkit과 Electron은 설치할 수 있는 웹 렌더링 엔진이나 마찬가지였으니까요.”</strong></p>
+<p>제품의 좌표도 이때 정해진다. <strong>“여기에 하나의 스펙트럼이 있어서 경량 편집기부터 완전한 IDE까지 이어진다면, 우리는 경량 편집기에 가깝게 가되 IDE에서 정말 마음에 드는 기능은 가져오자고 했습니다. 꼭 필요하고 마음에 든 것은 풍부한 언어 지원과 디버깅이었습니다.”</strong></p>
+<p>그리고 자평한다. <strong>“브라우저 접근은 조금 앞선 시도였고, 우리로서는 자연스럽게 방향을 틀어 좀 더 네이티브에 가까운 방향으로 가기로 한 것이죠.”</strong></p>
+<h3 id="스타벅스-이야기--대화조차-할-수-없었다">스타벅스 이야기 — “대화조차 할 수 없었다”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#스타벅스-이야기--대화조차-할-수-없었다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>제품 방향을 바꾼 문제의식을 가장 잘 보여 주는 일화다.</p>
+<p><strong>“Starbucks에 가 보면, 헤드폰을 쓴 멋진 젊은이들이 잔뜩 있고, 그 앞에는 커다란 라테 같은 걸 놓고 Mac으로 열심히 코딩하고 있죠. Sublime과 오픈 소스를 사용하고, Git을 비롯해 온갖 도구를 씁니다.”</strong></p>
+<p>그리고 당시 회사의 제안이 어떻게 들렸을지를 재현한다.</p>
+<p><strong>“제가 다가가 ‘아주 훌륭한 개발 도구가 있습니다. 훨씬 더 생산적으로 일할 수 있어요. 그러려면 몇 가지 해야 할 일이 있습니다. 첫째, 그 Mac을 닫고 Windows 컴퓨터를 사세요. Visual Studio를 사고, 5GB 분량을 받고, 모든 코드를 .NET과 C#으로 다시 작성하세요.‘”</strong></p>
+<p>결과는 뻔하다. <strong>“그러면 그 친구는 ‘네, 알겠어요’ 하고는 다시 헤드폰을 쓰고 저를 쫓아 버리겠죠. 그러니 우리는 별로 의미 있는 존재가 아니었죠.”</strong></p>
+<p>여기서 결론이 나온다. <strong>“이것이 VS Code를 로컬에 설치 가능한 크로스 플랫폼 오픈 소스 도구로 만들자는 아이디어의 출발점이었습니다. 그래야 사람들과 실제로 대화를 나눌 수 있었으니까요.”</strong></p>
+<h3 id="2015년-4월-build--linux-데모">2015년 4월 Build — Linux 데모<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2015년-4월-build--linux-데모" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>프로토타입 시연 장면이 전환점이었다. <strong>“Linux에서 시연했기 때문에 그 회의가 또렷이 기억납니다. 갑자기 Microsoft가 Linux에서 실행되는 개발 도구를 만들 수 있게 된 겁니다. 다들 크게 환호했습니다.”</strong></p>
+<p>일정도 그 자리에서 정해졌다. <strong>“그때가 10월이었고, 환호가 이어져 결국 다음 행사에서 발표하기로 결정할 정도였습니다. 약 6개월 뒤인 4월 Build 컨퍼런스에서, 크로스 플랫폼으로 실행되는 편집기가 있다고 발표하고자 했습니다.”</strong></p>
+<p>무대에서의 데모도 인용된다. <strong>“이제 Ubuntu로 왔고, .NET 앱을 디버깅하고 있습니다. 로컬 변수와 호출 스택을 확인할 수 있고, 중단점도 있습니다. 이 모든 기능이 경량 코드 편집기에 들어 있죠.”</strong></p>
+<p>당시 회사 분위기가 어땠는지도 증언한다. 이 대목이 이 다큐멘터리에서 가장 시대상을 잘 보여 준다.</p>
+<p><strong>“사람들은 2010년, 2015년의 Microsoft가 2025년의 Microsoft와 달랐다는 걸 기억해야 합니다. 당시엔 Microsoft 방식이 아니면 안 된다는 분위기가 있었죠. Windows와 우리 제품, 우리 코드와 앱만 고집했어요.”</strong></p>
+<p><strong>“그런데 누군가 모든 기능을 갖춘 코드 편집기를 들고나와 크로스 플랫폼에, Microsoft Build 무대에서 Mac까지 선보인다는 건 상상도 못 할 일이었죠. 만우절 농담이었다고 할 수도 있었죠.”</strong></p>
+<p>그럼에도 허용됐다는 점을 강조한다. <strong>“하지만 우리는 계속 한계에 도전했고 회사도 그렇게 하도록 허락해 줬습니다. 변화가 시작됐다는 느낌이었죠.”</strong></p>
+<p>이름을 정하는 대목도 짧지만 인상적이다. <strong>“누군가 ‘그냥 Code라고 하죠’라고 했어요. 저는 ‘누가 이름을 그렇게 지어?’ 싶었죠. 명사 하나를 덜컥 고를 배짱이 누구에게 있겠어요? 그냥 명사도 아니고, 바로 그 명사 ‘Code’를요.”</strong> 결론은 이렇다. <strong>“정말 미친 듯 대담한 발상이라고 생각했는데, 결국 ‘그냥 Code라고 하자’는 게 최고의 선택이 됐습니다.”</strong></p>
+<p>발표 당일의 반응도 남아 있다. <strong>“그날 Hacker News는 아주 뜨거웠습니다. 술집에 앉아 Hacker News 추천 100개마다 맥주를 한 잔씩 마셨어요. 추천이 1,400개쯤 되자 결단을 내려야 했죠.”</strong></p>
+<p>기술적 성취의 의미도 정리한다. <strong>“프로그레시브 웹 앱이나 Electron에서 실행되는 앱은 복잡성에 한계가 있던 시절이었어요. 그 정도 성능의 웹 앱은 아무도 본 적이 없었을 겁니다. Electron의 가능성을 제대로 보여 줬죠. TypeScript의 가능성도 보여 줬고요.”</strong></p>
+<h3 id="오픈-소스로-가는-길--hello-code">오픈 소스로 가는 길 — ‘Hello Code’<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#오픈-소스로-가는-길--hello-code" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>발표 직후 요구는 두 가지로 모였다. <strong>“사람들은 ‘좋지만 확장 프로그램이 필요해요’라고 했고, ‘좋지만 오픈 소스로 공개해 주세요’라고도 했죠. 요구는 분명했습니다. 그 두 가지가 우리가 달성해야 할 다음 목표가 됐습니다.”</strong></p>
+<p>준비 과정에서 코드를 정리했다. <strong>“코드를 샅샅이 살피며 많은 부분을 정리했습니다. 제가 // TODO 주석을 지우기만 한 커밋을 본 기억이 나요. ‘지난 3년 동안 안 했으니 앞으로도 절대 안 하겠지. 그냥 지우자’ 싶었죠.”</strong></p>
+<p>이력은 남기지 않기로 했다. <strong>“당시에는 이전 이력을 하나도 포함하지 않기로 했습니다. 출시일 당시 코드 상태만 스냅샷으로 공개하기로 했죠.”</strong></p>
+<p>그래서 첫 커밋이 상징적이다. <strong>“에리히 감마가 자기 이름을 걸기로 했죠. 그래서 VS Code 오픈 소스 저장소의 첫 코드는 에리히 감마의 ‘Hello Code’였고, 거기에 지난 4년간의 작업물이 한꺼번에 담겼습니다.”</strong></p>
+<p>회사 차원에서도 전례가 없었다. <strong>“Microsoft 내에서는 사실상 유일하게 훌륭한 사례였어요. Microsoft가 오픈 소스로 나아갈 길을 우리가 실제로 개척하고 있었습니다.”</strong></p>
+<p>실무적 쟁점도 있었다. <strong>“소스 파일에 Microsoft 이름을 넣어도 되는 걸까요? 브랜드 요소를 넣어도 될까요? 많은 협상 끝에 내린 결론은 브랜드 요소와 아이콘 디자인을 별도로 분리해야 한다는 것이었어요.”</strong></p>
+<p>실수담도 남아 있다. <strong>“공개하면 안 되는 저장소가 하나 있었는데, 제가 당연히 그 버튼을 눌러 버렸죠. 그래서 그 저장소가 1분 동안 오픈 소스로 공개됐습니다. 누군가 클론했어요.”</strong></p>
+<p>첫 기여 일화는 이 영상에서 가장 사랑받을 대목이다.</p>
+<p><strong>“제 철자 실력이 좋지 않아서 running의 n을 세 개로 썼습니다. 그런데 불과 7분 만에 첫 오픈 소스 기여가 들어와 그 철자를 고쳐 줬습니다. 첫 번째 풀 리퀘스트는 오타 수정이었습니다.”</strong></p>
+<h3 id="확장-api--날카로운-칼을-주지-않기">확장 API — “날카로운 칼을 주지 않기”<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#확장-api--날카로운-칼을-주지-않기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>확장 프로그램 설계의 첫 원칙은 격리였다. <strong>“확장 프로그램은 별도 프로세스에서 실행돼야 한다는 게 분명했습니다. 확장 프로그램에 오류가 있어서 무한 루프에 빠지면 확장 프로그램 프로세스는 멈춰도 편집기 자체는 항상 응답합니다.”</strong></p>
+<p>비유로 드라이버를 든다. <strong>“Windows는 불량 드라이버 때문에 종종 충돌하잖아요? 그럼 누구의 잘못일까요? 불량 드라이버 탓일까요, 아니면 Windows가 이렇게 충돌하도록 허용한 탓일까요?”</strong></p>
+<p>그래서 원칙이 정해진다.</p>
+<p><strong>“사람들에게 아주 날카로운 칼을 주면 결국 손가락을 베게 됩니다. 그래서 우리는 ‘그렇게 만들지는 말자’고 했습니다.”</strong></p>
+<p>경쟁 제품과의 차이도 명시한다. <strong>“당시 Atom은 스스로를 ‘마음대로 뜯어고칠 수 있는 편집기’라 했습니다. Atom 핵심 개발자가 할 수 있는 일은 무엇이든 Atom 생태계의 확장 프로그램도 할 수 있었죠. 하지만 VS Code에서는 그걸 허용하지 않았습니다.”</strong></p>
+<p>대가도 인정한다. <strong>“물론 그만큼 제약도 많습니다. 이 때문에 우리를 싫어하는 사람도 있지만, 장기적으로는 큰 이득이 됩니다.”</strong></p>
+<p>이유가 명확하다. 이 부분이 API 설계에 대한 좋은 교훈이다.</p>
+<p><strong>“누군가 쓰는 순간 그것은 API가 됩니다. 이건 API고 저건 내부 API라고 구분할 수는 없습니다. 내부 API라는 건 없습니다. 누군가 호출할 수 있다면 실제로 호출하고 API라고 여길 테니까요.”</strong></p>
+<p><strong>“그러다 아주 인기 있는 확장 프로그램이 생겼는데, 그 확장 프로그램이 쓰지 않기를 바라는 API를 사용할 수 있습니다. 이제 그들은 여러분을 인질로 잡을 수 있습니다.”</strong></p>
+<p>그래서 호환성 약속이 나온다. <strong>“우리는 API를 절대 변경하지 않습니다. 한번 공개된 API는 그대로 유지됩니다. 10년 전에 만든 확장 프로그램도 지금 설치할 수 있고, 여전히 실행됩니다. 그것이 우리의 보장입니다.”</strong></p>
+<p>진입 장벽도 낮게 잡았다. <strong>“확장 프로그램용 API는 최대한 단순하게 유지해야 합니다. 진입 장벽이 너무 높으면 확장 프로그램을 만들지 않을 테니까요.”</strong></p>
+<p>수요는 오히려 먼저 있었다. <strong>“흥미롭게도 사람들이 먼저 찾아와 확장 프로그램을 만들고 싶다고 했습니다. 제발 써 달라고 한 게 아니라, 정반대였죠.”</strong></p>
+<h3 id="확장-생태계-그리고-개발자의-정서적-애착">확장 생태계, 그리고 개발자의 정서적 애착<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#확장-생태계-그리고-개발자의-정서적-애착" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>한 확장 프로그램 개발자의 증언이 생태계의 성격을 보여 준다. 그는 오픈 소스가 되기 전에 패치를 보냈다고 한다.</p>
+<p><strong>“다음 릴리스에, 말 그대로 하루 이틀 만에 그 패치가 제품에 반영되어 배포됐습니다. 그때 이 제품에 완전히 매료됐죠.”</strong></p>
+<p>몰입의 정도도 전한다. <strong>“제 아내는 GitLens가 제 애인이라고 농담하곤 했습니다. 그래서 수많은 밤과 주말을 GitLens 개발에 쏟았습니다.”</strong></p>
+<p>배포도 간단했다. <strong>“표준 도구로 확장 프로그램을 한데 패키징한 뒤 VS Code 마켓플레이스에 바로 게시할 수 있었습니다. 정말 몇 초 만에 공개됐습니다.”</strong></p>
+<p>초기와 지금의 차이도 짚는다. <strong>“초창기에는 찾을 수 있는 확장 프로그램이 손에 꼽을 정도였습니다. 지금은 새 확장 프로그램마다 이미 등록된 수십만 개와 경쟁해야 합니다.”</strong></p>
+<p>제품 철학은 한 문장으로 요약된다. <strong>“핵심 철학은 제가 늘 말하는 ‘필요할 때 완성되는 IDE’입니다. 필요한 기능과 확장 프로그램 등을 딱 필요한 순간에 쓸 수 있습니다.”</strong></p>
+<p>그리고 자기 강화 효과를 짚는다. <strong>“새로운 기술이 나오면 아주 쉽게 VS Code용 확장 프로그램이 생깁니다. 자기실현적으로 스스로를 증폭하는 네트워크 효과죠.”</strong></p>
+<p>다큐멘터리는 여기서 한 발 물러나 질문을 던진다. <strong>“개발자들은 왜 코드 편집기에 그토록 정서적 애착을 느낄까요?”</strong></p>
+<p>답도 인용된다. <strong>“제 보금자리니까요. 제가 온종일 시간을 보내는 곳이죠.”</strong> 그리고 우선순위 목록을 든다. <strong>“예전에 프로그래머의 우선순위를 다룬 블로그 글을 쓴 적이 있습니다. 등, 엉덩이, 두뇌라고 했죠. 자기 엉덩이에 투자해서 좋은 의자를 사야 합니다. 훌륭한 코드 편집기도 있어야 하고요.”</strong></p>
+<p>전환의 어려움도 인정한다. <strong>“사람들이 바꿀 만큼의 가치를 제공하려면 문턱이 아주 높습니다. 그들이 매일 쓰는 도구를 말이죠. 하지만 VS Code는 해냈습니다.”</strong></p>
+<p>한 사용자의 전향 과정도 담긴다. <strong>“저는 Sublime Text의 골수 팬이라 책까지 썼습니다. 그러다 VS Code가 나오자 힐끗 보고는, ‘오, 제법 괜찮아 보이네.’ 그래도 Sublime Text를 아마 1년은 더 썼습니다. 하지만 다시 써 볼 때마다 깨달았죠. ‘와, 이건 사용 경험이 훨씬 좋네.‘”</strong></p>
+<p>유입 경로에 대한 관찰도 정확하다. <strong>“VS Code로 넘어온 많은 사람은 IDE를 쓰던 이들이 아니었습니다. 텍스트 편집기를 쓰던 사람들이라 꼭 IDE 기능을 알고 있던 것은 아니었죠. IDE 사용자들은 무척 화가 났습니다. 그들에겐 수년 전부터 있던 기능이니까요. 하지만 텍스트 편집기만 쓰던 우리는 ‘우와, 이거 끝내준다’ 했죠.”</strong></p>
+<h3 id="lsp--개방이-만든-표준">LSP — 개방이 만든 표준<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lsp--개방이-만든-표준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>언어 지원 문제를 정면으로 다룬 대목이다. 먼저 격차를 진단한다.</p>
+<p><strong>“TypeScript 같은 주력 언어는 심층적인 언어 지원을 제공했습니다. 다른 언어 확장 프로그램은 약 100개였는데, 대부분 언어별 구문 강조와 코드 조각만 제공할 뿐, 주력 언어처럼 풍부한 의미 정보를 제공하지는 못했습니다.”</strong></p>
+<p>그리고 현실을 인정한다. <strong>“우리는 시장의 선두가 아니어서 기대할 수 없었습니다. 새 언어를 만든 개발자가 VS Code에 와서 우리 API로 VS Code만을 위한 통합 기능을 만들어 주리라고요.”</strong></p>
+<p>힌트는 이미 있었다. <strong>“Steve Lucco가 TypeScript 서버를 만든 건 Sublime에서도 TypeScript를 지원하고 싶었기 때문입니다.”</strong></p>
+<p>여기서 유인 구조를 뒤집는 아이디어가 나온다.</p>
+<p><strong>“이를 통해 VS Code용 언어 지원 확장 프로그램을 만드는 이들에게 동기를 부여해, Vim 같은 다른 IDE도 지원하게 할 수 있습니다. 한 번 개발하면 VS Code뿐 아니라 Vim에서도 작동하는 거죠.”</strong></p>
+<p>그러나 통합 코드는 여전히 남았다. <strong>“그렇다면 IDE 쪽에서 랭귀지 서버 통합을 더 간단하게 만들 수 있을까요? 그때 이 아이디어를 떠올렸습니다. 랭귀지 서버와 통신할 수 있도록 JSON-RPC 기반 공통 프로토콜을 정의했죠.”</strong></p>
+<p>성공의 이유가 명확하다. <strong>“언어 제공자들이 아주 쉽게 언어 인텔리센스 기능을 제공하면서도 TypeScript로 다시 작성할 필요가 없었기 때문입니다. 핵심 아이디어는 C++ 개발자가 C++ 랭귀지 서버를 C++로 작성하고 C# 개발자는 C#으로 작성하는 것이었습니다.”</strong></p>
+<p>외부 검증도 거쳤다. <strong>“첫 사용자는 PowerShell이었고 덕분에 그 가능성을 확인했습니다. 물론 진정한 성공은 외부 사람이 실제로 이를 구현할 때 찾아옵니다.”</strong></p>
+<p>그래서 어려운 목표를 잡았다. <strong>“정말 멋진 일은 VS Code에서 풍부한 Java 지원을 제공하는 것이었습니다. 사람들이 우리가 하리라고 기대하지 않던 일이었으니까요.”</strong></p>
+<p>Red Hat과의 협업 배경도 나온다. <strong>“당시 우리는 Eclipse를 사용했고 Eclipse를 좋아했습니다. 하지만 소형 IDE들이 부상하고 있었고 LSP 덕분에 거의 같은 팀으로 여러 IDE를 지원할 수 있게 됐습니다.”</strong></p>
+<p>핵심 이점도 두 가지로 정리한다. <strong>“첫째, 실패해도 IDE의 나머지 부분에 영향을 주지 않고, 둘째, Java 개발자는 Java로 JavaScript 개발자는 JavaScript로 작성할 수 있습니다. 결국 더 적은 자원으로 더 많은 일을 할 수 있습니다.”</strong></p>
+<p>Go 커뮤니티 사례가 가장 극적이다. <strong>“한때 Go 사용자의 75%가 VS Code를 사용했던 것 같습니다. 그래서 사실상 표준 경험으로 자리 잡았습니다.”</strong> 그리고 <strong>“VS Code 없이는 Go가 널리 채택되기 매우 어려웠을 거라고 생각합니다.”</strong></p>
+<p>결과도 숫자로 제시된다. <strong>“현재 100개가 넘는 언어를 찾아볼 수 있는데 Language Server Protocol로 제공되는 언어들입니다. VS Code뿐 아니라 Vim 등에서도 사용됩니다.”</strong></p>
+<p>교훈은 한 문장이다. <strong>“개방형 접근법의 힘을 보여 줬죠. 우리는 공개 프로토콜을 만들어 누구나 이용할 수 있게 하고 쉽게 쓸 수 있도록 라이브러리도 제공했습니다. 그러자 사람들이 앞다퉈 참여했습니다.”</strong></p>
+<h3 id="원격-개발--네-가지-사용자-그리고-meta와의-거래">원격 개발 — 네 가지 사용자, 그리고 Meta와의 거래<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#원격-개발--네-가지-사용자-그리고-meta와의-거래" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>원격 개발은 쓸 수 없는 사용자들을 발견하면서 시작됐다. 네 가지 사례가 제시된다.</p>
+<p>첫째가 고성능 서버다. <strong>“Python 데이터 사이언티스트들은 모델 작업용으로 아주 고성능인 컴퓨터를 썼습니다. 거기서 개발하려면 SSH로 접속했고 Vim으로 개발할 수는 있었습니다. 하지만 그 컴퓨터에서는 VS Code의 풍부한 기능을 쓸 수 없었죠.”</strong></p>
+<p>둘째가 WSL이다. <strong>“Windows에서 Linux 환경을 대상으로 개발할 수 있습니다. 하지만 프로그램을 실행하려 할 때는 문제가 생깁니다. VS Code 쪽에도 Python이 있더라도 버전이 맞지 않거나 아예 설치돼 있지 않습니다.”</strong></p>
+<p>셋째가 컨테이너다. <strong>“Docker는 편리합니다. 개발과 빌드에 필요한 모든 것이 그 안에 들어 있습니다. 하지만 모든 것이 Docker 컨테이너 안에 있으면 그 안에서 손쉽게 개발할 수는 없습니다.”</strong></p>
+<p>넷째가 기업 정책이다. <strong>“이들은 개발자가 노트북에 소스 코드를 두는 것을 원하지 않습니다. 그래서 클라우드에 개발용 컴퓨터를 제공하고 개발자는 거기에 접속해 작업합니다.”</strong></p>
+<p>결론은 분리였다. <strong>“필요한 것은 VS Code의 일부를 실제로 원격 환경에서 실행해 도구와 파일이 있는 곳에서 작동하게 하는 것이었습니다.”</strong></p>
+<p>아키텍처가 이미 그 방향이었다는 점이 결정적이었다.</p>
+<p><strong>“이미 VS Code의 아키텍처는 깔끔하게 분리돼 있었기 때문입니다. UI 프로세스와 확장 프로그램 호스트 프로세스가 있었죠. 그렇다면 굳이 같은 컴퓨터에서 실행할 필요가 있을까요?”</strong></p>
+<p>경쟁사의 선례도 참고했다. <strong>“Facebook이 하는 일을 살펴보니 Nuclide라는 프로젝트가 있었는데 이를 통해 원격 환경에서 Atom을 쓸 수 있었습니다.”</strong></p>
+<p>그리고 흐름이 바뀐 시점을 짚는다. <strong>“2018년 초쯤 상황이 달라졌습니다. Atom은 여전히 인기 있는 편집기였지만 VS Code는 급성장하기 시작했죠. 당시 (Atom은) 활성 사용자 수가 약 200만 명이었고, VS Code는 아마 500만 명 정도였고 계속 성장하고 있었습니다.”</strong></p>
+<p>경쟁팀의 대응도 전한다. <strong>“그들에게는 새로운 구상도 있었습니다. X-ray라는 대대적인 재작성을 추진하려고 했고 Rust로 많은 부분을 만들면서 이렇게 말했죠. ‘성능으로 VS Code를 이기겠습니다.’ 그 프로젝트의 명맥은 오늘날 Zed 편집기에 이어진 것 같습니다.”</strong></p>
+<p>두 회사 간의 거래도 공개된다. <strong>“Microsoft와 Meta 양측을 모아 합의했습니다. Meta가 이 소스 코드를 받는 대신 우리는 원격 개발에 VS Code를 전면 도입하기로 했죠.”</strong></p>
+<p>시작은 확장 프로그램 세 개였다. <strong>“처음에는 세 가지 주요 확장 프로그램으로 시작했습니다. WSL, Dev Containers, Remote SSH였습니다.”</strong></p>
+<h3 id="웹으로-돌아오다--vscodedev와-codespaces">웹으로 돌아오다 — vscode.dev와 Codespaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#웹으로-돌아오다--vscodedev와-codespaces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>원격 아키텍처가 원래 비전으로 되돌아가게 했다는 점이 이 다큐멘터리의 구조적 반전이다.</p>
+<p><strong>“VS Code 팀의 원래 비전은 브라우저에서 완전히 실행되는 개발 도구를 만드는 것이었습니다. 그 비전을 현실로 구현해 여러분께 선보이게 되어 기쁩니다. 웹용 VS Code, 또는 vscode.dev에서 지금 사용할 수 있습니다.”</strong></p>
+<p>가능했던 이유도 아키텍처다. <strong>“VS Code가 신경 써야 할 것은 프로세스 간 통신과 연결뿐이었고 확장 프로그램 호스트 같은 다른 프로세스는 로컬 데스크톱에서도 원격 컴퓨터에서도 실행할 수 있었으며 웹에서 실행할 수도 있었습니다.”</strong></p>
+<p>Dev Containers의 효용도 설명한다. <strong>“devcontainer.json 파일이 있습니다. 이 파일 하나에 제 개발 환경 전체가 정의돼 있습니다. ‘컨테이너에서 다시 열기’만 선택하면 즉시 설정 파일을 읽고 필요한 것을 모두 내려받아 개발 환경을 구성해 줍니다.”</strong></p>
+<p>문제의식은 온보딩이다. <strong>“새 프로젝트에 적응하는 과정에서 대개 가장 먼저 해야 하는 일은 필요한 정보를 찾아보는 겁니다. 어떤 의존성이 필요할까요? 어떤 버전의 언어나 도구 체인을 설치해야 할까요?”</strong></p>
+<p>여기서도 개방을 택했다. <strong>“Dev Container CLI와 명세를 오픈 소스로 공개한 것은 논리적으로 당연한 다음 단계였습니다.”</strong> 목표는 자기 제품 밖까지다. <strong>“어떤 환경에서도 같은 애플리케이션으로 사용자가 생산성을 낼 수 있게 합니다. 그 환경이 VS Code 밖이라 해도요.”</strong></p>
+<p>기기 제약도 사라졌다. <strong>“아무것도 설치할 필요가 없었고 특히 Chromebook이나 태블릿 같은 기기에서 작업할 때는 휴대폰으로 코드를 볼 때조차 내 기기가 호환되는지 걱정할 필요가 없었습니다.“</strong></p>
+<h3 id="어떤-것이든-패턴-그리고-접근성">’어떤 것이든’ 패턴, 그리고 접근성<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#어떤-것이든-패턴-그리고-접근성" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>성장 전략을 하나의 패턴으로 정리하는 대목이다.</p>
+<p><strong>“우리에게 잘 통했던 이야기는 이른바 ‘어떤 것이든’ 패턴이었죠. 어떤 운영 체제든, 이미 해냈습니다. 다음은 어떤 언어든 지원하는 겁니다. 그다음은 ‘어떤 개발자든’이었죠.”</strong></p>
+<p>대상도 넓어졌다. <strong>“특별한 개발 환경이 필요한 개발자들이죠. 데이터 사이언티스트나 기업 사용자처럼요.”</strong></p>
+<p>그리고 세 번째 항목에서 태도가 바뀐다. <strong>“셋째로, 우리는 모두를 포용하는 제품을 만들고 싶었습니다. ‘어떤 개발자든’에는 접근성이 필요한 시각 장애인 등도 포함되며, 그들 모두를 지원하고자 했습니다.”</strong></p>
+<p>전환점이 된 장면도 구체적이다.</p>
+<p><strong>“제게 특히 큰 깨달음을 준 장면이 있었습니다. 시각 장애인 개발자가 스크린 리더로 VS Code에서 개발하는 모습이었죠. 그리고 우리가 얼마나 부족한지도 보였습니다. 우리는 물결 밑줄과 전구 아이콘을 화면에 표시하고, 중단점에 도달한 것도 표시합니다. 화면에만 보이는 것이 얼마나 많은지 깨닫고 눈이 번쩍 뜨였습니다.”</strong></p>
+<p>그래서 위상을 바꿨다. <strong>“그때부터 접근성을 단순한 체크 항목으로 두지 않기로 했습니다. 관점을 바꿔 접근성을 핵심 가치로 삼기로 했죠. 그래서 매번 반복 계획에서 첫 번째 항목은 항상 접근성 관련 과제였습니다.”</strong></p>
+<p>담당자의 정의도 인용된다. <strong>“접근성이란 단지 사용할 수 있게 하는 데 그치지 않고, 각자 필요한 방식으로 지원해 제품 안에서 역량을 펼치게 하는 것입니다.”</strong></p>
+<p>대상 범위도 넓다. <strong>“키보드 사용 경험을 어떻게 해야 스크린 리더 사용자뿐 아니라 이동 장애로 스위치 기기를 쓰는 이들에게도 실질적인 도움이 될지 고민합니다. 지적 장애가 있는 사용자나 VS Code 초보자, 그리고 저시력 사용자를 위해서요.”</strong></p>
+<p>그리고 한 문장으로 정리한다. <strong>“접근성은 있으면 좋은 정도가 아닙니다. 접근성은 사용자가 무언가를 할 수 있느냐 없느냐를 가르는 차이입니다.”</strong></p>
+<p>프로세스로도 굳혔다. <strong>“코드의 접근성 위반을 감지하는 자동화된 Playwright 테스트도 있어서, 누군가 풀 리퀘스트를 병합하려 할 때 접근성 요구 사항을 충족하지 못하면 테스트가 실패할 수 있습니다.”</strong></p>
+<p>사용자의 증언도 담긴다. <strong>“VS Code의 강점은 접근성을 우선한다는 데 있습니다. 세상은 그렇지 않은데도 말이죠.”</strong></p>
+<h3 id="성장의-세-가지-이유">성장의 세 가지 이유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성장의-세-가지-이유" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>한 참여자가 성공 요인을 셋으로 정리한다.</p>
+<p><strong>“첫째, 사용자 경험이 정말 좋습니다. 이것이 바로 엔지니어가 사용하는 핵심 도구라고 봅니다.”</strong></p>
+<p><strong>“둘째는 바로 이 개방형 생태계입니다. LSP는 수많은 언어 지원을 손쉽게 구현하게 해 줍니다. 아무리 자원이 풍부한 팀이라도, VS Code 팀조차 그 모든 언어를 직접 지원할 수는 없었을 겁니다.”</strong></p>
+<p><strong>“세 번째는 VS Code가 누구나 이용할 수 있게 했다는 점입니다. 유료 장벽 뒤에 갇혀 있지 않았죠. 다운로드만 클릭하면 바로 함께할 수 있었죠. 게다가 오픈 소스입니다.”</strong></p>
+<p>마지막 항목의 의미를 한 번 더 짚는다. <strong>“단순히 공짜라는 의미뿐 아니라 사상의 자유라는 의미에서도요.”</strong></p>
+<h3 id="ai--copilot이-시작된-방식">AI — Copilot이 시작된 방식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai--copilot이-시작된-방식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이야기는 2020년으로 넘어간다. <strong>“2020년 초였는데, 그들은 친절하게도 당시 개발 중인 모델을 쓰게 해 줬습니다. 훗날 GPT-3가 된 모델이었죠.”</strong></p>
+<p>첫인상은 반반이었다. <strong>“모델이 터무니없는 말을 많이 내놓아서 다 함께 한참 웃었습니다. 그래도 코드 생성 능력이 싹트고 있다는 건 분명했습니다.”</strong></p>
+<p>첫 평가는 참담했다. <strong>“제대로 시험해 보려고 면접 질문 50개를 코드로 만들었습니다. 전부 틀렸습니다. 하나도 빠짐없이요. 하지만 모델에 기회를 천 번 주면 결국에는 정답을 맞혔습니다.”</strong></p>
+<p>두 번째 실험이 판단을 바꿨다. <strong>“GitHub 저장소를 지정하면 테스트 커버리지가 높은 함수를 찾아냈죠. 그런 함수의 본문을 비운 뒤 모델에 코드를 채우게 하고 테스트를 다시 실행해 정답인지 확인했습니다. 결과는 정말 놀라웠습니다. 세 번 중 한 번이 넘는 비율로 정답을 맞혔습니다.”</strong></p>
+<p>성공 요인 분석이 특히 좋다. 모델 성능만이 아니라 오답의 비용이었다는 것이다.</p>
+<p><strong>“또 하나의 이유는 모델이 틀리더라도 그에 따른 대가가 아주 작다는 점이었죠. 사용자 입장에서는 모델이 조금 틀린 제안을 해도 신경 쓰이지 않아요. 그냥 계속 입력하면 되니까요. 작업을 방해하지 않습니다.”</strong></p>
+<p>통합 방식도 중요했다고 본다. <strong>“VS Code에 아주 매끄럽게 통합됐다는 점이 사용하고 싶게 만든 진짜 매력이었습니다.”</strong></p>
+<p>몰입 상태에 대한 비유도 나온다. <strong>“개발자에게 이상적인 상태는 이른바 몰입 상태겠죠? 일단 그 상태에 들어가면 방해받고 싶지 않습니다. 온갖 추상적 개념을 머릿속에 담고 있기 때문이죠.”</strong></p>
+<p>그리고 AI의 위치를 그 안에 놓는다. <strong>“그런데 똑같은 맥락을 또 누가 쌓았을까요? 바로 AI입니다. 그래서 AI도 여러분과 함께 몰입 상태에 들어갈 수 있습니다.”</strong></p>
+<p>제품 구조에 대한 오해도 정정한다. <strong>“흔한 오해는 GitHub Copilot을 (편집기)에 꽂아 두면 그저 한구석에 붙어 있는 부가 기능쯤으로 보는 것인데 전혀 사실이 아닙니다. 그저 내장된 AI 기능입니다.”</strong></p>
+<p>일하는 방식도 달라졌다고 한다. <strong>“예전에도 여러 AI 제품을 개발했는데 당시에는 과학 팀이 있었고 엔지니어링 팀도 따로 있어 두 팀 사이가 나뉘어 있었죠. 이 새로운 세계에서는 그 경계가 실제로 흐려집니다. 어디까지가 모델이고 사용자 경험인지 또 프롬프트인지 구분하기 어렵습니다.”</strong></p>
+<h3 id="자율성-슬라이더--ask에서-agent-mode로">자율성 슬라이더 — Ask에서 Agent Mode로<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#자율성-슬라이더--ask에서-agent-mode로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>AI 기능의 발전을 하나의 축으로 설명하는 대목이다. 이 비유가 이 다큐멘터리에서 가장 자주 인용될 만하다.</p>
+<p><strong>“AI 자율성을 조절하는 슬라이더라고 생각해 볼 수 있습니다. 우리 업계 전체가 함께 그 조절 과정을 거쳐 왔죠.”</strong></p>
+<p>끝까지 밀었을 때의 결론도 언급한다. <strong>“자율성을 끝까지 밀어붙이면 이런 주장에 이르게 됩니다. AI가 모든 코드를 작성하고 개발자는 더 이상 필요 없어진다는 주장이죠. 저는 그렇게까지 보지 않습니다.”</strong></p>
+<p>단계는 셋이다. <strong>“AI 자율성은 Ask에서 시작해 점차 확장되어 왔습니다. 그다음 Edits로 넘어가죠. 이제 코드를 제안하는 데 그치지 않고 직접 작성할 수도 있습니다. 계속 오른쪽으로 밀어 가면 Agent Mode에 도달합니다.”</strong></p>
+<p>팀의 작동 방식도 같다고 한다. <strong>“Ask를 만들고 나면 생각하죠. ‘더 많은 일을 할 수 없을까?’ Edits를 만들고 나서도 생각합니다. 그다음 Agent Mode를 만들며 AI가 실제로 어디까지 감당하는지 보려고 점점 더 많은 일을 맡깁니다.”</strong></p>
+<p>자동차 비유로 변화의 크기를 설명하는 부분도 인상적이다.</p>
+<p><strong>“운전대를 개선하면 열선이 들어간 아주 편안한 운전대를 얻을 수 있죠. 이는 VS Code에 새 확장 프로그램을 설치하는 것과 비슷합니다. (더 좋은 랭귀지 서버는) 자동차에 더 빠른 엔진을 다는 것이죠. 하지만 어느 정도는 단순한 편의 기능일 뿐입니다.”</strong></p>
+<p><strong>“개발자 도구에 들어간 초기 AI는 크루즈 컨트롤과 같았습니다. 여전히 직접 운전대를 잡고 적절한 속도를 설정해야 하죠. 자동차의 근본적 변화는 우리가 자율주행 자동차를 생각하기 시작했을 때라고 봅니다.”</strong></p>
+<p>그리고 지금의 위치를 규정한다. <strong>“그 새 모델들이 등장한 순간 우리는, 이것이 정말로 더 이상 코드의 모든 줄을 직접 작성할 책임이 없는, 아니 단 한 줄도 쓰지 않아도 되는 위치에 놓아 줄 수 있음을 깨달았습니다. 이는 소프트웨어 개발자로서 자신의 일을 바라보는 방식을 근본적으로 바꾸는 변화입니다.”</strong></p>
+<h3 id="지난-14개월의-속도">지난 14개월의 속도<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#지난-14개월의-속도" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>변화 속도에 대한 증언이 이어진다. <strong>“제 경력에서 변화의 속도가 이렇게 빨랐던 때는 기억나지 않습니다. 지금 같은 시기에 1년짜리 로드맵을 세우기는 매우 어렵습니다. 6개월 뒤 우리가 어디에 있을지조차요.”</strong></p>
+<p>제품 관리 방식도 흔들렸다고 한다. <strong>“1.0을 출시하고 나서 ‘커스터머 옵세션’이라는 구호가 있었습니다. GitHub에서 들어오는 이슈를 살피고 사람들이 무슨 말을 하는지 거의 그대로 파악했습니다. (그런데 AI 이후로는) 사람들이 무엇을 원하고 필요로 하는지 알던 상태에서, 사실 우리도 잘 모르는 상태가 됐죠.”</strong></p>
+<p>출시 주기도 바뀌었다. <strong>“월간 주기로 출시하던 데서 벗어나 이제 더 자주 출시하려 합니다. 매주 출시하게 될 겁니다.”</strong> 그리고 솔직하게 덧붙인다. <strong>“혼란스럽다는 말이 맞을 것 같아요. 하지만 좋은 의미의, 신나는 혼란이죠.”</strong></p>
+<p>새 모델이 나올 때의 절차도 공개한다. <strong>“보통 미리 접근해 직접 사용하며 검증합니다. 보유한 기본 프롬프트를 전부 모델에 넣어 보고 어느 것이 가장 잘 작동하는지 확인합니다. 보유한 도구 중 망가지는 것이 있는지 살펴봅니다.”</strong></p>
+<p>14개월간의 목록도 나열된다. Completions와 Next Edit Suggestions, Copilot Edits에서 시작해 <strong>“불과 몇 주 뒤 처음으로 에이전트형 흐름이 등장했습니다. 이는 모델에 도구를 주면 모델이 언제 그 도구를 호출할지 스스로 결정할 수 있다는 뜻입니다.”</strong></p>
+<p>오픈 소스화도 이어졌다. <strong>“6월에는 Chat과 관련된 모든 것을 오픈 소스로 공개했습니다. 11월에는 Completions도 우리 오픈 소스 코드베이스에 가져왔습니다.”</strong> 그리고 <strong>“Instructions를 도입했습니다. 이제 표준이 생겼고 Skills에 대해서도 거의 합의가 이루어졌습니다. MCP도 있습니다.”</strong></p>
+<p>모델 지형의 변화도 언급된다. <strong>“20개월 전에는 (초기 모델들을) 이야기했죠. 지금은 (여러 세대 뒤의 모델들을) 이야기합니다. 그때만 해도 Google은 존재감이 없었습니다. 지금은 (여러 모델이) 있습니다.”</strong></p>
+<h3 id="포크들--경쟁이자-확장">포크들 — 경쟁이자 확장<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#포크들--경쟁이자-확장" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>VS Code를 기반으로 한 포크들을 다루는 대목은 이 영상에서 가장 균형 잡힌 부분이다. 먼저 사용자의 피로를 인용한다.</p>
+<p><strong>“네, 이 포크들… 정말 믿기 힘들죠. 사용자 입장에서도 지칩니다. 웹 개발 기술을 따라가는 게 제 본업인데도 이것들을 쫓아가기가 벅찹니다.”</strong></p>
+<p>점유율도 제시된다. <strong>“제가 알기로 VS Code는 현재 개발자의 약 70%가 사용합니다. Stack Overflow 조사 기준이죠.”</strong></p>
+<p>왜 포크했는지도 분석한다. <strong>“VS Code의 지배력과 그 품질 덕분에 포크들도 처음부터 새로 만들지 않고 그 위에 구축하기로 한 겁니다. 어느 시점에 VS Code를 승자로 만든 건 UI였습니다. 하지만 UI의 한계 때문에 (그들이) 포크한 거죠.”</strong></p>
+<p>근본 원인은 불확실성이다. <strong>“모든 것에 맞는 API와 UI를 제공하기는 어렵습니다. 지금은 미래의 코딩이 어떤 모습일지 모르기 때문이죠.”</strong></p>
+<p>그래서 이런 평가가 나온다. <strong>“아이러니하게도 (우리는) 사실상 편집기 분야의 연구 개발을 해 온 셈입니다. 코드 편집기 문제는 해결됐습니다. 덕분에 전체 수준이 높아졌죠.”</strong></p>
+<p>내부의 시각도 두 갈래로 나뉜다. 하나는 비용의 비대칭이다. <strong>“(포크 팀은) VS Code 코드베이스의 보안 취약점까지 세세히 관리할 필요가 없으므로 훨씬 적은 비용으로 만들 수 있습니다. 그건 분명 사실입니다.”</strong></p>
+<p>다른 하나는 원래 취지다. <strong>“하지만 동시에 저는 여전히 (그 포크들이) 실제 개발 방식의 최첨단을 더욱 발전시키려 한다고 봅니다. 이는 VS Code를 애초에 오픈 소스로 만든 이유와 근본적으로 다르지 않습니다.”</strong></p>
+<p><strong>“어떤 포크와도 여전히 악감정은 없습니다.”</strong></p>
+<p>경쟁의 역사도 짚는다. <strong>“(우리가) 나왔을 당시에는 Sublime과 Atom이 있었고 Adobe의 Brackets를 비롯해 여러 훌륭한 편집기들이 있었습니다. 훌륭한 제품을 만드는 JetBrains도 있고요. Zed도 있습니다. 편집기를 밑바닥부터 직접 만들었죠. 정말 어려운 일입니다.”</strong></p>
+<p>결론은 사용자 편이다. <strong>“경쟁이 치열해지면서 VS Code도 엄청난 속도로 발전하고 있습니다. 최종 사용자로서는 이거야말로 최고죠.”</strong></p>
+<p>라이선스에 대한 태도도 담백하다. <strong>“VS Code를 포크해 (유료 서비스를 붙여) 팔아도 됩니다. 오픈 소스 라이선스를 택했다면 그럴 가능성도 받아들여야 하죠.”</strong></p>
+<h3 id="팀-문화--역할별-전담자가-없다">팀 문화 — 역할별 전담자가 없다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#팀-문화--역할별-전담자가-없다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>출시 압박에 대한 입장도 분명히 한다. <strong>“요즘 같은 시기에 AI 기능을 출시하다 보면 일단 만들어서 바로 내놓고 싶은 유혹이 큽니다. 우리도 같은 압박을 느끼니까요. 하지만 우리 도구를 사용하는 고객도 있습니다. 그래서 품질과 안전을 희생하면서까지 기능을 서둘러 출시하지는 않을 겁니다.”</strong></p>
+<p>이유도 명확하다. <strong>“왜 그렇게 하는지는 이해하지만 그 때문에 사람들이 정말 심각한 피해를 입게 됩니다.”</strong></p>
+<p>관심에 대한 태도도 밝힌다. <strong>“우리의 가치를 소셜 미디어에서 찾는다고는 말하지 않겠습니다. 오늘 Twitter에서 가장 화제가 되는지 아닌지는 그 일을 해내는 데 아무 상관이 없습니다.”</strong> 그러면서 자기 자신도 예외가 아니라고 인정한다. <strong>“정말 쉽게 한눈을 팔게 되죠. 저도 그런 세상에 살다 보니 한눈을 팔 때가 있다고 인정합니다.”</strong></p>
+<p>일하는 방식도 설명한다. 사양서를 넘기는 구조가 아니라는 것이다.</p>
+<p><strong>“PM이 사양서를 작성해 누군가에게 넘기고 그 사람이 그대로 코딩하는 그런 방식이 아닙니다. 오히려 ‘여기 해결할 문제가 있다’는 방식에 가깝습니다. 그러면 그 이면의 진짜 문제가 무엇인지 파악해야 합니다.”</strong></p>
+<p>책임의 범위도 넓다. <strong>“결국 한 사람이 제품 책임자이자 개발자 역할을 동시에 맡는 겁니다. 결과에 직접 책임을 지게 되니까요.”</strong></p>
+<p>전문화도 하지 않는다. <strong>“우리 팀에는 역할별 전담자가 없습니다. 누군가는 UI, 누군가는 테스트, 누군가는 서비스를 맡는 식이 아니죠. 우리 팀에서는 누구나 무엇이든 할 수 있습니다. AI 같은 새로운 분야가 등장하면 우리 모두 AI 엔지니어가 됩니다.”</strong></p>
+<p>개발 방식의 성격도 요약한다. <strong>“수많은 진화가 있었지만 혁명은 거의 없었습니다. 그리고 끊임없이 출시합니다. 무엇을 하든 멋진 아이디어는 얼마든지 낼 수 있습니다. 하지만 출시하지 않으면 존재하지 않는 셈이죠.”</strong></p>
+<p>마지막 메시지는 사람이다. <strong>“최고의 프로세스든, 리듬이든 수정이든, 뭐든 갖출 수 있지만 결국 중요한 건 사람입니다. 흔히 좋은 개발자라면 자존심이 강할 거라고 생각하지만 좋은 개발자들은 서로 함께 일하기를 정말 좋아합니다.”</strong></p>
+<p>그리고 한 참여자의 소회로 끝난다. <strong>“30년에 걸친 제 경력을 통틀어 이 일은 단연 제 경력의 정점이었습니다.”</strong></p>
+<h3 id="정리">정리<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정리" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>이 다큐멘터리는 한 편집기의 개발사이지만, 실제로는 제품 전략과 조직에 관한 여러 결정의 기록에 가깝다.</p>
+<p>첫째, <strong>출발점은 기술이 아니라 자기 인식</strong>이었다. Windows 개발자만 보던 조직이 웹으로 옮겨간 개발자들과 “대화조차 할 수 없다”는 사실을 인정한 것이 모든 것의 시작이다. 스타벅스 일화가 그 인식을 가장 선명하게 보여 준다.</p>
+<p>둘째, <strong>사람과 시간을 함께 사 왔다.</strong> 전설적인 개발자 한 명이 아니라 그가 오래 함께한 팀 전체가 왔고, 회사는 그들에게 “스타트업처럼” 긴 개발 기간을 보장했다. 대신 매년 만질 수 있는 결과물을 요구했다.</p>
+<p>셋째, <strong>초기 아키텍처 결정이 10년치 선택지를 만들었다.</strong> 프레임워크를 쓰지 않고 렌더링을 직접 제어한 것, UI 스레드에서 무거운 작업을 절대 돌리지 않은 것, 비용이 작업량에 비례하도록 설계한 것이 성능을 만들었다. 그리고 UI 프로세스와 확장 호스트를 분리한 결정이 훗날 원격 개발과 웹 버전을 가능하게 했다. 처음의 웹 IDE 비전으로 돌아오는 데 그 분리가 열쇠였다는 점이 이 이야기의 구조적 반전이다.</p>
+<p>넷째, <strong>API 설계의 원칙이 명확하다.</strong> “누군가 호출할 수 있다면 그것은 이미 API다”, “날카로운 칼을 주면 손가락을 벤다”, 그리고 한번 공개한 API는 바꾸지 않는다는 약속이다. 자유도를 낮춘 대신 10년 호환성을 얻었고, 그 선택 때문에 미움도 받았다고 스스로 말한다.</p>
+<p>다섯째, <strong>LSP는 개방이 표준을 만든 사례</strong>다. 자기 제품만을 위한 통합을 요구할 수 없는 후발주자였기 때문에, 오히려 다른 편집기에서도 동작하는 프로토콜을 만들어 언어 커뮤니티의 유인을 뒤집었다. Go 사용자의 상당수가 VS Code를 쓰게 된 것도 그 결과로 설명된다.</p>
+<p>여섯째, <strong>접근성이 체크 항목에서 핵심 가치로 옮겨간 과정</strong>이 인상적이다. 시각 장애 개발자가 스크린 리더로 일하는 장면을 보고 눈으로만 전달되는 정보가 얼마나 많았는지 깨달았다는 증언, 그리고 그것을 반복 계획의 첫 항목과 자동화 테스트로 제도화한 방식이다.</p>
+<p>일곱째, <strong>AI 이후의 태도가 담담하다.</strong> 자율성을 슬라이더로 놓고 Ask → Edits → Agent Mode로 밀어 왔지만 끝까지 가는 주장에는 동의하지 않는다고 밝힌다. 로드맵을 세울 수 없는 상황을 인정하면서도, 화제성보다 품질을 택하겠다고 못 박는다.</p>
+<p>여덟째, <strong>포크에 대한 평가가 균형 잡혀 있다.</strong> 비용의 비대칭은 사실이라고 인정하면서도, 그들이 최첨단을 밀고 있으며 그것이 처음 코드를 공개한 취지와 어긋나지 않는다고 말한다. 경쟁 덕분에 자기 제품이 더 빨라졌다는 평가도 함께 담는다.</p>
+<p>다만 이 영상은 <strong>당사자들이 만든 공식 다큐멘터리</strong>라는 점을 기억할 필요가 있다. 실패한 시도(초기 웹 IDE의 좁은 도달 범위)는 언급되지만 대체로 짧게 지나가고, 경쟁 제품에 대한 평가와 점유율 수치는 모두 화자들의 진술이다. 그럼에도 API 설계 원칙, 성능 원칙, 그리고 유인 구조를 뒤집어 표준을 만든 LSP의 사례는 제품을 만드는 사람이라면 업종과 무관하게 옮겨 담을 만하다.</p>
+<hr/>
+<blockquote>
+<p><strong>주의</strong>
+이 영상은 VS Code 팀이 직접 만든 <strong>공식 다큐멘터리</strong>이며, 한국어 자막이 제공된다. 다만 자동 추출 자막이라 인명 표기가 흔들리는 곳이 있다. 자막의 “샨쿠”는 당시 개발자 사업부 임원, “에리히 감마”는 Erich Gamma, “제이슨 잰더”는 Jason Zander, “스티브 루코”는 Steve Lucco, “앤더스”는 Anders Hejlsberg, “크리스 디아스”는 Chris Dias, “카이 메첼”은 Kai Maetzel을 가리킨다. 학교명(“Tech5”)과 일부 연도는 <strong>원본 영상으로 확인이 필요하다.</strong>
+또한 이 다큐멘터리는 <strong>제품을 만든 당사자들이 자기 제품의 역사를 이야기하는 형식</strong>이라 성공 서사에 유리하게 편집돼 있을 수 있다. 경쟁 제품(Atom, Sublime Text 등)에 대한 평가나 시장 점유율 수치도 화자들의 진술이다. 후반부에 등장하는 AI 모델 이름과 버전은 영상 제작 시점 기준이다.</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-943" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#왜-만들었나--windows만-보던-조직의-방향-전환" data-for="왜-만들었나--windows만-보던-조직의-방향-전환">왜 만들었나 — Windows만 보던 조직의 방향 전환</a></li><li class="depth-0"><a href="#2010년-웹이-바꾼-것" data-for="2010년-웹이-바꾼-것">2010년, 웹이 바꾼 것</a></li><li class="depth-0"><a href="#에리히-감마의-영입--새-직장이-아니라-새-도전" data-for="에리히-감마의-영입--새-직장이-아니라-새-도전">에리히 감마의 영입 — “새 직장이 아니라 새 도전”</a></li><li class="depth-0"><a href="#팀이-통째로-따라오다--취리히-개발-센터" data-for="팀이-통째로-따라오다--취리히-개발-센터">팀이 통째로 따라오다 — 취리히 개발 센터</a></li><li class="depth-0"><a href="#스타트업처럼--다이어그램이-아니라-만질-수-있는-것" data-for="스타트업처럼--다이어그램이-아니라-만질-수-있는-것">스타트업처럼 — “다이어그램이 아니라 만질 수 있는 것”</a></li><li class="depth-0"><a href="#typescript와의-상호-의존" data-for="typescript와의-상호-의존">TypeScript와의 상호 의존</a></li><li class="depth-0"><a href="#monaco--브라우저에서-도는-편집기" data-for="monaco--브라우저에서-도는-편집기">Monaco — 브라우저에서 도는 편집기</a></li><li class="depth-0"><a href="#성능-원칙--렌더러-스레드와-비례-비용" data-for="성능-원칙--렌더러-스레드와-비례-비용">성능 원칙 — 렌더러 스레드와 비례 비용</a></li><li class="depth-0"><a href="#셀프-호스팅--첫날-받은-과제" data-for="셀프-호스팅--첫날-받은-과제">셀프 호스팅 — 첫날 받은 과제</a></li><li class="depth-0"><a href="#웹-ide의-좌절-그리고-데스크톱으로" data-for="웹-ide의-좌절-그리고-데스크톱으로">웹 IDE의 좌절, 그리고 데스크톱으로</a></li><li class="depth-0"><a href="#스타벅스-이야기--대화조차-할-수-없었다" data-for="스타벅스-이야기--대화조차-할-수-없었다">스타벅스 이야기 — “대화조차 할 수 없었다”</a></li><li class="depth-0"><a href="#2015년-4월-build--linux-데모" data-for="2015년-4월-build--linux-데모">2015년 4월 Build — Linux 데모</a></li><li class="depth-0"><a href="#오픈-소스로-가는-길--hello-code" data-for="오픈-소스로-가는-길--hello-code">오픈 소스로 가는 길 — ‘Hello Code’</a></li><li class="depth-0"><a href="#확장-api--날카로운-칼을-주지-않기" data-for="확장-api--날카로운-칼을-주지-않기">확장 API — “날카로운 칼을 주지 않기”</a></li><li class="depth-0"><a href="#확장-생태계-그리고-개발자의-정서적-애착" data-for="확장-생태계-그리고-개발자의-정서적-애착">확장 생태계, 그리고 개발자의 정서적 애착</a></li><li class="depth-0"><a href="#lsp--개방이-만든-표준" data-for="lsp--개방이-만든-표준">LSP — 개방이 만든 표준</a></li><li class="depth-0"><a href="#원격-개발--네-가지-사용자-그리고-meta와의-거래" data-for="원격-개발--네-가지-사용자-그리고-meta와의-거래">원격 개발 — 네 가지 사용자, 그리고 Meta와의 거래</a></li><li class="depth-0"><a href="#웹으로-돌아오다--vscodedev와-codespaces" data-for="웹으로-돌아오다--vscodedev와-codespaces">웹으로 돌아오다 — vscode.dev와 Codespaces</a></li><li class="depth-0"><a href="#어떤-것이든-패턴-그리고-접근성" data-for="어떤-것이든-패턴-그리고-접근성">’어떤 것이든’ 패턴, 그리고 접근성</a></li><li class="depth-0"><a href="#성장의-세-가지-이유" data-for="성장의-세-가지-이유">성장의 세 가지 이유</a></li><li class="depth-0"><a href="#ai--copilot이-시작된-방식" data-for="ai--copilot이-시작된-방식">AI — Copilot이 시작된 방식</a></li><li class="depth-0"><a href="#자율성-슬라이더--ask에서-agent-mode로" data-for="자율성-슬라이더--ask에서-agent-mode로">자율성 슬라이더 — Ask에서 Agent Mode로</a></li><li class="depth-0"><a href="#지난-14개월의-속도" data-for="지난-14개월의-속도">지난 14개월의 속도</a></li><li class="depth-0"><a href="#포크들--경쟁이자-확장" data-for="포크들--경쟁이자-확장">포크들 — 경쟁이자 확장</a></li><li class="depth-0"><a href="#팀-문화--역할별-전담자가-없다" data-for="팀-문화--역할별-전담자가-없다">팀 문화 — 역할별 전담자가 없다</a></li><li class="depth-0"><a href="#정리" data-for="정리">정리</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2609070501'</script>
