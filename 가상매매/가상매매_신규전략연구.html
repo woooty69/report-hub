@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>신규 전략 연구 — 시설투자·PGR·신고가·신개념 뉴스</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="신규 전략 연구 — 시설투자·PGR·신고가·신개념 뉴스"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="신규 전략 연구 — 시설투자·PGR·신고가·신개념 뉴스"/><meta name="twitter:description" content="신규 전략 연구 — 시설투자 · PGR · 조건부 신고가 · 신개념 뉴스 데이터 ～2026-10-08 · 백테스트 실행 2026-10-10 15:29 · 매매 규칙은 가상매매_백테스트와 같음(1억, 10～15%, 최대 4종목, -10% 손절, 10·30일선 분할 매도, 교체, 다음날 시가·비용 반영) 판정 기준(기존과 동일): 무작위 선택 200회 대비 상위 5% · 신호 t ≥ 2 · 누적 플러스(긴 구간은 DSR ≥ 0.9까지) → ✅ 생존 후보 / 일부만 충족 → 🟡 관찰 / ❌ 탈락."/><meta property="og:description" content="신규 전략 연구 — 시설투자 · PGR · 조건부 신고가 · 신개념 뉴스 데이터 ～2026-10-08 · 백테스트 실행 2026-10-10 15:29 · 매매 규칙은 가상매매_백테스트와 같음(1억, 10～15%, 최대 4종목, -10% 손절, 10·30일선 분할 매도, 교체, 다음날 시가·비용 반영) 판정 기준(기존과 동일): 무작위 선택 200회 대비 상위 5% · 신호 t ≥ 2 · 누적 플러스(긴 구간은 DSR ≥ 0.9까지) → ✅ 생존 후보 / 일부만 충족 → 🟡 관찰 / ❌ 탈락."/><meta property="og:image:alt" content="신규 전략 연구 — 시설투자 · PGR · 조건부 신고가 · 신개념 뉴스 데이터 ～2026-10-08 · 백테스트 실행 2026-10-10 15:29 · 매매 규칙은 가상매매_백테스트와 같음(1억, 10～15%, 최대 4종목, -10% 손절, 10·30일선 분할 매도, 교체, 다음날 시가·비용 반영) 판정 기준(기존과 동일): 무작위 선택 200회 대비 상위 5% · 신호 t ≥ 2 · 누적 플러스(긴 구간은 DSR ≥ 0.9까지) → ✅ 생존 후보 / 일부만 충족 → 🟡 관찰 / ❌ 탈락."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/가상매매/가상매매_신규전략연구"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/가상매매/가상매매_신규전략연구"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="신규 전략 연구 — 시설투자 · PGR · 조건부 신고가 · 신개념 뉴스 데이터 ～2026-10-08 · 백테스트 실행 2026-10-10 15:29 · 매매 규칙은 가상매매_백테스트와 같음(1억, 10～15%, 최대 4종목, -10% 손절, 10·30일선 분할 매도, 교체, 다음날 시가·비용 반영) 판정 기준(기존과 동일): 무작위 선택 200회 대비 상위 5% · 신호 t ≥ 2 · 누적 플러스(긴 구간은 DSR ≥ 0.9까지) → ✅ 생존 후보 / 일부만 충족 → 🟡 관찰 / ❌ 탈락."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/가상매매/가상매매_신규전략연구-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/가상매매/가상매매_신규전략연구-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/가상매매/가상매매_신규전략연구-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="가상매매/가상매매_신규전략연구"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1120"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1120" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../가상매매/">가상매매</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>신규 전략 연구 — 시설투자·PGR·신고가·신개념 뉴스</a></div></nav><h1 class="article-title">신규 전략 연구 — 시설투자·PGR·신고가·신개념 뉴스</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-08T12:00:00.000Z">26.10.08.21</time><span>23 min read</span></p><ul class="tags"><li><a href="../tags/가상매매" class="internal tag-link">가상매매</a></li><li><a href="../tags/백테스트" class="internal tag-link">백테스트</a></li><li><a href="../tags/연구" class="internal tag-link">연구</a></li></ul></div></div><article class="popover-hint wide-table"><h1 id="신규-전략-연구--시설투자--pgr--조건부-신고가--신개념-뉴스">신규 전략 연구 — 시설투자 · PGR · 조건부 신고가 · 신개념 뉴스<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신규-전략-연구--시설투자--pgr--조건부-신고가--신개념-뉴스" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><em>데이터 ～2026-10-08 · 백테스트 실행 2026-10-10 15:29 · 매매 규칙은 <a href="../가상매매/가상매매_백테스트" class="internal alias" data-slug="가상매매/가상매매_백테스트">가상매매_백테스트</a>와 같음(1억, 10～15%, 최대 4종목, -10% 손절, 10·30일선 분할 매도, 교체, 다음날 시가·비용 반영)</em></p>
+<p>판정 기준(기존과 동일): 무작위 선택 200회 대비 상위 5% · 신호 t ≥ 2 · 누적 플러스(긴 구간은 DSR ≥ 0.9까지) → ✅ 생존 후보 / 일부만 충족 → 🟡 관찰 / ❌ 탈락.</p>
+<h2 id="0-한눈에-보기--매매-규칙-그대로-돌린-결과">0. 한눈에 보기 — 매매 규칙 그대로 돌린 결과<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-한눈에-보기--매매-규칙-그대로-돌린-결과" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>전략(시작)</th><th>누적</th><th>MDD</th><th>거래</th><th>승률</th><th>무작위 대비</th><th>DSR</th><th>신호 t</th><th>코스피&lt;60일선 필터</th><th>판정</th></tr></thead><tbody><tr><td>대형시설투자 발표 (23-07～)</td><td>-8.3%</td><td>-25.0%</td><td>117</td><td>30%</td><td>70%</td><td>0.00</td><td>-2.18</td><td>-14.7%</td><td>❌ 탈락</td></tr><tr><td>대형시설투자 완공 (23-07～)</td><td>+8.0%</td><td>-15.0%</td><td>101</td><td>38%</td><td>88%</td><td>0.00</td><td>-4.28</td><td>-0.6%</td><td>❌ 탈락</td></tr><tr><td>시설투자 완공전 선취매(사후가설) (23-07～)</td><td>+4.4%</td><td>-18.9%</td><td>99</td><td>34%</td><td>86%</td><td>0.00</td><td>0.56</td><td>+5.8%</td><td>❌ 탈락</td></tr><tr><td>저PGR(≤0.5) (25-11～)</td><td>+60.0%</td><td>-24.4%</td><td>117</td><td>41%</td><td>100%</td><td>0.15</td><td>2.48</td><td>+42.6%</td><td>🟡 관찰</td></tr><tr><td>PGR하락(추정치↑) (25-11～)</td><td>+2.0%</td><td>-24.6%</td><td>129</td><td>43%</td><td>67%</td><td>0.01</td><td>0.28</td><td>-0.5%</td><td>❌ 탈락</td></tr><tr><td>52주신고가(대조) (23-07～)</td><td>-61.7%</td><td>-65.0%</td><td>206</td><td>19%</td><td>0%</td><td>0.00</td><td>-1.53</td><td>-24.0%</td><td>❌ 탈락</td></tr><tr><td>신고가+신규상장1년 (23-07～)</td><td>-10.3%</td><td>-32.4%</td><td>118</td><td>27%</td><td>66%</td><td>0.00</td><td>0.56</td><td>+19.9%</td><td>❌ 탈락</td></tr><tr><td>신고가+실적신기록 (23-07～)</td><td>-2.5%</td><td>-26.5%</td><td>142</td><td>30%</td><td>78%</td><td>0.00</td><td>-0.72</td><td>+0.2%</td><td>❌ 탈락</td></tr><tr><td>신고가+예상신기록 (25-11～)</td><td>-6.2%</td><td>-28.1%</td><td>59</td><td>22%</td><td>43%</td><td>0.00</td><td>0.20</td><td>+28.9%</td><td>❌ 탈락</td></tr><tr><td>신고가+증권사커버(사후가설) (25-11～)</td><td>+9.3%</td><td>-21.0%</td><td>57</td><td>26%</td><td>82%</td><td>0.02</td><td>-0.74</td><td>+25.1%</td><td>❌ 탈락</td></tr><tr><td>신개념뉴스 수혜주 (25-11～)</td><td>-28.0%</td><td>-28.9%</td><td>75</td><td>21%</td><td>2%</td><td>0.00</td><td>-1.97</td><td>-21.9%</td><td>❌ 탈락</td></tr></tbody></table></div>
+<p>시작 시점이 다른 이유: 시설투자·신고가(확정 실적)는 2023-07～ 가격 전체, PGR·예상 신기록은 컨센서스 월별 이력이 2025-10～ 뿐이라 2025-11～, 신개념 뉴스는 뉴스 DB(2025-10～)에 120일 기준선을 둬야 해 2026-02～ 신호가 나옵니다. 짧은 구간 결과는 우연의 몫이 큽니다. ‘(사후가설)‘이 붙은 전략은 아래 사건연구를 보고 나서 만든 것이라 백테스트 숫자는 표본 안 결과일 뿐이고, 포워드(앞으로의 실제 신호)로만 판정합니다.</p>
+<h2 id="0-1-청산-규칙-바꿔-보기--느리게-오르는-신호에-맞는-청산은">0-1. 청산 규칙 바꿔 보기 — 느리게 오르는 신호에 맞는 청산은?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-1-청산-규칙-바꿔-보기--느리게-오르는-신호에-맞는-청산은" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>같은 신호·같은 진입(1억, 10～15%, 최대 4종목, -10% 손절, 다음날 시가·비용)에서 <strong>청산만</strong> 바꾼 누적수익입니다. 기본 = 10일선 아래 2번째 종가에 50%, 30일선 아래 2번째 종가에 나머지 · 60/120일 보유 = 기간이 차면 전량(그 전엔 손절만) · 60일선 이탈 = 60일선 위 마감을 확인한 뒤 60일선 아래 2번째 종가에 전량. 굵은 값 = 그 전략의 최선 청산. ‘최선의 무작위 대비’는 같은 시작일·같은 청산 규칙으로 무작위 종목을 산 200회와 비교한 백분위입니다(청산을 여러 개 고른 만큼 우연히 좋아 보일 수 있음).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>전략(시작)</th><th>이평선 분할(기본)</th><th>이평선·위 확인 후</th><th>60일 보유</th><th>120일 보유</th><th>60일선 이탈</th><th>60일 보유·교체 없음</th><th>60일 보유·코스피&lt;60일선</th><th>최선 청산</th><th>최선의 무작위 대비</th><th>평균 보유</th></tr></thead><tbody><tr><td>대형시설투자 발표 (23-07～)</td><td>-8.3%</td><td>-9.3%</td><td>-0.4%</td><td>-21.8%</td><td>-14.2%</td><td>+2.7%</td><td><strong>+8.6%</strong></td><td>60일 보유·코스피&lt;60일선</td><td>79%</td><td>28일</td></tr><tr><td>대형시설투자 완공 (23-07～)</td><td><strong>+8.0%</strong></td><td>-12.0%</td><td>-15.6%</td><td>+0.1%</td><td>-10.7%</td><td>-16.2%</td><td>-15.1%</td><td>이평선 분할(기본)</td><td>88%</td><td>8일</td></tr><tr><td>시설투자 완공전 선취매(사후가설) (23-07～)</td><td>+4.4%</td><td>+0.5%</td><td>-20.5%</td><td>+5.8%</td><td><strong>+15.5%</strong></td><td>-22.3%</td><td>-6.4%</td><td>60일선 이탈</td><td>80%</td><td>23일</td></tr><tr><td>저PGR(≤0.5) (25-11～)</td><td>+60.0%</td><td>+93.1%</td><td>+63.2%</td><td>+2.7%</td><td><strong>+126.9%</strong></td><td>+12.0%</td><td>+57.0%</td><td>60일선 이탈</td><td>100%</td><td>22일</td></tr><tr><td>PGR하락(추정치↑) (25-11～)</td><td>+2.0%</td><td>+4.1%</td><td>+6.2%</td><td>+16.4%</td><td><strong>+54.8%</strong></td><td>+6.2%</td><td>+0.3%</td><td>60일선 이탈</td><td>100%</td><td>25일</td></tr><tr><td>52주신고가(대조) (23-07～)</td><td>-61.7%</td><td>-61.8%</td><td>-57.9%</td><td>-60.5%</td><td>-58.3%</td><td>-41.5%</td><td><strong>-21.3%</strong></td><td>60일 보유·코스피&lt;60일선</td><td>28%</td><td>18일</td></tr><tr><td>신고가+신규상장1년 (23-07～)</td><td>-10.3%</td><td>-10.4%</td><td>-11.2%</td><td>-18.2%</td><td><strong>+7.1%</strong></td><td>-11.2%</td><td>-23.3%</td><td>60일선 이탈</td><td>73%</td><td>21일</td></tr><tr><td>신고가+실적신기록 (23-07～)</td><td>-2.5%</td><td>-2.6%</td><td>+6.4%</td><td><strong>+13.9%</strong></td><td>-6.4%</td><td>-12.2%</td><td>-11.9%</td><td>120일 보유</td><td>76%</td><td>32일</td></tr><tr><td>신고가+예상신기록 (25-11～)</td><td>-6.2%</td><td>-6.1%</td><td>+9.2%</td><td><strong>+37.6%</strong></td><td>-8.4%</td><td>-22.2%</td><td>+32.8%</td><td>120일 보유</td><td>94%</td><td>22일</td></tr><tr><td>신고가+증권사커버(사후가설) (25-11～)</td><td>+9.3%</td><td>+10.3%</td><td>+12.2%</td><td><strong>+26.9%</strong></td><td>-10.2%</td><td>-16.7%</td><td>+21.9%</td><td>120일 보유</td><td>91%</td><td>20일</td></tr><tr><td>신개념뉴스 수혜주 (25-11～)</td><td>-28.0%</td><td>-27.8%</td><td>-28.9%</td><td>-28.7%</td><td><strong>-22.5%</strong></td><td>-28.9%</td><td>-29.2%</td><td>60일선 이탈</td><td>8%</td><td>12일</td></tr><tr><td>목표가상향 (25-11～)</td><td>+24.9%</td><td>+33.1%</td><td>+32.4%</td><td>+29.0%</td><td><strong>+33.6%</strong></td><td>+32.4%</td><td>+30.7%</td><td>60일선 이탈</td><td>97%</td><td>25일</td></tr><tr><td>미국주도→한국 (23-07～)</td><td>+17.7%</td><td>+27.0%</td><td>+47.6%</td><td>-7.1%</td><td><strong>+129.8%</strong></td><td>+33.6%</td><td>-8.2%</td><td>60일선 이탈</td><td>100%</td><td>24일</td></tr><tr><td>실적호조(공시) (25-11～)</td><td>+11.0%</td><td>+21.2%</td><td>+10.4%</td><td>+21.7%</td><td><strong>+23.6%</strong></td><td>+10.4%</td><td>+13.3%</td><td>60일선 이탈</td><td>90%</td><td>29일</td></tr><tr><td>테마리더 (23-07～)</td><td>-44.5%</td><td>-48.9%</td><td>-39.0%</td><td>-59.5%</td><td>-55.9%</td><td>-39.0%</td><td><strong>-30.8%</strong></td><td>60일 보유·코스피&lt;60일선</td><td>12%</td><td>22일</td></tr><tr><td>업종리더 (23-07～)</td><td>-47.2%</td><td>-39.4%</td><td>-39.3%</td><td>-47.0%</td><td>-20.1%</td><td>-39.3%</td><td><strong>-6.9%</strong></td><td>60일 보유·코스피&lt;60일선</td><td>53%</td><td>28일</td></tr><tr><td>RS모멘텀 (23-07～)</td><td>-62.4%</td><td>-64.6%</td><td>-57.1%</td><td>-58.3%</td><td>-55.3%</td><td>-46.2%</td><td><strong>-43.9%</strong></td><td>60일 보유·코스피&lt;60일선</td><td>0%</td><td>22일</td></tr><tr><td>신고가돌파 (23-07～)</td><td>-88.8%</td><td>-88.7%</td><td>-83.5%</td><td>-79.6%</td><td>-87.7%</td><td>-83.5%</td><td><strong>-51.4%</strong></td><td>60일 보유·코스피&lt;60일선</td><td>0%</td><td>18일</td></tr></tbody></table></div>
+<p><strong>무작위 상위 5% 안에 든 조합</strong>: 저PGR(≤0.5) → 60일선 이탈 +126.9% (무작위 대비 100%), PGR하락(추정치↑) → 60일선 이탈 +54.8% (무작위 대비 100%), 목표가상향 → 60일선 이탈 +33.6% (무작위 대비 97%), 미국주도→한국 → 60일선 이탈 +129.8% (무작위 대비 100%).</p>
+<h3 id="핵심-요약-사건연구--매주-갱신">핵심 요약 (사건연구 · 매주 갱신)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#핵심-요약-사건연구--매주-갱신" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>시설투자 발표</strong>: 발표 직후 5일 -1.1%(t -3.2)로 오히려 밀리고, 60일 +5.3%·120일 +7.3%로 뒤늦게 오릅니다. 단 매출의 30% 이상을 쏟는 초대형 투자는 5일 -2.6%·20일 -3.2%로 부진(Titman 등 2004의 ‘과잉 투자’ 경고와 같은 방향).</li>
+<li><strong>완공(투자기간 종료일)</strong>: 오르는 구간은 완공 <strong>전</strong>입니다 — 완공 120→60일 전 +6.7%(t 4.2), 60일 전→완공 +3.2%. 완공 뒤 120일은 +3.8%로 뚜렷하지 않고, 매출 30% 이상 초대형은 -11.7%(t -4.1)로 약세. ‘완공 후 상승’ 가설은 지지되지 않았고, ‘완공 전 선취매’를 사후 가설로 포워드 검증합니다.</li>
+<li><strong>신고가</strong>: 조건 없는 52주 신고가(첫 경신만)는 20일 -0.5%로 성과가 없습니다. 컨센서스상 예상 신기록이면 20일 +3.7%·120일 +14.6%(t 5.0), 확정 실적 10년 신기록이면 60일 +4.3%로 좋았습니다. 다만 증권사 커버 종목이면 예상 신기록이 아니어도 120일 +20.7%로 비슷해, ‘실적 신기록’보다 ‘증권사가 실적을 추정해 주는(커버) 종목의 신고가’가 핵심일 수 있습니다. 신규상장 1년 내 최고가는 120일 -7.0%로 부진(Ritter 1991과 같은 방향).</li>
+<li><strong>신개념 뉴스</strong>: 수혜주는 뉴스가 몰리기 전 20일 동안 이미 +7.7% 올라 있었고, 사건 뒤 20일 -7.0%(t -5.7)로 되밀렸습니다 — 뉴스가 주가를 뒤따르는 ‘관심 과열’ 패턴(New News is Bad News와 같은 방향). 수혜주 추격 매수는 탈락, 오히려 경계 신호로 봅니다.</li>
+<li><strong>PGR</strong>: 월말 PGR 하위 20%(싼 쪽)의 다음 20일 초과수익 +3.7% vs 상위 20% -0.9%, 2년 뒤 영업이익 추정치를 한 달 새 가장 많이 올린 20% +4.7% vs 가장 많이 내린 20% +1.1%. 방향은 ‘싸고 추정치가 오르는 종목’에 유리하지만 표본이 10개월뿐입니다.</li>
+</ul>
+<h2 id="1-대형-시설투자--발표-때-오르나-완공-뒤-오르나">1. 대형 시설투자 — 발표 때 오르나, 완공 뒤 오르나<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-대형-시설투자--발표-때-오르나-완공-뒤-오르나" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>선행 연구.</strong> 시설투자 확대 발표는 단기적으로 주가에 긍정적이라는 결과가 많습니다(McConnell·Muscarella 1985: 투자 확대 발표 후 유의한 초과수익). 반대로 투자를 크게 늘린 기업은 이후 1～5년 수익률이 낮다는 결과도 있습니다(Titman·Wei·Xie 2004, 미국 1973～1996: 투자 증가 하위−상위 포트폴리오 연 약 2%, 현금흐름 많고 부채 적은 ‘제국 건설형’ 투자일수록 뚜렷). 완공 시점 자체를 다룬 연구는 드물어, 여기서는 ‘투자기간 종료일(완공 예정일)‘을 사건일로 놓고 전후 수익률을 직접 쟀습니다.</p>
+<p><strong>데이터.</strong> 네이버 증권 종목 공시(거래소 공시 원문)에서 2019년～ 신규시설투자 공시(원공시·정정공시)를 모아 프로젝트 987개로 묶음(자율공시 107개) · 정정으로 완공일이 바뀐 프로젝트 421개 · 매출 대비 10% 이상 또는 자기자본 20%·시총 10% 이상 ‘대형’ 700개 (그중 생산설비형 644개). 완공일은 그 날짜 이전에 나온 정정만 반영(미래 정보 차단).</p>
+<h3 id="1-1-발표-후-초과수익-다음날-시가-매수-유동성-종목-동일가중-대비">1-1. 발표 후 초과수익 (다음날 시가 매수, 유동성 종목 동일가중 대비)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-1-발표-후-초과수익-다음날-시가-매수-유동성-종목-동일가중-대비" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>건수</th><th>1일</th><th>5일</th><th>20일</th><th>60일</th><th>120일</th></tr></thead><tbody><tr><td>전체(자율공시 제외)</td><td>408</td><td><strong>-0.4%</strong> (t -2.1)</td><td><strong>-1.1%</strong> (t -3.2)</td><td>-0.0% (t -0.0)</td><td><strong>+5.3%</strong> (t 3.1)</td><td><strong>+7.3%</strong> (t 2.8)</td></tr><tr><td>대형(매출·자본·시총 기준)·생산설비</td><td>325</td><td>-0.4% (t -1.7)</td><td><strong>-1.4%</strong> (t -3.7)</td><td>+0.1% (t 0.2)</td><td><strong>+4.4%</strong> (t 2.4)</td><td>+3.9% (t 1.6)</td></tr><tr><td>대형·비생산(사옥·부지 등)</td><td>19</td><td>+0.1% (t 0.1)</td><td>+0.3% (t 0.1)</td><td>-0.4% (t -0.1)</td><td>+3.0% (t 0.4)</td><td>+9.5% (t 1.3)</td></tr><tr><td>자율공시(소형)</td><td>51</td><td>-0.9% (t -2.0)</td><td>-0.6% (t -0.6)</td><td>-0.7% (t -0.3)</td><td>-0.2% (t -0.1)</td><td>+0.3% (t 0.0)</td></tr><tr><td>매출 대비 10～30%</td><td>129</td><td>-0.1% (t -0.3)</td><td>-0.3% (t -0.4)</td><td>+2.9% (t 2.0)</td><td><strong>+5.6%</strong> (t 2.0)</td><td><strong>+10.0%</strong> (t 2.2)</td></tr><tr><td>매출 대비 3～10%</td><td>87</td><td>+0.2% (t 0.5)</td><td>-0.6% (t -0.8)</td><td>+0.8% (t 0.5)</td><td><strong>+8.5%</strong> (t 2.1)</td><td><strong>+11.3%</strong> (t 2.1)</td></tr><tr><td>매출 대비 &lt;3%</td><td>40</td><td>-0.4% (t -0.9)</td><td>-0.2% (t -0.2)</td><td>-1.9% (t -1.1)</td><td>+5.3% (t 1.1)</td><td>+14.1% (t 1.3)</td></tr><tr><td>매출 대비 ≥30%</td><td>129</td><td><strong>-0.9%</strong> (t -2.2)</td><td><strong>-2.6%</strong> (t -4.3)</td><td><strong>-3.2%</strong> (t -2.6)</td><td>+0.3% (t 0.1)</td><td>-2.1% (t -0.6)</td></tr><tr><td>매출 대비 미상</td><td>23</td><td><strong>-2.6%</strong> (t -2.2)</td><td>-1.6% (t -0.8)</td><td>+1.3% (t 0.3)</td><td>+18.1% (t 1.4)</td><td>+14.8% (t 0.8)</td></tr></tbody></table></div>
+<h3 id="1-2-완공투자기간-종료일-전후-초과수익-종가-기준-구간-2023-가격-범위-안-완공분">1-2. 완공(투자기간 종료일) 전후 초과수익 (종가 기준 구간, 2023～ 가격 범위 안 완공분)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-2-완공투자기간-종료일-전후-초과수익-종가-기준-구간-2023-가격-범위-안-완공분" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>건수</th><th>-120→-60일</th><th>-60→0일</th><th>-20→0일</th><th>0→+20일</th><th>0→+60일</th><th>0→+120일</th></tr></thead><tbody><tr><td>전체</td><td>373</td><td><strong>+6.7%</strong> (t 4.2)</td><td><strong>+3.2%</strong> (t 2.3)</td><td>-0.8% (t -0.9)</td><td>+1.0% (t 1.3)</td><td>+2.5% (t 1.6)</td><td>+3.8% (t 1.7)</td></tr><tr><td>대형·생산설비</td><td>241</td><td><strong>+5.4%</strong> (t 2.9)</td><td><strong>+3.8%</strong> (t 2.1)</td><td>+0.1% (t 0.1)</td><td>+0.1% (t 0.1)</td><td>+1.6% (t 0.8)</td><td>-0.1% (t -0.0)</td></tr><tr><td>대형·생산·연기 없음</td><td>95</td><td>+3.8% (t 1.5)</td><td>+1.3% (t 0.5)</td><td>+0.3% (t 0.2)</td><td>+0.9% (t 0.5)</td><td>+0.7% (t 0.2)</td><td>+2.1% (t 0.4)</td></tr><tr><td>대형·생산·연기 있었음</td><td>146</td><td><strong>+6.4%</strong> (t 2.5)</td><td><strong>+5.5%</strong> (t 2.3)</td><td>-0.0% (t -0.0)</td><td>-0.4% (t -0.3)</td><td>+2.3% (t 0.8)</td><td>-1.5% (t -0.6)</td></tr><tr><td>소형·생산</td><td>86</td><td><strong>+11.7%</strong> (t 3.3)</td><td>+2.5% (t 1.0)</td><td>-2.0% (t -1.2)</td><td>+2.2% (t 1.5)</td><td>+3.3% (t 1.7)</td><td><strong>+11.1%</strong> (t 2.5)</td></tr><tr><td>매출 대비 10～30%·생산</td><td>126</td><td><strong>+9.7%</strong> (t 3.3)</td><td><strong>+5.1%</strong> (t 2.0)</td><td>+0.2% (t 0.2)</td><td>+1.1% (t 0.8)</td><td>+4.9% (t 1.6)</td><td>+7.2% (t 1.6)</td></tr><tr><td>매출 대비 3～10%·생산</td><td>68</td><td>+4.4% (t 1.6)</td><td>-0.9% (t -0.4)</td><td>-2.8% (t -1.9)</td><td><strong>+4.2%</strong> (t 2.3)</td><td>+3.6% (t 1.5)</td><td>+8.2% (t 2.0)</td></tr><tr><td>매출 대비 &lt;3%·생산</td><td>36</td><td><strong>+12.3%</strong> (t 2.7)</td><td>+5.7% (t 1.2)</td><td>-0.3% (t -0.1)</td><td>-1.3% (t -0.6)</td><td>+1.7% (t 0.6)</td><td>+16.8% (t 1.8)</td></tr><tr><td>매출 대비 ≥30%·생산</td><td>73</td><td>+1.3% (t 0.5)</td><td>+4.7% (t 1.4)</td><td>-0.3% (t -0.2)</td><td>-1.0% (t -0.6)</td><td>-1.4% (t -0.3)</td><td><strong>-11.7%</strong> (t -4.1)</td></tr><tr><td>매출 대비 미상·생산</td><td>24</td><td>+9.0% (t 0.9)</td><td>+0.0% (t 0.0)</td><td>+2.2% (t 0.4)</td><td>-3.2% (t -0.9)</td><td>-6.2% (t -1.3)</td><td>-12.1% (t -1.9)</td></tr></tbody></table></div>
+<p>굵은 값 = |t| ≥ 2. 구간 수익률은 그 종목 종가 변화 − 같은 기간 유동성 종목 동일가중 지수 변화입니다.</p>
+<h2 id="2-pgrper--2년-영업이익-연평균-증가율--성장-대비-싼-종목-추정치가-오르는-종목">2. PGR(PER ÷ 2년 영업이익 연평균 증가율) — 성장 대비 싼 종목, 추정치가 오르는 종목<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-pgrper--2년-영업이익-연평균-증가율--성장-대비-싼-종목-추정치가-오르는-종목" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>정의.</strong> PGR = 현재 PER(시총 ÷ 직전 확정 연도 지배순이익) ÷ 직전 확정 연도 → 2년 뒤 영업이익 컨센서스의 연평균 증가율(%). 1 미만이면 성장 속도에 비해 싸다는 뜻(피터 린치의 PEG와 같은 발상). 현재 값은 <a href="../가상매매/PGR_스크리너" class="internal alias" data-slug="가상매매/PGR_스크리너">PGR_스크리너</a>·주도주 대시보드 ⑧ 성장주 탭(💎 저PGR)·종목 카드·한국시장 리포트 종목 리포트 표에 표시됩니다.</p>
+<p><strong>선행 연구.</strong> PEG는 실무에서 널리 쓰이지만 학계 검증은 엇갈립니다. Easton(2004)은 PEG를 기대수익률(자본비용) 추정 도구로 해석했고, Bordalo·Gennaioli·La Porta·Shleifer(NBER 2017, 미국 1981～2015)는 애널리스트 장기 성장률 전망이 가장 높은 10% 종목이 가장 낮은 10%보다 다음 해 수익이 연 약 12%p 낮다고 보고했습니다 — ‘높은 성장 전망’은 과잉 낙관일 수 있다는 경고입니다. 그래서 ① 낮은 PGR(성장 대비 싸게) ② PGR이 내려가는 원인이 ‘추정치 상향’인 경우(이익 수정 모멘텀)를 따로 시험했고, 연 100% 넘는 기저효과 성장은 제외했습니다.</p>
+<h3 id="2-1-월말-5분위--다음-20거래일-초과수익-2025-11-컨센서스-커버-종목">2-1. 월말 5분위 → 다음 20거래일 초과수익 (2025-11～, 컨센서스 커버 종목)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-1-월말-5분위--다음-20거래일-초과수익-2025-11-컨센서스-커버-종목" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>기준</th><th>분위</th><th>평균 초과수익</th><th>플러스 달 비율</th><th>개월</th><th>분위당 종목</th></tr></thead><tbody><tr><td>PGR 수준</td><td>1분위 (낮음)</td><td>+3.7%</td><td>80%</td><td>10</td><td>52</td></tr><tr><td>PGR 수준</td><td>2분위</td><td>+1.8%</td><td>60%</td><td>10</td><td>52</td></tr><tr><td>PGR 수준</td><td>3분위</td><td>+3.8%</td><td>80%</td><td>10</td><td>51</td></tr><tr><td>PGR 수준</td><td>4분위</td><td>+1.2%</td><td>60%</td><td>10</td><td>52</td></tr><tr><td>PGR 수준</td><td>5분위 (높음)</td><td>-0.9%</td><td>30%</td><td>10</td><td>52</td></tr><tr><td>2년뒤 영업이익 추정 21일 변화</td><td>1분위 (낮음)</td><td>+1.1%</td><td>67%</td><td>9</td><td>70</td></tr><tr><td>2년뒤 영업이익 추정 21일 변화</td><td>2분위</td><td>+2.2%</td><td>67%</td><td>9</td><td>70</td></tr><tr><td>2년뒤 영업이익 추정 21일 변화</td><td>3분위</td><td>+1.6%</td><td>67%</td><td>9</td><td>70</td></tr><tr><td>2년뒤 영업이익 추정 21일 변화</td><td>4분위</td><td>+2.3%</td><td>56%</td><td>9</td><td>70</td></tr><tr><td>2년뒤 영업이익 추정 21일 변화</td><td>5분위 (높음)</td><td>+4.7%</td><td>89%</td><td>9</td><td>70</td></tr></tbody></table></div>
+<p>표본이 11개월 남짓이라 방향만 참고하세요. 컨센서스 월별 이력을 매주 쌓고 있어 기간이 늘어나면 다시 봅니다.</p>
+<h2 id="3-조건부-신고가--신규상장-1년--10년-실적-신기록--예상-신기록">3. 조건부 신고가 — 신규상장 1년 · 10년 실적 신기록 · 예상 신기록<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-조건부-신고가--신규상장-1년--10년-실적-신기록--예상-신기록" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>선행 연구.</strong> George·Hwang(2004)은 주가가 52주 최고가에 가까울수록 이후 수익률이 높고(기존 모멘텀보다 강함) 장기 반전도 없다고 보고했습니다 — 투자자가 52주 고점을 ‘기준점’으로 삼아 좋은 소식을 늦게 반영한다는 해석입니다. Li·Yu(2012)는 시장 지수 차원에서 52주 고점 근접은 이후 수익을 높이고, 역사적 최고가 근접은 오히려 낮춘다고 했습니다. 신규상장주는 장기적으로 시장보다 부진하다는 연구(Ritter 1991)도 있어, ‘신고가 + 실적의 뒷받침’이 핵심 조건이라는 가설을 시험했습니다. 실적 신기록 = 직전 확정 연도 매출·영업이익이 모두 과거 최대 10년치 이상(OpenDART 2015～ 재무, 상폐 종목 포함).</p>
+<h3 id="3-1-신고가-경신일-다음날-시가-매수--초과수익-2024-유동성-종목">3-1. 신고가 경신일 다음날 시가 매수 → 초과수익 (2024～, 유동성 종목)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-1-신고가-경신일-다음날-시가-매수--초과수익-2024-유동성-종목" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>사건 수</th><th>5일</th><th>20일</th><th>60일</th><th>120일</th></tr></thead><tbody><tr><td>52주 신고가: 전체</td><td>2910</td><td><strong>-0.7%</strong> (t -2.7)</td><td>-0.5% (t -0.9)</td><td>-0.3% (t -0.4)</td><td>+1.2% (t 0.7)</td></tr><tr><td>52주 신고가 + 신기록 아님</td><td>2429</td><td><strong>-0.8%</strong> (t -2.7)</td><td>-0.9% (t -1.5)</td><td>-1.4% (t -1.6)</td><td>-0.0% (t -0.0)</td></tr><tr><td>52주 신고가 + 컨센서스 커버·예상 신기록 아님</td><td>886</td><td>+0.4% (t 1.2)</td><td><strong>+2.4%</strong> (t 3.4)</td><td><strong>+9.2%</strong> (t 6.0)</td><td><strong>+20.7%</strong> (t 5.0)</td></tr><tr><td>52주 신고가 + 예상 신기록(컨센서스)</td><td>601</td><td>+0.2% (t 0.6)</td><td><strong>+3.7%</strong> (t 3.9)</td><td><strong>+8.2%</strong> (t 4.7)</td><td><strong>+14.6%</strong> (t 5.0)</td></tr><tr><td>52주 신고가 + 실적 10년 신기록</td><td>525</td><td>+0.2% (t 0.4)</td><td>+1.4% (t 1.4)</td><td><strong>+4.3%</strong> (t 2.5)</td><td><strong>+6.1%</strong> (t 2.4)</td></tr><tr><td>신규상장 1년 + 상장 후 최고가</td><td>142</td><td>+1.5% (t 0.9)</td><td>+0.7% (t 0.3)</td><td>-0.2% (t -0.0)</td><td>-7.0% (t -1.2)</td></tr><tr><td>52주 신고가: 전체 (2025～)</td><td>2107</td><td><strong>-0.9%</strong> (t -2.8)</td><td>-0.3% (t -0.5)</td><td>-0.5% (t -0.5)</td><td>+0.7% (t 0.3)</td></tr><tr><td>52주 신고가 + 신기록 아님 (2025～)</td><td>1771</td><td><strong>-1.0%</strong> (t -2.8)</td><td>-0.8% (t -1.2)</td><td>-1.3% (t -1.2)</td><td>+0.1% (t 0.1)</td></tr><tr><td>52주 신고가 + 예상 신기록(컨센서스) (2025～)</td><td>597</td><td>+0.3% (t 0.7)</td><td><strong>+3.8%</strong> (t 3.9)</td><td><strong>+8.3%</strong> (t 4.7)</td><td><strong>+14.8%</strong> (t 5.0)</td></tr><tr><td>52주 신고가 + 컨센서스 커버·예상 신기록 아님 (2025～)</td><td>523</td><td>+0.4% (t 0.8)</td><td><strong>+2.8%</strong> (t 2.7)</td><td><strong>+10.7%</strong> (t 4.5)</td><td><strong>+26.4%</strong> (t 3.7)</td></tr><tr><td>52주 신고가 + 실적 10년 신기록 (2025～)</td><td>363</td><td>+0.3% (t 0.4)</td><td>+2.0% (t 1.5)</td><td>+3.1% (t 1.5)</td><td>+3.6% (t 1.1)</td></tr></tbody></table></div>
+<h2 id="4-신개념-뉴스--처음-보는-말이-갑자기-쏟아질-때의-수혜주">4. 신개념 뉴스 — 처음 보는 말이 갑자기 쏟아질 때의 수혜주<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-신개념-뉴스--처음-보는-말이-갑자기-쏟아질-때의-수혜주" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>선행 연구.</strong> 특허 문장을 ‘과거 문서와 얼마나 다른가(새로움)‘와 ‘이후 문서와 얼마나 닮았나(영향)‘로 재서 획기적 혁신을 찾은 연구(Kelly·Papanikolaou·Seru·Taddy 2021, AER: Insights), 뉴스 문장 분포의 새로움(엔트로피)이 커지면 이후 1년 시장 수익이 낮아진다는 연구(New News is Bad News, 2023)가 있습니다. 여기서는 이를 종목 단위로 옮겼습니다.</p>
+<p><strong>방법.</strong> 종목뉴스 27만 건·증권사 리포트 1.2만 건의 제목·요약에서 명사(2어절 포함)를 뽑아 → 최근 7일 비중이 직전 120일의 8배 이상 · 7일 12건 이상 · 직전 120일 3건 이하(=거의 처음 보는 말) · 언론사 3곳·서로 다른 종목 뉴스 3개 이상 · 최근 30일 증권사 리포트에도 등장 → ‘신개념 사건’. 그 7일간 그 말이 가장 많이 나온 종목(2건 이상, 문서의 10% 이상, 최대 3개)을 수혜주로 봅니다. 사람 이름·행사·달력·숫자 조합은 걸러냅니다.</p>
+<p><strong>사건 111개 · 수혜주 연결 228건 (2026-02-03 ～ 2026-10-08)</strong> — 최근 사건 예시: 세미콘리서치랩(10-08), 노근창 세미콘리서치랩(10-08), IP 차단(10-08), 영업일 수(10-07), FOMC 의사록(10-07), 분기 IPO(10-04), 매입 종료(10-03), 중국 국경절(10-02), 유럽 금리(10-02), 수출 중단(10-02), 초과 세수(10-01), 이동 전화(10-01), 한국 통신(10-01), 대한민국 해군(09-30), TWh(09-28), Muse(09-23), 멜콘(09-20), UAE 국영(09-18), Kakao(09-17), 인상 선(09-16), 코리아 HBM(09-15), 삼성전자 보통주(09-15), PLUS 코리아(09-15), 증설 발표(09-14), 엔진 증설(09-11)</p>
+<h3 id="4-1-사건일-다음날-시가-매수--초과수익">4-1. 사건일 다음날 시가 매수 → 초과수익<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-1-사건일-다음날-시가-매수--초과수익" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>건수</th><th>1일</th><th>5일</th><th>20일</th><th>60일</th></tr></thead><tbody><tr><td>신개념 수혜주 전체</td><td>227</td><td><strong>-1.2%</strong> (t -3.3)</td><td><strong>-2.8%</strong> (t -3.8)</td><td><strong>-7.0%</strong> (t -5.7)</td><td>-3.4% (t -0.7)</td></tr><tr><td>신개념 수혜 2～3순위 종목</td><td>116</td><td>-1.0% (t -1.8)</td><td><strong>-2.9%</strong> (t -2.7)</td><td><strong>-4.1%</strong> (t -2.4)</td><td>-4.1% (t -0.6)</td></tr><tr><td>신개념 수혜 1순위 종목</td><td>111</td><td><strong>-1.4%</strong> (t -2.9)</td><td><strong>-2.8%</strong> (t -2.7)</td><td><strong>-9.8%</strong> (t -5.9)</td><td>-2.7% (t -0.4)</td></tr></tbody></table></div>
+<p>사건 전 20일 동안 수혜주는 이미 시장보다 평균 +7.7% 움직였습니다(뉴스가 주가를 뒤따르는지 확인용).</p>
+<h2 id="5-한계와-다음-단계">5. 한계와 다음 단계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-한계와-다음-단계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>기간</strong>: PGR·예상 신기록(컨센서스 이력)과 신개념 뉴스(뉴스 DB)는 1년 안팎이라 판정이 불안정합니다. 컨센서스 월별 이력은 매주 토요일, 뉴스 사건은 매일 밤 쌓이므로 주간 백테스트(토 07:40)가 자동으로 기간을 늘려 다시 평가합니다.</li>
+<li><strong>완공일</strong>: 공시상 ‘투자기간 종료일’은 계획일이라 실제 가동일과 다를 수 있습니다(정정공시로 바뀐 것만 반영).</li>
+<li><strong>시설투자 규모</strong>: 2023년 이전 공시는 일별 시가총액이 없어 매출·자기자본 대비로만 판단합니다.</li>
+<li><strong>포워드 검증</strong>: 9개 신규 전략 모두 오늘부터 매일 신호가 저장되어(paper_signals) 앞으로의 실제 성과로 다시 판정합니다. 여러 전략을 시험할수록 우연히 좋아 보이는 결과가 섞이므로(DSR), 포워드에서 살아남은 것만 실전 후보로 올립니다.</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-954" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#신규-전략-연구--시설투자--pgr--조건부-신고가--신개념-뉴스" data-for="신규-전략-연구--시설투자--pgr--조건부-신고가--신개념-뉴스">신규 전략 연구 — 시설투자 · PGR · 조건부 신고가 · 신개념 뉴스</a></li><li class="depth-1"><a href="#0-한눈에-보기--매매-규칙-그대로-돌린-결과" data-for="0-한눈에-보기--매매-규칙-그대로-돌린-결과">0. 한눈에 보기 — 매매 규칙 그대로 돌린 결과</a></li><li class="depth-1"><a href="#0-1-청산-규칙-바꿔-보기--느리게-오르는-신호에-맞는-청산은" data-for="0-1-청산-규칙-바꿔-보기--느리게-오르는-신호에-맞는-청산은">0-1. 청산 규칙 바꿔 보기 — 느리게 오르는 신호에 맞는 청산은?</a></li><li class="depth-2"><a href="#핵심-요약-사건연구--매주-갱신" data-for="핵심-요약-사건연구--매주-갱신">핵심 요약 (사건연구 · 매주 갱신)</a></li><li class="depth-1"><a href="#1-대형-시설투자--발표-때-오르나-완공-뒤-오르나" data-for="1-대형-시설투자--발표-때-오르나-완공-뒤-오르나">1. 대형 시설투자 — 발표 때 오르나, 완공 뒤 오르나</a></li><li class="depth-2"><a href="#1-1-발표-후-초과수익-다음날-시가-매수-유동성-종목-동일가중-대비" data-for="1-1-발표-후-초과수익-다음날-시가-매수-유동성-종목-동일가중-대비">1-1. 발표 후 초과수익 (다음날 시가 매수, 유동성 종목 동일가중 대비)</a></li><li class="depth-2"><a href="#1-2-완공투자기간-종료일-전후-초과수익-종가-기준-구간-2023-가격-범위-안-완공분" data-for="1-2-완공투자기간-종료일-전후-초과수익-종가-기준-구간-2023-가격-범위-안-완공분">1-2. 완공(투자기간 종료일) 전후 초과수익 (종가 기준 구간, 2023～ 가격 범위 안 완공분)</a></li><li class="depth-1"><a href="#2-pgrper--2년-영업이익-연평균-증가율--성장-대비-싼-종목-추정치가-오르는-종목" data-for="2-pgrper--2년-영업이익-연평균-증가율--성장-대비-싼-종목-추정치가-오르는-종목">2. PGR(PER ÷ 2년 영업이익 연평균 증가율) — 성장 대비 싼 종목, 추정치가 오르는 종목</a></li><li class="depth-2"><a href="#2-1-월말-5분위--다음-20거래일-초과수익-2025-11-컨센서스-커버-종목" data-for="2-1-월말-5분위--다음-20거래일-초과수익-2025-11-컨센서스-커버-종목">2-1. 월말 5분위 → 다음 20거래일 초과수익 (2025-11～, 컨센서스 커버 종목)</a></li><li class="depth-1"><a href="#3-조건부-신고가--신규상장-1년--10년-실적-신기록--예상-신기록" data-for="3-조건부-신고가--신규상장-1년--10년-실적-신기록--예상-신기록">3. 조건부 신고가 — 신규상장 1년 · 10년 실적 신기록 · 예상 신기록</a></li><li class="depth-2"><a href="#3-1-신고가-경신일-다음날-시가-매수--초과수익-2024-유동성-종목" data-for="3-1-신고가-경신일-다음날-시가-매수--초과수익-2024-유동성-종목">3-1. 신고가 경신일 다음날 시가 매수 → 초과수익 (2024～, 유동성 종목)</a></li><li class="depth-1"><a href="#4-신개념-뉴스--처음-보는-말이-갑자기-쏟아질-때의-수혜주" data-for="4-신개념-뉴스--처음-보는-말이-갑자기-쏟아질-때의-수혜주">4. 신개념 뉴스 — 처음 보는 말이 갑자기 쏟아질 때의 수혜주</a></li><li class="depth-2"><a href="#4-1-사건일-다음날-시가-매수--초과수익" data-for="4-1-사건일-다음날-시가-매수--초과수익">4-1. 사건일 다음날 시가 매수 → 초과수익</a></li><li class="depth-1"><a href="#5-한계와-다음-단계" data-for="5-한계와-다음-단계">5. 한계와 다음 단계</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2610110329'</script>

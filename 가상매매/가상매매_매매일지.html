@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>모의투자 매매일지</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="모의투자 매매일지"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="모의투자 매매일지"/><meta name="twitter:description" content="모의투자 매매일지 — 전략별 매수·매도 종목과 이유 기준일 2026-10-08 장 마감 · 포워드 시작 2026-10-08 · 계좌·수익률은 가상매매 대시보드, 규칙 검증은 백테스트 매수 이유 = 전략 규칙 + 신호일 종가 기준 지표(RS = 상대강도 백분위, 52주고가 = 52주 최고가 대비 현재가, PGR = PER ÷ 2년 영업이익 증가율, 외인·기관 = 20일 순매수 대금 ÷ 시가총액, bp = 0.01%)."/><meta property="og:description" content="모의투자 매매일지 — 전략별 매수·매도 종목과 이유 기준일 2026-10-08 장 마감 · 포워드 시작 2026-10-08 · 계좌·수익률은 가상매매 대시보드, 규칙 검증은 백테스트 매수 이유 = 전략 규칙 + 신호일 종가 기준 지표(RS = 상대강도 백분위, 52주고가 = 52주 최고가 대비 현재가, PGR = PER ÷ 2년 영업이익 증가율, 외인·기관 = 20일 순매수 대금 ÷ 시가총액, bp = 0.01%)."/><meta property="og:image:alt" content="모의투자 매매일지 — 전략별 매수·매도 종목과 이유 기준일 2026-10-08 장 마감 · 포워드 시작 2026-10-08 · 계좌·수익률은 가상매매 대시보드, 규칙 검증은 백테스트 매수 이유 = 전략 규칙 + 신호일 종가 기준 지표(RS = 상대강도 백분위, 52주고가 = 52주 최고가 대비 현재가, PGR = PER ÷ 2년 영업이익 증가율, 외인·기관 = 20일 순매수 대금 ÷ 시가총액, bp = 0.01%)."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/가상매매/가상매매_매매일지"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/가상매매/가상매매_매매일지"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="모의투자 매매일지 — 전략별 매수·매도 종목과 이유 기준일 2026-10-08 장 마감 · 포워드 시작 2026-10-08 · 계좌·수익률은 가상매매 대시보드, 규칙 검증은 백테스트 매수 이유 = 전략 규칙 + 신호일 종가 기준 지표(RS = 상대강도 백분위, 52주고가 = 52주 최고가 대비 현재가, PGR = PER ÷ 2년 영업이익 증가율, 외인·기관 = 20일 순매수 대금 ÷ 시가총액, bp = 0.01%)."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/가상매매/가상매매_매매일지-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/가상매매/가상매매_매매일지-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/가상매매/가상매매_매매일지-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="가상매매/가상매매_매매일지"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1118"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1118" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../가상매매/">가상매매</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>모의투자 매매일지</a></div></nav><h1 class="article-title">모의투자 매매일지</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-08T09:55:00.000Z">26.10.08.18</time><span>77 min read</span></p><ul class="tags"><li><a href="../tags/가상매매" class="internal tag-link">가상매매</a></li></ul></div></div><article class="popover-hint wide-table text-table"><h1 id="모의투자-매매일지--전략별-매수매도-종목과-이유">모의투자 매매일지 — 전략별 매수·매도 종목과 이유<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#모의투자-매매일지--전략별-매수매도-종목과-이유" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>기준일 <strong>2026-10-08</strong> 장 마감 · 포워드 시작 2026-10-08 · 계좌·수익률은 <a href="../가상매매/가상매매_대시보드" class="internal alias" data-slug="가상매매/가상매매_대시보드">가상매매 대시보드</a>, 규칙 검증은 <a href="../가상매매/가상매매_백테스트" class="internal alias" data-slug="가상매매/가상매매_백테스트">백테스트</a></p>
+<blockquote>
+<p>매수 이유 = 전략 규칙 + 신호일 종가 기준 지표(RS = 상대강도 백분위, 52주고가 = 52주 최고가 대비 현재가, PGR = PER ÷ 2년 영업이익 증가율, 외인·기관 = 20일 순매수 대금 ÷ 시가총액, bp = 0.01%). 매도 이유 = 엔진 청산 규칙. 기계적 신호이며 투자 권유가 아닙니다 — 직접 매수할 때는 공시·리포트·차트를 함께 확인하세요.</p>
+</blockquote>
+<h2 id="0-여러-전략이-함께-고른-종목다음-거래일-매수-예정-기준">0. 여러 전략이 함께 고른 종목(다음 거래일 매수 예정 기준)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#0-여러-전략이-함께-고른-종목다음-거래일-매수-예정-기준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>종목</th><th>전략 수</th><th>고른 전략</th><th>지표</th></tr></thead><tbody><tr><td>한국화장품제조(003350)</td><td>6</td><td>CANSLIM 펀더멘털(I=기관), CANSLIM 펀더멘털(I=쌍끌이), CANSLIM 펀더멘털(I=외국인), CANSLIM 펀더멘털(I=외인+기관), CANSLIM 펀더멘털(돌파무관), 저PGR∩CANSLIM</td><td>RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>마이크로컨텍솔(098120)</td><td>6</td><td>CANSLIM 펀더멘털(I=기관), CANSLIM 펀더멘털(I=쌍끌이), CANSLIM 펀더멘털(I=외국인), CANSLIM 펀더멘털(I=외인+기관), CANSLIM 펀더멘털(돌파무관), 내부자매수(DART)</td><td>RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>인텍플러스(064290)</td><td>6</td><td>복합(2개 이상 일치), 신고가+예상신기록, 신고가+증권사커버(사후가설), 외국인 보유율↑(20일+1%p), 외국인 순매수(20일), 외국인 연속순매수(5일+)</td><td>RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>코스맥스(192820)</td><td>5</td><td>CANSLIM 펀더멘털(I=기관), CANSLIM 펀더멘털(I=외인+기관), CANSLIM 펀더멘털(돌파무관), 목표가상향, 목표가상향∩CANSLIM</td><td>RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp</td></tr><tr><td>저스템(417840)</td><td>5</td><td>개인매도 흡수(외인+기관), 신고가+예상신기록, 신고가+증권사커버(사후가설), 외국인 순매수(20일), 외국인 연속순매수(5일+)</td><td>RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp</td></tr><tr><td>뉴파워프라즈마(144960)</td><td>4</td><td>신고가+실적신기록, 신고가+예상신기록, 신고가+증권사커버(사후가설), 쌍끌이+신고가 근접</td><td>RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp</td></tr><tr><td>피에스케이홀딩스(031980)</td><td>3</td><td>CANSLIM 펀더멘털(I=외국인), CANSLIM 펀더멘털(I=외인+기관), CANSLIM 펀더멘털(돌파무관)</td><td>RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp</td></tr><tr><td>고영(098460)</td><td>3</td><td>쌍끌이 단기(5일中3일), 외국인 순매수(20일), 외국인 연속순매수(5일+)</td><td>RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp</td></tr><tr><td>RF머트리얼즈(327260)</td><td>2</td><td>RS모멘텀, 복합(2개 이상 일치)</td><td>RS 99 · 20일 +58% · 52주고가 92% · 분기순익 +141% · PGR 1.27 · 외인20일 -351bp·기관 +410bp</td></tr><tr><td>한양디지텍(078350)</td><td>2</td><td>개인매도 흡수(외인+기관), 기관 순매수(20일)</td><td>RS 90 · 20일 +101% · 52주고가 92% · 분기순익 +36% · 외인20일 -61bp·기관 +692bp</td></tr><tr><td>엑시콘(092870)</td><td>2</td><td>개인매도 흡수(외인+기관), 외국인 보유율↑(20일+1%p)</td><td>RS 98 · 20일 +75% · 52주고가 99% · 분기순익 +855% · PGR 0.04 · 외인20일 +463bp·기관 +44bp</td></tr><tr><td>드림텍(192650)</td><td>2</td><td>개인매도 흡수(외인+기관), 기관 순매수(20일)</td><td>RS 80 · 20일 +40% · 52주고가 93% · 분기순익 적자전환 · 외인20일 -18bp·기관 +577bp</td></tr><tr><td>BGF리테일(282330)</td><td>2</td><td>목표가상향, 복합(2개 이상 일치)</td><td>RS 43 · 20일 -16% · 52주고가 83% · 분기순익 +8% · PGR 0.74 · 외인20일 +18bp·기관 -28bp</td></tr><tr><td>LS ELECTRIC(010120)</td><td>2</td><td>목표가상향∩CANSLIM, 미국주도→한국∩CANSLIM</td><td>RS 78 · 20일 -6% · 52주고가 61% · 분기순익 +72% · PGR 1.83 · 외인20일 +33bp·기관 -24bp</td></tr><tr><td>흥아해운(003280)</td><td>2</td><td>미국주도→한국, 미국주도→한국(가격상관 제외)</td><td>RS 34 · 20일 +5% · 52주고가 41% · 분기순익 -67% · 외인20일 +95bp·기관 +1bp</td></tr><tr><td>팬오션(028670)</td><td>2</td><td>미국주도→한국, 미국주도→한국(가격상관 제외)</td><td>RS 70 · 20일 -0% · 52주고가 95% · 분기순익 +12% · PGR 0.54 · 외인20일 -15bp·기관 +51bp</td></tr><tr><td>로보티즈(108490)</td><td>2</td><td>미국주도→한국, 미국주도→한국(가격상관 제외)</td><td>RS 72 · 20일 -1% · 52주고가 73% · 분기순익 +1,412% · PGR 5.08 · 외인20일 +225bp·기관 +8bp</td></tr><tr><td>유니퀘스트(077500)</td><td>2</td><td>쌍끌이+신고가 근접, 외국인·기관 쌍끌이(20일)</td><td>RS 79 · 20일 +39% · 52주고가 93% · 분기순익 +160% · 외인20일 +256bp·기관 +245bp</td></tr><tr><td>지씨지놈(340450)</td><td>2</td><td>쌍끌이+신고가 근접, 외국인·기관 쌍끌이(20일)</td><td>RS 82 · 20일 +79% · 52주고가 97% · 분기순익 +174% · PGR 0.44 · 외인20일 +200bp·기관 +283bp</td></tr><tr><td>SFA반도체(036540)</td><td>2</td><td>외국인 보유율↑(20일+1%p), 외국인 순매수(20일)</td><td>RS 94 · 20일 +93% · 52주고가 99% · 외인20일 +816bp·기관 -365bp</td></tr></tbody></table></div>
+<p>겹친 전략이 많을수록 서로 다른 근거(가격·실적·수급·리포트)가 같은 종목을 가리킨다는 뜻입니다. 대조군 전략은 제외했습니다.</p>
+<h2 id="1-다음-거래일-시가-매수-예정전략별">1. 다음 거래일 시가 매수 예정(전략별)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-다음-거래일-시가-매수-예정전략별" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>전략</th><th>종목</th><th>설정</th><th>매수 이유</th></tr></thead><tbody><tr><td>CANSLIM 펀더멘털(I=기관)</td><td>한국화장품제조(003350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 기관 순매수 (후보 3위) — RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>CANSLIM 펀더멘털(I=기관)</td><td>한미사이언스(008930)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 기관 순매수 (후보 4위) — RS 78 · 20일 +1% · 52주고가 94% · 분기순익 +54% · 외인20일 -39bp·기관 +55bp</td></tr><tr><td>CANSLIM 펀더멘털(I=기관)</td><td>마이크로컨텍솔(098120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 기관 순매수 (후보 1위) — RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>CANSLIM 펀더멘털(I=기관)</td><td>코스맥스(192820)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 기관 순매수 (후보 2위) — RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp</td></tr><tr><td>CANSLIM 펀더멘털(I=쌍끌이)</td><td>한국화장품제조(003350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 쌍끌이 (후보 2위) — RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>CANSLIM 펀더멘털(I=쌍끌이)</td><td>마이크로컨텍솔(098120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 쌍끌이 (후보 1위) — RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외국인)</td><td>한국화장품제조(003350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인 순매수 (후보 3위) — RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외국인)</td><td>피에스케이홀딩스(031980)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인 순매수 (후보 2위) — RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외국인)</td><td>마이크로컨텍솔(098120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인 순매수 (후보 1위) — RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외국인)</td><td>티에프이(425420)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인 순매수 (후보 4위) — RS 78 · 20일 +22% · 52주고가 87% · 분기순익 +67% · PGR 0.65 · 외인20일 +245bp·기관 -90bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외인+기관)</td><td>한국화장품제조(003350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인+기관 순매수 (후보 4위) — RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외인+기관)</td><td>피에스케이홀딩스(031980)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인+기관 순매수 (후보 2위) — RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외인+기관)</td><td>마이크로컨텍솔(098120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인+기관 순매수 (후보 1위) — RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>CANSLIM 펀더멘털(I=외인+기관)</td><td>코스맥스(192820)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 펀더멘털 + 외국인+기관 순매수 (후보 3위) — RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp</td></tr><tr><td>CANSLIM 펀더멘털(돌파무관)</td><td>한국화장품제조(003350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 완화 C·A·L·I + 52주 고가 85% 이상 (후보 4위) — RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>CANSLIM 펀더멘털(돌파무관)</td><td>피에스케이홀딩스(031980)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 완화 C·A·L·I + 52주 고가 85% 이상 (후보 2위) — RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp</td></tr><tr><td>CANSLIM 펀더멘털(돌파무관)</td><td>마이크로컨텍솔(098120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 완화 C·A·L·I + 52주 고가 85% 이상 (후보 1위) — RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>CANSLIM 펀더멘털(돌파무관)</td><td>코스맥스(192820)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>CAN SLIM 완화 C·A·L·I + 52주 고가 85% 이상 (후보 3위) — RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp</td></tr><tr><td>PGR하락(추정치↑)</td><td>태광(023160)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>컨센서스 상향으로 PGR 하락 (후보 2위) — RS 38 · 20일 -1% · 52주고가 54% · 분기순익 +415% · PGR 0.21 · 외인20일 -350bp·기관 +226bp</td></tr><tr><td>PGR하락(추정치↑)</td><td>컴투스(078340)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>컨센서스 상향으로 PGR 하락 (후보 1위) — RS 59 · 20일 +14% · 52주고가 94% · 분기순익 적자전환 · PGR 0.03 · 외인20일 +174bp·기관 +45bp</td></tr><tr><td>PGR하락(추정치↑)</td><td>PS일렉트로닉스(332570)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>컨센서스 상향으로 PGR 하락 (후보 3위) — RS 78 · 20일 +10% · 52주고가 59% · 분기순익 +405% · PGR 0.09 · 외인20일 +207bp·기관 +85bp</td></tr><tr><td>PGR하락(추정치↑)</td><td>에코프로에이치엔(383310)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>컨센서스 상향으로 PGR 하락 (후보 4위) — RS 29 · 20일 +11% · 52주고가 57% · 분기순익 +49% · PGR 0.31 · 외인20일 +30bp·기관 +23bp</td></tr><tr><td>RS모멘텀</td><td>피델릭스(032580)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>12개월 가중 상대강도 상위 (후보 3위) — RS 99 · 20일 +56% · 52주고가 90% · 외인20일 +251bp·기관 +36bp</td></tr><tr><td>RS모멘텀</td><td>주성엔지니어링(036930)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>12개월 가중 상대강도 상위 (후보 1위) — RS 100 · 20일 +43% · 52주고가 96% · 분기순익 +9% · PGR 3.12 · 외인20일 +110bp·기관 +177bp</td></tr><tr><td>RS모멘텀</td><td>아스플로(159010)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>12개월 가중 상대강도 상위 (후보 2위) — RS 100 · 20일 +44% · 52주고가 100% · 분기순익 적자전환 · 외인20일 -141bp·기관 +199bp</td></tr><tr><td>RS모멘텀</td><td>RF머트리얼즈(327260)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>12개월 가중 상대강도 상위 (후보 4위) — RS 99 · 20일 +58% · 52주고가 92% · 분기순익 +141% · PGR 1.27 · 외인20일 -351bp·기관 +410bp</td></tr><tr><td>개인매도 흡수(외인+기관)</td><td>한양디지텍(078350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>개인 순매도를 외국인+기관이 흡수 &amp; 20일선 위 (후보 1위) — RS 90 · 20일 +101% · 52주고가 92% · 분기순익 +36% · 외인20일 -61bp·기관 +692bp</td></tr><tr><td>개인매도 흡수(외인+기관)</td><td>엑시콘(092870)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>개인 순매도를 외국인+기관이 흡수 &amp; 20일선 위 (후보 4위) — RS 98 · 20일 +75% · 52주고가 99% · 분기순익 +855% · PGR 0.04 · 외인20일 +463bp·기관 +44bp</td></tr><tr><td>개인매도 흡수(외인+기관)</td><td>드림텍(192650)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>개인 순매도를 외국인+기관이 흡수 &amp; 20일선 위 (후보 2위) — RS 80 · 20일 +40% · 52주고가 93% · 분기순익 적자전환 · 외인20일 -18bp·기관 +577bp</td></tr><tr><td>개인매도 흡수(외인+기관)</td><td>저스템(417840)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>개인 순매도를 외국인+기관이 흡수 &amp; 20일선 위 (후보 3위) — RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp</td></tr><tr><td>기관 순매수(20일)</td><td>아로마티카(0015N0)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>기관 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 4위) — RS 66 · 20일 +8% · 52주고가 49% · 분기순익 +103% · PGR 0.50 · 외인20일 -134bp·기관 +484bp</td></tr><tr><td>기관 순매수(20일)</td><td>한양디지텍(078350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>기관 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 1위) — RS 90 · 20일 +101% · 52주고가 92% · 분기순익 +36% · 외인20일 -61bp·기관 +692bp</td></tr><tr><td>기관 순매수(20일)</td><td>드림텍(192650)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>기관 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 2위) — RS 80 · 20일 +40% · 52주고가 93% · 분기순익 적자전환 · 외인20일 -18bp·기관 +577bp</td></tr><tr><td>기관 순매수(20일)</td><td>디케이티(290550)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>기관 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 3위) — RS 92 · 20일 +59% · 52주고가 77% · 분기순익 +76% · PGR 0.35 · 외인20일 -218bp·기관 +507bp</td></tr><tr><td>내부자매수(DART)</td><td>마이크로컨텍솔(098120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>등기임원·주요주주 지분 증가 (후보 3위) — RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp</td></tr><tr><td>내부자매수(DART)</td><td>에코프로비엠(247540)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>등기임원·주요주주 지분 증가 (후보 1위) — RS 27 · 20일 +21% · 52주고가 52% · 분기순익 적자전환 · PGR 77.68 · 외인20일 +10bp·기관 -24bp</td></tr><tr><td>내부자매수(DART)</td><td>알지노믹스(476830)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>등기임원·주요주주 지분 증가 (후보 2위) — RS 1 · 20일 -8% · 분기영업익 적자전환 · 외인20일 -52bp·기관 -112bp</td></tr><tr><td>대형공급계약(공시)</td><td>한화엔진(082740)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>매출 대비 10% 이상 공급계약 공시 (후보 4위) — RS 20 · 20일 -11% · 52주고가 46% · 분기순익 +54% · PGR 0.27 · 외인20일 -202bp·기관 +134bp</td></tr><tr><td>대형공급계약(공시)</td><td>인텔리안테크(189300)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>매출 대비 10% 이상 공급계약 공시 (후보 2위) — RS 27 · 20일 -1% · 52주고가 37% · 분기순익 +97% · PGR 0.77 · 외인20일 -191bp·기관 -0bp</td></tr><tr><td>대형공급계약(공시)</td><td>씨이랩(189330)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>매출 대비 10% 이상 공급계약 공시 (후보 1위) — RS 84 · 20일 -14% · 52주고가 55% · 외인20일 -439bp·기관 -16bp</td></tr><tr><td>대형공급계약(공시)</td><td>파두(440110)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>매출 대비 10% 이상 공급계약 공시 (후보 3위) — RS 93 · 20일 +18% · 52주고가 65% · 외인20일 -336bp·기관 +454bp</td></tr><tr><td>리포트테마급증</td><td>라온시큐어(042510)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 리포트 언급 급증 테마 (후보 2위) — RS 88 · 20일 +78% · 52주고가 92% · 분기순익 +2,807% · PGR 0.90 · 외인20일 -66bp·기관 +15bp</td></tr><tr><td>리포트테마급증</td><td>지니언스(263860)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 리포트 언급 급증 테마 (후보 4위) — RS 77 · 20일 +55% · 52주고가 82% · 분기순익 +170% · PGR 0.78 · 외인20일 -135bp·기관 +52bp</td></tr><tr><td>리포트테마급증</td><td>엑스게이트(356680)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 리포트 언급 급증 테마 (후보 3위) — RS 91 · 20일 +58% · 52주고가 65% · 분기순익 +3,463% · 외인20일 -183bp·기관 +2bp</td></tr><tr><td>리포트테마급증</td><td>샌즈랩(411080)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 리포트 언급 급증 테마 (후보 1위) — RS 70 · 20일 +79% · 52주고가 79% · 분기순익 적자전환 · 외인20일 -35bp·기관 +3bp</td></tr><tr><td>목표가상향</td><td>SK이노베이션(096770)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 2주 증권사 목표가 상향 (후보 4위) — RS 78 · 20일 +17% · 52주고가 100% · 분기영업익 +111% · 외인20일 +117bp·기관 +45bp</td></tr><tr><td>목표가상향</td><td>한국콜마(161890)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 2주 증권사 목표가 상향 (후보 3위) — RS 81 · 20일 -5% · 52주고가 85% · 분기순익 +69% · PGR 0.81 · 외인20일 +23bp·기관 +8bp</td></tr><tr><td>목표가상향</td><td>코스맥스(192820)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 2주 증권사 목표가 상향 (후보 1위) — RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp</td></tr><tr><td>목표가상향</td><td>BGF리테일(282330)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 2주 증권사 목표가 상향 (후보 2위) — RS 43 · 20일 -16% · 52주고가 83% · 분기순익 +8% · PGR 0.74 · 외인20일 +18bp·기관 -28bp</td></tr><tr><td>목표가상향∩CANSLIM</td><td>LS ELECTRIC(010120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>목표가상향 중 CAN SLIM 부합 (후보 3위) — RS 78 · 20일 -6% · 52주고가 61% · 분기순익 +72% · PGR 1.83 · 외인20일 +33bp·기관 -24bp</td></tr><tr><td>목표가상향∩CANSLIM</td><td>코스맥스(192820)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>목표가상향 중 CAN SLIM 부합 (후보 1위) — RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp</td></tr><tr><td>목표가상향∩CANSLIM</td><td>코스메카코리아(241710)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>목표가상향 중 CAN SLIM 부합 (후보 2위) — RS 76 · 20일 -14% · 52주고가 72% · 분기순익 +88% · PGR 0.89 · 외인20일 -135bp·기관 +122bp</td></tr><tr><td>미국주도→한국</td><td>흥아해운(003280)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마와 연결된 한국 종목 (후보 3위) — RS 34 · 20일 +5% · 52주고가 41% · 분기순익 -67% · 외인20일 +95bp·기관 +1bp</td></tr><tr><td>미국주도→한국</td><td>HMM(011200)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마와 연결된 한국 종목 (후보 4위) — RS 40 · 20일 -3% · 52주고가 85% · 분기순익 -13% · 외인20일 +18bp·기관 -9bp</td></tr><tr><td>미국주도→한국</td><td>팬오션(028670)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마와 연결된 한국 종목 (후보 1위) — RS 70 · 20일 -0% · 52주고가 95% · 분기순익 +12% · PGR 0.54 · 외인20일 -15bp·기관 +51bp</td></tr><tr><td>미국주도→한국</td><td>로보티즈(108490)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마와 연결된 한국 종목 (후보 2위) — RS 72 · 20일 -1% · 52주고가 73% · 분기순익 +1,412% · PGR 5.08 · 외인20일 +225bp·기관 +8bp</td></tr><tr><td>미국주도→한국(가격상관 제외)</td><td>흥아해운(003280)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마 연결(가격 상관 제외) (후보 2위) — RS 34 · 20일 +5% · 52주고가 41% · 분기순익 -67% · 외인20일 +95bp·기관 +1bp</td></tr><tr><td>미국주도→한국(가격상관 제외)</td><td>팬오션(028670)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마 연결(가격 상관 제외) (후보 1위) — RS 70 · 20일 -0% · 52주고가 95% · 분기순익 +12% · PGR 0.54 · 외인20일 -15bp·기관 +51bp</td></tr><tr><td>미국주도→한국(가격상관 제외)</td><td>로보티즈(108490)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마 연결(가격 상관 제외) (후보 3위) — RS 72 · 20일 -1% · 52주고가 73% · 분기순익 +1,412% · PGR 5.08 · 외인20일 +225bp·기관 +8bp</td></tr><tr><td>미국주도→한국(가격상관 제외)</td><td>가온칩스(399720)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국 주도 테마 연결(가격 상관 제외) (후보 4위) — RS 34 · 20일 +11% · 52주고가 60% · 분기순익 -72% · 외인20일 +200bp·기관 -237bp</td></tr><tr><td>미국주도→한국∩CANSLIM</td><td>SK하이닉스(000660)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국주도→한국 중 CAN SLIM 부합 (후보 2위) — RS 93 · 20일 -6% · 52주고가 58% · 분기순익 +1,242% · PGR 0.15 · 외인20일 -133bp·기관 -6bp</td></tr><tr><td>미국주도→한국∩CANSLIM</td><td>LS ELECTRIC(010120)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국주도→한국 중 CAN SLIM 부합 (후보 1위) — RS 78 · 20일 -6% · 52주고가 61% · 분기순익 +72% · PGR 1.83 · 외인20일 +33bp·기관 -24bp</td></tr><tr><td>미국주도→한국∩CANSLIM</td><td>지엔씨에너지(119850)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>미국주도→한국 중 CAN SLIM 부합 (후보 3위) — RS 80 · 20일 +9% · 52주고가 84% · 분기순익 +45% · PGR 0.99 · 외인20일 +207bp·기관 -172bp</td></tr><tr><td>복합(2개 이상 일치)</td><td>대한광통신(010170)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>2개 이상 전략 동시 후보 (후보 4위) — RS 99 · 20일 +26% · 52주고가 58% · 외인20일 +159bp·기관 +34bp</td></tr><tr><td>복합(2개 이상 일치)</td><td>인텍플러스(064290)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>2개 이상 전략 동시 후보 (후보 3위) — RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>복합(2개 이상 일치)</td><td>BGF리테일(282330)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>2개 이상 전략 동시 후보 (후보 1위) — RS 43 · 20일 -16% · 52주고가 83% · 분기순익 +8% · PGR 0.74 · 외인20일 +18bp·기관 -28bp</td></tr><tr><td>복합(2개 이상 일치)</td><td>RF머트리얼즈(327260)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>2개 이상 전략 동시 후보 (후보 2위) — RS 99 · 20일 +58% · 52주고가 92% · 분기순익 +141% · PGR 1.27 · 외인20일 -351bp·기관 +410bp</td></tr><tr><td>신개념뉴스 수혜주</td><td>기아(000270)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>새 개념 뉴스 급증 수혜주 (후보 3위) — RS 13 · 20일 -17% · 52주고가 52% · 분기순익 +3% · PGR 0.64 · 외인20일 -0bp·기관 -50bp</td></tr><tr><td>신개념뉴스 수혜주</td><td>현대차(005380)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>새 개념 뉴스 급증 수혜주 (후보 2위) — RS 26 · 20일 -17% · 52주고가 43% · 분기순익 -11% · PGR 1.54 · 외인20일 -55bp·기관 -51bp</td></tr><tr><td>신개념뉴스 수혜주</td><td>삼성증권(016360)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>새 개념 뉴스 급증 수혜주 (후보 4위) — RS 25 · 20일 -2% · 52주고가 57% · 분기순익 +108% · PGR 0.33 · 외인20일 +27bp·기관 +17bp</td></tr><tr><td>신개념뉴스 수혜주</td><td>신한지주(055550)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>새 개념 뉴스 급증 수혜주 (후보 1위) — RS 50 · 20일 -13% · 52주고가 87% · 분기순익 +17% · PGR 1.00 · 외인20일 -49bp·기관 +42bp</td></tr><tr><td>신고가+실적신기록</td><td>뉴파워프라즈마(144960)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>10년 최대 실적 + 신고가 (후보 1위) — RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp</td></tr><tr><td>신고가+예상신기록</td><td>인텍플러스(064290)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>올해 예상 실적 10년 최대 + 신고가 (후보 3위) — RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>신고가+예상신기록</td><td>뉴파워프라즈마(144960)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>올해 예상 실적 10년 최대 + 신고가 (후보 2위) — RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp</td></tr><tr><td>신고가+예상신기록</td><td>저스템(417840)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>올해 예상 실적 10년 최대 + 신고가 (후보 1위) — RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp</td></tr><tr><td>신고가+증권사커버(사후가설)</td><td>인텍플러스(064290)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 커버 종목 신고가 (후보 3위) — RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>신고가+증권사커버(사후가설)</td><td>뉴파워프라즈마(144960)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 커버 종목 신고가 (후보 2위) — RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp</td></tr><tr><td>신고가+증권사커버(사후가설)</td><td>저스템(417840)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>증권사 커버 종목 신고가 (후보 1위) — RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp</td></tr><tr><td>신고가돌파</td><td>동국산업(005160)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>52주 신고가 돌파(거래대금 동반) (후보 2위) — RS 86 · 20일 +86% · 52주고가 100% · 분기순익 적자전환 · 외인20일 -26bp·기관 +58bp</td></tr><tr><td>신고가돌파</td><td>HLB제약(047920)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>52주 신고가 돌파(거래대금 동반) (후보 4위) — RS 32 · 20일 +73% · 52주고가 63% · 분기순익 적자전환 · 외인20일 -65bp·기관 -142bp</td></tr><tr><td>신고가돌파</td><td>비아트론(141000)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>52주 신고가 돌파(거래대금 동반) (후보 3위) — RS 80 · 20일 +59% · 52주고가 100% · 분기순익 -84% · 외인20일 -4bp·기관 -66bp</td></tr><tr><td>신고가돌파</td><td>HLB바이오스텝(278650)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>52주 신고가 돌파(거래대금 동반) (후보 1위) — RS 81 · 20일 +162% · 52주고가 100% · 외인20일 -45bp·기관 -0bp</td></tr><tr><td>실적호조(공시)</td><td>삼성전자(005930)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>잠정실적 공시 호조 (후보 1위) — RS 85 · 20일 -3% · 52주고가 72% · 분기순익 +1,300% · PGR 0.13 · 외인20일 -42bp·기관 +8bp</td></tr><tr><td>쌍끌이 단기(5일中3일)</td><td>고영(098460)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 5일 중 3일 이상 외국인·기관 동시 순매수 (후보 1위) — RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp</td></tr><tr><td>쌍끌이 단기(5일中3일)</td><td>한중엔시에스(107640)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 5일 중 3일 이상 외국인·기관 동시 순매수 (후보 4위) — RS 64 · 20일 +19% · 52주고가 67% · 분기순익 적자전환 · PGR 0.93 · 외인20일 +1bp·기관 +321bp</td></tr><tr><td>쌍끌이 단기(5일中3일)</td><td>오이솔루션(138080)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 5일 중 3일 이상 외국인·기관 동시 순매수 (후보 2위) — RS 86 · 20일 +44% · 52주고가 57% · 외인20일 -32bp·기관 +284bp</td></tr><tr><td>쌍끌이 단기(5일中3일)</td><td>HD현대에너지솔루션(322000)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>최근 5일 중 3일 이상 외국인·기관 동시 순매수 (후보 3위) — RS 88 · 20일 +7% · 52주고가 60% · 분기순익 +170% · PGR 0.39 · 외인20일 +155bp·기관 -71bp</td></tr><tr><td>쌍끌이+신고가 근접</td><td>하나마이크론(067310)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>쌍끌이 + 20일선 위 + 52주 고가 90% 이상 (후보 3위) — RS 88 · 20일 +41% · 52주고가 90% · 분기순익 +1,101% · PGR 1.07 · 외인20일 +128bp·기관 +203bp</td></tr><tr><td>쌍끌이+신고가 근접</td><td>유니퀘스트(077500)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>쌍끌이 + 20일선 위 + 52주 고가 90% 이상 (후보 2위) — RS 79 · 20일 +39% · 52주고가 93% · 분기순익 +160% · 외인20일 +256bp·기관 +245bp</td></tr><tr><td>쌍끌이+신고가 근접</td><td>뉴파워프라즈마(144960)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>쌍끌이 + 20일선 위 + 52주 고가 90% 이상 (후보 4위) — RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp</td></tr><tr><td>쌍끌이+신고가 근접</td><td>지씨지놈(340450)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>쌍끌이 + 20일선 위 + 52주 고가 90% 이상 (후보 1위) — RS 82 · 20일 +79% · 52주고가 97% · 분기순익 +174% · PGR 0.44 · 외인20일 +200bp·기관 +283bp</td></tr><tr><td>업종리더</td><td>디아이(003160)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 업종 안의 대장주 (후보 2위) — RS 90 · 20일 +35% · 52주고가 98% · 분기순익 +260% · PGR 2.36 · 외인20일 +435bp·기관 -3bp</td></tr><tr><td>업종리더</td><td>코리아써키트(007810)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 업종 안의 대장주 (후보 4위) — RS 92 · 20일 +69% · 52주고가 62% · 분기순익 +332% · PGR 0.62 · 외인20일 -64bp·기관 +116bp</td></tr><tr><td>업종리더</td><td>미래산업(025560)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 업종 안의 대장주 (후보 3위) — RS 89 · 20일 +27% · 52주고가 53% · 분기순익 +716% · 외인20일 +44bp·기관 -2bp</td></tr><tr><td>업종리더</td><td>케이씨텍(281820)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 업종 안의 대장주 (후보 1위) — RS 94 · 20일 +78% · 52주고가 100% · 분기순익 +92% · 외인20일 +59bp·기관 +104bp</td></tr><tr><td>외국인 보유율↑(20일+1%p)</td><td>SFA반도체(036540)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 보유율 20일간 +1%p 이상 (후보 1위) — RS 94 · 20일 +93% · 52주고가 99% · 외인20일 +816bp·기관 -365bp</td></tr><tr><td>외국인 보유율↑(20일+1%p)</td><td>지어소프트(051160)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 보유율 20일간 +1%p 이상 (후보 2위) — RS 89 · 20일 +45% · 52주고가 100% · 분기순익 +65% · 외인20일 +387bp·기관 +20bp</td></tr><tr><td>외국인 보유율↑(20일+1%p)</td><td>인텍플러스(064290)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 보유율 20일간 +1%p 이상 (후보 4위) — RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>외국인 보유율↑(20일+1%p)</td><td>엑시콘(092870)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 보유율 20일간 +1%p 이상 (후보 3위) — RS 98 · 20일 +75% · 52주고가 99% · 분기순익 +855% · PGR 0.04 · 외인20일 +463bp·기관 +44bp</td></tr><tr><td>외국인 순매수(20일)</td><td>SFA반도체(036540)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 1위) — RS 94 · 20일 +93% · 52주고가 99% · 외인20일 +816bp·기관 -365bp</td></tr><tr><td>외국인 순매수(20일)</td><td>인텍플러스(064290)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 3위) — RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>외국인 순매수(20일)</td><td>고영(098460)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 2위) — RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp</td></tr><tr><td>외국인 순매수(20일)</td><td>저스템(417840)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 (후보 4위) — RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp</td></tr><tr><td>외국인 연속순매수(5일+)</td><td>인텍플러스(064290)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 5일 이상 연속 순매수 (후보 2위) — RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp</td></tr><tr><td>외국인 연속순매수(5일+)</td><td>고영(098460)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 5일 이상 연속 순매수 (후보 1위) — RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp</td></tr><tr><td>외국인 연속순매수(5일+)</td><td>파마리서치(214450)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 5일 이상 연속 순매수 (후보 4위) — RS 17 · 20일 -20% · 52주고가 50% · 분기순익 +34% · PGR 0.73 · 외인20일 +463bp·기관 -622bp</td></tr><tr><td>외국인 연속순매수(5일+)</td><td>저스템(417840)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인 5일 이상 연속 순매수 (후보 3위) — RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp</td></tr><tr><td>외국인·기관 쌍끌이(20일)</td><td>유니퀘스트(077500)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인·기관 모두 20일 순매수 (후보 3위) — RS 79 · 20일 +39% · 52주고가 93% · 분기순익 +160% · 외인20일 +256bp·기관 +245bp</td></tr><tr><td>외국인·기관 쌍끌이(20일)</td><td>에이팩트(200470)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인·기관 모두 20일 순매수 (후보 4위) — RS 88 · 20일 +73% · 52주고가 87% · 분기영업익 +19% · 외인20일 +199bp·기관 +266bp</td></tr><tr><td>외국인·기관 쌍끌이(20일)</td><td>자이에스앤디(317400)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인·기관 모두 20일 순매수 (후보 2위) — RS 94 · 20일 -7% · 52주고가 85% · 분기순익 +128% · PGR 0.06 · 외인20일 +196bp·기관 +383bp</td></tr><tr><td>외국인·기관 쌍끌이(20일)</td><td>지씨지놈(340450)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>외국인·기관 모두 20일 순매수 (후보 1위) — RS 82 · 20일 +79% · 52주고가 97% · 분기순익 +174% · PGR 0.44 · 외인20일 +200bp·기관 +283bp</td></tr><tr><td>저PGR(≤0.5)</td><td>금호건설(002990)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>PER ÷ 2년 영업이익 증가율 0.5 이하 (후보 1위) — RS 91 · 20일 -31% · 52주고가 64% · 분기순익 +30% · PGR 0.13 · 외인20일 +176bp·기관 -16bp</td></tr><tr><td>저PGR(≤0.5)</td><td>HD현대마린엔진(071970)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>PER ÷ 2년 영업이익 증가율 0.5 이하 (후보 2위) — RS 3 · 20일 -16% · 52주고가 37% · 분기순익 +92% · PGR 0.13 · 외인20일 -55bp·기관 -94bp</td></tr><tr><td>저PGR(≤0.5)</td><td>제닉(123330)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>PER ÷ 2년 영업이익 증가율 0.5 이하 (후보 4위) — RS 23 · 20일 -23% · 52주고가 59% · 분기순익 +180% · PGR 0.18 · 외인20일 +149bp·기관 -277bp</td></tr><tr><td>저PGR(≤0.5)</td><td>IPARK현대산업개발(294870)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>PER ÷ 2년 영업이익 증가율 0.5 이하 (후보 3위) — RS 47 · 20일 -5% · 52주고가 88% · 분기순익 +59% · PGR 0.13 · 외인20일 +4bp·기관 +17bp</td></tr><tr><td>저PGR∩CANSLIM</td><td>한국화장품제조(003350)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>저PGR 중 CAN SLIM 부합 (후보 1위) — RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp</td></tr><tr><td>테마리더</td><td>성호전자(043260)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 테마 안의 대장주 (후보 1위) — RS 100 · 20일 +104% · 52주고가 61% · 분기순익 적자전환 · PGR 0.10 · 외인20일 -26bp·기관 +4bp</td></tr><tr><td>테마리더</td><td>빛과전자(069540)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 테마 안의 대장주 (후보 4위) — RS 99 · 20일 +74% · 52주고가 70% · 외인20일 +317bp·기관 -1bp</td></tr><tr><td>테마리더</td><td>빛샘전자(072950)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 테마 안의 대장주 (후보 2위) — RS 96 · 20일 +93% · 52주고가 68% · 분기순익 +150% · 외인20일 -15bp·기관 +98bp</td></tr><tr><td>테마리더</td><td>머큐리(100590)</td><td>기본, 이평선확인, 60일선청산, 120일보유, CANSLIM원칙</td><td>강한 테마 안의 대장주 (후보 3위) — RS 83 · 20일 +78% · 52주고가 53% · 분기순익 적자전환 · 외인20일 -463bp·기관 -0bp</td></tr></tbody></table></div>
+<h2 id="2-다음-거래일-시가-매도-예정">2. 다음 거래일 시가 매도 예정<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-다음-거래일-시가-매도-예정" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>없음</p>
+<h2 id="3-전략별-매매-기록최근-15거래일보유오늘-후보">3. 전략별 매매 기록(최근 15거래일)·보유·오늘 후보<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-전략별-매매-기록최근-15거래일보유오늘-후보" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="매매-없는-전략오늘-후보만">매매 없는 전략(오늘 후보만)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#매매-없는-전략오늘-후보만" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>52주신고가(대조)</strong> — 52주 신고가(대조군) · 오늘 후보: HLB바이오스텝(278650) [RS 81 · 20일 +162% · 52주고가 100% · 외인20일 -45bp·기관 -0bp], 동국산업(005160) [RS 86 · 20일 +86% · 52주고가 100% · 분기순익 적자전환 · 외인20일 -26bp·기관 +58bp], 비아트론(141000) [RS 80 · 20일 +59% · 52주고가 100% · 분기순익 -84% · 외인20일 -4bp·기관 -66bp]</li>
+<li><strong>CANSLIM 펀더멘털(I=기관)</strong> — CAN SLIM 펀더멘털 + 기관 순매수 · 오늘 후보: 마이크로컨텍솔(098120) [RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp], 코스맥스(192820) [RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp], 한국화장품제조(003350) [RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp]</li>
+<li><strong>CANSLIM 펀더멘털(I=쌍끌이)</strong> — CAN SLIM 펀더멘털 + 쌍끌이 · 오늘 후보: 마이크로컨텍솔(098120) [RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp], 한국화장품제조(003350) [RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp]</li>
+<li><strong>CANSLIM 펀더멘털(I=외국인)</strong> — CAN SLIM 펀더멘털 + 외국인 순매수 · 오늘 후보: 마이크로컨텍솔(098120) [RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp], 피에스케이홀딩스(031980) [RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp], 한국화장품제조(003350) [RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp]</li>
+<li><strong>CANSLIM 펀더멘털(I=외인+기관)</strong> — CAN SLIM 펀더멘털 + 외국인+기관 순매수 · 오늘 후보: 마이크로컨텍솔(098120) [RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp], 피에스케이홀딩스(031980) [RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp], 코스맥스(192820) [RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp]</li>
+<li><strong>CANSLIM 펀더멘털(돌파무관)</strong> — CAN SLIM 완화 C·A·L·I + 52주 고가 85% 이상 · 오늘 후보: 마이크로컨텍솔(098120) [RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp], 피에스케이홀딩스(031980) [RS 97 · 20일 +34% · 52주고가 100% · 분기순익 +40% · PGR 0.98 · 외인20일 +65bp·기관 -40bp], 코스맥스(192820) [RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp]</li>
+<li><strong>PGR하락(추정치↑)</strong> — 컨센서스 상향으로 PGR 하락 · 오늘 후보: 컴투스(078340) [RS 59 · 20일 +14% · 52주고가 94% · 분기순익 적자전환 · PGR 0.03 · 외인20일 +174bp·기관 +45bp], 태광(023160) [RS 38 · 20일 -1% · 52주고가 54% · 분기순익 +415% · PGR 0.21 · 외인20일 -350bp·기관 +226bp], PS일렉트로닉스(332570) [RS 78 · 20일 +10% · 52주고가 59% · 분기순익 +405% · PGR 0.09 · 외인20일 +207bp·기관 +85bp]</li>
+<li><strong>RS모멘텀</strong> — 12개월 가중 상대강도 상위 · 오늘 후보: 주성엔지니어링(036930) [RS 100 · 20일 +43% · 52주고가 96% · 분기순익 +9% · PGR 3.12 · 외인20일 +110bp·기관 +177bp], 아스플로(159010) [RS 100 · 20일 +44% · 52주고가 100% · 분기순익 적자전환 · 외인20일 -141bp·기관 +199bp], 피델릭스(032580) [RS 99 · 20일 +56% · 52주고가 90% · 외인20일 +251bp·기관 +36bp]</li>
+<li><strong>개인매도 흡수(외인+기관)</strong> — 개인 순매도를 외국인+기관이 흡수 &amp; 20일선 위 · 오늘 후보: 한양디지텍(078350) [RS 90 · 20일 +101% · 52주고가 92% · 분기순익 +36% · 외인20일 -61bp·기관 +692bp], 드림텍(192650) [RS 80 · 20일 +40% · 52주고가 93% · 분기순익 적자전환 · 외인20일 -18bp·기관 +577bp], 저스템(417840) [RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp]</li>
+<li><strong>기관 순매수(20일)</strong> — 기관 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 · 오늘 후보: 한양디지텍(078350) [RS 90 · 20일 +101% · 52주고가 92% · 분기순익 +36% · 외인20일 -61bp·기관 +692bp], 드림텍(192650) [RS 80 · 20일 +40% · 52주고가 93% · 분기순익 적자전환 · 외인20일 -18bp·기관 +577bp], 디케이티(290550) [RS 92 · 20일 +59% · 52주고가 77% · 분기순익 +76% · PGR 0.35 · 외인20일 -218bp·기관 +507bp]</li>
+<li><strong>내부자매수(DART)</strong> — 등기임원·주요주주 지분 증가 · 오늘 후보: 에코프로비엠(247540) [RS 27 · 20일 +21% · 52주고가 52% · 분기순익 적자전환 · PGR 77.68 · 외인20일 +10bp·기관 -24bp], 알지노믹스(476830) [RS 1 · 20일 -8% · 분기영업익 적자전환 · 외인20일 -52bp·기관 -112bp], 마이크로컨텍솔(098120) [RS 96 · 20일 +26% · 52주고가 97% · 분기순익 +430% · 외인20일 +122bp·기관 +133bp]</li>
+<li><strong>단기반등(대조)</strong> — 단기 급락 종목(대조군) · 오늘 후보: 페니트리움바이오(187660) [RS 83 · 20일 -2% · 52주고가 34% · 분기순익 적자전환 · 외인20일 -185bp·기관 -1bp], 혜인(003010) [RS 81 · 20일 -9% · 52주고가 64% · 분기순익 +61% · 외인20일 +258bp·기관 -8bp], 금강철강(053260) [RS 75 · 20일 +4% · 52주고가 82% · 분기순익 +51% · 외인20일 +19bp·기관 -99bp]</li>
+<li><strong>대형공급계약(공시)</strong> — 매출 대비 10% 이상 공급계약 공시 · 오늘 후보: 씨이랩(189330) [RS 84 · 20일 -14% · 52주고가 55% · 외인20일 -439bp·기관 -16bp], 인텔리안테크(189300) [RS 27 · 20일 -1% · 52주고가 37% · 분기순익 +97% · PGR 0.77 · 외인20일 -191bp·기관 -0bp], 파두(440110) [RS 93 · 20일 +18% · 52주고가 65% · 외인20일 -336bp·기관 +454bp]</li>
+<li><strong>리포트테마급증</strong> — 증권사 리포트 언급 급증 테마 · 오늘 후보: 샌즈랩(411080) [RS 70 · 20일 +79% · 52주고가 79% · 분기순익 적자전환 · 외인20일 -35bp·기관 +3bp], 라온시큐어(042510) [RS 88 · 20일 +78% · 52주고가 92% · 분기순익 +2,807% · PGR 0.90 · 외인20일 -66bp·기관 +15bp], 엑스게이트(356680) [RS 91 · 20일 +58% · 52주고가 65% · 분기순익 +3,463% · 외인20일 -183bp·기관 +2bp]</li>
+<li><strong>목표가상향</strong> — 최근 2주 증권사 목표가 상향 · 오늘 후보: 코스맥스(192820) [RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp], BGF리테일(282330) [RS 43 · 20일 -16% · 52주고가 83% · 분기순익 +8% · PGR 0.74 · 외인20일 +18bp·기관 -28bp], 한국콜마(161890) [RS 81 · 20일 -5% · 52주고가 85% · 분기순익 +69% · PGR 0.81 · 외인20일 +23bp·기관 +8bp]</li>
+<li><strong>목표가상향∩CANSLIM</strong> — 목표가상향 중 CAN SLIM 부합 · 오늘 후보: 코스맥스(192820) [RS 83 · 20일 +12% · 52주고가 99% · 분기순익 +129% · PGR 0.93 · 외인20일 -156bp·기관 +184bp], 코스메카코리아(241710) [RS 76 · 20일 -14% · 52주고가 72% · 분기순익 +88% · PGR 0.89 · 외인20일 -135bp·기관 +122bp], LS ELECTRIC(010120) [RS 78 · 20일 -6% · 52주고가 61% · 분기순익 +72% · PGR 1.83 · 외인20일 +33bp·기관 -24bp]</li>
+<li><strong>미국주도→한국</strong> — 미국 주도 테마와 연결된 한국 종목 · 오늘 후보: 팬오션(028670) [RS 70 · 20일 -0% · 52주고가 95% · 분기순익 +12% · PGR 0.54 · 외인20일 -15bp·기관 +51bp], 로보티즈(108490) [RS 72 · 20일 -1% · 52주고가 73% · 분기순익 +1,412% · PGR 5.08 · 외인20일 +225bp·기관 +8bp], 흥아해운(003280) [RS 34 · 20일 +5% · 52주고가 41% · 분기순익 -67% · 외인20일 +95bp·기관 +1bp]</li>
+<li><strong>미국주도→한국(가격상관 제외)</strong> — 미국 주도 테마 연결(가격 상관 제외) · 오늘 후보: 팬오션(028670) [RS 70 · 20일 -0% · 52주고가 95% · 분기순익 +12% · PGR 0.54 · 외인20일 -15bp·기관 +51bp], 흥아해운(003280) [RS 34 · 20일 +5% · 52주고가 41% · 분기순익 -67% · 외인20일 +95bp·기관 +1bp], 로보티즈(108490) [RS 72 · 20일 -1% · 52주고가 73% · 분기순익 +1,412% · PGR 5.08 · 외인20일 +225bp·기관 +8bp]</li>
+<li><strong>미국주도→한국∩CANSLIM</strong> — 미국주도→한국 중 CAN SLIM 부합 · 오늘 후보: LS ELECTRIC(010120) [RS 78 · 20일 -6% · 52주고가 61% · 분기순익 +72% · PGR 1.83 · 외인20일 +33bp·기관 -24bp], SK하이닉스(000660) [RS 93 · 20일 -6% · 52주고가 58% · 분기순익 +1,242% · PGR 0.15 · 외인20일 -133bp·기관 -6bp], 지엔씨에너지(119850) [RS 80 · 20일 +9% · 52주고가 84% · 분기순익 +45% · PGR 0.99 · 외인20일 +207bp·기관 -172bp]</li>
+<li><strong>복합(2개 이상 일치)</strong> — 2개 이상 전략 동시 후보 · 오늘 후보: BGF리테일(282330) [RS 43 · 20일 -16% · 52주고가 83% · 분기순익 +8% · PGR 0.74 · 외인20일 +18bp·기관 -28bp], RF머트리얼즈(327260) [RS 99 · 20일 +58% · 52주고가 92% · 분기순익 +141% · PGR 1.27 · 외인20일 -351bp·기관 +410bp], 인텍플러스(064290) [RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp]</li>
+<li><strong>신개념뉴스 수혜주</strong> — 새 개념 뉴스 급증 수혜주 · 오늘 후보: 신한지주(055550) [RS 50 · 20일 -13% · 52주고가 87% · 분기순익 +17% · PGR 1.00 · 외인20일 -49bp·기관 +42bp], 현대차(005380) [RS 26 · 20일 -17% · 52주고가 43% · 분기순익 -11% · PGR 1.54 · 외인20일 -55bp·기관 -51bp], 기아(000270) [RS 13 · 20일 -17% · 52주고가 52% · 분기순익 +3% · PGR 0.64 · 외인20일 -0bp·기관 -50bp]</li>
+<li><strong>신고가+실적신기록</strong> — 10년 최대 실적 + 신고가 · 오늘 후보: 뉴파워프라즈마(144960) [RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp]</li>
+<li><strong>신고가+예상신기록</strong> — 올해 예상 실적 10년 최대 + 신고가 · 오늘 후보: 저스템(417840) [RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp], 뉴파워프라즈마(144960) [RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp], 인텍플러스(064290) [RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp]</li>
+<li><strong>신고가+증권사커버(사후가설)</strong> — 증권사 커버 종목 신고가 · 오늘 후보: 저스템(417840) [RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp], 뉴파워프라즈마(144960) [RS 93 · 20일 +57% · 52주고가 100% · 분기순익 +23,295% · PGR 1.04 · 외인20일 +290bp·기관 +98bp], 인텍플러스(064290) [RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp]</li>
+<li><strong>신고가돌파</strong> — 52주 신고가 돌파(거래대금 동반) · 오늘 후보: HLB바이오스텝(278650) [RS 81 · 20일 +162% · 52주고가 100% · 외인20일 -45bp·기관 -0bp], 동국산업(005160) [RS 86 · 20일 +86% · 52주고가 100% · 분기순익 적자전환 · 외인20일 -26bp·기관 +58bp], 비아트론(141000) [RS 80 · 20일 +59% · 52주고가 100% · 분기순익 -84% · 외인20일 -4bp·기관 -66bp]</li>
+<li><strong>실적호조(공시)</strong> — 잠정실적 공시 호조 · 오늘 후보: 삼성전자(005930) [RS 85 · 20일 -3% · 52주고가 72% · 분기순익 +1,300% · PGR 0.13 · 외인20일 -42bp·기관 +8bp]</li>
+<li><strong>쌍끌이 단기(5일中3일)</strong> — 최근 5일 중 3일 이상 외국인·기관 동시 순매수 · 오늘 후보: 고영(098460) [RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp], 오이솔루션(138080) [RS 86 · 20일 +44% · 52주고가 57% · 외인20일 -32bp·기관 +284bp], HD현대에너지솔루션(322000) [RS 88 · 20일 +7% · 52주고가 60% · 분기순익 +170% · PGR 0.39 · 외인20일 +155bp·기관 -71bp]</li>
+<li><strong>쌍끌이+신고가 근접</strong> — 쌍끌이 + 20일선 위 + 52주 고가 90% 이상 · 오늘 후보: 지씨지놈(340450) [RS 82 · 20일 +79% · 52주고가 97% · 분기순익 +174% · PGR 0.44 · 외인20일 +200bp·기관 +283bp], 유니퀘스트(077500) [RS 79 · 20일 +39% · 52주고가 93% · 분기순익 +160% · 외인20일 +256bp·기관 +245bp], 하나마이크론(067310) [RS 88 · 20일 +41% · 52주고가 90% · 분기순익 +1,101% · PGR 1.07 · 외인20일 +128bp·기관 +203bp]</li>
+<li><strong>업종리더</strong> — 강한 업종 안의 대장주 · 오늘 후보: 케이씨텍(281820) [RS 94 · 20일 +78% · 52주고가 100% · 분기순익 +92% · 외인20일 +59bp·기관 +104bp], 디아이(003160) [RS 90 · 20일 +35% · 52주고가 98% · 분기순익 +260% · PGR 2.36 · 외인20일 +435bp·기관 -3bp], 미래산업(025560) [RS 89 · 20일 +27% · 52주고가 53% · 분기순익 +716% · 외인20일 +44bp·기관 -2bp]</li>
+<li><strong>외국인 보유율↑(20일+1%p)</strong> — 외국인 보유율 20일간 +1%p 이상 · 오늘 후보: SFA반도체(036540) [RS 94 · 20일 +93% · 52주고가 99% · 외인20일 +816bp·기관 -365bp], 지어소프트(051160) [RS 89 · 20일 +45% · 52주고가 100% · 분기순익 +65% · 외인20일 +387bp·기관 +20bp], 엑시콘(092870) [RS 98 · 20일 +75% · 52주고가 99% · 분기순익 +855% · PGR 0.04 · 외인20일 +463bp·기관 +44bp]</li>
+<li><strong>외국인 순매수(20일)</strong> — 외국인 20일 순매수 ≥ 시총 0.05% &amp; 5일도 순매수 · 오늘 후보: SFA반도체(036540) [RS 94 · 20일 +93% · 52주고가 99% · 외인20일 +816bp·기관 -365bp], 고영(098460) [RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp], 인텍플러스(064290) [RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp]</li>
+<li><strong>외국인 연속순매수(5일+)</strong> — 외국인 5일 이상 연속 순매수 · 오늘 후보: 고영(098460) [RS 81 · 20일 +33% · 52주고가 86% · 분기순익 +389% · PGR 1.63 · 외인20일 +593bp·기관 -245bp], 인텍플러스(064290) [RS 96 · 20일 +49% · 52주고가 100% · 분기순익 적자전환 · 외인20일 +572bp·기관 -310bp], 저스템(417840) [RS 98 · 20일 +48% · 52주고가 100% · 분기순익 +322% · PGR 0.58 · 외인20일 +538bp·기관 +3bp]</li>
+<li><strong>외국인·기관 쌍끌이(20일)</strong> — 외국인·기관 모두 20일 순매수 · 오늘 후보: 지씨지놈(340450) [RS 82 · 20일 +79% · 52주고가 97% · 분기순익 +174% · PGR 0.44 · 외인20일 +200bp·기관 +283bp], 자이에스앤디(317400) [RS 94 · 20일 -7% · 52주고가 85% · 분기순익 +128% · PGR 0.06 · 외인20일 +196bp·기관 +383bp], 유니퀘스트(077500) [RS 79 · 20일 +39% · 52주고가 93% · 분기순익 +160% · 외인20일 +256bp·기관 +245bp]</li>
+<li><strong>저PGR(≤0.5)</strong> — PER ÷ 2년 영업이익 증가율 0.5 이하 · 오늘 후보: 금호건설(002990) [RS 91 · 20일 -31% · 52주고가 64% · 분기순익 +30% · PGR 0.13 · 외인20일 +176bp·기관 -16bp], HD현대마린엔진(071970) [RS 3 · 20일 -16% · 52주고가 37% · 분기순익 +92% · PGR 0.13 · 외인20일 -55bp·기관 -94bp], IPARK현대산업개발(294870) [RS 47 · 20일 -5% · 52주고가 88% · 분기순익 +59% · PGR 0.13 · 외인20일 +4bp·기관 +17bp]</li>
+<li><strong>저PGR∩CANSLIM</strong> — 저PGR 중 CAN SLIM 부합 · 오늘 후보: 한국화장품제조(003350) [RS 87 · 20일 +25% · 52주고가 96% · 분기순익 +28% · PGR 0.39 · 외인20일 +65bp·기관 +264bp]</li>
+<li><strong>테마리더</strong> — 강한 테마 안의 대장주 · 오늘 후보: 성호전자(043260) [RS 100 · 20일 +104% · 52주고가 61% · 분기순익 적자전환 · PGR 0.10 · 외인20일 -26bp·기관 +4bp], 빛샘전자(072950) [RS 96 · 20일 +93% · 52주고가 68% · 분기순익 +150% · 외인20일 -15bp·기관 +98bp], 머큐리(100590) [RS 83 · 20일 +78% · 52주고가 53% · 분기순익 적자전환 · 외인20일 -463bp·기관 -0bp]</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-952" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#모의투자-매매일지--전략별-매수매도-종목과-이유" data-for="모의투자-매매일지--전략별-매수매도-종목과-이유">모의투자 매매일지 — 전략별 매수·매도 종목과 이유</a></li><li class="depth-1"><a href="#0-여러-전략이-함께-고른-종목다음-거래일-매수-예정-기준" data-for="0-여러-전략이-함께-고른-종목다음-거래일-매수-예정-기준">0. 여러 전략이 함께 고른 종목(다음 거래일 매수 예정 기준)</a></li><li class="depth-1"><a href="#1-다음-거래일-시가-매수-예정전략별" data-for="1-다음-거래일-시가-매수-예정전략별">1. 다음 거래일 시가 매수 예정(전략별)</a></li><li class="depth-1"><a href="#2-다음-거래일-시가-매도-예정" data-for="2-다음-거래일-시가-매도-예정">2. 다음 거래일 시가 매도 예정</a></li><li class="depth-1"><a href="#3-전략별-매매-기록최근-15거래일보유오늘-후보" data-for="3-전략별-매매-기록최근-15거래일보유오늘-후보">3. 전략별 매매 기록(최근 15거래일)·보유·오늘 후보</a></li><li class="depth-2"><a href="#매매-없는-전략오늘-후보만" data-for="매매-없는-전략오늘-후보만">매매 없는 전략(오늘 후보만)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2610110329'</script>
