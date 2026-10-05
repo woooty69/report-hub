@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>지식습득 월간 소스 점검 2026-10</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="지식습득 월간 소스 점검 2026-10"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="지식습득 월간 소스 점검 2026-10"/><meta name="twitter:description" content="지식습득 월간 소스 점검 2026-10 대상 기간 2026-10-01～10-31 (know_health 는 10-11 부터 기록) · 자동 점검(2호기, 2026-11-01) · 이 문서는 제안만 — 바꾸는 것은 사용자 결재 뒤 결론: 수집은 대부분 정상(krx·tg·ecos 21/21일)이나, 유튜브는 요약 34%·채점 1% 로 “모으기만 하고 돈 되는 검증으로 못 넘어가는” 상태 — 고칠 1순위."/><meta property="og:description" content="지식습득 월간 소스 점검 2026-10 대상 기간 2026-10-01～10-31 (know_health 는 10-11 부터 기록) · 자동 점검(2호기, 2026-11-01) · 이 문서는 제안만 — 바꾸는 것은 사용자 결재 뒤 결론: 수집은 대부분 정상(krx·tg·ecos 21/21일)이나, 유튜브는 요약 34%·채점 1% 로 “모으기만 하고 돈 되는 검증으로 못 넘어가는” 상태 — 고칠 1순위."/><meta property="og:image:alt" content="지식습득 월간 소스 점검 2026-10 대상 기간 2026-10-01～10-31 (know_health 는 10-11 부터 기록) · 자동 점검(2호기, 2026-11-01) · 이 문서는 제안만 — 바꾸는 것은 사용자 결재 뒤 결론: 수집은 대부분 정상(krx·tg·ecos 21/21일)이나, 유튜브는 요약 34%·채점 1% 로 “모으기만 하고 돈 되는 검증으로 못 넘어가는” 상태 — 고칠 1순위."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/작업보드/지식습득_월간점검_2026-10"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/작업보드/지식습득_월간점검_2026-10"/><link rel="icon" href="../static/icon.png"/><script src="../static/pdf-fallback.js" defer></script><meta name="description" content="지식습득 월간 소스 점검 2026-10 대상 기간 2026-10-01～10-31 (know_health 는 10-11 부터 기록) · 자동 점검(2호기, 2026-11-01) · 이 문서는 제안만 — 바꾸는 것은 사용자 결재 뒤 결론: 수집은 대부분 정상(krx·tg·ecos 21/21일)이나, 유튜브는 요약 34%·채점 1% 로 “모으기만 하고 돈 되는 검증으로 못 넘어가는” 상태 — 고칠 1순위."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/작업보드/지식습득_월간점검_2026-10-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/작업보드/지식습득_월간점검_2026-10-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/작업보드/지식습득_월간점검_2026-10-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="작업보드/지식습득_월간점검_2026-10"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let folderOrder={dailymarketreport:0,\&quot;\\uD55C\\uAD6D\\uC2DC\\uC7A5-\\uB9AC\\uD3EC\\uD2B8\&quot;:.5,\&quot;youtube-\\uC694\\uC57D\&quot;:1,\&quot;\\uC720\\uD29C\\uBE0C-\\uD22C\\uC790\\uB178\\uD2B8\&quot;:1.2,\&quot;\\uD22C\\uC790\\uAE30\\uBC95-\\uC694\\uC57D\&quot;:1.5,\&quot;\\uC99D\\uAD8C\\uC0AC-\\uB9AC\\uD3EC\\uD2B8-\\uC694\\uC57D\&quot;:2,\&quot;d\\uB7A8-\\uAC00\\uACA9-\\uB9AC\\uD3EC\\uD2B8\&quot;:3,\&quot;\\uC9C0\\uC815\\uD559-\\uB9AC\\uD3EC\\uD2B8\&quot;:3.5,\&quot;\\uC99D\\uAD8C\\uC0AC\\uB9AC\\uD3EC\\uD2B8-\\uAC80\\uC0C9\&quot;:4,\&quot;\\uC9C0\\uC218-\\uACC4\\uC808\\uC131\&quot;:5,\&quot;\\uC2E0\\uADDC\\uC0C1\\uC7A5-\\uC624\\uBC84\\uD589\&quot;:5.5,\&quot;\\uAD00\\uC138\\uCCAD-\\uC218\\uCD9C\\uC785\&quot;:5.7,\&quot;\\uC815\\uCC45-\\uCD94\\uC801\&quot;:5.8};if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1392"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1392" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../작업보드/">작업보드</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>지식습득 월간 소스 점검 2026 10</a></div></nav><h1 class="article-title">지식습득 월간 소스 점검 2026-10</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-31T15:00:00.000Z">26.11.01.00</time><span>7 min read</span></p></div></div><article class="popover-hint"><h1 id="지식습득-월간-소스-점검-2026-10">지식습득 월간 소스 점검 2026-10<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#지식습득-월간-소스-점검-2026-10" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><em>대상 기간 2026-10-01～10-31 (know_health 는 10-11 부터 기록) · 자동 점검(2호기, 2026-11-01) · 이 문서는 제안만 — 바꾸는 것은 사용자 결재 뒤</em></p>
+<p><strong>결론: 수집은 대부분 정상(krx·tg·ecos 21/21일)이나, 유튜브는 요약 34%·채점 1% 로 “모으기만 하고 돈 되는 검증으로 못 넘어가는” 상태 — 고칠 1순위.</strong></p>
+<h2 id="1-수집-건강-know_health-정상-일수전체">1. 수집 건강 (know_health, 정상 일수/전체)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-수집-건강-know_health-정상-일수전체" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>소스</th><th>정상/전체</th><th>실패 내용</th></tr></thead><tbody><tr><td>krx · tg · ecos</td><td>21/21</td><td>없음</td></tr><tr><td>dart</td><td>20/21</td><td>10-13 실행 0회(10-07·08·12 일부 err, 이후 채움)</td></tr><tr><td>yt</td><td>16/21</td><td>10-12·13·20·21 요약 묶음 0회, 10-11 실패 2</td></tr></tbody></table></div>
+<h2 id="2-작업별-실행-know_runs-10월">2. 작업별 실행 (know_runs, 10월)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-작업별-실행-know_runs-10월" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>작업</th><th>결과</th><th>비고</th></tr></thead><tbody><tr><td>tg_collect</td><td>ok 64 · no_session 1</td><td>22,453행. 10-11 로그인 전 1회만 실패</td></tr><tr><td>yt_watch</td><td>ok 257 · error 4 · no_key 1</td><td>error 는 googleapis SSL 재시도 초과(10-13·14·22·29)</td></tr><tr><td>yt_digest</td><td>ok 99 · rate_limited 4 · no_credit 1 · no_key 1</td><td>Gemini 503 과부하 75편, 402 크레딧 소진 1회(10-11)</td></tr><tr><td>yt_digest ‘running’</td><td>23행 멈춤</td><td>10-11 19:01 부터 3시간 넘게 running 으로 남음(유령 기록)</td></tr><tr><td>krx_drv_daily</td><td>ok 37 · partial 1</td><td>10-15 partial(10-05·10-14), 10-14 은 이후 채워짐</td></tr><tr><td>dart_events_daily</td><td>ok 20 · partial 1</td><td>34,114행</td></tr><tr><td>datagokr_daily</td><td>ok 19 · partial 2</td><td>apis.data.go.kr 연결 재시도 초과(10-13·28)</td></tr><tr><td>ecos_daily</td><td>ok 18 · no_key 1</td><td>10-11 키 누락 1회 뒤 정상</td></tr><tr><td>naver_blog</td><td>no_key 1 · partial 1</td><td>10-11 이후 실행 기록 없음 — 사실상 멈춤</td></tr><tr><td>ipo_daily / ipo_extract</td><td>ok 14(0행) · error 1 / ok 3 · rate_limited 3</td><td>ipo_daily 14회 모두 0행</td></tr><tr><td>trade_10d</td><td>ok 2</td><td>23행</td></tr><tr><td>yt_claim_score</td><td>ok 22</td><td>누적 68건만 채점</td></tr></tbody></table></div>
+<h2 id="3-소스별-쓸모">3. 소스별 쓸모<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-소스별-쓸모" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="텔레그램-승인-86개-10월-새-글-20757건83개-채널">텔레그램 (승인 86개, 10월 새 글 20,757건·83개 채널)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#텔레그램-승인-86개-10월-새-글-20757건83개-채널" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>채널</th><th>근거</th></tr></thead><tbody><tr><td>종목 언급 상위</td><td>growthresearch · eugene2team · KimchiTerminal · hedgehara · meritz_tech · hi_gs</td><td>종목 언급 글 265 · 104 · 104 · 102 · 99 · 94</td></tr><tr><td>언급률 우수</td><td>kmj_retailcosmetics · mnjeong_bio · enc210406 · alexppark</td><td>114 중 83 · 140 중 88 · 117 중 74 · 162 중 79</td></tr><tr><td>소음 많음</td><td>KimchiTerminal · realtime_stock_news</td><td>8,706글 중 종목 104(1.2%) · 286글 중 0</td></tr><tr><td>30일 글 0건</td><td>hanhwasmall · semirae · nudgetech · shinyoungglobal</td><td>마지막 글 06-04 · 06-24 · 07-03 · 09-16</td></tr><tr><td>fail_note</td><td>없음</td><td>—</td></tr><tr><td>공유 시트</td><td><strong>재등록 필요</strong></td><td>Drive 수정 시각 2026-10-13 02:41Z (08-22 이후 수정됨)</td></tr></tbody></table></div>
+<h3 id="유튜브-승인-40개-채널-10월-공개-4798편">유튜브 (승인 40개 채널, 10월 공개 4,798편)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#유튜브-승인-40개-채널-10월-공개-4798편" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>내용</th><th>근거</th></tr></thead><tbody><tr><td>요약 상태</td><td>done 1,624 · 미처리 3,086 · error 43 · skip 45</td><td>요약률 34%</td></tr><tr><td>주장 카드</td><td>7,218건 (종목 지정 2,315)</td><td>채점 완료 68건(0.9%)</td></tr><tr><td>요약 많은 채널</td><td>매일경제TV · 한국경제TV · 딜사이트경제TV · 삼프로TV</td><td>252 · 223 · 202 · 164편</td></tr><tr><td>요약 거의 없음</td><td>삼성증권 · 미래에셋 스마트머니 · 유진투자선물 · 알파TV · 퇴근길주식TV · 투자로그인 · 주식전망TV</td><td>4/97 · 6/68 · 3/55 · 3/15 · 0/33 · 0/3 · 0/0</td></tr><tr><td>403 권한 오류</td><td>한국경제TV 12 · 한국투자증권 12 · 채널K 9 · 주식단테 4</td><td>자막 접근 거부(45편)</td></tr></tbody></table></div>
+<p>성적표(scorecard.md, 표본 10건 이상):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>채널</th><th>건수</th><th>적중률 · 평균 방향 초과수익</th></tr></thead><tbody><tr><td>한국경제TV</td><td>10</td><td>80% · +10.40%</td></tr><tr><td>딜사이트경제TV</td><td>14</td><td>64% · +2.93%</td></tr><tr><td>주식단테_20년차트고수</td><td>14</td><td>50% · -1.29%</td></tr></tbody></table></div>
+<p>화자별은 10건 넘는 곳 없음 — 표본 부족으로 아직 판단 불가.</p>
+<h3 id="공시파생거시">공시·파생·거시<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#공시파생거시" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>소스</th><th>10월 상태</th><th>비고</th></tr></thead><tbody><tr><td>dart_events</td><td>6,868건</td><td>7월 9,283 · 8월 7,466 · 9월 6,363 — 정상 범위</td></tr><tr><td>krx_fut/opt_daily</td><td>20거래일 모두 적재</td><td>빈 날 10-05·10-09 (개천절 대체공휴일·한글날로 추정) · 옵션 하루 2.7～3.0만행</td></tr><tr><td>ecos_series</td><td>일별 10-30 까지</td><td>M2(월) 2026-08 까지 — 발표 시차 정상</td></tr><tr><td>trade_10d</td><td>10월 1～10·1～20·월 모두 적재</td><td>10월 월치 11-01 적재</td></tr><tr><td>krx_svc_status</td><td>5개 서비스 모두 HTTP 200</td><td>10-12 승인, 만료 없음</td></tr></tbody></table></div>
+<h3 id="검증">검증<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#검증" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>10월</th><th>비고</th></tr></thead><tbody><tr><td>hypothesis_tests</td><td>11건 (pass 1 · fail 10)</td><td>통과: 가설 7(목표가 유지·상향 20일, 2/15)</td></tr><tr><td>insight_queue</td><td>처리 5 · 대기 6</td><td>대기: 관세청 과거분 채우기·텔레그램 종목 오탐 점검 등</td></tr></tbody></table></div>
+<h2 id="4-제안-결재-대기">4. 제안 (결재 대기)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-제안-결재-대기" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="a-중단-후보">(a) 중단 후보<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-중단-후보" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>대상</th><th>근거</th></tr></thead><tbody><tr><td>a1</td><td>텔레그램 4채널 (hanhwasmall · semirae · nudgetech · shinyoungglobal)</td><td>30일 글 0건, 마지막 글 6～9월</td></tr><tr><td>a2</td><td>텔레그램 realtime_stock_news</td><td>10월 286글 중 종목 언급 0</td></tr><tr><td>a3</td><td>유튜브 퇴근길주식TV · 주식전망TV · 투자로그인(NH)</td><td>요약 0편 (33 · 0 · 3편 중)</td></tr><tr><td>a4</td><td>ipo_daily</td><td>10월 14회 ok 모두 0행 + error 1 — 쓸모 확인 전까지 보류</td></tr></tbody></table></div>
+<h3 id="b-추가-후보">(b) 추가 후보<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-추가-후보" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>대상</th><th>이유 · 비용</th></tr></thead><tbody><tr><td>b1</td><td>공유 시트 신규 채널 재등록</td><td>10-13 수정됨 → 새 채널 반영. 비용 0 (tg_channels_load 1회)</td></tr><tr><td>b2</td><td>종목 언급률 높은 증권사 채널과 같은 계열 추가 탐색</td><td>언급률 50%+ 채널이 소비재·바이오·건설에 몰림. 비용 0</td></tr><tr><td>b3</td><td>naver_blog 재가동 (네이버 키 등록, 사용자 직접 입력)</td><td>10-11 이후 멈춤. 무료 API</td></tr></tbody></table></div>
+<h3 id="c-고칠-것">(c) 고칠 것<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#c-고칠-것" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>#</th><th>대상</th><th>근거</th></tr></thead><tbody><tr><td>c1</td><td><strong>yt 주장 채점 확대</strong> (yt_claim_score)</td><td>종목 주장 2,315건 중 채점 68건 — 성적표가 표본 부족으로 판단 불가</td></tr><tr><td>c2</td><td>yt_digest 처리량 (Gemini 503·402 대응, 대기열 우선순위 A채널·종목 주장 많은 채널 먼저)</td><td>요약률 34%, 503 실패 75편, 402 크레딧 소진 1회</td></tr><tr><td>c3</td><td>유령 ‘running’ 23행 정리 규칙 (3시간 넘으면 stale 처리)</td><td>10-11 부터 쌓임 — 건강 점검 왜곡</td></tr><tr><td>c4</td><td>유튜브 403(자막 권한) 45편 → 다른 자막 경로 또는 skip 표시</td><td>한국경제TV·한국투자증권 각 12편</td></tr><tr><td>c5</td><td>yt_watch SSL 재시도 · datagokr 연결 재시도 간격 늘리기</td><td>각 4회 · 2회 실패</td></tr><tr><td>c6</td><td>KimchiTerminal 종목 추출 필터 (insight_queue 10번과 연결)</td><td>8,706글 중 종목 1.2% — 메시지량 42% 차지</td></tr></tbody></table></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1078" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#지식습득-월간-소스-점검-2026-10" data-for="지식습득-월간-소스-점검-2026-10">지식습득 월간 소스 점검 2026-10</a></li><li class="depth-1"><a href="#1-수집-건강-know_health-정상-일수전체" data-for="1-수집-건강-know_health-정상-일수전체">1. 수집 건강 (know_health, 정상 일수/전체)</a></li><li class="depth-1"><a href="#2-작업별-실행-know_runs-10월" data-for="2-작업별-실행-know_runs-10월">2. 작업별 실행 (know_runs, 10월)</a></li><li class="depth-1"><a href="#3-소스별-쓸모" data-for="3-소스별-쓸모">3. 소스별 쓸모</a></li><li class="depth-2"><a href="#텔레그램-승인-86개-10월-새-글-20757건83개-채널" data-for="텔레그램-승인-86개-10월-새-글-20757건83개-채널">텔레그램 (승인 86개, 10월 새 글 20,757건·83개 채널)</a></li><li class="depth-2"><a href="#유튜브-승인-40개-채널-10월-공개-4798편" data-for="유튜브-승인-40개-채널-10월-공개-4798편">유튜브 (승인 40개 채널, 10월 공개 4,798편)</a></li><li class="depth-2"><a href="#공시파생거시" data-for="공시파생거시">공시·파생·거시</a></li><li class="depth-2"><a href="#검증" data-for="검증">검증</a></li><li class="depth-1"><a href="#4-제안-결재-대기" data-for="4-제안-결재-대기">4. 제안 (결재 대기)</a></li><li class="depth-2"><a href="#a-중단-후보" data-for="a-중단-후보">(a) 중단 후보</a></li><li class="depth-2"><a href="#b-추가-후보" data-for="b-추가-후보">(b) 추가 후보</a></li><li class="depth-2"><a href="#c-고칠-것" data-for="c-고칠-것">(c) 고칠 것</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2611041720'</script>
