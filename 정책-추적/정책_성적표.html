@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>정책 신호 성적표</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="정책 신호 성적표"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="정책 신호 성적표"/><meta name="twitter:description" content="정책 신호 성적표 (2026-10-31) 정책 항목마다 Claude 가 꼽은 업종·한국 종목 바구니의 ‘맞은 방향’ 초과수익(▲면 그대로, ▼면 부호 반대). 0일 = 처음 본 뒤 첫 시가. 초과수익 = 종목 − 베타×시장지수."/><meta property="og:description" content="정책 신호 성적표 (2026-10-31) 정책 항목마다 Claude 가 꼽은 업종·한국 종목 바구니의 ‘맞은 방향’ 초과수익(▲면 그대로, ▼면 부호 반대). 0일 = 처음 본 뒤 첫 시가. 초과수익 = 종목 − 베타×시장지수."/><meta property="og:image:alt" content="정책 신호 성적표 (2026-10-31) 정책 항목마다 Claude 가 꼽은 업종·한국 종목 바구니의 ‘맞은 방향’ 초과수익(▲면 그대로, ▼면 부호 반대). 0일 = 처음 본 뒤 첫 시가. 초과수익 = 종목 − 베타×시장지수."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/정책-추적/정책_성적표"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/정책-추적/정책_성적표"/><link rel="icon" href="../static/icon.png"/><script src="../static/pdf-fallback.js" defer></script><meta name="description" content="정책 신호 성적표 (2026-10-31) 정책 항목마다 Claude 가 꼽은 업종·한국 종목 바구니의 ‘맞은 방향’ 초과수익(▲면 그대로, ▼면 부호 반대). 0일 = 처음 본 뒤 첫 시가. 초과수익 = 종목 − 베타×시장지수."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/정책-추적/정책_성적표-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/정책-추적/정책_성적표-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/정책-추적/정책_성적표-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="정책-추적/정책_성적표"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let folderOrder={dailymarketreport:0,\&quot;\\uD55C\\uAD6D\\uC2DC\\uC7A5-\\uB9AC\\uD3EC\\uD2B8\&quot;:.5,\&quot;youtube-\\uC694\\uC57D\&quot;:1,\&quot;\\uC720\\uD29C\\uBE0C-\\uD22C\\uC790\\uB178\\uD2B8\&quot;:1.2,\&quot;\\uD22C\\uC790\\uAE30\\uBC95-\\uC694\\uC57D\&quot;:1.5,\&quot;\\uC99D\\uAD8C\\uC0AC-\\uB9AC\\uD3EC\\uD2B8-\\uC694\\uC57D\&quot;:2,\&quot;d\\uB7A8-\\uAC00\\uACA9-\\uB9AC\\uD3EC\\uD2B8\&quot;:3,\&quot;\\uC9C0\\uC815\\uD559-\\uB9AC\\uD3EC\\uD2B8\&quot;:3.5,\&quot;\\uC99D\\uAD8C\\uC0AC\\uB9AC\\uD3EC\\uD2B8-\\uAC80\\uC0C9\&quot;:4,\&quot;\\uC9C0\\uC218-\\uACC4\\uC808\\uC131\&quot;:5,\&quot;\\uC2E0\\uADDC\\uC0C1\\uC7A5-\\uC624\\uBC84\\uD589\&quot;:5.5,\&quot;\\uAD00\\uC138\\uCCAD-\\uC218\\uCD9C\\uC785\&quot;:5.7,\&quot;\\uC815\\uCC45-\\uCD94\\uC801\&quot;:5.8};if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1343"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1343" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../정책-추적/">정책 추적</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>정책 신호 성적표</a></div></nav><h1 class="article-title">정책 신호 성적표</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-30T15:00:00.000Z">26.10.31.00</time><span>4 min read</span></p></div></div><article class="popover-hint"><h1 id="정책-신호-성적표-2026-10-31">정책 신호 성적표 (2026-10-31)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정책-신호-성적표-2026-10-31" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>정책 항목마다 Claude 가 꼽은 업종·한국 종목 바구니의 ‘맞은 방향’ 초과수익(▲면 그대로, ▼면 부호 반대). 0일 = 처음 본 뒤 첫 시가. 초과수익 = 종목 − 베타×시장지수. * = 정책 효과: 실제 − 위약(같은 바구니의 평소 날 ±15～60거래일 진입값 평균 — 중·장기는 바구니 자체 추세가 크게 섞임, 과거 검증 결과) − 같은 날 진입한 다른 정책 바구니 평균(그날 테마 바구니 전체가 같이 움직인 몫, 같은 날 5건 미만이면 빈칸). 0일·1일은 원래 값. 투자 권유 아님.</p>
+</blockquote>
+<h3 id="발표-기준--단기1520일--중기60일--3개월--장기120250일--6개월1년-괄호--익은-건수">발표 기준 — 단기(1·5·20일) · 중기(60일 ≈ 3개월) · 장기(120·250일 ≈ 6개월·1년), 괄호 = 익은 건수<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#발표-기준--단기1520일--중기60일--3개월--장기120250일--6개월1년-괄호--익은-건수" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>칸</th><th>0일 반응</th><th>1일</th><th>5일*</th><th>20일*</th><th>60일*</th><th>120일*</th><th>250일*</th></tr></thead><tbody><tr><td>유형</td><td>관세</td><td>-0.19%(112)</td><td>-0.17%(109)</td><td>-0.63%(72)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>규제</td><td>+0.10%(211)</td><td>+0.20%(197)</td><td>-0.33%(139)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>규제완화</td><td>-0.41%(144)</td><td>-0.03%(127)</td><td>+0.39%(86)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>기타</td><td>+0.15%(25)</td><td>+0.07%(23)</td><td>-0.02%(15)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>보조금</td><td>-0.09%(44)</td><td>-0.10%(40)</td><td>+0.57%(25)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>부동산</td><td>-0.24%(88)</td><td>-0.27%(74)</td><td>-0.01%(52)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>산업전략</td><td>-0.87%(243)</td><td>+0.10%(221)</td><td>+0.31%(150)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>세제</td><td>+0.03%(27)</td><td>+0.24%(27)</td><td>+0.59%(18)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>수출통제</td><td>-0.01%(20)</td><td>-1.11%(16)</td><td>-1.56%(15)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>에너지</td><td>-0.24%(43)</td><td>-0.37%(41)</td><td>-2.78%(31)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>자본시장</td><td>-0.08%(37)</td><td>-0.49%(34)</td><td>-0.65%(29)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>조달</td><td>-0.36%(20)</td><td>+0.41%(17)</td><td>+0.55%(12)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>유형</td><td>통화</td><td>-0.07%(16)</td><td>+0.17%(14)</td><td>+0.32%(10)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>단계</td><td>법안</td><td>-0.37%(102)</td><td>+0.09%(84)</td><td>+0.32%(61)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>단계</td><td>시행</td><td>-0.18%(293)</td><td>+0.08%(274)</td><td>-0.12%(193)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>단계</td><td>제안</td><td>-0.42%(532)</td><td>-0.04%(484)</td><td>-0.32%(325)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>단계</td><td>철회</td><td>-0.53%(19)</td><td>+0.08%(19)</td><td>-1.70%(14)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>단계</td><td>최종</td><td>+0.06%(69)</td><td>-0.43%(64)</td><td>+0.27%(46)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>단계</td><td>통과</td><td>+0.29%(15)</td><td>+0.10%(15)</td><td>+0.82%(15)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>새로움</td><td>진전</td><td>-0.37%(99)</td><td>-0.14%(93)</td><td>-0.69%(67)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>새로움</td><td>최초</td><td>-0.30%(931)</td><td>-0.00%(847)</td><td>-0.10%(587)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>지역</td><td>CN</td><td>-0.14%(27)</td><td>-0.26%(27)</td><td>-0.59%(23)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>지역</td><td>EU</td><td>-0.35%(48)</td><td>-0.32%(46)</td><td>-1.76%(30)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>지역</td><td>JP</td><td>+0.22%(10)</td><td>-0.14%(10)</td><td>+2.96%(6)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>지역</td><td>KR</td><td>-0.37%(733)</td><td>+0.01%(654)</td><td>-0.05%(449)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>지역</td><td>US</td><td>-0.18%(178)</td><td>+0.12%(169)</td><td>-0.13%(124)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>지역</td><td>기타</td><td>+0.35%(34)</td><td>-0.58%(34)</td><td>-0.76%(22)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>cn_govcn</td><td>+1.08%(1)</td><td>-1.53%(1)</td><td>+2.85%(1)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>cn_mofcom</td><td>+0.09%(3)</td><td>-0.99%(3)</td><td>-0.20%(3)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>fr_docs</td><td>-0.04%(72)</td><td>-0.06%(69)</td><td>-0.76%(53)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>fr_pi</td><td>-1.57%(2)</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>kr_bill</td><td>-0.59%(93)</td><td>+0.06%(76)</td><td>+0.78%(55)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>kr_fsc</td><td>-0.30%(19)</td><td>-0.12%(18)</td><td>-0.89%(16)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>kr_moef</td><td>-1.46%(2)</td><td>+1.60%(2)</td><td>+3.59%(2)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>kr_molit</td><td>+0.04%(13)</td><td>+0.26%(13)</td><td>-0.29%(10)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>kr_motie</td><td>-0.24%(22)</td><td>+0.02%(18)</td><td>-2.61%(10)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>kr_msit</td><td>-0.39%(5)</td><td>+1.17%(5)</td><td>+0.91%(3)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr><tr><td>출처</td><td>ls_news</td><td>-0.30%(798)</td><td>-0.03%(735)</td><td>-0.15%(501)</td><td>–</td><td>–</td><td>–</td><td>–</td></tr></tbody></table></div>
+<h3 id="발효시행일-기준">발효(시행일) 기준<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#발효시행일-기준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>아직 없음(시행일이 지난 사안부터 채점).</p>
+<h2 id="점수-가중유형단계--20일60일-맞은-방향-초과수익-20건-이상만-2점-상한">점수 가중(유형|단계 — 20일·60일 ‘맞은 방향’ 초과수익, 20건 이상만, ±2점 상한)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#점수-가중유형단계--20일60일-맞은-방향-초과수익-20건-이상만-2점-상한" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>칸</th><th>20일 익은 건수</th><th>5일*</th><th>20일*</th><th>60일*</th><th>250일*</th><th>가중</th></tr></thead><tbody><tr><td>관세</td><td>시행</td><td>0</td><td>+0.46%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>관세</td><td>제안</td><td>0</td><td>-0.70%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>관세</td><td>철회</td><td>0</td><td>-5.52%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>관세</td><td>최종</td><td>0</td><td>-0.49%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제</td><td>법안</td><td>0</td><td>+0.05%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제</td><td>시행</td><td>0</td><td>+0.19%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제</td><td>제안</td><td>0</td><td>-0.90%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제</td><td>최종</td><td>0</td><td>+0.97%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제</td><td>통과</td><td>0</td><td>+2.87%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제완화</td><td>법안</td><td>0</td><td>-3.10%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제완화</td><td>시행</td><td>0</td><td>+0.13%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제완화</td><td>제안</td><td>0</td><td>+0.66%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제완화</td><td>철회</td><td>0</td><td>+0.29%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>규제완화</td><td>최종</td><td>0</td><td>+1.20%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>기타</td><td>법안</td><td>0</td><td>+0.49%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>기타</td><td>시행</td><td>0</td><td>-0.17%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>기타</td><td>제안</td><td>0</td><td>+0.01%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>기타</td><td>최종</td><td>0</td><td>+0.26%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>보조금</td><td>시행</td><td>0</td><td>-0.04%</td><td>–</td><td>–</td><td>–</td></tr><tr><td>보조금</td><td>제안</td><td>0</td><td>+1.23%</td><td>–</td><td>–</td><td>–</td></tr></tbody></table></div>
+<h2 id="과거-검증2024-규칙-기반--미-관세수출통제행정명령-중국-수출통제-공고--한국-업종-바구니-부호-그대로">과거 검증(2024～, 규칙 기반 — 미 관세·수출통제·행정명령, 중국 수출통제 공고 → 한국 업종 바구니, 부호 그대로)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#과거-검증2024-규칙-기반--미-관세수출통제행정명령-중국-수출통제-공고--한국-업종-바구니-부호-그대로" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>규칙</th><th>건수</th><th>0일 반응</th><th>1일</th><th>5일</th><th>20일</th><th>60일</th><th>120일</th><th>250일</th></tr></thead><tbody><tr><td>placebo</td><td>2500</td><td>-0.00%</td><td>-0.09%</td><td>-0.12%</td><td>-0.25%</td><td>-5.20%</td><td>-11.28%</td><td>-23.53%</td></tr><tr><td>cn_ctrl_other</td><td>52</td><td>-0.29%</td><td>-0.18%</td><td>+1.15%</td><td>+0.84%</td><td>-0.96%</td><td>-4.82%</td><td>-16.58%</td></tr><tr><td>cn_export_ctrl</td><td>36</td><td>+1.36%</td><td>+2.70%</td><td>+0.65%</td><td>-1.75%</td><td>-5.17%</td><td>-6.96%</td><td>-10.78%</td></tr><tr><td>us_tariff_product</td><td>28</td><td>-0.08%</td><td>-0.00%</td><td>+0.43%</td><td>+0.59%</td><td>-7.52%</td><td>-15.01%</td><td>-38.24%</td></tr><tr><td>cn_unreliable</td><td>26</td><td>+0.52%</td><td>+0.61%</td><td>+1.40%</td><td>-0.88%</td><td>-6.76%</td><td>-11.25%</td><td>-16.31%</td></tr><tr><td>us_tariff_broad</td><td>20</td><td>+0.02%</td><td>-0.21%</td><td>+0.25%</td><td>+0.21%</td><td>-8.23%</td><td>-17.23%</td><td>-37.00%</td></tr><tr><td>us_232_notice</td><td>19</td><td>+0.27%</td><td>+0.30%</td><td>-0.74%</td><td>-3.35%</td><td>-10.75%</td><td>-23.99%</td><td>-41.45%</td></tr><tr><td>us_bis_entity</td><td>19</td><td>+0.43%</td><td>+0.82%</td><td>+1.11%</td><td>+0.89%</td><td>-3.98%</td><td>-6.97%</td><td>-4.77%</td></tr><tr><td>cn_antidumping</td><td>14</td><td>-0.21%</td><td>-0.63%</td><td>-0.56%</td><td>-3.31%</td><td>-9.11%</td><td>-21.07%</td><td>-32.22%</td></tr><tr><td>us_bis_semi</td><td>14</td><td>+0.27%</td><td>+0.77%</td><td>+1.66%</td><td>+5.41%</td><td>+2.98%</td><td>+0.32%</td><td>-0.62%</td></tr><tr><td>us_ustr_301</td><td>14</td><td>-0.01%</td><td>+0.92%</td><td>+3.20%</td><td>-0.73%</td><td>+2.43%</td><td>-1.61%</td><td>-12.72%</td></tr><tr><td>us_tariff_relax</td><td>5</td><td>-0.05%</td><td>-0.98%</td><td>-1.69%</td><td>-5.37%</td><td>-9.44%</td><td>-20.05%</td><td>-53.37%</td></tr><tr><td>cn_export_relax</td><td>3</td><td>-0.80%</td><td>-0.32%</td><td>-1.63%</td><td>-3.61%</td><td>-6.69%</td><td>-1.75%</td><td>–</td></tr><tr><td>cn_counter_kr</td><td>1</td><td>-0.77%</td><td>+1.87%</td><td>+5.60%</td><td>-12.32%</td><td>-13.22%</td><td>-33.56%</td><td>-72.38%</td></tr></tbody></table></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1061" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#정책-신호-성적표-2026-10-31" data-for="정책-신호-성적표-2026-10-31">정책 신호 성적표 (2026-10-31)</a></li><li class="depth-2"><a href="#발표-기준--단기1520일--중기60일--3개월--장기120250일--6개월1년-괄호--익은-건수" data-for="발표-기준--단기1520일--중기60일--3개월--장기120250일--6개월1년-괄호--익은-건수">발표 기준 — 단기(1·5·20일) · 중기(60일 ≈ 3개월) · 장기(120·250일 ≈ 6개월·1년), 괄호 = 익은 건수</a></li><li class="depth-2"><a href="#발효시행일-기준" data-for="발효시행일-기준">발효(시행일) 기준</a></li><li class="depth-1"><a href="#점수-가중유형단계--20일60일-맞은-방향-초과수익-20건-이상만-2점-상한" data-for="점수-가중유형단계--20일60일-맞은-방향-초과수익-20건-이상만-2점-상한">점수 가중(유형|단계 — 20일·60일 ‘맞은 방향’ 초과수익, 20건 이상만, ±2점 상한)</a></li><li class="depth-1"><a href="#과거-검증2024-규칙-기반--미-관세수출통제행정명령-중국-수출통제-공고--한국-업종-바구니-부호-그대로" data-for="과거-검증2024-규칙-기반--미-관세수출통제행정명령-중국-수출통제-공고--한국-업종-바구니-부호-그대로">과거 검증(2024～, 규칙 기반 — 미 관세·수출통제·행정명령, 중국 수출통제 공고 → 한국 업종 바구니, 부호 그대로)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2610311721'</script>

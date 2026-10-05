@@ -1,0 +1,110 @@
+---
+title: 리포트 허브
+---
+
+<div class="hub-hero">
+  <p class="hub-kicker">Daily Research Hub</p>
+  <h2 class="hub-title">매일 축적되는 리서치를<br>한곳에서 봅니다.</h2>
+  <p class="hub-sub">미국 증시 마감 리포트, 증권사 애널리스트 리포트 요약, DRAM·NAND 현물가, 이란·우크라이나 전쟁보고서, 유튜브 인사이트까지 — 매일 자동으로 수집·정리되어 갱신됩니다.</p>
+  <ul class="hub-stats">
+    <li>📈 US 마켓 · 매일 아침</li>
+    <li>📊 한국 마켓 · 매일 05:05·장중 12:30·저녁 18:00</li>
+    <li>📑 증권사 리포트 · 24h 윈도우</li>
+    <li>💾 DRAM/NAND 현물가 · 일간</li>
+    <li>🌍 이란·우크라이나 전쟁보고서 · 매일 05:10</li>
+    <li>🧭 주도주 선점 신호 · 아침·오후</li>
+    <li>🧪 가상매매 · 평일 저녁</li>
+    <li>💎 PGR 스크리너 · 평일 저녁</li>
+    <li>📝 매매일지·수급 · 평일 저녁</li>
+    <li>🆕 신규상장 오버행 · 평일 저녁</li>
+    <li>🎙️ 유튜브 투자노트 · 하루 2회</li>
+    <li>🔊 음성 청취 지원</li>
+  </ul>
+</div>
+
+<p class="hub-section-title">주제별 폴더</p>
+
+<div class="hub-grid">
+  <a class="hub-card" href="dailymarketreport/">
+    <span class="hub-card-head"><span class="hub-card-icon">📈</span><span class="hub-card-title">US 데일리 마켓 리포트</span></span>
+    <span class="hub-card-desc">미국 정규장 마감 시세·섹터 흐름·매크로 이벤트를 정리한 데일리 리포트</span>
+    <span class="hub-card-foot"><span>미국증시 · 데일리</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="한국시장 리포트/">
+    <span class="hub-card-head"><span class="hub-card-icon">📊</span><span class="hub-card-title">한국 데일리 마켓 리포트</span></span>
+    <span class="hub-card-desc">코스피·코스닥 마감 시세·수급·업종 흐름, 이슈 종목 40선, 증권사 리포트 요약과 원문 PDF 링크 — 매일 아침 05:05(휴장일은 휴장 브리핑)·거래일 저녁 18:00</span>
+    <span class="hub-card-foot"><span>한국증시 · 데일리</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="증권사 리포트 요약/">
+    <span class="hub-card-head"><span class="hub-card-icon">📑</span><span class="hub-card-title">증권사 리포트 요약</span></span>
+    <span class="hub-card-desc">증권사 애널리스트 리포트 아침 요약. 강력추천·신규종목을 별도 정리하고, 최근 7일 문서는 원본 PDF 1페이지 미리보기를 포함</span>
+    <span class="hub-card-foot"><span>애널리스트 · 아침 다이제스트</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="d램 가격 리포트/">
+    <span class="hub-card-head"><span class="hub-card-icon">💾</span><span class="hub-card-title">D램 가격 리포트</span></span>
+    <span class="hub-card-desc">DRAM/NAND 현물가 일일 리포트 — 주요 품목 가격과 90일 추이 차트</span>
+    <span class="hub-card-foot"><span>반도체 · 현물가</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="지정학 리포트/">
+    <span class="hub-card-head"><span class="hub-card-icon">🌍</span><span class="hub-card-title">이란·우크라이나 전쟁보고서</span></span>
+    <span class="hub-card-desc">이란·중동과 우크라이나 전황을 진영별 언론(이란·이스라엘·걸프·우크라이나·러시아·Fox·일본)과 시장 데이터로 교차검증하고, 유가→미국 물가·금리→한국 섹터 영향과 시나리오 확률까지 정리 — 매일 05:10 일간, 월요일 주간</span>
+    <span class="hub-card-foot"><span>전쟁 · 유가 · 데일리</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="주도주 대시보드/">
+    <span class="hub-card-head"><span class="hub-card-icon">🧭</span><span class="hub-card-title">주도주 대시보드</span></span>
+    <span class="hub-card-desc">미국에서 먼저 강해지는 세부 테마와 한국 연결 종목(관련도 상·중·하)의 선점 신호 — 아침(미국 마감)·오후(한국 마감) 2회 요약</span>
+    <span class="hub-card-foot"><span>미국→한국 선점 · 1일 2회</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="신규상장 오버행/신규상장_매수적기">
+    <span class="hub-card-head"><span class="hub-card-icon">🆕</span><span class="hub-card-title">신규상장 오버행</span></span>
+    <span class="hub-card-desc">코스닥 신규상장주의 의무보유 해제(오버행) 일정과 바닥 시점 연구(2021-10~ 공모주 320개), 최근 상장 종목의 바닥 통과 확률·다음 해제일·PER·PBR·ROE·PGR</span>
+    <span class="hub-card-foot"><span>공모주 · 평일 저녁 갱신</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="가상매매/">
+    <span class="hub-card-head"><span class="hub-card-icon">🧪</span><span class="hub-card-title">가상매매</span></span>
+    <span class="hub-card-desc">전략별 1억 원 가상 계좌의 포워드 기록(매일 장 마감 후 신호 저장·다음날 시가 체결)과 백테스트 종합 — 손절·이평선 이익실현·교체·하락장 필터 규칙 적용, 무작위 대조군과 비교</span>
+    <span class="hub-card-foot"><span>전략 검증 · 평일 저녁 갱신</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="가상매매/PGR_스크리너">
+    <span class="hub-card-head"><span class="hub-card-icon">💎</span><span class="hub-card-title">PGR 스크리너</span></span>
+    <span class="hub-card-desc">PGR = 현재 PER ÷ 향후 2년 영업이익 연평균 증가율 — 성장 대비 싼 종목(PGR&lt;1), 한 달 새 추정치 상향으로 PGR이 내려간 종목, 나빠진 종목. 신규 전략 연구(시설투자·신고가·신개념 뉴스)는 가상매매 폴더</span>
+    <span class="hub-card-foot"><span>밸류에이션 · 평일 저녁 갱신</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="가상매매/CANSLIM_선정기준">
+    <span class="hub-card-head"><span class="hub-card-icon">📐</span><span class="hub-card-title">CAN SLIM 선정 기준</span></span>
+    <span class="hub-card-desc">O'Neil 『How to Make Money in Stocks』 7원칙(C·A·N·S·L·I·M)과 매도 원칙의 한국 적용 — 오늘의 시장 방향(분산일·팔로스루), 기준 충족 후보, 백테스트, 모의투자 계획과 현황</span>
+    <span class="hub-card-foot"><span>종목 선정 · 평일 저녁 갱신</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="가상매매/가상매매_매매일지">
+    <span class="hub-card-head"><span class="hub-card-icon">📝</span><span class="hub-card-title">모의투자 매매일지</span></span>
+    <span class="hub-card-desc">전략별로 다음 거래일 매수·매도 예정 종목과 그 이유(전략 규칙 + RS·52주 고가 대비·분기 이익·PGR·외국인/기관 수급), 최근 체결과 보유 종목, 오늘의 후보 1~3위</span>
+    <span class="hub-card-foot"><span>종목 · 이유 · 평일 저녁 갱신</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="가상매매/수급_전략연구">
+    <span class="hub-card-head"><span class="hub-card-icon">🤝</span><span class="hub-card-title">수급 전략 연구</span></span>
+    <span class="hub-card-desc">네이버 투자자별 매매동향(2023~)으로 외국인·기관·쌍끌이·연속 순매수·보유율·개인 매도 흡수 신호를 검증 — 방법론, 백테스트, CANSLIM 'I' 실제 수급 적용, 오늘의 수급 상위</span>
+    <span class="hub-card-foot"><span>외국인·기관 · 평일 저녁 갱신</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="youtube 요약/">
+    <span class="hub-card-head"><span class="hub-card-icon">▶️</span><span class="hub-card-title">유튜브 요약</span></span>
+    <span class="hub-card-desc">투자·경제 유튜브 영상 정리 노트. 문서 우측 상단 <strong>🔊 내용듣기</strong>로 음성 청취 가능</span>
+    <span class="hub-card-foot"><span>인사이트 · 음성 지원</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="유튜브 투자노트/">
+    <span class="hub-card-head"><span class="hub-card-icon">🎙️</span><span class="hub-card-title">유튜브 투자노트</span></span>
+    <span class="hub-card-desc">투자 유튜브 40개 채널의 새 영상을 1호기가 자동 요약 — 영상마다 10줄 요약과 근거 붙은 주장 카드. 오전판(06시)·오후판(22시 30분)</span>
+    <span class="hub-card-foot"><span>유튜브 · 하루 2회</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="투자기법 요약/">
+    <span class="hub-card-head"><span class="hub-card-icon">📚</span><span class="hub-card-title">투자기법 요약</span></span>
+    <span class="hub-card-desc">투자 고전·트레이딩 기법(서적 리뷰·트레이더 인터뷰)을 요약한 영상 정리. 모든 문서에서 <strong>🔊 내용듣기</strong>로 언제든 음성 청취 가능</span>
+    <span class="hub-card-foot"><span>투자기법 · 음성 지원</span><span class="hub-card-arrow">→</span></span>
+  </a>
+  <a class="hub-card" href="증권사리포트 검색/">
+    <span class="hub-card-head"><span class="hub-card-icon">🔍</span><span class="hub-card-title">증권사리포트 검색</span></span>
+    <span class="hub-card-desc">회사명·종목코드로 증권사 리포트 원문(PDF)을 바로 찾기</span>
+    <span class="hub-card-foot"><span>아카이브 · PDF 원문</span><span class="hub-card-arrow">→</span></span>
+  </a>
+</div>
+
+<p class="hub-tip">💡 좌측(모바일은 ☰ 메뉴)의 <kbd>검색</kbd>으로 전체 문서 내용을 찾을 수 있습니다.</p>
