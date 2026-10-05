@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>신규상장 오버행 연구</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="신규상장 오버행 연구"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="신규상장 오버행 연구"/><meta name="twitter:description" content="신규상장주는 언제 바닥을 치나 — 코스닥 오버행 연구 기준 2026-10-13 종가 · 표본: 2021-10 이후 코스닥 신규상장(공모) 320개, 그중 상장 후 2년(500거래일)이 지난 193개로 바닥 시점을 잽니다 · 해제 일정 확인 130개 · 매월 1일 다시 계산 바닥 = 상장 후 500거래일 안의 최저 종가(무상증자·분할은 수정)."/><meta property="og:description" content="신규상장주는 언제 바닥을 치나 — 코스닥 오버행 연구 기준 2026-10-13 종가 · 표본: 2021-10 이후 코스닥 신규상장(공모) 320개, 그중 상장 후 2년(500거래일)이 지난 193개로 바닥 시점을 잽니다 · 해제 일정 확인 130개 · 매월 1일 다시 계산 바닥 = 상장 후 500거래일 안의 최저 종가(무상증자·분할은 수정)."/><meta property="og:image:alt" content="신규상장주는 언제 바닥을 치나 — 코스닥 오버행 연구 기준 2026-10-13 종가 · 표본: 2021-10 이후 코스닥 신규상장(공모) 320개, 그중 상장 후 2년(500거래일)이 지난 193개로 바닥 시점을 잽니다 · 해제 일정 확인 130개 · 매월 1일 다시 계산 바닥 = 상장 후 500거래일 안의 최저 종가(무상증자·분할은 수정)."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/신규상장-오버행/신규상장_오버행_연구"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/신규상장-오버행/신규상장_오버행_연구"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="신규상장주는 언제 바닥을 치나 — 코스닥 오버행 연구 기준 2026-10-13 종가 · 표본: 2021-10 이후 코스닥 신규상장(공모) 320개, 그중 상장 후 2년(500거래일)이 지난 193개로 바닥 시점을 잽니다 · 해제 일정 확인 130개 · 매월 1일 다시 계산 바닥 = 상장 후 500거래일 안의 최저 종가(무상증자·분할은 수정)."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/신규상장-오버행/신규상장_오버행_연구-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/신규상장-오버행/신규상장_오버행_연구-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/신규상장-오버행/신규상장_오버행_연구-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="신규상장-오버행/신규상장_오버행_연구"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1154"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1154" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../신규상장-오버행/">신규상장 오버행</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>신규상장 오버행 연구</a></div></nav><h1 class="article-title">신규상장 오버행 연구</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-12T15:00:00.000Z">26.10.13.00</time><span>12 min read</span></p><ul class="tags"><li><a href="../tags/신규상장" class="internal tag-link">신규상장</a></li><li><a href="../tags/오버행" class="internal tag-link">오버행</a></li></ul></div></div><article class="popover-hint wide-table"><h1 id="신규상장주는-언제-바닥을-치나--코스닥-오버행-연구">신규상장주는 언제 바닥을 치나 — 코스닥 오버행 연구<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신규상장주는-언제-바닥을-치나--코스닥-오버행-연구" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><em>기준 2026-10-13 종가 · 표본: 2021-10 이후 코스닥 신규상장(공모) 320개, 그중 상장 후 2년(500거래일)이 지난 193개로 바닥 시점을 잽니다 · 해제 일정 확인 130개 · 매월 1일 다시 계산</em></p>
+<p><strong>바닥</strong> = 상장 후 500거래일 안의 최저 종가(무상증자·분할은 수정). <strong>오버행</strong> = 상장 후 매도가 풀리는 물량 (최대주주·벤처금융 등 의무보유, 상장주선인 의무인수, 우리사주, 기관 의무보유확약, 스톡옵션·전환사채)을 상장주식수 대비 %로 잰 것. 해제 일정은 투자설명서의 유통가능물량 표와 증권발행실적보고서의 기관 확약 배정표에서 읽었습니다.</p>
+<blockquote>
+<p>진행 중: 상장 후 2년이 지난 193개 중 기존주주 해제 일정까지 확인된 종목은 7개입니다. 나머지는 투자설명서 표를 1호기가 매일 100건씩 읽는 중이라(약 3일), 그 뒤 2·3절(해제일과 바닥, 오버행 크기와 바닥)이 채워지고 모델도 다시 맞춥니다. 기관 확약 해제는 이미 전 종목 반영.</p>
+</blockquote>
+<h2 id="한눈에">한눈에<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한눈에" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>바닥(상장 후 2년 안 최저가)까지 걸린 기간 중앙값은 <strong>16.7개월</strong>, 가운데 절반은 8.2～22.0개월. 바닥은 공모가 대비 중앙값 -53%, 바닥 뒤 1년 안 최대 반등 중앙값 +102%(50% 이상 반등한 종목 73%).</li>
+<li>상장일 장세별: 상승장(200일선 위) 상장 65개는 중앙값 17.5개월, 하락장 상장 128개는 16.0개월.</li>
+<li>상장 뒤 6개월 장세별(사후 구분): 코스닥 상승 17.4개월 vs 하락 16.2개월.</li>
+<li>기관 확약 해제: 해제 전 20일 -5.9%, 해제 뒤 20일 -3.6%, 21～60일 -5.4% (코스닥 대비, 309건).</li>
+<li>기존주주 6개월: 해제 전 20일 -7.7%, 해제 뒤 20일 -5.2%, 21～60일 -8.0% (코스닥 대비, 71건).</li>
+<li>기존주주 1년: 해제 전 20일 -7.6%, 해제 뒤 20일 -5.3%, 21～60일 -4.5% (코스닥 대비, 43건).</li>
+<li>마지막 큰 해제 5거래일 뒤 매수: 6개월 코스닥 대비 평균 -8.6%(표본 안 73건, t -2.1), 보류 구간 -17.3%(74건).</li>
+<li>그중 공모가 이하일 때만: 6개월 코스닥 대비 평균 -10.0%(표본 안 22건, t -1.6), 보류 구간 -12.5%(39건).</li>
+<li>확률 모델의 ‘관심’ 신호(보류 구간, 표본 안 계수만 사용): 6개월 코스닥 대비 평균 -14.1%(42건·15종목, 이긴 비율 29%) vs 같은 기간 전체 -14.4%.</li>
+</ul>
+<h2 id="1-바닥까지-걸린-기간--장세별">1. 바닥까지 걸린 기간 — 장세별<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-바닥까지-걸린-기간--장세별" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>종목 수</th><th>바닥 시점 중앙값</th><th>가운데 50%</th><th>3개월 안</th><th>3～6개월</th><th>6～12개월</th><th>12개월 뒤</th><th>바닥의 공모가 대비</th><th>바닥 뒤 1년 최대 반등</th><th>반등 50% 이상</th></tr></thead><tbody><tr><td>전체</td><td>193</td><td>16.7개월</td><td>8.2～22.0개월</td><td>11%</td><td>8%</td><td>15%</td><td>66%</td><td>-53%</td><td>+102%</td><td>73%</td></tr><tr><td>상장일 코스닥 200일선 위(상승장)</td><td>65</td><td>17.5개월</td><td>10.4～21.1개월</td><td>8%</td><td>5%</td><td>20%</td><td>68%</td><td>-57%</td><td>+101%</td><td>72%</td></tr><tr><td>상장일 코스닥 200일선 아래(하락장)</td><td>128</td><td>16.0개월</td><td>7.2～22.4개월</td><td>13%</td><td>9%</td><td>12%</td><td>65%</td><td>-50%</td><td>+103%</td><td>73%</td></tr><tr><td>상장 후 6개월 코스닥 상승</td><td>70</td><td>17.4개월</td><td>12.3～22.0개월</td><td>10%</td><td>4%</td><td>7%</td><td>79%</td><td>-47%</td><td>+104%</td><td>76%</td></tr><tr><td>상장 후 6개월 코스닥 하락</td><td>123</td><td>16.2개월</td><td>6.7～22.0개월</td><td>12%</td><td>10%</td><td>20%</td><td>59%</td><td>-55%</td><td>+100%</td><td>71%</td></tr></tbody></table></div>
+<p>코스닥 지수 대비(시장 영향 제거) 바닥 시점 중앙값은 전체 19.0개월 · 상장일 코스닥 200일선 위(상승장) 18.1개월 · 상장일 코스닥 200일선 아래(하락장) 19.4개월.</p>
+<h3 id="첫-큰-반등이-시작된-바닥--저점에서-50-이상-처음-오른-경우의-그-저점">첫 ‘큰 반등’이 시작된 바닥 — 저점에서 50% 이상 처음 오른 경우의 그 저점<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#첫-큰-반등이-시작된-바닥--저점에서-50-이상-처음-오른-경우의-그-저점" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>2년 최저가는 계속 내리는 종목이면 2년 끝에 몰리므로, ‘눌렸다가 크게 오르는’ 시점을 따로 잽니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>2년 안에 +50% 반등이 나온 비율</th><th>반등 출발 바닥 중앙값</th><th>가운데 50%</th><th>6개월 안</th><th>6～12개월</th><th>그 바닥의 공모가 대비</th></tr></thead><tbody><tr><td>전체</td><td>89%</td><td>2.9개월</td><td>1.3～6.2개월</td><td>73%</td><td>19%</td><td>-30%</td></tr><tr><td>상장일 코스닥 200일선 위(상승장)</td><td>91%</td><td>3.1개월</td><td>1.5～7.7개월</td><td>66%</td><td>25%</td><td>-35%</td></tr><tr><td>상장일 코스닥 200일선 아래(하락장)</td><td>88%</td><td>2.6개월</td><td>1.2～5.5개월</td><td>77%</td><td>15%</td><td>-24%</td></tr><tr><td>상장 후 6개월 코스닥 상승</td><td>96%</td><td>2.1개월</td><td>1.1～4.7개월</td><td>76%</td><td>16%</td><td>-20%</td></tr><tr><td>상장 후 6개월 코스닥 하락</td><td>85%</td><td>3.1개월</td><td>1.6～7.2개월</td><td>71%</td><td>20%</td><td>-35%</td></tr></tbody></table></div>
+<h3 id="해제일-전후-코스닥-대비-초과수익--해제-종류별">해제일 전후 코스닥 대비 초과수익 — 해제 종류별<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#해제일-전후-코스닥-대비-초과수익--해제-종류별" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>건수</th><th>해제 물량 중앙값</th><th>해제 전 20일</th><th>해제일～5일</th><th>해제일～20일</th><th>21～60일</th></tr></thead><tbody><tr><td>기관 확약 해제</td><td>309</td><td>1.7%</td><td>-5.9% (t -4.6)</td><td>-3.2% (t -5.4)</td><td>-3.6% (t -3.2)</td><td>-5.4% (t -4.1)</td></tr><tr><td>기존주주 1개월</td><td>32</td><td>13.3%</td><td>-19.0% (t -5.0)</td><td>-3.2% (t -1.2)</td><td>-3.1% (t -0.6)</td><td>-5.2% (t -0.9)</td></tr><tr><td>기존주주 2～3개월</td><td>108</td><td>9.4%</td><td>-6.0% (t -2.2)</td><td>-2.0% (t -1.7)</td><td>-2.8% (t -1.2)</td><td>-6.5% (t -2.2)</td></tr><tr><td>기존주주 6개월</td><td>71</td><td>10.5%</td><td>-7.7% (t -4.1)</td><td>-2.1% (t -1.7)</td><td>-5.2% (t -2.7)</td><td>-8.0% (t -3.2)</td></tr><tr><td>기존주주 1년</td><td>43</td><td>7.0%</td><td>-7.6% (t -2.7)</td><td>-2.0% (t -1.6)</td><td>-5.3% (t -1.6)</td><td>-4.5% (t -1.1)</td></tr><tr><td>기존주주 1년 초과</td><td>12</td><td>8.6%</td><td>-4.4% (t -0.9)</td><td>+3.1% (t 0.6)</td><td>+4.6% (t 0.6)</td><td>-21.1% (t -3.0)</td></tr></tbody></table></div>
+<h3 id="해제일-전후-코스닥-대비-초과수익--해제-크기별상장주식수-대비">해제일 전후 코스닥 대비 초과수익 — 해제 크기별(상장주식수 대비)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#해제일-전후-코스닥-대비-초과수익--해제-크기별상장주식수-대비" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>구분</th><th>건수</th><th>해제 물량 중앙값</th><th>해제 전 20일</th><th>해제일～5일</th><th>해제일～20일</th><th>21～60일</th></tr></thead><tbody><tr><td>0.5～2%</td><td>213</td><td>1.0%</td><td>-5.7% (t -3.6)</td><td>-2.4% (t -3.5)</td><td>-3.6% (t -2.6)</td><td>-4.2% (t -2.7)</td></tr><tr><td>2～5%</td><td>160</td><td>3.2%</td><td>-8.3% (t -4.9)</td><td>-3.5% (t -4.4)</td><td>-2.5% (t -1.5)</td><td>-5.8% (t -2.9)</td></tr><tr><td>5～10%</td><td>72</td><td>7.2%</td><td>-9.5% (t -3.5)</td><td>-3.7% (t -2.7)</td><td>-7.0% (t -2.9)</td><td>-12.6% (t -4.1)</td></tr><tr><td>10% 이상</td><td>130</td><td>18.7%</td><td>-6.2% (t -2.9)</td><td>-1.4% (t -1.1)</td><td>-2.9% (t -1.3)</td><td>-6.3% (t -2.5)</td></tr></tbody></table></div>
+<p>t 는 평균이 0과 다른지 보는 값(절댓값 2 이상이면 우연으로 보기 어려움).</p>
+<h2 id="3-오버행-크기일정과-바닥의-관계">3. 오버행 크기·일정과 바닥의 관계<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-오버행-크기일정과-바닥의-관계" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>변수</th><th>종목 수</th><th>바닥 시점과 순위상관</th><th>바닥 깊이(상장일 대비)와 순위상관</th><th>t</th></tr></thead></table></div>
+<p>바닥 깊이 상관이 음수면 그 값이 클수록 바닥이 더 깊었다는 뜻입니다.</p>
+<h2 id="4-매수-시점-규칙-검증">4. 매수 시점 규칙 검증<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-매수-시점-규칙-검증" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>매수 뒤 120거래일(약 6개월) 동안 코스닥 대비 초과수익. <strong>표본 안</strong> = 매수일 2024-07-01 이전, <strong>보류 구간</strong> = 그 이후(규칙을 정한 뒤 한 번만 확인).</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>규칙</th><th>구간</th><th>건수</th><th>평균</th><th>중앙값</th><th>이긴 비율</th><th>t</th></tr></thead><tbody><tr><td>상장 1개월 뒤 일괄 매수(비교 기준)</td><td>표본 안</td><td>175</td><td>-13.7%</td><td>-16.7%</td><td>29%</td><td>-5.2</td></tr><tr><td>상장 1개월 뒤 일괄 매수(비교 기준)</td><td>보류 구간</td><td>117</td><td>-14.1%</td><td>-21.7%</td><td>32%</td><td>-3.1</td></tr><tr><td>마지막 큰 해제(13개월 안) 5거래일 뒤</td><td>표본 안</td><td>73</td><td>-8.6%</td><td>-11.5%</td><td>32%</td><td>-2.1</td></tr><tr><td>마지막 큰 해제(13개월 안) 5거래일 뒤</td><td>보류 구간</td><td>74</td><td>-17.3%</td><td>-19.5%</td><td>28%</td><td>-4.0</td></tr><tr><td>R1 + 그때 주가가 공모가 이하</td><td>표본 안</td><td>22</td><td>-10.0%</td><td>-11.4%</td><td>27%</td><td>-1.6</td></tr><tr><td>R1 + 그때 주가가 공모가 이하</td><td>보류 구간</td><td>39</td><td>-12.5%</td><td>-19.4%</td><td>36%</td><td>-2.3</td></tr><tr><td>모델 ‘관심’ 신호(매달 점검, 아래 5절)</td><td>표본 안</td><td>49 (21종목)</td><td>+3.1%</td><td>-10.9%</td><td>47%</td><td>0.4</td></tr><tr><td>모델 ‘관심’ 신호(매달 점검, 아래 5절)</td><td>보류 구간</td><td>42 (15종목)</td><td>-14.1%</td><td>-17.9%</td><td>29%</td><td>-3.1</td></tr><tr><td>같은 기간 전체 월별 시점(비교)</td><td>표본 안</td><td>2605</td><td>-11.2%</td><td>-14.4%</td><td>31%</td><td>-16.4</td></tr><tr><td>같은 기간 전체 월별 시점(비교)</td><td>보류 구간</td><td>2784</td><td>-14.4%</td><td>-17.2%</td><td>29%</td><td>-20.0</td></tr></tbody></table></div>
+<h2 id="5-확률-모델-매수-적기-표에-쓰는-것">5. 확률 모델 (매수 적기 표에 쓰는 것)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-확률-모델-매수-적기-표에-쓰는-것" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>상장 후 매달 같은 날짜에 종목 상태를 찍어 과거 표본으로 세 가지를 맞췄습니다(로지스틱·선형 회귀, 변수는 표준화).</p>
+<ul>
+<li><strong>바닥 통과 확률</strong>: 지금까지의 저점이 상장 후 2년 안에 다시 깨지지 않을 확률. 평균 37%. 구분력(AUC, 0.5=동전 던지기) 표본 안 0.88 · 보류 구간 0.88 (144개 종목).</li>
+<li><strong>3개월 안 새 저점 확률</strong>: 평균 47%. AUC 표본 안 0.88 · 보류 구간 0.85.</li>
+<li><strong>6개월 기대 초과수익</strong>: 보류 구간에서 예측과 실제의 순위상관 0.18, 예측 상위 1/3 평균 -9.5% vs 하위 1/3 -20.1%.</li>
+<li>쓰는 변수: 지금까지 저점 대비 상승폭, 상장 후 고점 대비 하락폭, 공모가 대비, 코스닥 200일선 위, 상장 후 경과(로그). 해제 일정 변수는 기존주주 해제 일정이 확인된 종목이 패널의 80% 이상일 때만 넣습니다(현재 29%).</li>
+<li><strong>실제 해제 기록 반영(2026-10-12～)</strong>: 2024-10 이후 상장한 116개 종목은 이미 지난 해제를 신고서 일정 대신 금융위원회 의무보호예수 반환 기록(공공데이터포털)으로 바꿨습니다. 신고서·추출 일정과 ±10일 안에 맞은 비율 95% (106개 종목, 기관 확약 제외).</li>
+</ul>
+<p><strong>바닥 통과 확률 보정 확인(보류 구간)</strong> — 예측한 확률대로 실제로 맞았는지</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>예측 확률 구간</th><th>건수</th><th>평균 예측</th><th>실제 비율</th></tr></thead><tbody><tr><td>(-0.001, 0.2]</td><td>733</td><td>11%</td><td>12%</td></tr><tr><td>(0.2, 0.4]</td><td>416</td><td>29%</td><td>44%</td></tr><tr><td>(0.4, 0.6]</td><td>260</td><td>49%</td><td>69%</td></tr><tr><td>(0.6, 0.8]</td><td>176</td><td>70%</td><td>86%</td></tr><tr><td>(0.8, 1.0]</td><td>263</td><td>92%</td><td>98%</td></tr></tbody></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>변수</th><th>바닥 통과 확률</th><th>3개월 안 새 저점</th><th>6개월 초과수익 (t)</th></tr></thead><tbody><tr><td>지금까지 저점 대비 상승폭</td><td>1.94</td><td>-2.60</td><td>-3.7%p (-4.6)</td></tr><tr><td>상장 후 고점 대비 하락폭</td><td>0.34</td><td>-0.28</td><td>4.1%p (5.7)</td></tr><tr><td>공모가 대비</td><td>-0.05</td><td>0.15</td><td>-3.1%p (-3.7)</td></tr><tr><td>코스닥 200일선 위</td><td>-0.39</td><td>0.26</td><td>-6.2%p (-11.7)</td></tr><tr><td>상장 후 경과(로그)</td><td>1.47</td><td>-0.48</td><td>2.7%p (4.1)</td></tr></tbody></table></div>
+<p>계수는 변수가 1표준편차 클 때의 변화(로지스틱은 로그오즈, 표준화 값은 ±3에서 자름). 과거 표본이 300여 종목·5년이라 장세가 바뀌면 맞지 않을 수 있습니다.</p>
+<hr/>
+<p><em>자료: OpenDART 증권신고서·투자설명서·증권발행실적보고서, KRX 정보데이터 일별 시세. 해제 물량은 신고서 기준이며 실제 매도 여부는 알 수 없습니다. 투자 권유가 아닙니다.</em></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-964" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#신규상장주는-언제-바닥을-치나--코스닥-오버행-연구" data-for="신규상장주는-언제-바닥을-치나--코스닥-오버행-연구">신규상장주는 언제 바닥을 치나 — 코스닥 오버행 연구</a></li><li class="depth-1"><a href="#한눈에" data-for="한눈에">한눈에</a></li><li class="depth-1"><a href="#1-바닥까지-걸린-기간--장세별" data-for="1-바닥까지-걸린-기간--장세별">1. 바닥까지 걸린 기간 — 장세별</a></li><li class="depth-2"><a href="#첫-큰-반등이-시작된-바닥--저점에서-50-이상-처음-오른-경우의-그-저점" data-for="첫-큰-반등이-시작된-바닥--저점에서-50-이상-처음-오른-경우의-그-저점">첫 ‘큰 반등’이 시작된 바닥 — 저점에서 50% 이상 처음 오른 경우의 그 저점</a></li><li class="depth-2"><a href="#해제일-전후-코스닥-대비-초과수익--해제-종류별" data-for="해제일-전후-코스닥-대비-초과수익--해제-종류별">해제일 전후 코스닥 대비 초과수익 — 해제 종류별</a></li><li class="depth-2"><a href="#해제일-전후-코스닥-대비-초과수익--해제-크기별상장주식수-대비" data-for="해제일-전후-코스닥-대비-초과수익--해제-크기별상장주식수-대비">해제일 전후 코스닥 대비 초과수익 — 해제 크기별(상장주식수 대비)</a></li><li class="depth-1"><a href="#3-오버행-크기일정과-바닥의-관계" data-for="3-오버행-크기일정과-바닥의-관계">3. 오버행 크기·일정과 바닥의 관계</a></li><li class="depth-1"><a href="#4-매수-시점-규칙-검증" data-for="4-매수-시점-규칙-검증">4. 매수 시점 규칙 검증</a></li><li class="depth-1"><a href="#5-확률-모델-매수-적기-표에-쓰는-것" data-for="5-확률-모델-매수-적기-표에-쓰는-것">5. 확률 모델 (매수 적기 표에 쓰는 것)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2610180326'</script>
