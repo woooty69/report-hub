@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>신호 성적표 모음</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="신호 성적표 모음"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="신호 성적표 모음"/><meta name="twitter:description" content="신호 성적표 모음 우리 자료로 만든 투자 신호·가설이 지금 실제로 맞고 있는지 한 장에 모은 표. 매일 22:20 갱신. 지금 장세: 하락·변동성 높음 · 한국 시장 체력 7.1(매우약함, 2026-11-06)."/><meta property="og:description" content="신호 성적표 모음 우리 자료로 만든 투자 신호·가설이 지금 실제로 맞고 있는지 한 장에 모은 표. 매일 22:20 갱신. 지금 장세: 하락·변동성 높음 · 한국 시장 체력 7.1(매우약함, 2026-11-06)."/><meta property="og:image:alt" content="신호 성적표 모음 우리 자료로 만든 투자 신호·가설이 지금 실제로 맞고 있는지 한 장에 모은 표. 매일 22:20 갱신. 지금 장세: 하락·변동성 높음 · 한국 시장 체력 7.1(매우약함, 2026-11-06)."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/신호-성적표/신호_성적표_모음"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/신호-성적표/신호_성적표_모음"/><link rel="icon" href="../static/icon.png"/><script src="../static/pdf-fallback.js" defer></script><meta name="description" content="신호 성적표 모음 우리 자료로 만든 투자 신호·가설이 지금 실제로 맞고 있는지 한 장에 모은 표. 매일 22:20 갱신. 지금 장세: 하락·변동성 높음 · 한국 시장 체력 7.1(매우약함, 2026-11-06)."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/신호-성적표/신호_성적표_모음-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/신호-성적표/신호_성적표_모음-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/신호-성적표/신호_성적표_모음-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="신호-성적표/신호_성적표_모음"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let folderOrder={dailymarketreport:0,\&quot;\\uD55C\\uAD6D\\uC2DC\\uC7A5-\\uB9AC\\uD3EC\\uD2B8\&quot;:.5,\&quot;youtube-\\uC694\\uC57D\&quot;:1,\&quot;\\uC720\\uD29C\\uBE0C-\\uD22C\\uC790\\uB178\\uD2B8\&quot;:1.2,\&quot;\\uD22C\\uC790\\uAE30\\uBC95-\\uC694\\uC57D\&quot;:1.5,\&quot;\\uC99D\\uAD8C\\uC0AC-\\uB9AC\\uD3EC\\uD2B8-\\uC694\\uC57D\&quot;:2,\&quot;d\\uB7A8-\\uAC00\\uACA9-\\uB9AC\\uD3EC\\uD2B8\&quot;:3,\&quot;\\uC9C0\\uC815\\uD559-\\uB9AC\\uD3EC\\uD2B8\&quot;:3.5,\&quot;\\uC99D\\uAD8C\\uC0AC\\uB9AC\\uD3EC\\uD2B8-\\uAC80\\uC0C9\&quot;:4,\&quot;\\uC9C0\\uC218-\\uACC4\\uC808\\uC131\&quot;:5,\&quot;\\uC2E0\\uADDC\\uC0C1\\uC7A5-\\uC624\\uBC84\\uD589\&quot;:5.5,\&quot;\\uAD00\\uC138\\uCCAD-\\uC218\\uCD9C\\uC785\&quot;:5.7,\&quot;\\uC815\\uCC45-\\uCD94\\uC801\&quot;:5.8,\&quot;\\uC2E0\\uD638-\\uC131\\uC801\\uD45C\&quot;:5.9,\&quot;\\uAC1C\\uC778-\\uD22C\\uC790-\\uAE30\\uB85D\&quot;:5.95};if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1366"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1366" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../신호-성적표/">신호 성적표</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>신호 성적표 모음</a></div></nav><h1 class="article-title">신호 성적표 모음</h1><p show-comma="true" class="content-meta"><time datetime="2026-11-06T15:00:00.000Z">26.11.07.00</time><span>21 min read</span></p></div></div><article class="popover-hint"><h1 id="신호-성적표-모음">신호 성적표 모음<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#신호-성적표-모음" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>우리 자료로 만든 투자 신호·가설이 지금 실제로 맞고 있는지 한 장에 모은 표. 매일 22:20 갱신. 지금 장세: <strong>하락·변동성 높음</strong> · 한국 시장 체력 7.1(매우약함, 2026-11-06). 대부분의 신호는 2024～25년 강세장 자료로 조사했으므로 하락장에서의 결과를 따로 본다(각 성적표의 ‘장세별’ 절). 투자 권유 아님.</p>
+</blockquote>
+<h2 id="1-매일-채점하는-신호">1. 매일 채점하는 신호<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-매일-채점하는-신호" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>신호</th><th>무엇을 보나</th><th>최근 결과</th><th>지금 장세에서</th><th>판정</th><th>자세히</th></tr></thead><tbody><tr><td>🆕 새로운 뉴스 선정</td><td>후보 기사 점수 → 5일 시장 대비 초과수익</td><td>hand-v1(현재) IC -0.086, 상위 7개 -3.07% (7일) · prior-nv-261029(그림자) IC +0.077, 상위 7개 +0.90% (7일)</td><td>–</td><td>그림자 40거래일 뒤 교체 판정</td><td></td></tr><tr><td>🏛 정책 신호</td><td>정책 바구니 ‘맞은 방향’ 초과수익 − 위약 − 같은 날 평균</td><td>채점 1340건 · 5일 정책 효과 -0.14%(1096) · 20일 +0.76%(101) · 60일 0건</td><td>하락장 5일 -0.04%(700)</td><td>20일 11월～ · 60일 1월～ · 250일 2027-10</td><td><a href="../정책-추적/정책_성적표" class="internal alias" data-slug="정책-추적/정책_성적표">정책_성적표</a></td></tr><tr><td>📦 관세청 수출 신호</td><td>수출 단가·가속·새 국가 → 60일 순초과수익</td><td>검증 기간: 단가 주도 − 물량 주도 +3.6%p(가장 일관) · 가속 상위 − 하위 +0.9%p · 총수출 놀람은 부호 반대</td><td>최근 신호 종목 코스피 대비 -7.5%</td><td>2026-12-27</td><td><a href="../관세청-수출입/관세청_수출신호_성적표" class="internal alias" data-slug="관세청-수출입/관세청_수출신호_성적표">관세청_수출신호_성적표</a></td></tr><tr><td>💱 수출·환율·주가 종합 (H-TRD-007)</td><td>원화 환산 수출·가속·단가·추정치·주가 → 긍정 − 주의 60일</td><td>조사 13달 +10.1% (t 2.18, 이긴 달 9/13) · 검증 18달 +6.7% (t 3.34, 이긴 달 13/18)</td><td>주가 요소는 반대(모멘텀) → H-TRD-008 앞으로 채점</td><td>2026-12-27</td><td><a href="../관세청-수출입/2026-11-06_수출·환율·주가-종합-(2026년-9월)" class="internal alias" data-slug="관세청-수출입/2026-11-06_수출·환율·주가-종합-(2026년-9월)">2026-11-06_수출·환율·주가 종합 (2026년 9월)</a></td></tr><tr><td>🧭 섹터 논지 (H-THS-001～003)</td><td>12섹터 Claude 논지(주간) + 수치 점검표(매일)</td><td>바닥 모색 2 · 진행 1 · 하락 11 · 하락 점검 2개↑ 14섹터</td><td>과거: 하락 점검 3개↑ 같은 날 −7.8%p(t −2.6) · 상승 점검은 반대로 작동</td><td>Claude 확률 보정 26주 뒤</td><td><a href="../신호-성적표/섹터_논지_판" class="internal alias" data-slug="신호-성적표/섹터_논지_판">섹터_논지_판</a></td></tr><tr><td>📺 유튜브 주장</td><td>채널 주장 방향 × 이후 수익(종목·업종·지수)</td><td>주장 11,143건 중 채점 452건 · 적중 53% · 평균 +0.32% · 상승 주장 64%</td><td>기준 대비 1위: 한국경제TV · 66 · 55% · +2.27% · +2.42%p</td><td>기간이 차는 대로</td><td><a href="../신호-성적표/유튜브_주장_성적표" class="internal alias" data-slug="신호-성적표/유튜브_주장_성적표">유튜브_주장_성적표</a></td></tr><tr><td>🧭 장세 지표</td><td>예탁금·신용·심리·펀드 → 20·60일 지수</td><td>검증 통과: H-MKT-003(공개 관찰) (나머지는 국면 따라 부호가 바뀜)</td><td>–</td><td>관찰</td><td></td></tr><tr><td>📈 주봉 CANSLIM (H-WBT-002)</td><td>가상 포트폴리오(실자본 0) 전진 추적</td><td>자본 100.0 (시작 100) · 보유 0종목</td><td>KOSPI 지수>30주선 ❌ · KOSDAQ ❌</td><td>2027-05·11</td><td><a href="../가상매매/주봉CANSLIM_전진추적" class="internal alias" data-slug="가상매매/주봉CANSLIM_전진추적">주봉CANSLIM_전진추적</a></td></tr><tr><td>🛡 006 병행 검증</td><td>006 복제 vs 장세 엔진 갈래(가상)</td><td>006 복제(A0) 19일 누적 -78.8백만</td><td>엔진 − 006: 하루 평균 +4.1백만 (t 1.43, 95% 구간 +0.4백만 ～ +10.8백만, 19일)</td><td>관문 2 = 40거래일</td><td></td></tr><tr><td>🐢 터틀 실시간 모의</td><td>코스피200 선물 S1 매수 전용(주문 없음)</td><td>8계좌 거래 0건 · 수익률 +0.00%</td><td>–</td><td>관찰(10-20～)</td><td></td></tr></tbody></table></div>
+<h2 id="2-가설-등록부">2. 가설 등록부<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-가설-등록부" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>등록 69개 — 가장 최근 판정 기준: 통과 2 · 미통과 13 · 보류 1 · 시험 전 53. 조사 기간 결과는 가설을 다듬는 데만 쓰고 판단은 검증 기간으로 한다. 시험 수가 많을수록 통과 기준(t)이 올라간다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>코드</th><th>가설</th><th>상태</th><th>조사 기간</th><th>검증 기간</th><th>마지막 시험</th></tr></thead><tbody><tr><td>H-DRV-001</td><td>내재변동성이 실현변동성보다 충분히 클 때만 양매도 규모를 키우면 위험 대비 수익이 좋아진다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-002</td><td>외국인 선물 순매수와 프로그램 비차익 변화가 이후 30분 선물 방향을 예고한다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-003</td><td>만기일과 평일은 프리미엄 가드·이동 임계값의 최적값이 다르다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-004</td><td>미국 정규장 마감과 야간선물 움직임이 다음 날 코스피200 선물 시가 갭을 설명한다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-005</td><td>옵션 거리 계산의 기준점은 지수보다 내재선물(K*)이 낫다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-006</td><td>시간대 위클리 양매도의 수익은 진입 시각·보유 시간·행사가와 그날 조건(전일 나스닥, 야간선물, KOSPI200 이동평균 위치</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-006C</td><td>시간대 위클리 양매도 조건별 순위 (모형 백테스트: 선물 1분 경로 + 일별 IV)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-007</td><td>코스피200이 5거래일 -8% 이하로 급락하는 동안 선물 미결제약정이 +5% 이상 늘면, 이후 5·10거래일 코스피200 수익</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-17</td></tr><tr><td>H-DRV-008</td><td>코스피200 옵션의 풋-콜 내재변동성 차이(OTM 풋 IV − OTM 콜 IV, 거래량 가중)가 직전 20거래일 평균보다 2표</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-17</td></tr><tr><td>H-DRV-008B</td><td>(H-DRV-008 재검증판) 코스피200 옵션 OTM 풋−콜 IV 차이가 직전 20일 대비 z≥2 로 벌어진 다음 날부터 5</td><td>진행</td><td>–</td><td>❌ 미통과</td><td>10-20</td></tr><tr><td>H-DRV-009</td><td>코스피200이 5거래일 −8% 이하로 급락한 날 종가에 사면 이후 5거래일 수익률이 무조건 평균보다 높다(지수 급락 뒤 단기</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-010</td><td>코스피200이 20거래일 고점 대비 -15% 이상 빠진 상태에서 옵션 풋/콜 거래량 비율(주간·당일)이 직전 60거래일 하위</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-011</td><td>006 선물 방향 포지션의 오버나이트 순노출을 1계약 이하·증거금률 상한 70%로 묶으면 모의 회차 손실과 최대낙폭이 절반 이</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-012</td><td>006 옵션 매도분에 ‘받은 프리미엄 3배 손절’ 또는 ‘지수 일중 ±2% 돌파 시 델타 헤지’를 두면 꼬리 손실이 줄고 매도</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-013</td><td>ATM IV − RV20이 직전 1년 상위 20%인 날은 이후 5일 양매도 꼬리 손실이 크다 → 그날 규모 50% 축소가 위험</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-014</td><td>코스피200 옵션 전체 미결제약정이 20거래일 새 +30% 이상 늘어난 날 다음 5거래일 코스피200 실현변동성은 직전 20일</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-015</td><td>코스피200이 하루 +3% 이상 오른 날 옵션 거래량가중 IV 도 오르면(상승-변동성 동행), 다음 5거래일 코스피200 절대</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-DRV-016</td><td>코스피200 선물 근월물 종가 − 현물(spot_p) 베이시스가 이론 베이시스보다 0.5%p 이상 낮은(백워데이션 심화) 날</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-ETF-001</td><td>국내 주식형 테마 ETF 의 편입 예시 종목은 ETF 상장 뒤 20·60거래일 동안 시장(동일가중) 대비 약세다(회피 신호)</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-15</td></tr><tr><td>H-MKT-001</td><td>반대매매 비중이 높은(투매) 다음 코스닥 20일 수익률이 높다(바닥 반등)</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-24</td></tr><tr><td>H-MKT-002</td><td>코스닥 신용융자/시가총액이 높을수록 이후 코스닥 60일 수익률이 낮다(레버리지 과열)</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-24</td></tr><tr><td>H-MKT-003</td><td>대기자금(예탁금/시총)이 많고 시장 체력이 낮을수록 이후 코스피 60일 수익률이 높다(실탄 반등)</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-24</td></tr><tr><td>H-MKT-004</td><td>개인 자금 심리 지수가 높을수록(탐욕) 이후 코스피 60일 수익률이 낮다</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-24</td></tr><tr><td>H-MKT-005</td><td>주식형 공모펀드 순유출(개인 환매)이 클수록 이후 코스피 20일 수익률이 높다</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-24</td></tr><tr><td>H-MKT-006</td><td>ELS 발행 급증 → 다음 달 VKOSPI 하락, 미상환잔고 큰 상태의 지수 급락 → 하락 가속</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-MKT-007</td><td>국고채 3년 − 한국은행 기준금리 차이가 직전 250일 상위 10% 로 벌어진 날 이후 20거래일 코스피 수익률은 전체 평균보</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-MKT-008</td><td>회사채(AA-,3년) − 국고채 3년 신용스프레드가 20거래일 새 +15bp 이상 넓어지면 이후 20거래일 코스닥 수익률이 코</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-MKT-009</td><td>12월 대주주 양도세 기준일 직전 10거래일 동안 코스닥(개인 순매도 큰 구간)은 코스피 대비 약세이고, 연초 첫 10거래일에</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-MKT-010</td><td>미국 중간선거 다음 날부터 60거래일 코스피 수익률은 같은 달력 구간의 비선거 연도 평균보다 높다(유튜브 22개 채널 반복 주</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-001</td><td>사건 없이 기사만 급증한 종목은 이후 20～60일 되돌림(음)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-002</td><td>본문 기준 덜 반영된 실질 호재·악재(당일 반응 작음)는 1～20일 드리프트</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-003</td><td>같은 종류 실질 사건이라도 새로운 것은 드리프트 +, 반복된 것은 약하거나 되돌림</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-004</td><td>테마 첫 등장 → 테마 바구니 1～4주 초과수익</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-005</td><td>대형주 급락일에 실질 사건 없는 뉴스만 있으면 이후 반등 +</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-006</td><td>업종 뉴스심리 지수 변화 → 1～4주 업종 상대수익</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-NWS-007</td><td>뉴스 노출 적은 공시는 이후 드리프트가 크다(소외)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-REG-001</td><td>장세 판정 v0.2 덧씌움 점수가 높을수록 이후 5일 변동성 프리미엄(VKOSPI − 실현변동성)이 크다 → 옵션 매도 관문</td><td>진행</td><td>❌ 미통과</td><td>–</td><td>10-24</td></tr><tr><td>H-SOC-001A</td><td>브랜드 검색 증가가 다음 달 품목 수출 증가를 앞선다</td><td>진행</td><td>⏸ 보류</td><td>⏸ 보류</td><td>11-01</td></tr><tr><td>H-SOC-001B</td><td>2021년 보고서 브랜드의 네이버 검색 증가가 그 분기 매출 증가를 설명한다</td><td>기각</td><td>❌ 미통과</td><td>❌ 미통과</td><td>11-01</td></tr><tr><td>H-SOC-004</td><td>시점별 보고서 브랜드의 네이버 검색 증가가 그 분기 매출 증가를 설명한다</td><td>기각</td><td>❌ 미통과</td><td>❌ 미통과</td><td>11-01</td></tr><tr><td>H-STK-001</td><td>공급계약·자사주·전환사채·유상증자 공시 뒤 일정 기간 수익률에 유형별 규칙성이 있다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-002</td><td>증권사 목표주가 상향·신규 커버리지 개시 종목은 이후 20일 초과수익을 낸다</td><td>진행</td><td>✅ 통과</td><td>–</td><td>10-31</td></tr><tr><td>H-STK-003</td><td>미국 테마 강세가 한국 관련주 상승을 며칠 앞선다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-004</td><td>관세청 10일 단위 품목 수출 변화가 해당 업종의 실적·주가를 앞선다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-005</td><td>네이버 투자 블로그·투자 유튜브 언급이 평소의 몇 배로 뛴 종목은 이후 20일 초과수익이 낮다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-006</td><td>과거 적중률 상위 투자 채널이 처음 언급한 종목은 이후 20일 초과수익을 낸다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-007</td><td>코스피200이 5거래일 -8% 이하로 급락한 직후, 시총 상위 100 종목 중 5일 낙폭 상위 20% 종목을 동일가중으로 사면</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-008</td><td>한 주에 투자 유튜브 5개 이상 채널이 코스피 상승(반등)을 주장한 주의 다음 1주·4주 코스피200 수익률은 그런 주장이 적</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-009</td><td>시총 1조원 이상 종목에서 최대주주등소유주식변동신고서가 장내매수(최대주주·특수관계인 순증)로 확인되면, 이후 20거래일 시장(</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-010</td><td>유튜브 종목 주장 중 근거 유형이 data·report 인 주장은 opinion 인 주장보다 이후 20거래일 방향 적중률이 높</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-011</td><td>공급계약·자사주 공시가 나온 주에 텔레그램 언급이 평소(직전 4주 주평균)의 3배 이상으로 뛴 종목은, 언급 급증이 없던 같은</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-012</td><td>시총 300억～1천억 종목의 최대주주변경 공시 뒤 다음 날 시가 매수는 20거래일 순초과수익이 음(−)이다(회피)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-013</td><td>시총 1천억～5천억 종목의 유상증자 공시 뒤 20거래일 순초과수익이 음(−)이다(회피)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-014</td><td>전환사채·유상증자 결정 공시를 30일 안에 [기재정정] 3회 이상 낸 종목은 이후 20거래일 시장(동일가중) 대비 초과수익이</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-015</td><td>증권사가 낸 KOSPI200·KOSDAQ150 정기변경 편입 예상 종목(2개 이상 증권사 겹침)은 목록 공개 다음 날 시가～변</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-016</td><td>목표가 하향 리포트 종목은 같은 주 목표가 유지 종목보다 이후 20거래일 순초과수익이 3%p 이상 낮다(회피)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-STK-017</td><td>코스피200이 20거래일 고점 대비 -10% 이하인 하락장에서 나온 자기주식취득결정 공시 종목은, 평시에 나온 자사주 공시 종</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-THS-001</td><td>섹터 하락 점검표(가격 규칙·호재 무반응·추정치 수정 폭 악화·목표가 군집·쏠림·외국인/개인 분산 중 수치형) 3개 이상 켜진</td><td>진행</td><td>⏸ 보류</td><td>✅ 통과</td><td>11-07</td></tr><tr><td>H-THS-002</td><td>섹터 상승 점검표(200일선 위·50일선 상승, 추정치 수정 폭 양전, 외국인 매집, 관심 조용) 3개 이상 켜진 섹터는 이후</td><td>진행</td><td>⏸ 보류</td><td>❌ 미통과</td><td>11-07</td></tr><tr><td>H-THS-003</td><td>Claude 가 리포트·기사·수치로 매주 쓰는 섹터 논지의 P(3개월 코스피 대비 우위) 는 보정되어 있다(브라이어 점수가 5</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-001</td><td>관세청 10일·월 잠정 총수출의 일평균 전년비 놀람(직전 3회 평균 대비)이 클수록 발표 뒤 코스피200 5일 수익이 높다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-002</td><td>매핑 종목의 3개월 수출 전년비 가속 상위 20%는 확정치 공표(다음 달 15일) 뒤 초과수익이 양(+), 하위 20%는 음(</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-003</td><td>단가 주도 수출 성장(3개월 단가 +5%↑·금액 증가) 종목은 공표 뒤 초과수익이 양(+), 물량 주도(단가 −5%↓)는 약하</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-004</td><td>품목×국가 수출에서 새 국가 급증(비중 3σ) → 유통·브랜드 종목 이후 초과수익</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-005</td><td>수출 환산 매출 증가율 − 컨센서스 하반기 매출 증가율(R3 차이)이 양수면 다음 실적·추정치 상향</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-006</td><td>수출 신호(001·002)의 효과가 해마다 줄어든다(알파 소멸)</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-007</td><td>수출·환율·추정치·주가 종합 점수 상위 20%(긍정)는 하위 20%(주의)보다 공표 뒤 60거래일 코스피 대비 수익이 높다</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-TRD-008</td><td>H-TRD-007 의 주가 요소를 모멘텀(+0.5x 3개월 코스피 대비 수익 순위)으로 바꾼 종합 점수: 상위 20%가 하위</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr><tr><td>H-WBT-002</td><td>CANSLIM 주봉 융합(C분기EPS가속+A+RS주도주+시장국면+MACD트레일)이 한국에서 공정벤치 대비 저낙폭으로 유효</td><td>진행</td><td>–</td><td>–</td><td>시험 전</td></tr></tbody></table></div>
+<h2 id="읽는-법">읽는 법<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#읽는-법" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>‘최근 결과’의 % 는 모두 시장(또는 기준) 대비 초과수익이고 비용은 성적표마다 다르다(각 성적표 머리말).</li>
+<li>표본이 30 미만이거나 날짜 수가 적으면 우연일 가능성이 크다. 장세는 몇 주씩 이어져 같은 장세 안의 사례가 덩어리로 묶인다.</li>
+<li>근거·계산 방법은 각 성적표와 hw-hq 저장소 know/HYP_README.md.</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1031" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#신호-성적표-모음" data-for="신호-성적표-모음">신호 성적표 모음</a></li><li class="depth-1"><a href="#1-매일-채점하는-신호" data-for="1-매일-채점하는-신호">1. 매일 채점하는 신호</a></li><li class="depth-1"><a href="#2-가설-등록부" data-for="2-가설-등록부">2. 가설 등록부</a></li><li class="depth-1"><a href="#읽는-법" data-for="읽는-법">읽는 법</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2611071720'</script>
