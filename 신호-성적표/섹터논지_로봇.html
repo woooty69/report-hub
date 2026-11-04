@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><script src="/report-hub/static/gate.js"></script><title>섹터 논지 — 로봇</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="섹터 논지 — 로봇"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="섹터 논지 — 로봇"/><meta name="twitter:description" content="섹터 논지 — 로봇 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta property="og:description" content="섹터 논지 — 로봇 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta property="og:image:alt" content="섹터 논지 — 로봇 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_로봇"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_로봇"/><link rel="icon" href="../static/icon.png"/><script src="../static/pdf-fallback.js" defer></script><meta name="description" content="섹터 논지 — 로봇 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_로봇-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_로봇-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_로봇-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="신호-성적표/섹터논지_로봇"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let folderOrder={dailymarketreport:0,\&quot;\\uD55C\\uAD6D\\uC2DC\\uC7A5-\\uB9AC\\uD3EC\\uD2B8\&quot;:.5,\&quot;youtube-\\uC694\\uC57D\&quot;:1,\&quot;\\uC720\\uD29C\\uBE0C-\\uD22C\\uC790\\uB178\\uD2B8\&quot;:1.2,\&quot;\\uD22C\\uC790\\uAE30\\uBC95-\\uC694\\uC57D\&quot;:1.5,\&quot;\\uC99D\\uAD8C\\uC0AC-\\uB9AC\\uD3EC\\uD2B8-\\uC694\\uC57D\&quot;:2,\&quot;d\\uB7A8-\\uAC00\\uACA9-\\uB9AC\\uD3EC\\uD2B8\&quot;:3,\&quot;\\uC9C0\\uC815\\uD559-\\uB9AC\\uD3EC\\uD2B8\&quot;:3.5,\&quot;\\uC99D\\uAD8C\\uC0AC\\uB9AC\\uD3EC\\uD2B8-\\uAC80\\uC0C9\&quot;:4,\&quot;\\uC9C0\\uC218-\\uACC4\\uC808\\uC131\&quot;:5,\&quot;\\uC2E0\\uADDC\\uC0C1\\uC7A5-\\uC624\\uBC84\\uD589\&quot;:5.5,\&quot;\\uAD00\\uC138\\uCCAD-\\uC218\\uCD9C\\uC785\&quot;:5.7,\&quot;\\uC815\\uCC45-\\uCD94\\uC801\&quot;:5.8,\&quot;\\uC2E0\\uD638-\\uC131\\uC801\\uD45C\&quot;:5.9,\&quot;\\uAC1C\\uC778-\\uD22C\\uC790-\\uAE30\\uB85D\&quot;:5.95};if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1399"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1399" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../신호-성적표/">신호 성적표</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>섹터 논지 — 로봇</a></div></nav><h1 class="article-title">섹터 논지 — 로봇</h1><p show-comma="true" class="content-meta"><time datetime="2026-11-08T15:00:00.000Z">26.11.09.00</time><span>12 min read</span></p></div></div><article class="popover-hint"><h1 id="섹터-논지--로봇">섹터 논지 — 로봇<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#섹터-논지--로봇" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). <a href="../신호-성적표/섹터_논지_판" class="internal alias" data-slug="신호-성적표/섹터_논지_판">← 섹터 논지 판</a> · 투자 권유 아님.</p>
+</blockquote>
+<h2 id="한-줄-논지">한 줄 논지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한-줄-논지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>로봇 바구니는 고점 대비 -50.6%, 200일선 대비 -30.8%로 이미 크게 눌린 하락 단계다. 피지컬AI 정책·제품 뉴스는 쏟아지지만 수치(추정치 하향, 하락 점검 2/7)가 아직 이를 확인해 주지 않는다.</p>
+<p><strong>지난주 대비 바뀐 점</strong>: 첫 작성이라 지난 카드와의 비교는 없다. 기준율 50에서 출발한다. 이번 주 새 사실은 세 가지다. 미 중간선거 이후 AI·데이터센터 규제 우려로 반도체가 급락했다[R3]. 당정이 피지컬AI 특별법 연내 처리와 AI 예산 9.4조를 밝혔다[P2][P3]. 중국 휴머노이드의 27년 대규모 구조조정 전망이 나왔다[R2].</p>
+<p><strong>3개월 코스피 대비 우위 확률 42%</strong> — 기준율 50에서 출발했다. 추세(-50.6%, 200일선 -30.8%)와 추정치 하향(-0.29), 외국인 순매도, 규제 우려가 하향 요인이다. 이미 절반 가까이 빠져 있고 20일 코스피 대비 +1.9%, 정책 모멘텀, 11월 후반 계절성은 상향 요인이다. 상승 점검이 0/5라 반등 확인이 없어 50보다 소폭 낮은 42로 둔다.</p>
+<p><strong>단계(Claude)</strong>: 하락 — 수치 점검표(규칙 단계 하락)와 같다. 다만 -50.6%라는 낙폭 때문에 바닥 형성 여부를 따져 볼 시점이지만, 상승 점검이 0/5라 바닥으로 올리기에는 증거가 부족하다.</p>
+<h2 id="상승-논지">상승 논지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#상승-논지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>정책 지원이 구체화되고 있다. 피지컬AI 특별법 연내 처리 추진과 AI 예산 9.4조, 정부·산은의 육성 협력이 이어진다. — [P2] [P3] [P1] [P4] 정책 사실은 확인된다. 다만 법안이 통과되기 전이고 예산이 종목 실적으로 이어지는 경로는 자료에 없다.</li>
+<li>대기업의 투자와 사업 구체화가 진행 중이다. 현대차그룹 새만금 로봇공장, 도요타 로보틱스 신설, LG의 CEO 직속 로봇 조직, 삼성 CES 기대가 있다. — [N28] [N19] [N23] [R2] [N29] 현대모비스 목표가 60만원(메리츠). [R6]은 2027년을 휴머노이드 실현 가시성 확보의 해로 본다.</li>
+<li>부품·양산 소식이 늘고 있고 일부 기업은 매출 성장을 제시한다. 가격(목표가÷주가 1.83)과 목표가 상향 비율(+9.3%, 97건)은 애널리스트 낙관을 보여 주며, 20일 코스피 대비로는 +1.9%로 반등 조짐이 있다. — [N9] 에스피지 SDD 12월 첫 양산, [N21] 삼성전기·LG이노텍 공급 확대, [N25] 로보티즈 내년 매출 2배 목표, [N6] 링크솔루션 2공장 연말 준공, [수치] 목표가÷주가 1.83, 20일 코스피 대비 +1.9%, [R10] 11월 후반 이후 연말·연초 강세 계절성에 주목.</li>
+</ul>
+<h2 id="하락-논지">하락 논지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#하락-논지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>가격·추세가 심각하게 나쁘다. 3개월 -21.2%, 52주 고점 대비 -50.6%, 200일선 대비 -30.8%이고 규칙 단계가 하락이다. 하락 점검은 2/7(P1, P2)이 켜졌고 상승 점검은 0/5다. — [수치] 하락 점검 2/7(P1,P2), 상승 점검 0/5, 규칙 단계 하락. 다만 20일 코스피 대비 +1.9%는 단기 반등을 가리킨다.</li>
+<li>AI·데이터센터 규제 우려와 높은 밸류에이션이 겹쳐 있다. 중간선거 후 민주당이 의회를 장악하자 반도체가 급락했고, 리포트는 규제 우려가 고밸류 로봇주 심리에 부정적이라고 본다. — [R3] SOXX -16%, 한국 반도체 ETF -12.9%, 코스피 200 -7%. [R10] AI 인프라 규제 우려와 테슬라의 정치적 부담이 로봇주 단기 심리에 부정적이고, 조선과 함께 정책 불확실성이 해소될 때까지 관망 후 대응을 제시한다.</li>
+<li>수익성·경쟁 구도가 불리하다. 액추에이터는 결국 가격 싸움이고 중국이 싸며, 중국 휴머노이드 업계는 27년부터 대규모 구조조정이 전망된다. 현대차그룹은 ‘허니문이 끝났다’는 비용 우려가 있다. 추정치도 하향 중이다. — [N4] 삼현 ‘물량 되면 中만큼 싸게’, [R2] 중국 휴머노이드 27년 구조조정 전망, [R6] 2027년부터 비용 투하 국면과 원가 상승 우려, [수치] 추정치 수정 폭 -0.29, 외국인 20일 순매수/시총 -0.3%. [Y1] 증시각도기TV는 실제 서비스 현장 대체에 상당한 시간이 걸린다고 한다.</li>
+</ul>
+<p><strong>지금 우세한 쪽에 대한 가장 강한 반론</strong>: 상승 쪽 이야기(정책·신제품·대기업 투자)는 대부분 소규모 종목의 크기 1～2짜리 보도와 계획 단계의 발표이며, 유튜브 주장은 상승 155 대 하락 12로 한쪽에 쏠려 있는데도 가격·추정치·점검표는 하락을 가리켜 아직 실적으로 확인된 것이 없다.</p>
+<h2 id="이-논지가-틀렸다고-볼-조건">이 논지가 틀렸다고 볼 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-논지가-틀렸다고-볼-조건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>상승 점검이 0/5에서 3/5 이상으로 늘어난다(하락 논지가 틀렸다는 신호).</li>
+<li>추정치 수정 폭이 -0.29에서 0 이상으로 돌아서고 외국인 20일 순매수/시총이 플러스로 바뀐다.</li>
+<li>바구니가 20일 코스피 대비 초과 수익을 몇 주 연속 유지하면서 200일선 대비 낙폭(-30.8%)이 눈에 띄게 줄어든다.</li>
+<li>AI·데이터센터 규제 우려가 완화되어 반도체 ETF가 낙폭을 회복한다.</li>
+<li>하락 점검이 2/7에서 4/7 이상으로 늘어나 하락이 확대된다(상승 논지가 틀렸다는 신호).</li>
+</ul>
+<h2 id="확인해-줄-조건">확인해 줄 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#확인해-줄-조건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>피지컬AI 특별법이 연내 처리되고 AI 예산 9.4조의 집행 계획이 구체화된다.</li>
+<li>로보티즈 등 부품사의 매출·수주가 실제 실적으로 확인된다(예: 에스피지 SDD 12월 양산 시작).</li>
+<li>삼성 휴머노이드 공개(CES 기대) 등 대기업의 상용화 일정이 가시화된다.</li>
+</ul>
+<h2 id="앞으로-4주-확인할-일">앞으로 4주 확인할 일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#앞으로-4주-확인할-일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2026-11-10 — 미국 10월 CPI 발표(AI 규제 우려 속 물가 지표 관심), ETF 6종 신규 상장(현대차 로봇 밸류체인 등)</li>
+<li>2026-11-13 — 미국 10월 PPI 발표, 한국 10월 수출입물가·무역지수 발표</li>
+<li>미정 — 피지컬AI 특별법 국회 처리(당정 연내 추진)</li>
+<li>2026-12 — 에스피지 SDD 첫 양산, 조선 12월 환경규제 논의(참고)</li>
+<li>미정 — 삼성 휴머노이드 로봇 공개 여부(CES 관련 기대)</li>
+</ul>
+<p>하락 키워드: AI 규제, 데이터센터 규제, 목표가 하향, 구조조정, 가격 경쟁, 밸류에이션 부담, 외국인 순매도, 정책 불확실성 · 상승 키워드: 피지컬 AI 특별법, 양산, 공급 계약, 공장 구축, 목표가 상향, 휴머노이드 상용화, 수주, 로봇 사업 개시</p>
+<h2 id="수치-점검표-2026-11-09">수치 점검표 (2026-11-09)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수치-점검표-2026-11-09" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>상태</th><th>값</th></tr></thead><tbody><tr><td>P1 가격 규칙</td><td>🔴 켜짐</td><td>52주 고점 대비 -52.5% · 200일선 대비 -33.4%</td></tr><tr><td>P2 호재 무반응</td><td>🔴 켜짐</td><td></td></tr><tr><td>P3 추정치 수정 폭 악화</td><td>🔴 켜짐</td><td>수정 폭 -0.62</td></tr><tr><td>P4 목표가 군집</td><td>–</td><td>상향 비율 +7.2% · 목표가÷주가 1.87</td></tr><tr><td>P5 쏠림</td><td>–</td><td>관심 z 0.47 · 개인 20일 -0.1%</td></tr><tr><td>P6 분산</td><td>–</td><td>외국인 20일 -0.2% · 개인 -0.1%</td></tr><tr><td>P7 하락 서사 급증</td><td>🔴 켜짐</td><td>하락 키워드 7일 249건</td></tr><tr><td>U1 추세 상승</td><td>–</td><td></td></tr><tr><td>U2 추정치 수정 폭 양·개선</td><td>–</td><td>수정 폭 -0.62</td></tr><tr><td>U3 외국인 20일 순매수·증가</td><td>–</td><td>외국인 20일 -0.2%</td></tr><tr><td>U4 관심 조용</td><td>🟢 켜짐</td><td>관심 z 0.47</td></tr><tr><td>U5 하락 서사 잦아듦</td><td>–</td><td></td></tr></tbody></table></div>
+<p>규칙 단계 <strong>하락</strong> · 가격 규칙 발동 — 논지보다 우선(절반 이상 줄이는 약속 점검)</p>
+<h2 id="보조-지표-관찰용--점검표-밖">보조 지표 (관찰용 — 점검표 밖)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#보조-지표-관찰용--점검표-밖" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>반응 비대칭(60일, 호재 107·악재 38건): 호재 뒤 -0.8% · 악재 뒤 -2.3% · 합 -3.1% ⚠ 호재가 안 먹힘</li>
+<li>정보 이산성 ID -0.01 (음 = 조금씩 오는 정보 → 추세가 오래감)</li>
+<li>2년 수익 +162.9%</li>
+<li>추정치 수정 폭 4주 변화 -0.20</li>
+</ul>
+<h2 id="최근-13주-주말-기준">최근 13주 (주말 기준)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#최근-13주-주말-기준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>주</th><th>지수</th><th>20일 코스피 대비</th><th>하락 점검</th><th>상승 점검</th><th>단계</th></tr></thead><tbody><tr><td>2026-11-13</td><td>470.0</td><td>+2.5%</td><td>4</td><td>1</td><td>하락</td></tr><tr><td>2026-11-06</td><td>490.9</td><td>+2.2%</td><td>4</td><td>0</td><td>하락</td></tr><tr><td>2026-10-30</td><td>525.5</td><td>+0.7%</td><td>4</td><td>0</td><td>하락</td></tr><tr><td>2026-10-23</td><td>533.6</td><td>+4.1%</td><td>4</td><td>0</td><td>하락</td></tr><tr><td>2026-10-16</td><td>547.3</td><td>+3.6%</td><td>3</td><td>0</td><td>하락</td></tr><tr><td>2026-10-09</td><td>624.7</td><td>+4.2%</td><td>5</td><td>0</td><td>하락</td></tr><tr><td>2026-10-02</td><td>654.9</td><td>+3.7%</td><td>4</td><td>1</td><td>하락</td></tr><tr><td>2026-09-25</td><td>636.2</td><td>-3.7%</td><td>3</td><td>2</td><td>바닥 모색</td></tr><tr><td>2026-09-18</td><td>640.3</td><td>+0.9%</td><td>4</td><td>2</td><td>바닥 모색</td></tr><tr><td>2026-09-11</td><td>639.1</td><td>-9.5%</td><td>2</td><td>2</td><td>바닥 모색</td></tr><tr><td>2026-09-04</td><td>624.5</td><td>-11.8%</td><td>2</td><td>3</td><td>바닥 모색</td></tr><tr><td>2026-08-28</td><td>629.4</td><td>+1.2%</td><td>3</td><td>2</td><td>바닥 모색</td></tr><tr><td>2026-08-21</td><td>636.3</td><td>+4.6%</td><td>3</td><td>1</td><td>하락</td></tr></tbody></table></div>
+<p>확률 추이(주간): 11-07 42%</p>
+<p>바구니: 현대모비스, LG전자, 현대오토에버, 레인보우로보틱스, 두산로보틱스, 로보티즈, 에스엘, 현대무벡스, 에스피지, HL만도, 삼현, 신성델타테크, 유일로보틱스, 휴림로봇, 클로봇</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1052" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#섹터-논지--로봇" data-for="섹터-논지--로봇">섹터 논지 — 로봇</a></li><li class="depth-1"><a href="#한-줄-논지" data-for="한-줄-논지">한 줄 논지</a></li><li class="depth-1"><a href="#상승-논지" data-for="상승-논지">상승 논지</a></li><li class="depth-1"><a href="#하락-논지" data-for="하락-논지">하락 논지</a></li><li class="depth-1"><a href="#이-논지가-틀렸다고-볼-조건" data-for="이-논지가-틀렸다고-볼-조건">이 논지가 틀렸다고 볼 조건</a></li><li class="depth-1"><a href="#확인해-줄-조건" data-for="확인해-줄-조건">확인해 줄 조건</a></li><li class="depth-1"><a href="#앞으로-4주-확인할-일" data-for="앞으로-4주-확인할-일">앞으로 4주 확인할 일</a></li><li class="depth-1"><a href="#수치-점검표-2026-11-09" data-for="수치-점검표-2026-11-09">수치 점검표 (2026-11-09)</a></li><li class="depth-1"><a href="#보조-지표-관찰용--점검표-밖" data-for="보조-지표-관찰용--점검표-밖">보조 지표 (관찰용 — 점검표 밖)</a></li><li class="depth-1"><a href="#최근-13주-주말-기준" data-for="최근-13주-주말-기준">최근 13주 (주말 기준)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2611091720'</script>

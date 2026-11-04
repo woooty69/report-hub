@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+<head><script src="/report-hub/static/gate.js"></script>
 <meta charset="utf-8"><link rel="icon" type="image/png" href="https://woooty69.github.io/report-hub/static/icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>증권사리포트 검색</title>
@@ -25,6 +25,17 @@
   .tag.sec { background: #fef3c7; color: #92400e; }
   @media (max-width: 560px) { .row { flex-wrap: wrap; } .c { flex-basis: 60%; } }
   #hint { color: #889; font-size: 13.5px; margin-top: 18px; line-height: 1.7; }
+  /* 2026-11-06 최신 리포트 1면 카드 (PC 2열 · 휴대폰 1열, 내부 스크롤 없음) */
+  .sec-t { font-size: 14px; font-weight: 700; color: #1b4f8a; margin: 14px 2px 8px; }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+  @media (max-width: 700px) { .cards { grid-template-columns: 1fr; } }
+  .card { display: block; border: 1px solid #dde3ea; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; background: #fff; }
+  .card:hover { border-color: #4a7dbd; box-shadow: 0 2px 10px rgba(27, 79, 138, .12); }
+  .card .h { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 8px 10px; font-size: 13px; border-bottom: 1px solid #eef1f4; }
+  .card .h .c { flex-basis: 100%; font-size: 14px; white-space: normal; }
+  .card img { display: block; width: 100%; height: auto; aspect-ratio: auto 1 / 1.414; background: #f4f6f8; }
+  .card .ph { padding: 28px 10px; text-align: center; font-size: 12.5px; color: #889; background: #f7f8fa; }
+  .pg { font-size: 12px; font-weight: 600; color: #0f8f7e; margin-left: 4px; white-space: nowrap; }   /* 2026-11-06 리포트 쪽수 */
   @media (prefers-color-scheme: dark) {
     body { color: #d7d7d7; }
     #q { background: #1e1e22; color: #ddd; border-color: #444; }
@@ -37,6 +48,11 @@
     .tag.nw { background: #2e1065; color: #c4b5fd; }
     .tag.sec { background: #451a03; color: #fcd34d; }
     #hint, #stat { color: #999; }
+    .sec-t { color: #93c5fd; }
+    .card { background: #1e1e22; border-color: #3a3a40; }
+    .card .h { border-color: #333; }
+    .card img { background: #26262b; }
+    .card .ph { background: #26262b; color: #999; }
   }
 </style>
 </head>
@@ -47,12 +63,38 @@
 <div id="hint">회사명(또는 6자리 종목코드)을 입력하면 해당 종목의 증권사 리포트 원문을 찾아줍니다.<br>
 🔵 <b>PDF</b> 표시는 웹에서 바로 열리고, <b>네이버·한경·DART</b> 표시는 아직 아카이브 업로드 전이라 원문 사이트로 이동하며(보통 다음 날 PDF로 바뀜), <b>텔레그램</b> 표시는 텔레그램 앱(채널 가입 계정)에서만 열립니다.<br>
 깃허브가 응답하지 않으면 Tailscale 이 켜진 내 기기에서는 2호기 사본으로 자동으로 열립니다.<br>
-📑 <b>산업 발췌</b> 표시는 산업·전략 리포트 안에 들어 있는 그 종목 장으로, 누르면 원본 PDF의 해당 쪽부터 열립니다.</div>
+📑 <b>산업 발췌</b> 표시는 산업·전략 리포트 안에 들어 있는 그 종목 장으로, 누르면 원본 PDF의 해당 쪽부터 열립니다.<br>
+📄 검색하면 맨 위에 <b>최신 리포트 10건의 1면</b>이 카드로 나오고(산업 발췌는 그 장 첫 쪽), 카드를 누르면 PDF가 열립니다.</div>
 <script src="./pdf-fallback.js"></script>
 <script>
-var DATA = null, MAX = 200;
+var DATA = null, MAX = 200, NCARD = 10;
 var PDF_BASE = "https://woooty69.github.io/report-pdf/pdf/";
 var TG_BASE = "https://t.me/c/1378197756/";
+// 2026-11-06 리포트 1면 카드: [12]=그림 키, [13]=깃허브 그림 샤드(hw-p1-NNN, 0=아직 업로드 전).
+//   그림 순서: (2호기 미러에서 연 경우 미러) → 깃허브 샤드 → 2호기 Tailscale 미러 → '준비 중' 안내
+var P1_MIRROR = "https://win-prds3cnco9g.tailbbe13a.ts.net/p1/";
+var ON_MIRROR = /^win-prds3cnco9g/.test(location.hostname) || location.hostname === "127.0.0.1";
+function p1key(it) {
+  if (!it[12]) return "";
+  var k = String(it[12]).length === 12 ? it[2] + "_" + it[12] : String(it[12]);
+  if (it[11] && it[11] > 1) k += "_p" + it[11];
+  return k;
+}
+function p1srcs(it) {
+  var k = p1key(it), a = [];
+  if (!k) return a;
+  if (ON_MIRROR) a.push("/p1/" + k + ".jpg");
+  if (it[13]) a.push("https://woooty69.github.io/hw-p1-" + ("00" + it[13]).slice(-3) + "/" + k + ".jpg");
+  if (!ON_MIRROR) a.push(P1_MIRROR + k + ".jpg");
+  return a;
+}
+function p1err(img) {   // 다음 주소로 넘어가고, 모두 실패하면 안내문
+  var s = (img.getAttribute("data-srcs") || "").split(" ").filter(Boolean);
+  if (s.length) { img.setAttribute("data-srcs", s.slice(1).join(" ")); img.src = s[0]; return; }
+  var d = document.createElement("div"); d.className = "ph";
+  d.textContent = "1면 그림을 불러오지 못했습니다 (업로드 대기 중이면 2호기 미러에서만 보임) · 누르면 PDF가 열립니다";
+  img.replaceWith(d);
+}
 function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
 function fdate(d) { return d.length === 8 ? d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8) : d; }
 function render() {
@@ -61,7 +103,7 @@ function render() {
   if (!DATA) { stat.textContent = "목록을 불러오는 중..."; return; }
   if (!q) { list.innerHTML = ""; stat.textContent = "전체 " + DATA.count + "건 · 기준 " + DATA.generated; hint.style.display = ""; return; }
   hint.style.display = "none";
-  var out = [], n = 0;
+  var out = [], n = 0, cards = [];
   for (var i = 0; i < DATA.items.length; i++) {
     var it = DATA.items[i];
     if (it[0].toLowerCase().indexOf(q) < 0 && it[1].indexOf(q) < 0) continue;
@@ -86,12 +128,22 @@ function render() {
     var fl = it[9] || "";   // 2026-10-21: 목표가상향 · 신규 리포트 표시
     if (fl.indexOf("목표가상향") >= 0) tag += '<span class="tag up">📈 목표가상향</span>';
     if (fl.indexOf("신규 리포트") >= 0) tag += '<span class="tag nw">🆕 신규 리포트</span>';
+    var npg = DATA.pages ? DATA.pages[i] : 0;   // 2026-11-06 사용자 요청: 종목명[코드] 다음에 쪽수
+    var pgs = npg ? ' <span class="pg">' + npg + 'page</span>' : '';
+    if (cards.length < NCARD) {
+      var ss = p1srcs(it);
+      if (ss.length) cards.push('<a class="card" href="' + url + '"' + extra + ' target="_blank" rel="noopener"><div class="h"><span class="d">' +
+        fdate(it[2]) + '</span><span class="b">' + esc(it[3]) + '</span>' + tag + '<span class="c">' + esc(it[0]) +
+        (it[1] ? ' <small>[' + it[1] + ']</small>' : '') + pgs + '</span></div><img src="' + ss[0] + '" data-srcs="' + ss.slice(1).join(" ") +
+        '" alt="' + esc(it[0]) + ' 1면" loading="lazy" decoding="async" onerror="p1err(this)"></a>');
+    }
     out.push('<a class="row" href="' + url + '"' + extra + ' target="_blank" rel="noopener"><span class="d">' + fdate(it[2]) +
-      '</span><span class="c">' + esc(it[0]) + (it[1] ? ' <small>[' + it[1] + ']</small>' : '') +
+      '</span><span class="c">' + esc(it[0]) + (it[1] ? ' <small>[' + it[1] + ']</small>' : '') + pgs +
       '</span><span class="b">' + esc(it[3]) + '</span>' + tag + '</a>');
   }
   stat.textContent = n + "건 검색됨" + (n > MAX ? " (최신 " + MAX + "건 표시)" : "");
-  list.innerHTML = out.join("");
+  list.innerHTML = (cards.length ? '<div class="sec-t">📄 최신 리포트 1면 (' + cards.length + '건)</div><div class="cards">' + cards.join("") +
+    '</div><div class="sec-t">📋 전체 목록</div>' : "") + out.join("");
 }
 document.getElementById("q").addEventListener("input", render);
 fetch("./pdfindex.json").then(function (r) { return r.json(); }).then(function (j) {
@@ -100,4 +152,4 @@ fetch("./pdfindex.json").then(function (r) { return r.json(); }).then(function (
 </script>
 </body>
 </html>
-<script>window.__hubver='2611041720'</script>
+<script>window.__hubver='2611091720'</script>

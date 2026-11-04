@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><script src="/report-hub/static/gate.js"></script><title>섹터 논지 — 방산</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@400;700&amp;family=Noto Sans KR:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="📚 리포트 허브"/><meta property="og:title" content="섹터 논지 — 방산"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="섹터 논지 — 방산"/><meta name="twitter:description" content="섹터 논지 — 방산 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta property="og:description" content="섹터 논지 — 방산 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta property="og:image:alt" content="섹터 논지 — 방산 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta property="twitter:domain" content="woooty69.github.io/report-hub"/><meta property="og:url" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_방산"/><meta property="twitter:url" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_방산"/><link rel="icon" href="../static/icon.png"/><script src="../static/pdf-fallback.js" defer></script><meta name="description" content="섹터 논지 — 방산 논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). ← 섹터 논지 판 · 투자 권유 아님."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiRTpcXHJlcG9ydC1odWJcXHF1YXJ0elxcY29tcG9uZW50c1xcc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://woooty69.github.io/report-hub/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_방산-og-image.webp"/><meta property="og:image:url" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_방산-og-image.webp"/><meta name="twitter:image" content="https://woooty69.github.io/report-hub/신호-성적표/섹터논지_방산-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="신호-성적표/섹터논지_방산"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">📚 리포트 허브</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>검색</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="검색어를 입력하세요" placeholder="검색어를 입력하세요"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="다크 모드"><title>다크 모드</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="라이트 모드"><title>라이트 모드</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let folderOrder={dailymarketreport:0,\&quot;\\uD55C\\uAD6D\\uC2DC\\uC7A5-\\uB9AC\\uD3EC\\uD2B8\&quot;:.5,\&quot;youtube-\\uC694\\uC57D\&quot;:1,\&quot;\\uC720\\uD29C\\uBE0C-\\uD22C\\uC790\\uB178\\uD2B8\&quot;:1.2,\&quot;\\uD22C\\uC790\\uAE30\\uBC95-\\uC694\\uC57D\&quot;:1.5,\&quot;\\uC99D\\uAD8C\\uC0AC-\\uB9AC\\uD3EC\\uD2B8-\\uC694\\uC57D\&quot;:2,\&quot;d\\uB7A8-\\uAC00\\uACA9-\\uB9AC\\uD3EC\\uD2B8\&quot;:3,\&quot;\\uC9C0\\uC815\\uD559-\\uB9AC\\uD3EC\\uD2B8\&quot;:3.5,\&quot;\\uC99D\\uAD8C\\uC0AC\\uB9AC\\uD3EC\\uD2B8-\\uAC80\\uC0C9\&quot;:4,\&quot;\\uC9C0\\uC218-\\uACC4\\uC808\\uC131\&quot;:5,\&quot;\\uC2E0\\uADDC\\uC0C1\\uC7A5-\\uC624\\uBC84\\uD589\&quot;:5.5,\&quot;\\uAD00\\uC138\\uCCAD-\\uC218\\uCD9C\\uC785\&quot;:5.7,\&quot;\\uC815\\uCC45-\\uCD94\\uC801\&quot;:5.8,\&quot;\\uC2E0\\uD638-\\uC131\\uC801\\uD45C\&quot;:5.9,\&quot;\\uAC1C\\uC778-\\uD22C\\uC790-\\uAE30\\uB85D\&quot;:5.95};if(a.isFolder&amp;&amp;b.isFolder){let d=(folderOrder[a.slugSegment??\&quot;\&quot;]??99)-(folderOrder[b.slugSegment??\&quot;\&quot;]??99);return d!==0?d:a.displayName.localeCompare(b.displayName)}return!a.isFolder&amp;&amp;!b.isFolder?(b.slugSegment??\&quot;\&quot;).localeCompare(a.slugSegment??\&quot;\&quot;,void 0,{numeric:!0}):a.isFolder?-1:1}&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1403"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>탐색기</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1403" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../신호-성적표/">신호 성적표</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>섹터 논지 — 방산</a></div></nav><h1 class="article-title">섹터 논지 — 방산</h1><p show-comma="true" class="content-meta"><time datetime="2026-11-08T15:00:00.000Z">26.11.09.00</time><span>13 min read</span></p></div></div><article class="popover-hint"><h1 id="섹터-논지--방산">섹터 논지 — 방산<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#섹터-논지--방산" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>논지는 Claude 가 매주(2026-11-07 작성) 리포트·기사·수치로 다시 쓰고, 점검표는 매일 갱신(2026-11-09). <a href="../신호-성적표/섹터_논지_판" class="internal alias" data-slug="신호-성적표/섹터_논지_판">← 섹터 논지 판</a> · 투자 권유 아님.</p>
+</blockquote>
+<h2 id="한-줄-논지">한 줄 논지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#한-줄-논지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>방산 바구니는 52주 고점 대비 -52.4%, 200일선 대비 -35.7%로 이미 크게 빠졌다. 수요와 수주 서사는 살아 있지만 미국 예산 불확실성, 실적 편차, 추정치 하향이 겹쳐, 코스피 대비 우위 확률은 기준율보다 약간 낮게 본다.</p>
+<p><strong>지난주 대비 바뀐 점</strong>: 첫 작성이라 지난 카드가 없다. 이번 주 새로 생긴 변수는 세 가지다. ① 미 중간선거에서 민주당이 승리해 FY27 방위비 축소 우려가 커졌다[R1][R3]. ② 이란전 종식 가능성이 방산주 악재로 작용했다[N11]. ③ 한화에어로의 폴란드 유도미사일 공장 착공과 KAI의 1조4575억 비공개 수주가 나왔다[N4][N35]. 수치 점검표에서는 하락 점검 P1·P2가 켜졌다.</p>
+<p><strong>3개월 코스피 대비 우위 확률 42%</strong> — 기준율 50에서 시작한다. 하락 요인으로 단계가 하락이고 200일선 대비 -35.7%이며 추정치 수정 폭이 -0.17이라는 점, 미 예산 불확실성(CR 12/11)과 실적 편차를 반영해 낮춘다. 상승 요인으로 52주 고점 대비 -52.4%의 낙폭, 목표가÷주가 1.87, 외국인 순매수 +0.2%(개인은 -0.4%), 수주·현지화 뉴스를 반영해 일부 되돌린다. 추세는 약하지만 밸류에이션 완충이 있어 확신은 피하고 42로 둔다.</p>
+<p><strong>단계(Claude)</strong>: 하락 — 규칙 단계(하락)와 같게 본다. 3개월 -19.2%, 200일선 아래 -35.7%, 코스피 대비 20일 -2.7%가 모두 하락 국면과 맞는다. 다만 낙폭이 크고 기사 관심 z는 0.54로 과열이 아니어서, 바닥 형성 여부는 아직 확인되지 않았다.</p>
+<h2 id="상승-논지">상승 논지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#상승-논지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>무기 재고 고갈로 수요가 꺾이지 않았고, 수주 사이클이 이어진다 — Eugene은 한국 업체 참여 수출 사업 규모가 2021년 약 50조원에서 2026년 약 300조원으로 늘었고, 2027～30년 해외 수주를 연 25조원으로 추정했다[R10]. 미국 방산 기업의 수주잔고도 L3해리스 +47%, HII +54%, GD +61%로 늘었다[R1]. 국내 수주잔고는 120조원이다[N1]. 단, 이 숫자들은 증권사 추정과 해외 peer 지표다.</li>
+<li>선거발 하락은 심리 충격이고, 한국 방산의 미국 의존도는 낮아 펀더멘털 훼손은 제한적이다 — 한국 방산은 미국 익스포저가 크지 않고, 미국 무기 인도 지연이 길어지면 대체 공급자 수요가 부각된다[R6]. 유럽·중동의 방위력 강화 수요는 미국 정치와 무관하게 이어진다[R5]. 수치상 목표가÷주가가 1.87이고, 유튜브에서도 프리미엄 반납으로 중장기 접근이 쉬워졌다는 주장이 나왔다[Y1][수치].</li>
+<li>현지 생산과 신규 수주 재개가 ‘폴란드 이후 공백’ 우려를 줄일 수 있다 — 한화에어로가 폴란드 고주프에 첫 해외 유도미사일 공장을 착공했고 2030년 양산 목표다[N4][N12]. KAI는 1조4575억원 규모 비공개 수주를 공시했다[N35]. 인도 K-9 추가 발주 가능성과 한화시스템의 초소형위성체계 사업자 선정도 있었다[R7]. 미국 대형 수주 우려 속에서도 터키 아셀산이 1.5조원 방공 계약을 따냈다[R3].</li>
+</ul>
+<h2 id="하락-논지">하락 논지<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#하락-논지" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>미국 국방예산 규모와 집행이 불확실하고, 지정학 프리미엄이 줄고 있다 — 민주당이 상·하원을 모두 이기면서 FY27 방위비 축소와 골든돔·골든함선 제동 우려가 나왔다[R1]. 주요 미사일 조달 요구액은 예산조정입법 의존도가 PAC-3 MSE 90%, AMRAAM 88%, THAAD 84%다. 정규 세출법은 12/11까지 임시예산(CR)으로 운영 중이다[R6]. 이란전 종식 가능성은 방산주 악재로 지목됐다[N11].</li>
+<li>수주잔고 증가세가 둔화되고 실적이 갈려, ‘수주 연속성’이 의심받는다 — 폴란드·중동 편중 수출의 한계로 수주잔고가 꺾였다는 보도가 있다[N25]. 3분기 실적은 KAI만 웃었다는 평가다[N18]. 독일 라인메탈은 계약·인도 지연으로 2026년 가이던스를 하향했다[R3]. 삼프로TV는 방산주가 실적 부진보다 모멘텀과 수주 연속성 부족으로 하락한다고 주장했다[Y1].</li>
+<li>가격 추세와 추정치가 모두 약하고, 개별 제재 리스크도 남아 있다 — 3개월 -19.2%, 200일선 대비 -35.7%, 추정치 수정 폭 -0.17이다. 30일 목표가 상향 비율은 +0.9%에 그쳐 목표가÷주가 1.87과 괴리가 크다[수치]. LIG D&amp;A는 10일 국기연의 1000억원 제재부가금 심의가 예정돼 있다[P2]. KF-21 미사일 사업에 영향을 줄 수 있어 법원 판단도 주목받았다[N21][P1].</li>
+</ul>
+<p><strong>지금 우세한 쪽에 대한 가장 강한 반론</strong>: 하락 추세가 우세하지만, 가격이 이미 고점 대비 절반 아래로 내려왔고 수주·재고 수요 논거는 훼손되지 않았다는 점이 가장 강한 반론이다. 반대로 강세 서사가 더 우세하다면, 유튜브 상승 주장 67건 대 하락 28건[Y1]이라는 쏠림과 추정치 하향·목표가 정체[수치]가 그 서사를 가장 크게 의심하게 한다.</p>
+<h2 id="이-논지가-틀렸다고-볼-조건">이 논지가 틀렸다고 볼 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#이-논지가-틀렸다고-볼-조건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>12/11 CR 만료 전후 협상에서 미사일·방공 조달(PAC-3, AMRAAM, THAAD 등) 예산이 의미 있게 삭감되면, 상승 논지(수요 지속)는 틀린 것이다[R6]</li>
+<li>추정치 수정 폭이 -0.17보다 더 나빠지고, 30일 목표가 상향 비율이 0%대 이하로 내려가면 실적 회복 논거가 약해진다[수치]</li>
+<li>바구니가 200일선 대비 -35.7%보다 더 벌어지고 코스피 대비 20일 성과도 악화되면, 낙폭 과대 논지는 틀린 것이다[수치]</li>
+<li>폴란드·중동 외 신규 대형 수주가 4주 안에 나오지 않고 수주잔고 정체 보도가 늘면 수주 연속성 논지는 약화된다[N25]</li>
+<li>LIG D&amp;A 제재 수위가 1000억원 이상으로 확정되고 KF-21 미사일 사업에 차질이 생기면, 개별 리스크가 바구니 전반으로 번지는지 재점검한다[P2][N21]</li>
+</ul>
+<h2 id="확인해-줄-조건">확인해 줄 조건<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#확인해-줄-조건" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>수치 점검표의 하락 점검이 2/7에서 줄고 상승 점검이 1/5에서 늘어난다[수치]</li>
+<li>추정치 수정 폭이 0 위로 돌아서고 30일 목표가 상향 비율이 확대된다[수치]</li>
+<li>바구니가 200일선 회복을 시도하며 코스피 대비 20일 성과가 플러스로 전환된다[수치]</li>
+<li>12월 임시예산 협상에서 미사일·방공 예산이 초당적으로 유지되고, 폴란드 외 지역 신규 수주가 나온다[R6][N35]</li>
+</ul>
+<h2 id="앞으로-4주-확인할-일">앞으로 4주 확인할 일<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#앞으로-4주-확인할-일" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>2026-11-10 — 국기연, LIG D&amp;A 1000억원 규모 제재부가금 심의 [P2]</li>
+<li>미정 — LIG D&amp;A 제재 관련 법원 판단과 KF-21 미사일 사업 영향 [N21]</li>
+<li>미정 — 방산 업체 3분기 실적 발표 및 KAI 비공개 수주 상세 공시 [N18][N35]</li>
+<li>2026-12-11 — 임시예산(CR) 만료. 세출법과 NDAA 처리 여부 (4주 밖이지만 11월 협상 동향 확인) [R6]</li>
+<li>미정 — 이란 휴전·종전 관련 뉴스와 유럽 방산 업체(라인메탈 등) 수주·인도 소식 [N11][R3]</li>
+<li>2027-01-03 — 새 미 의회 임기 시작 (4주 밖, 참고) [R6]</li>
+</ul>
+<p>하락 키워드: 국방비 삭감, 예산 불확실, 수주잔고 감소, 가이던스 하향, 인도 지연, 종전 기대, 제재부가금, 실적 부진 · 상승 키워드: 수주 재개, 비공개 수주, 현지 생산, 유도미사일, 재고 보충, 수출 계약, 목표가 상향, 수주잔고 증가</p>
+<h2 id="수치-점검표-2026-11-09">수치 점검표 (2026-11-09)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#수치-점검표-2026-11-09" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>항목</th><th>상태</th><th>값</th></tr></thead><tbody><tr><td>P1 가격 규칙</td><td>🔴 켜짐</td><td>52주 고점 대비 -52.7% · 200일선 대비 -35.9%</td></tr><tr><td>P2 호재 무반응</td><td>🔴 켜짐</td><td></td></tr><tr><td>P3 추정치 수정 폭 악화</td><td>–</td><td>수정 폭 -0.17</td></tr><tr><td>P4 목표가 군집</td><td>–</td><td>상향 비율 +0.8% · 목표가÷주가 1.92</td></tr><tr><td>P5 쏠림</td><td>–</td><td>관심 z 0.14 · 개인 20일 -0.4%</td></tr><tr><td>P6 분산</td><td>–</td><td>외국인 20일 +0.2% · 개인 -0.4%</td></tr><tr><td>P7 하락 서사 급증</td><td>🔴 켜짐</td><td>하락 키워드 7일 83건</td></tr><tr><td>U1 추세 상승</td><td>–</td><td></td></tr><tr><td>U2 추정치 수정 폭 양·개선</td><td>–</td><td>수정 폭 -0.17</td></tr><tr><td>U3 외국인 20일 순매수·증가</td><td>🟢 켜짐</td><td>외국인 20일 +0.2%</td></tr><tr><td>U4 관심 조용</td><td>🟢 켜짐</td><td>관심 z 0.14</td></tr><tr><td>U5 하락 서사 잦아듦</td><td>–</td><td></td></tr></tbody></table></div>
+<p>규칙 단계 <strong>바닥 모색</strong> · 가격 규칙 발동 — 논지보다 우선(절반 이상 줄이는 약속 점검)</p>
+<h2 id="보조-지표-관찰용--점검표-밖">보조 지표 (관찰용 — 점검표 밖)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#보조-지표-관찰용--점검표-밖" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>반응 비대칭(60일, 호재 208·악재 187건): 호재 뒤 +0.9% · 악재 뒤 -3.7% · 합 -2.8%</li>
+<li>정보 이산성 ID +0.02 (음 = 조금씩 오는 정보 → 추세가 오래감)</li>
+<li>2년 수익 +76.9%</li>
+<li>추정치 수정 폭 4주 변화 +0.00</li>
+</ul>
+<h2 id="최근-13주-주말-기준">최근 13주 (주말 기준)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#최근-13주-주말-기준" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>주</th><th>지수</th><th>20일 코스피 대비</th><th>하락 점검</th><th>상승 점검</th><th>단계</th></tr></thead><tbody><tr><td>2026-11-13</td><td>323.7</td><td>-1.8%</td><td>3</td><td>2</td><td>바닥 모색</td></tr><tr><td>2026-11-06</td><td>325.5</td><td>-2.6%</td><td>3</td><td>1</td><td>하락</td></tr><tr><td>2026-10-30</td><td>358.3</td><td>-5.0%</td><td>3</td><td>0</td><td>하락</td></tr><tr><td>2026-10-23</td><td>377.5</td><td>+4.2%</td><td>4</td><td>0</td><td>하락</td></tr><tr><td>2026-10-16</td><td>408.3</td><td>+5.8%</td><td>3</td><td>0</td><td>하락</td></tr><tr><td>2026-10-09</td><td>441.3</td><td>+5.3%</td><td>4</td><td>0</td><td>하락</td></tr><tr><td>2026-10-02</td><td>479.7</td><td>+7.2%</td><td>5</td><td>0</td><td>하락</td></tr><tr><td>2026-09-25</td><td>448.0</td><td>-4.0%</td><td>3</td><td>0</td><td>하락</td></tr><tr><td>2026-09-18</td><td>457.4</td><td>+6.6%</td><td>4</td><td>0</td><td>하락</td></tr><tr><td>2026-09-11</td><td>447.6</td><td>-8.1%</td><td>2</td><td>0</td><td>하락</td></tr><tr><td>2026-09-04</td><td>432.3</td><td>-9.1%</td><td>2</td><td>0</td><td>하락</td></tr><tr><td>2026-08-28</td><td>451.5</td><td>+2.4%</td><td>3</td><td>2</td><td>바닥 모색</td></tr><tr><td>2026-08-21</td><td>430.3</td><td>+0.8%</td><td>3</td><td>1</td><td>하락</td></tr></tbody></table></div>
+<p>확률 추이(주간): 11-07 42%</p>
+<p>바구니: 한화에어로스페이스, 한국항공우주, 한화시스템, 현대로템, LIG디펜스앤에어로스페이스, 풍산, 현대위아, RFHIC, 비츠로셀, SNT다이내믹스, SNT모티브, 풍산홀딩스, 아이쓰리시스템, 삼양컴텍, 삼미금속</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1056" aria-expanded="true"><h3>목차</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#섹터-논지--방산" data-for="섹터-논지--방산">섹터 논지 — 방산</a></li><li class="depth-1"><a href="#한-줄-논지" data-for="한-줄-논지">한 줄 논지</a></li><li class="depth-1"><a href="#상승-논지" data-for="상승-논지">상승 논지</a></li><li class="depth-1"><a href="#하락-논지" data-for="하락-논지">하락 논지</a></li><li class="depth-1"><a href="#이-논지가-틀렸다고-볼-조건" data-for="이-논지가-틀렸다고-볼-조건">이 논지가 틀렸다고 볼 조건</a></li><li class="depth-1"><a href="#확인해-줄-조건" data-for="확인해-줄-조건">확인해 줄 조건</a></li><li class="depth-1"><a href="#앞으로-4주-확인할-일" data-for="앞으로-4주-확인할-일">앞으로 4주 확인할 일</a></li><li class="depth-1"><a href="#수치-점검표-2026-11-09" data-for="수치-점검표-2026-11-09">수치 점검표 (2026-11-09)</a></li><li class="depth-1"><a href="#보조-지표-관찰용--점검표-밖" data-for="보조-지표-관찰용--점검표-밖">보조 지표 (관찰용 — 점검표 밖)</a></li><li class="depth-1"><a href="#최근-13주-주말-기준" data-for="최근-13주-주말-기준">최근 13주 (주말 기준)</a></li><li class="overflow-end"></li></ul></div></div><footer class><p class="hub-footer-brand">📚 리포트 허브 · Daily Research Hub</p><p>© 2026 Healthy World Research · 매일 자동 수집·정리되는 리서치 아카이브 · <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a></p><ul></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html><script>window.__hubver='2611091720'</script>
