@@ -9,17 +9,22 @@
   var MIRROR_HTTPS = "https://" + HOST, MIRROR_HTTP = "http://" + HOST;
   var onMirror = location.hostname === HOST || location.hostname === "win-prds3cnco9g" || location.hostname === "127.0.0.1";
   function mirrorPath(u) {
-    var m = u.match(/^https:\/\/woooty69\.github\.io\/hw-pdf-arch-(\d+)\/([^?#]+\.pdf)$/i);
-    if (m) return "/arch/" + m[1] + "/" + m[2];
-    m = u.match(/^https:\/\/woooty69\.github\.io\/report-pdf\/pdf\/([^?#]+\.pdf)$/i);
-    if (m) return "/rpdf/" + m[1];
+    var m = u.match(/^https:\/\/woooty69\.github\.io\/hw-pdf-arch-(\d+)\/([^?#]+\.pdf)(#page=\d+)?$/i);   // 11-12: #page= 붙은 산업 발췌도 대체 열기
+    if (m) return "/arch/" + m[1] + "/" + m[2] + (m[3] || "");
+    m = u.match(/^https:\/\/woooty69\.github\.io\/report-pdf\/pdf\/([^?#]+\.pdf)(#page=\d+)?$/i);
+    if (m) return "/rpdf/" + m[1] + (m[2] || "");
     return null;
   }
   function timed(p, ms) {
     return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error("timeout")); }, ms); })]);
   }
-  function alive(url) {   // 같은 출처(github.io) 또는 CORS 허용(미러) — HEAD 로 생존 확인
-    return timed(fetch(url, { method: "HEAD", cache: "no-store" }), 4000).then(function (r) { return r.ok; }, function () { return false; });
+  function alive(url, ms) {   // 같은 출처(github.io) 또는 CORS 허용(미러) — HEAD 로 생존 확인
+    return timed(fetch(url, { method: "HEAD", cache: "no-store" }), ms || 4000).then(function (r) { return r.ok; }, function () { return false; });
+  }
+  // 2026-11-12: 응답이 '없다(404 등)'인지 '늦다(시간 초과·네트워크 오류)'인지 구분 — 늦은 경우엔 깃허브를 그대로 연다.
+  //   (이전엔 휴대폰 등 느린 망에서 4초를 넘기면 tailnet 밖 기기에서 열리지 않는 2호기 http 주소로 보내 '불러오지 못함'이 났음)
+  function probe(url, ms) {
+    return timed(fetch(url, { method: "HEAD", cache: "no-store" }), ms).then(function (r) { return r.ok ? "ok" : "missing"; }, function () { return "slow"; });
   }
   document.addEventListener("click", function (e) {
     if (e.defaultPrevented || e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey) return;
@@ -32,13 +37,15 @@
     var w = window.open("about:blank", "_blank");   // 클릭 순간에 창을 열어야 팝업 차단을 피함
     var go = function (u) { if (w) w.location.href = u; else location.href = u; };
     var gh = mirrorPath(a.href) ? a.href : null;
-    (gh ? alive(gh) : Promise.resolve(false)).then(function (ok) {
-      if (ok) return go(gh);
-      alive(MIRROR_HTTPS + mp).then(function (mok) {
+    (gh ? probe(gh, 6000) : Promise.resolve("none")).then(function (st) {
+      if (st === "ok") return go(gh);
+      alive(MIRROR_HTTPS + mp, 4000).then(function (mok) {
         if (mok) return go(MIRROR_HTTPS + mp);
+        if (gh && st === "slow") return go(gh);   // 깃허브가 느렸을 뿐 — 미러가 안 되면 깃허브로
         var orig = a.getAttribute("data-orig");
-        if (!gh && orig) return go(orig);     // 깃허브 링크가 아닌 행: 원문 우선
-        go(MIRROR_HTTP + mp);                // HTTPS 미러가 아직 없으면 http 미러(tailnet 기기에서만 열림)
+        if (orig && orig !== gh) return go(orig); // 원문 사이트(네이버·한경·증권사)
+        if (gh) return go(gh);
+        go(MIRROR_HTTP + mp);                // 마지막: http 미러(tailnet 기기에서만 열림)
       });
     });
   }, true);
