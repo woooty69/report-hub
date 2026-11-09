@@ -74,7 +74,8 @@
   css.textContent =
     "html.hwg-lock body>*:not(#hwg){display:none!important}" +
     "html.hwg-general .graph{display:none!important}" +
-    "#hwg{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;" +
+    "#hwg,#hwg *{visibility:visible!important}" +   // 페이지가 html 을 visibility:hidden 으로 시작해도 잠금 화면은 보이게
+    "#hwg{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;" +
     "background:#f4f6fa;font-family:system-ui,'Malgun Gothic',sans-serif;padding:16px;box-sizing:border-box}" +
     "#hwg .bx{width:100%;max-width:340px;background:#fff;border:1px solid #e3e7ee;border-radius:12px;padding:22px 20px;box-shadow:0 6px 24px rgba(0,0,0,.08)}" +
     "#hwg h1{font-size:20px;margin:0 0 4px;color:#1f2937}#hwg p{margin:0 0 14px;font-size:13px;color:#6b7280}" +
